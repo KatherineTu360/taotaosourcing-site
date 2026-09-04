@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog — 21 Categories from Screened South China Suppliers | Taotao Trading Sourcing</title>
+  <meta name="description" content="Full product catalog: motorcycle helmets & visors, aluminum doors & windows, door closers, hinges, decking, steel structures, prefab cabins, solar PV mounting, heat pumps, energy storage robots, sanitary ware, jewelry boxes, apparel, rosin and more — every supplier risk-screened before you commit.">
+  <link rel="canonical" href="https://www.taotaosourcing.com/products.html">
+  <meta property="og:title" content="Taotao Trading — Full Product Catalog (21 Categories)">
+  <meta property="og:description" content="Helmets, building hardware, energy equipment, consumer goods — all from risk-screened South China suppliers. MOQ and lead time quoted by model and quantity.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.taotaosourcing.com/products.html">
+  <meta property="og:image" content="https://www.taotaosourcing.com/assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .filter-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; }
+    .filter-tabs button {
+      padding: 9px 20px; border-radius: 999px; border: 1.5px solid #cfdaea;
+      background: #fff; color: var(--text); font-weight: 700; font-size: 0.9rem;
+      cursor: pointer; font-family: var(--font); transition: all 0.15s;
+    }
+    .filter-tabs button.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .pcard {
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      overflow: hidden; display: flex; flex-direction: column; transition: all 0.2s;
+    }
+    .pcard:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .pcard-body { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+    .pcard-body h3 { font-size: 1.1rem; color: var(--navy-ink); margin-bottom: 8px; font-weight: 750; }
+    .pcard-body p { font-size: 0.9rem; color: var(--muted); flex: 1; }
+    .pcard-body .more { margin-top: 14px; font-weight: 700; font-size: 0.88rem; color: var(--red); }
+    .pcard-body .more:hover { color: var(--red-dark); }
+
+    .pcard-media { position: relative; height: 210px; overflow: hidden; background: #eef2f9; }
+    .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; }
+    .slides::-webkit-scrollbar { display: none; }
+    .slides img { flex: 0 0 100%; width: 100%; height: 100%; object-fit: cover; scroll-snap-align: start; }
+    .pcard-media .placeholder {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; background: linear-gradient(135deg, #0b3f8f, #01204e); color: rgba(255,255,255,0.9);
+    }
+    .s-btn {
+      position: absolute; top: 50%; transform: translateY(-50%); z-index: 3;
+      width: 30px; height: 30px; border-radius: 50%; border: none; cursor: pointer;
+      background: rgba(255,255,255,0.92); color: var(--navy); font-size: 1.15rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      transition: background 0.15s; padding: 0; line-height: 1;
+    }
+    .s-btn:hover { background: #fff; }
+    .s-prev { left: 10px; } .s-next { right: 10px; }
+    .s-dots { position: absolute; bottom: 9px; left: 0; right: 0; display: flex; justify-content: center; gap: 5px; z-index: 3; }
+    .s-dots span { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.55); transition: background 0.15s; }
+    .s-dots span.on { background: #fff; }
+    .pcard-media.single .s-btn, .pcard-media.single .s-dots { display: none; }
+    @media (max-width: 1020px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 680px) { .catalog-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Taotao Trading home">
+        <img src="assets/logo.png" alt="Taotao Trading logo">
+        <span class="brand-name">Taotao Trading
+          <small>Sourcing · Risk Control</small>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="services.html">Services</a>
+        <a href="index.html#process">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Start an Inquiry</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
+      <h1>Product catalog</h1>
+      <p>21 categories from screened South China suppliers — the product lines our partner
+      factories actively produce today. Whatever you don't see here can go through custom
+      sourcing with the same risk-control process. MOQ and lead time are quoted by model and
+      quantity.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-tabs" role="tablist" aria-label="Filter catalog">
+        <button class="active" data-filter="all">All Products</button>
+        <button data-filter="building">Building &amp; Hardware</button>
+        <button data-filter="energy">Energy &amp; Industrial</button>
+        <button data-filter="consumer">Consumer &amp; Lifestyle</button>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid">
+
+        <article class="pcard" data-group="consumer" id="helmets-card">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/helmets/helmet-1.jpg" alt="Glossy white full-face motorcycle helmet with dark smoke visor" loading="lazy">
+            <img src="assets/products/helmets/helmet-2.jpg" alt="White full-face helmet with black and red racing graphics" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Motorcycle Helmets &amp; Visors</h3>
+            <p>Our founding line. Full-face, open-face and off-road helmets plus replacement visors (clear, tinted, mirrored, anti-fog). ECE / DOT / GB factory documents checked and shared before you commit. OEM/ODM — your graphics, your brand.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20motorcycle%20helmets%20%2F%20visors.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building" id="doors-card">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/doors-windows/door-1.jpg" alt="Black aluminum sliding patio door opening onto a garden terrace" loading="lazy">
+            <img src="assets/products/doors-windows/door-2.jpg" alt="Slim black aluminum glass partition doors in a modern kitchen" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Aluminum Doors &amp; Windows</h3>
+            <p>Thermal-break sliding systems (TC76, TC115): 6063-T5 alloy, 5+12A+5 tempered glass, Akzo Nobel powder coating, 304 stainless mesh, PA66-GF25 strips. Spec sheet below.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20aluminum%20doors%20%20windows.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/door-closers/closer-1.jpg" alt="Surface-mounted door closer body with complete link arm, three-quarter view" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Door Closers</h3>
+            <p>Commercial door closers for fire-rated and passage doors, multiple finishes and power sizes. OEM branding available from our long-checked hardware factory.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20door%20closers.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/hinges/hinge-1.jpg" alt="Black window friction stay hinges, 3D render" loading="lazy">
+            <img src="assets/products/hinges/hinge-2.jpg" alt="Stainless steel friction stay window hinges, 3D render" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Heavy-Duty Hinges &amp; Friction Stays</h3>
+            <p>Window friction stays and heavy-duty door hinges in stainless steel and painted finishes — the quiet hero of every door &amp; window project above.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20hinges%20%2F%20friction%20stays.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/decking/deck-1.jpg" alt="Composite decking boards in five color options" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Outdoor Decking &amp; Flooring</h3>
+            <p>Co-extrusion WPC and aluminum-core decking with pixel-level wood texture. The Geometry Cube series carries a 15-year warranty program for outdoor use.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20outdoor%20decking.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/steel/steel-1.jpg" alt="CNC laser cutting of steel plates on a production line" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Steel Structures &amp; Fabrication</h3>
+            <p>Steel beams, frames and custom fabrication from a workshop with automated laser cutting and CNC bending lines — drawings in, finished steel out.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20steel%20structures%20%2F%20fabrication.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/prefab/prefab-1.jpg" alt="Prefabricated cabin with glass curtain wall, wood cladding and rooftop solar" loading="lazy">
+            <img src="assets/products/prefab/prefab-2.jpg" alt="Prefabricated modular home bedroom unit with floor-to-ceiling glass walls" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Prefab Houses &amp; Cabins</h3>
+            <p>The ESO YK-series integrated cabins: glass-curtain-wall vacation homes with rooftop solar, delivered as liftable modules. Resort and glamping projects welcome.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20prefab%20houses%20%2F%20cabins.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/track/track-1.jpg" alt="Red all-weather running track around a soccer field" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Sports Tracks &amp; Court Surfaces</h3>
+            <p>Running tracks, silicon-PU and acrylic court systems from a national high-tech supplier with 30+ patents — material datasheets and reference projects available.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20sports%20track%20%2F%20court%20materials.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="building">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/pv/pv-1.jpg" alt="Ground-mounted solar PV array on galvanized mounting structures" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Solar PV Mounting &amp; Steel</h3>
+            <p>Ground-mount and rooftop PV racking: hot-dip galvanized and zinc-aluminum-magnesium brackets, C/U purlins and fasteners — the steel backbone under solar projects.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20solar%20PV%20mounting%20systems.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="energy">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/led/led-1.jpg" alt="Vertical foldable LED poster display on a wheeled stand" loading="lazy">
+            <img src="assets/products/led/led-2.jpg" alt="Tri-fold double-sided LED poster display, front and back views" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>LED Poster Displays</h3>
+            <p>Foldable LED poster screens: tri-fold double-sided and up-down folding models, GOB floor-tile-grade process, seamless multi-unit splicing, no installation needed — power on and use.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20LED%20poster%20displays.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="energy">
+          <div class="pcard-media"><div class="placeholder">♨️</div></div>
+          <div class="pcard-body">
+            <h3>Air-Source Heat Pumps</h3>
+            <p>Residential and commercial heat pumps for space heating and hot water — tested in the supplier's own low-temperature lab. Catalogs from two checked factories.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20air-source%20heat%20pumps.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="energy">
+          <div class="pcard-media"><div class="placeholder">🔋</div></div>
+          <div class="pcard-body">
+            <h3>Energy Storage &amp; Charging Robots</h3>
+            <p>Distributed mobile charge-storage robot solutions for EV charging, peak shaving and temporary power — for operators, service areas and smart-city projects.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20energy%20storage%20%2F%20charging%20robots.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="energy">
+          <div class="pcard-media"><div class="placeholder">🤖</div></div>
+          <div class="pcard-body">
+            <h3>Industrial Robot Arms</h3>
+            <p>Six-axis robot arms for palletizing and handling, with integration reference videos from real warehouse deployments. Videos on request.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20industrial%20robot%20arms.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="energy">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/heating/heating-1.jpg" alt="Flange-mounted electric tubular heating element for water heaters" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Electric Heating Elements</h3>
+            <p>Flange immersion heating modules with built-in thermostats for water heaters and boilers. Factory ISO 9001; UL / CE / CQC documents per model — verified before sampling.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20electric%20heating%20elements.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="energy">
+          <div class="pcard-media"><div class="placeholder">🛢️</div></div>
+          <div class="pcard-body">
+            <h3>Lubricants &amp; Greases</h3>
+            <p>Industrial and automotive lubricant lines from a Guangdong blender — product range and specs shared on request, with MSDS and test reports checked per shipment.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20lubricants%20%2F%20greases.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="consumer">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/sanitary/sanitary-1.jpg" alt="White ceramic floor-standing urinal in a modern bathroom" loading="lazy">
+            <img src="assets/products/sanitary/sanitary-2.jpg" alt="Egg-shaped smart toilet with automatic open/close cover" loading="lazy">
+            <img src="assets/products/sanitary/sanitary-4.jpg" alt="Smart toilet with disposable protective film pad system" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Smart Toilets &amp; Sanitary Ware</h3>
+            <p>Smart toilets (bidet washing, heated seats, auto lids) plus ceramic series — urinals, basins, mop tubs. Export models carry cUL / ETL / WaterMark documentation — verified per model.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20smart%20toilets%20%2F%20sanitary%20ware.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="consumer">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/jewelry-boxes/box-1.jpg" alt="Assorted jewelry boxes and travel cases in a lit display cabinet" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Jewelry Packaging &amp; Display</h3>
+            <p>Jewelry boxes, travel cases and display packaging in velvet, leatherette and paper — custom sizes, colors and logo debossing for brands and retailers.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20jewelry%20packaging.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="consumer">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/apparel/apparel-1.jpg" alt="Women's gray long-sleeve loungewear set with wide-leg pants" loading="lazy">
+            <img src="assets/products/apparel/apparel-2.jpg" alt="Women's brown ribbed cropped tank top" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Garments &amp; Apparel</h3>
+            <p>Knitwear, loungewear and activewear styles for private label — style catalog and fabric options on request, small-lot trial orders possible.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20garments%20%2F%20apparel.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="consumer">
+          <div class="pcard-media"><div class="placeholder">👜</div></div>
+          <div class="pcard-body">
+            <h3>Leather Goods &amp; Bags</h3>
+            <p>Genuine-leather belts, wallets, card &amp; passport holders and handbags — OEM production under <em>your own brand only</em>. We do not supply branded goods.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20leather%20goods%20%2F%20bags.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="consumer">
+          <div class="pcard-media"><div class="placeholder">👁️</div></div>
+          <div class="pcard-body">
+            <h3>False Eyelashes</h3>
+            <p>Mink and synthetic lash styles for beauty brands — domestic and export lines, private-label packaging available.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20false%20eyelashes.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+        <article class="pcard" data-group="consumer">
+          <div class="pcard-media">
+            <div class="slides">
+            <img src="assets/products/rosin/rosin-1.jpg" alt="Pale yellow gum rosin chunks, close-up" loading="lazy">
+            </div>
+            <button class="s-btn s-prev" aria-label="Previous image">‹</button>
+            <button class="s-btn s-next" aria-label="Next image">›</button>
+            <div class="s-dots"></div>
+          </div>
+          <div class="pcard-body">
+            <h3>Gum Rosin</h3>
+            <p>Industrial gum rosin for adhesives, inks, coatings and electronics — grade, packing and COA details confirmed per lot before order.</p>
+            <a class="more" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20interested%20in%20gum%20rosin.%20Requirement:%20" target="_blank" rel="noreferrer">Ask about this →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured spec sheet ===== -->      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured spec sheet ===== -->
+  <section class="section alt" id="doors-spec">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Featured spec sheet</span>
+        <h2>Aluminum Doors &amp; Windows — TC115 six-track sliding window</h2>
+        <p>A sample of the engineering depth our window specifications carry. Full TC76 / TC115
+        documentation on request.</p>
+      </div>
+      <div class="card" style="max-width:900px; margin:0 auto;">
+        <table class="spec-table">
+          <tbody>
+            <tr><th scope="row">Profile</th><td>6063-T5 virgin aluminum-silicon-titanium-magnesium alloy; 115 mm wall width; sash visible width 60 mm</td></tr>
+            <tr><th scope="row">Glass</th><td>5+12A+5 automotive-grade tempered insulated glass, fluorocarbon black bent aluminum spacer</td></tr>
+            <tr><th scope="row">Coating</th><td>Akzo Nobel (Netherlands) powder coating</td></tr>
+            <tr><th scope="row">Hardware</th><td>Dual-point automatic collision lock; imported 304 stainless steel six-track dual rollers</td></tr>
+            <tr><th scope="row">Thermal &amp; sealing</th><td>Ronghai PA66-GF25 thermal strip; EPDM composite foam seal; siliconized wool pile</td></tr>
+            <tr><th scope="row">Screen</th><td>304 stainless steel woven 06 medium-transparent diamond mesh</td></tr>
+            <tr><th scope="row">Colors</th><td>Metallic Gray, Extreme Gray, Black Gold, Coffee, Elegant White — custom RAL on volume orders</td></tr>
+            <tr><th scope="row">MOQ &amp; lead time</th><td>Quoted by model, dimensions and quantity with your quotation</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Don't see your product?</h2>
+          <p>These 21 categories are our established lines. Anything else goes through
+          custom sourcing — you get the same supplier screening, samples and QC follow-up.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="contact.html">Describe your product</a>
+          <a class="btn btn-wa" href="https://wa.me/8616626662274?text=Hi%20Katherine%2C%20I%27m%20looking%20for%20a%20product%20not%20in%20your%20catalog%3A%20" target="_blank" rel="noreferrer">WhatsApp Katherine</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Taotao Trading logo">
+            <div>
+              <strong>Taotao Trading</strong>
+              <small>Zhaoqing Taotao Import and Export Trading Co., Ltd.</small>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;">A sourcing partner with a banker's approach to supplier
+          risk. 21 product categories from screened South China manufacturers — founded
+          2023, based in Zhaoqing, Guangdong.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/katherine-tu-1b2574286/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
+            <a href="https://www.youtube.com/@TuKatherine" target="_blank" rel="noreferrer" aria-label="YouTube" title="YouTube">▶</a>
+            <a href="https://www.instagram.com/katherinetu360/" target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram">ig</a>
+            <a href="https://www.facebook.com/profile.php?id=61583761061206" target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook">f</a>
+          </div>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html#helmets-card">Helmets &amp; Visors</a></li>
+            <li><a href="products.html#doors-card">Doors, Windows &amp; Hardware</a></li>
+            <li><a href="products.html#doors-spec">Window Spec Sheet</a></li>
+            <li><a href="contact.html">Custom Sourcing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#verification">Supplier Verification</a></li>
+            <li><a href="services.html#audit">Factory Visits &amp; Audits</a></li>
+            <li><a href="services.html#qc">Inspection &amp; QC</a></li>
+            <li><a href="services.html#full-service">Full Sourcing Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>Zhaoqing, Guangdong, China</li>
+            <li><a href="https://wa.me/8616626662274" target="_blank" rel="noreferrer">WhatsApp: +86 166 2666 2274</a></li>
+            <li><a href="contact.html">Inquiry form →</a></li>
+            <li><a href="https://www.linkedin.com/in/katherine-tu-1b2574286/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Zhaoqing Taotao Import and Export Trading Co., Ltd. All rights reserved.</span>
+        <span><a href="privacy.html">Privacy</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/8616626662274" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.5-1.5-5.8-5-6-5.3-.2-.2-1.4-1.9-1.4-3.6 0-1.7.9-2.6 1.2-2.9.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.1.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1 1-.2 1.7z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Catalog filter
+    document.querySelectorAll('.filter-tabs button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tabs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('#catalogGrid .pcard').forEach(card => {
+          card.style.display = (f === 'all' || card.dataset.group === f) ? '' : 'none';
+        });
+      });
+    });
+
+    // Card image sliders: arrows, dots, touch swipe (scroll-snap)
+    document.querySelectorAll('.pcard-media').forEach(mediaBox => {
+      const track = mediaBox.querySelector('.slides');
+      if (!track) return;
+      const n = track.children.length;
+      if (n <= 1) { mediaBox.classList.add('single'); return; }
+      const dots = mediaBox.querySelector('.s-dots');
+      for (let i = 0; i < n; i++) {
+        const s = document.createElement('span');
+        if (i === 0) s.classList.add('on');
+        dots.appendChild(s);
+      }
+      const dotsArr = [...dots.children];
+      const go = (dir) => track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' });
+      mediaBox.querySelector('.s-prev').addEventListener('click', () => go(-1));
+      mediaBox.querySelector('.s-next').addEventListener('click', () => go(1));
+      let raf = null;
+      track.addEventListener('scroll', () => {
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          raf = null;
+          const i = Math.round(track.scrollLeft / track.clientWidth);
+          dotsArr.forEach((d, k) => d.classList.toggle('on', k === i));
+        });
+      });
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
