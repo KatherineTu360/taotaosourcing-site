@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /privacy.html
 
-Sitemap: https://www.taotaosourcing.com/sitemap.xml
+Sitemap: https://taotaosourcing.com/sitemap.xml
