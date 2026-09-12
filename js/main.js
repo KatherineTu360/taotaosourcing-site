@@ -37,7 +37,14 @@ if (form) {
       '',
       `Requirement: ${val('message')}`,
     ].filter(Boolean);
-    const url = 'https://wa.me/8616626662274?text=' + encodeURIComponent(parts.join('\n'));
+    const message = parts.join('\n');
+    const channel = e.submitter && e.submitter.value;
+    if (channel === 'email') {
+      const subject = val('interest') ? `Sourcing inquiry: ${val('interest')}` : 'Sourcing inquiry';
+      window.location.href = 'mailto:rabieternity@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+      return;
+    }
+    const url = 'https://wa.me/8616626662274?text=' + encodeURIComponent(message);
     window.open(url, '_blank', 'noopener');
   });
 }

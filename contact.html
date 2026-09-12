@@ -43,8 +43,8 @@
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
       <h1>Start an inquiry</h1>
-      <p>Tell us the product, service or factory you have in mind. Every inquiry is read and
-      answered personally by Katherine — usually within one business day.</p>
+      <p>Tell us the product, service or factory you have in mind. Katherine reviews each
+      inquiry personally and replies through your chosen contact channel.</p>
     </div>
   </section>
 
@@ -54,8 +54,9 @@
       <!-- ===== Form ===== -->
       <div class="form-card">
         <h2 style="font-size:1.3rem; color:var(--navy-ink); margin-bottom:6px;">Inquiry form</h2>
-        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:22px;">Submitting opens
-        WhatsApp with your message pre-filled — the fastest way to reach me. No account needed.</p>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:22px;">Choose WhatsApp or
+        email below. Your message is prepared for you and is not sent until you confirm it in
+        the selected app.</p>
         <form id="inquiryForm">
           <div class="form-row">
             <div class="form-group">
@@ -93,9 +94,14 @@
             <textarea id="message" name="message" rows="5" required
               placeholder="Product models or description, estimated quantity, target market, and any deadlines…"></textarea>
           </div>
-          <button type="submit" class="btn btn-wa" style="width:100%; justify-content:center;">
-            Send via WhatsApp →
-          </button>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px;">
+            <button type="submit" name="channel" value="whatsapp" class="btn btn-wa" style="width:100%; justify-content:center;">
+              Send via WhatsApp →
+            </button>
+            <button type="submit" name="channel" value="email" class="btn btn-ghost" style="width:100%; justify-content:center;">
+              Send by Email →
+            </button>
+          </div>
           <p class="form-note">Prefer email or LinkedIn? Use the buttons on the right — same
           inbox, same reply speed. Your details are never shared or sold (see
           <a href="privacy.html">privacy note</a>).</p>
@@ -128,8 +134,8 @@
           <div class="icon">✉️</div>
           <div>
             <strong>Email</strong>
-            <p>Ask on WhatsApp or LinkedIn for current email — we keep it off open pages to
-            avoid spam robots.</p>
+            <p><a href="mailto:rabieternity@gmail.com">rabieternity@gmail.com</a><br>
+            Send your product, quantity, target market and required documents.</p>
           </div>
         </div>
 
@@ -175,7 +181,7 @@
             </div>
           </div>
           <p style="font-size:0.88rem;">A sourcing partner with a banker's approach to supplier
-          risk. Helmets, visors and industrial products from screened South China manufacturers —
+          risk. Helmets, visors and selected industrial sourcing projects in South China —
           founded 2023, based in Zhaoqing, Guangdong.</p>
           <div class="footer-social">
             <a href="https://www.linkedin.com/in/katherine-tu-1b2574286/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
@@ -207,6 +213,7 @@
           <ul>
             <li>Zhaoqing, Guangdong, China</li>
             <li><a href="https://wa.me/8616626662274" target="_blank" rel="noreferrer">WhatsApp: +86 166 2666 2274</a></li>
+            <li><a href="mailto:rabieternity@gmail.com">Email: rabieternity@gmail.com</a></li>
             <li><a href="contact.html">Inquiry form →</a></li>
             <li><a href="https://www.linkedin.com/in/katherine-tu-1b2574286/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
           </ul>
