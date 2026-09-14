@@ -1,4 +1,4 @@
-// Taotao Trading — site behaviour
+// Taotao Sourcing — site behaviour
 
 // Mobile menu toggle
 const navToggle = document.getElementById('navToggle');
@@ -21,6 +21,16 @@ if (navToggle && mainNav) {
 // (no backend needed; nothing is stored server-side)
 const form = document.getElementById('inquiryForm');
 if (form) {
+  const query = new URLSearchParams(window.location.search);
+  const requestedProduct = query.get('product');
+  if (requestedProduct) {
+    const interest = document.getElementById('interest');
+    const message = document.getElementById('message');
+    if (interest) interest.value = 'Product catalog item / model';
+    if (message && !message.value) {
+      message.value = `Product / model: ${requestedProduct}\nTarget market: \nEstimated quantity: \nRequired specifications or documents: `;
+    }
+  }
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const val = (id) => {
