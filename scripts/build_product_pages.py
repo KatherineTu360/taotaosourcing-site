@@ -329,7 +329,7 @@ def update_sitemap(generated: list[str]) -> None:
     ] + [f"{DOMAIN}/detail-{slug}.html" for slug in category_slugs]
     for url in changed_urls:
         pattern = rf"(<loc>{re.escape(url)}</loc>\s*<lastmod>)[^<]+"
-        existing = re.sub(pattern, rf"\g<1>2026-09-13", existing)
+        existing = re.sub(pattern, rf"\g<1>2026-09-14", existing)
 
     marker_start = "  <!-- GENERATED PRODUCT URLS START -->"
     marker_end = "  <!-- GENERATED PRODUCT URLS END -->"
@@ -338,7 +338,7 @@ def update_sitemap(generated: list[str]) -> None:
         block.extend([
             "  <url>",
             f"    <loc>{DOMAIN}/{name}</loc>",
-            "    <lastmod>2026-09-13</lastmod>",
+            "    <lastmod>2026-09-14</lastmod>",
             "    <changefreq>monthly</changefreq>",
             "    <priority>0.7</priority>",
             "  </url>",

@@ -4,13 +4,23 @@
   "categories": [
     {
       "slug": "helmets",
-      "title": "Helmets, Visors & Protective Headgear",
-      "intro": "Motorcycle, sports, ski and cycling helmet lines plus replacement visor references. Specifications and compliance claims are reviewed by exact model and destination market.",
+      "title": "Motorcycle, Sports & Ski Helmets",
+      "intro": "Full-face, open-face, off-road, bicycle and ski helmet lines from reviewed suppliers. Model-compatible replacement visors and spoilers are covered in the dedicated visor category.",
       "buyerNote": "Start with use, target market, size range and required documents. A catalog mark is not treated as proof until it is matched to the exact product and current evidence.",
       "heroImage": "assets/products/helmets/helmet-1.jpg",
       "heroAlt": "Motorcycle helmet sourcing catalog",
-      "seoTitle": "Helmet, Visor & Sports Helmet Sourcing | Taotao Sourcing",
-      "metaDescription": "Browse reviewed motorcycle, sports, ski and cycling helmet and visor references. Ask about model details, samples, current documents and sourcing support in China."
+      "seoTitle": "Motorcycle, Sports & Ski Helmet Sourcing | Taotao Sourcing",
+      "metaDescription": "Browse reviewed motorcycle, sports, ski and cycling helmet lines. Ask about model details, samples, current documents and sourcing support in China."
+    },
+    {
+      "slug": "helmet-visors",
+      "title": "Motorcycle Helmet Visors & Spoilers",
+      "intro": "Model-compatible replacement visors for AGV, HJC, Scorpion EXO, SHARK, SHOEI, Arai, LS2, MT and more, plus bubble visors and model-specific rear spoilers. Aftermarket parts — fit and certification are checked per model and destination market.",
+      "buyerNote": "Tell us the exact helmet model and revision before ordering a visor. Finishes, pin-lock options, tint legality and destination-market documents are confirmed per inquiry; a catalogue photo is not proof of fit.",
+      "heroImage": "assets/products/helmet-visors/hv-agv-01.jpg",
+      "heroAlt": "Model-compatible replacement motorcycle helmet visors in clear and mirrored finishes",
+      "seoTitle": "Motorcycle Helmet Visors by Model | Compatible Replacement Visors | Taotao Sourcing",
+      "metaDescription": "Aftermarket replacement visors for AGV, HJC, SHOEI, Arai, LS2, MT and other helmet models, plus bubble visors and rear spoilers. Fitment, samples and documents checked per inquiry."
     },
     {
       "slug": "doors-windows",
@@ -651,52 +661,6 @@
       "lead_time": "To be confirmed",
       "oem_odm": "Branding and colour options to be confirmed.",
       "documentNote": "ECE is stated in the quotation; no model-specific certificate was reviewed."
-    },
-    {
-      "slug": "rx7x-compatible-helmet-visor",
-      "category": "helmets",
-      "name": "RX-7X Compatible Helmet Visor Range",
-      "model": "RX-7X compatible",
-      "productType": "Replacement motorcycle helmet visor",
-      "summary": "A supplier-listed replacement visor range shown in clear, smoke and mirrored colour options.",
-      "description": "This RX-7X-compatible visor family is shown in multiple clear, smoke and iridescent finishes. Compatibility should be confirmed with a physical helmet sample or approved fit drawing before bulk production; brand names describe supplier-listed fit only and do not imply affiliation.",
-      "features": [
-        "Clear option shown",
-        "Smoke option shown",
-        "Multiple mirrored finishes shown",
-        "Supplier-listed RX-7X compatibility",
-        "Physical fit verification recommended"
-      ],
-      "specifications": [
-        {
-          "label": "Fit reference",
-          "value": "RX-7X compatible, supplier-listed"
-        },
-        {
-          "label": "Finish options",
-          "value": "Clear, smoke and mirrored colours shown"
-        },
-        {
-          "label": "Material",
-          "value": "To be confirmed for the finished visor"
-        }
-      ],
-      "confirmBeforeOrder": [
-        "Exact helmet shell and visor revision",
-        "Pin and mounting-point fit",
-        "Optical and impact test requirements",
-        "Tint legality in the target market",
-        "Packaging protection"
-      ],
-      "image": "assets/products/helmets/rx7x-visor-catalog.jpg",
-      "imageAlt": "RX-7X compatible replacement motorcycle helmet visors",
-      "seoTitle": "RX-7X Compatible Helmet Visor Sourcing | Taotao Sourcing",
-      "metaDescription": "Compare RX-7X-compatible clear, smoke and mirrored helmet visors. Request fit verification, samples, packaging and test-document details.",
-      "moq": "To be confirmed",
-      "sample": "Recommended for fit verification; cost to be confirmed",
-      "lead_time": "To be confirmed",
-      "oem_odm": "Tint, finish, logo and packaging options to be confirmed.",
-      "documentNote": "Compatibility and performance features are supplier-listed. Raw-material RoHS/SVHC declarations do not establish finished-visor compliance."
     },
     {
       "slug": "m76-thermal-break-system-window",
@@ -4932,6 +4896,951 @@
       "lead_time": "To be confirmed",
       "oem_odm": "To be confirmed",
       "documentNote": "The supplier catalog mentions SGS and RoHS for JCDH-2/JCDH-030, but no certificate or test report is attached; do not present the line as certified."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "agv-compatible-helmet-visors",
+      "name": "Visors for AGV Helmets (Aftermarket)",
+      "model": "K1/K1S, K3SV, K5/K5S, K5 PLUS, K6/K6S, PISTA, new-style K3/K4",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for AGV K1/K1S, K3SV, K5/K5S, K5 PLUS, K6/K6S, PISTA and new-style K3/K4 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for AGV helmets covering K1/K1S, K3SV, K5/K5S, K5 PLUS, K6/K6S, PISTA, new-style K3/K4. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: K1/K1S, K3SV, K5/K5S, K5 PLUS, K6/K6S, PISTA, new-style K3/K4",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "K1/K1S, K3SV, K5/K5S, K5 PLUS, K6/K6S, PISTA, new-style K3/K4"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-agv-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-agv-01.jpg",
+        "assets/products/helmet-visors/hv-agv-02.jpg",
+        "assets/products/helmet-visors/hv-agv-03.jpg",
+        "assets/products/helmet-visors/hv-agv-04.jpg",
+        "assets/products/helmet-visors/hv-agv-05.jpg",
+        "assets/products/helmet-visors/hv-agv-06.jpg",
+        "assets/products/helmet-visors/hv-agv-07.jpg",
+        "assets/products/helmet-visors/hv-agv-08.jpg",
+        "assets/products/helmet-visors/hv-agv-09.jpg",
+        "assets/products/helmet-visors/hv-agv-10.jpg"
+      ],
+      "imageAlt": "Visors for AGV Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for AGV Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for agv helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "hjc-compatible-helmet-visors",
+      "name": "Visors for HJC Helmets (Aftermarket)",
+      "model": "HJ20M (C70), HJ31 (i10/i70), HJ26 (RPHA 11), HJ42 (RPHA 12), HJ33 (i90/i91), HJ34P (C10), HJ17 (C91), HJ38 (i71)",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for HJC C70, i10/i70, RPHA 11, RPHA 12, i90/i91, C10, C91 and i71 helmets via the matching HJ-series visor, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for HJC helmets covering HJ20M (C70), HJ31 (i10/i70), HJ26 (RPHA 11), HJ42 (RPHA 12), HJ33 (i90/i91), HJ34P (C10), HJ17 (C91), HJ38 (i71). Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: HJ20M (C70), HJ31 (i10/i70), HJ26 (RPHA 11), HJ42 (RPHA 12), HJ33 (i90/i91), HJ34P (C10), HJ17 (C91), HJ38 (i71)",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "HJ20M (C70), HJ31 (i10/i70), HJ26 (RPHA 11), HJ42 (RPHA 12), HJ33 (i90/i91), HJ34P (C10), HJ17 (C91), HJ38 (i71)"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-hjc-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-hjc-01.jpg",
+        "assets/products/helmet-visors/hv-hjc-02.jpg",
+        "assets/products/helmet-visors/hv-hjc-03.jpg",
+        "assets/products/helmet-visors/hv-hjc-04.jpg",
+        "assets/products/helmet-visors/hv-hjc-05.jpg",
+        "assets/products/helmet-visors/hv-hjc-06.jpg",
+        "assets/products/helmet-visors/hv-hjc-07.jpg",
+        "assets/products/helmet-visors/hv-hjc-08.jpg",
+        "assets/products/helmet-visors/hv-hjc-09.jpg",
+        "assets/products/helmet-visors/hv-hjc-10.jpg"
+      ],
+      "imageAlt": "Visors for HJC Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for HJC Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for hjc helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "scorpion-exo-compatible-helmet-visors",
+      "name": "Visors for Scorpion EXO Helmets (Aftermarket)",
+      "model": "EXO-R1 / 520 / 1400, EXO-R420",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for Scorpion EXO R1, 520, 1400 and R420 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for Scorpion EXO helmets covering EXO-R1 / 520 / 1400, EXO-R420. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: EXO-R1 / 520 / 1400, EXO-R420",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "EXO-R1 / 520 / 1400, EXO-R420"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-scorpion-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-scorpion-01.jpg",
+        "assets/products/helmet-visors/hv-scorpion-02.jpg",
+        "assets/products/helmet-visors/hv-scorpion-03.jpg",
+        "assets/products/helmet-visors/hv-scorpion-04.jpg"
+      ],
+      "imageAlt": "Visors for Scorpion EXO Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for Scorpion EXO Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for scorpion exo helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "shark-compatible-helmet-visors",
+      "name": "Visors for SHARK Helmets (Aftermarket)",
+      "model": "GT / Spartan GT / Pro / RS, Skwal, GP, i3 / D-Skwal 3 / Ridill 1-2",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for SHARK Spartan GT/Pro/RS, GT, Skwal, GP, i3, D-Skwal 3 and Ridill 1-2 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for SHARK helmets covering GT / Spartan GT / Pro / RS, Skwal, GP, i3 / D-Skwal 3 / Ridill 1-2. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: GT / Spartan GT / Pro / RS, Skwal, GP, i3 / D-Skwal 3 / Ridill 1-2",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "GT / Spartan GT / Pro / RS, Skwal, GP, i3 / D-Skwal 3 / Ridill 1-2"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-shark-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-shark-01.jpg",
+        "assets/products/helmet-visors/hv-shark-02.jpg",
+        "assets/products/helmet-visors/hv-shark-03.jpg",
+        "assets/products/helmet-visors/hv-shark-04.jpg",
+        "assets/products/helmet-visors/hv-shark-05.jpg",
+        "assets/products/helmet-visors/hv-shark-06.jpg",
+        "assets/products/helmet-visors/hv-shark-07.jpg",
+        "assets/products/helmet-visors/hv-shark-08.jpg"
+      ],
+      "imageAlt": "Visors for SHARK Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for SHARK Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for shark helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "shoei-compatible-helmet-visors",
+      "name": "Visors for SHOEI Helmets (Aftermarket)",
+      "model": "Z7, X14, Z8/X15, GT-Air / GT-Air II, Neotec 2 (CNS-3), Neotec 3, Hornet ADV, Glamster CPB-1V, J-Cruise",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for SHOEI Z7, X-14, Z8/X15, GT-Air II, Neotec 2/3, Hornet ADV, Glamster CPB-1V and J-Cruise helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for SHOEI helmets covering Z7, X14, Z8/X15, GT-Air / GT-Air II, Neotec 2 (CNS-3), Neotec 3, Hornet ADV, Glamster CPB-1V, J-Cruise. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: Z7, X14, Z8/X15, GT-Air / GT-Air II, Neotec 2 (CNS-3), Neotec 3, Hornet ADV, Glamster CPB-1V, J-Cruise",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "Z7, X14, Z8/X15, GT-Air / GT-Air II, Neotec 2 (CNS-3), Neotec 3, Hornet ADV, Glamster CPB-1V, J-Cruise"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-shoei-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-shoei-01.jpg",
+        "assets/products/helmet-visors/hv-shoei-02.jpg",
+        "assets/products/helmet-visors/hv-shoei-03.jpg",
+        "assets/products/helmet-visors/hv-shoei-04.jpg",
+        "assets/products/helmet-visors/hv-shoei-05.jpg",
+        "assets/products/helmet-visors/hv-shoei-06.jpg",
+        "assets/products/helmet-visors/hv-shoei-07.jpg",
+        "assets/products/helmet-visors/hv-shoei-08.jpg",
+        "assets/products/helmet-visors/hv-shoei-09.jpg",
+        "assets/products/helmet-visors/hv-shoei-10.jpg"
+      ],
+      "imageAlt": "Visors for SHOEI Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for SHOEI Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for shoei helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "kyt-compatible-helmet-visors",
+      "name": "Visors for KYT Helmets (Aftermarket)",
+      "model": "R2R, TT-Revo",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for KYT R2R and TT-Revo helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for KYT helmets covering R2R, TT-Revo. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: R2R, TT-Revo",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "R2R, TT-Revo"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-kyt-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-kyt-01.jpg",
+        "assets/products/helmet-visors/hv-kyt-02.jpg",
+        "assets/products/helmet-visors/hv-kyt-03.jpg",
+        "assets/products/helmet-visors/hv-kyt-04.jpg"
+      ],
+      "imageAlt": "Visors for KYT Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for KYT Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for kyt helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "icon-compatible-helmet-visors",
+      "name": "Visors for ICON Helmets (Aftermarket)",
+      "model": "IC06",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for ICON helmets listed under the supplier's IC06 fit reference, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for ICON helmets covering IC06. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: IC06",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "IC06"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-icon-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-icon-01.jpg",
+        "assets/products/helmet-visors/hv-icon-02.jpg"
+      ],
+      "imageAlt": "Visors for ICON Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for ICON Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for icon helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "nolan-x803-compatible-visor",
+      "name": "Visors for NOLAN Helmets (Aftermarket)",
+      "model": "X803",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for Nolan X-803 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for NOLAN helmets covering X803. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: X803",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "X803"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-nolan-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-nolan-01.jpg",
+        "assets/products/helmet-visors/hv-nolan-02.jpg"
+      ],
+      "imageAlt": "Visors for NOLAN Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for NOLAN Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for nolan helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "arai-compatible-helmet-visors",
+      "name": "Visors for Arai Helmets (Aftermarket)",
+      "model": "RX-7X, Tour-Cross 5, Tour-Cross 3 (TX3/XD4), VZ-RAM",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for Arai RX-7X, Tour-Cross 5, Tour-Cross 3 TX3/XD4 and VZ-RAM helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for Arai helmets covering RX-7X, Tour-Cross 5, Tour-Cross 3 (TX3/XD4), VZ-RAM. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: RX-7X, Tour-Cross 5, Tour-Cross 3 (TX3/XD4), VZ-RAM",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "RX-7X, Tour-Cross 5, Tour-Cross 3 (TX3/XD4), VZ-RAM"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-arai-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-arai-01.jpg",
+        "assets/products/helmet-visors/hv-arai-02.jpg",
+        "assets/products/helmet-visors/hv-arai-03.jpg",
+        "assets/products/helmet-visors/hv-arai-04.jpg",
+        "assets/products/helmet-visors/hv-arai-05.jpg",
+        "assets/products/helmet-visors/hv-arai-06.jpg",
+        "assets/products/helmet-visors/hv-arai-07.jpg",
+        "assets/products/helmet-visors/hv-arai-08.jpg"
+      ],
+      "imageAlt": "Visors for Arai Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for Arai Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for arai helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "ls2-compatible-helmet-visors",
+      "name": "Visors for LS2 Helmets (Aftermarket)",
+      "model": "FF801/FF397/FF813, FF808, FF811, 353/320/328/800, 352/802/358, OF626/OF618/OF603/OF608, FF906/FF908/FF910, MX701",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for LS2 full-face, open-face and MX models in the FF80x, FF90x, 3xx, OF-6xx and MX701 families, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for LS2 helmets covering FF801/FF397/FF813, FF808, FF811, 353/320/328/800, 352/802/358, OF626/OF618/OF603/OF608, FF906/FF908/FF910, MX701. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: FF801/FF397/FF813, FF808, FF811, 353/320/328/800, 352/802/358, OF626/OF618/OF603/OF608, FF906/FF908/FF910, MX701",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "FF801/FF397/FF813, FF808, FF811, 353/320/328/800, 352/802/358, OF626/OF618/OF603/OF608, FF906/FF908/FF910, MX701"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-ls2-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-ls2-01.jpg",
+        "assets/products/helmet-visors/hv-ls2-02.jpg",
+        "assets/products/helmet-visors/hv-ls2-03.jpg",
+        "assets/products/helmet-visors/hv-ls2-04.jpg",
+        "assets/products/helmet-visors/hv-ls2-05.jpg",
+        "assets/products/helmet-visors/hv-ls2-06.jpg",
+        "assets/products/helmet-visors/hv-ls2-07.jpg",
+        "assets/products/helmet-visors/hv-ls2-08.jpg",
+        "assets/products/helmet-visors/hv-ls2-09.jpg",
+        "assets/products/helmet-visors/hv-ls2-10.jpg"
+      ],
+      "imageAlt": "Visors for LS2 Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for LS2 Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for ls2 helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "mt-compatible-helmet-visors",
+      "name": "Visors for MT Helmets (Aftermarket)",
+      "model": "V-12/Targo, V-14 series, V-28B (Thunder 4SV), V-25B, V-18B/V-18C, V-29 (KRE+ carbon), V-32 (Jarama), V31/V31B",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for MT Helmets Targo, Revenge/Thunder 4SV, V-25B, V-18, KRE+, Jarama and V31 series, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for MT helmets covering V-12/Targo, V-14 series, V-28B (Thunder 4SV), V-25B, V-18B/V-18C, V-29 (KRE+ carbon), V-32 (Jarama), V31/V31B. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: V-12/Targo, V-14 series, V-28B (Thunder 4SV), V-25B, V-18B/V-18C, V-29 (KRE+ carbon), V-32 (Jarama), V31/V31B",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "V-12/Targo, V-14 series, V-28B (Thunder 4SV), V-25B, V-18B/V-18C, V-29 (KRE+ carbon), V-32 (Jarama), V31/V31B"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-mt-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-mt-01.jpg",
+        "assets/products/helmet-visors/hv-mt-02.jpg",
+        "assets/products/helmet-visors/hv-mt-03.jpg",
+        "assets/products/helmet-visors/hv-mt-04.jpg",
+        "assets/products/helmet-visors/hv-mt-05.jpg",
+        "assets/products/helmet-visors/hv-mt-06.jpg",
+        "assets/products/helmet-visors/hv-mt-07.jpg",
+        "assets/products/helmet-visors/hv-mt-08.jpg",
+        "assets/products/helmet-visors/hv-mt-09.jpg",
+        "assets/products/helmet-visors/hv-mt-10.jpg"
+      ],
+      "imageAlt": "Visors for MT Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for MT Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for mt helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "alpinestars-r10-compatible-visor",
+      "name": "Visors for Alpinestars Helmets (Aftermarket)",
+      "model": "Supertech R10",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for Alpinestars Supertech R10 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for Alpinestars helmets covering Supertech R10. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: Supertech R10",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "Supertech R10"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-alpinestars-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-alpinestars-01.jpg",
+        "assets/products/helmet-visors/hv-alpinestars-02.jpg"
+      ],
+      "imageAlt": "Visors for Alpinestars Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for Alpinestars Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for alpinestars helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "motorax-r50s-compatible-visor",
+      "name": "Visors for MOTORAX Helmets (Aftermarket)",
+      "model": "R50S",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for MOTORAX R50S helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for MOTORAX helmets covering R50S. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: R50S",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "R50S"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-motorax-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-motorax-01.jpg",
+        "assets/products/helmet-visors/hv-motorax-02.jpg"
+      ],
+      "imageAlt": "Visors for MOTORAX Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for MOTORAX Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for motorax helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "bell-rs1-compatible-visor",
+      "name": "Visors for Bell Helmets (Aftermarket)",
+      "model": "RS-1",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for Bell RS-1 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for Bell helmets covering RS-1. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: RS-1",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "RS-1"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-bell-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-bell-01.jpg",
+        "assets/products/helmet-visors/hv-bell-02.jpg",
+        "assets/products/helmet-visors/hv-bell-03.jpg",
+        "assets/products/helmet-visors/hv-bell-04.jpg"
+      ],
+      "imageAlt": "Visors for Bell Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for Bell Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for bell helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "bubble-visor-open-face",
+      "name": "Bubble Visor Range for Open-Face Helmets",
+      "model": "Bubble visor, flat and regular curve",
+      "productType": "Open-face helmet bubble visor",
+      "summary": "Flat-curve and regular-curve bubble visors shown in clear and tinted options for open-face, retro and cafe-racer style helmets.",
+      "description": "This bubble-visor line covers the two common curves — flat and regular — with clear and tinted options photographed in the supplier catalogue. Mounting hole spacing and edge sealing are confirmed per sample before bulk production. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Flat and regular curve options",
+        "Clear and tinted finishes shown",
+        "Suits open-face and retro helmet styles",
+        "Fit confirmed by sample before production"
+      ],
+      "specifications": [
+        {
+          "label": "Curves",
+          "value": "Flat, regular"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear and tinted shown"
+        },
+        {
+          "label": "Mounting",
+          "value": "Three-snap or screw pattern confirmed per sample"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-bubble-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-bubble-01.jpg",
+        "assets/products/helmet-visors/hv-bubble-02.jpg"
+      ],
+      "imageAlt": "Bubble Visor Range for Open-Face Helmets — supplier catalogue photos",
+      "seoTitle": "Bubble Visor Range for Open-Face Helmets Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about bubble visor range for open-face helmets: fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "bobo-wind-visor",
+      "name": "Visors for BOBO Helmets (Aftermarket)",
+      "model": "Wind visor",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for BOBO helmets per the supplier's fit list, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for BOBO helmets covering Wind visor. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: Wind visor",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "Wind visor"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-bobo-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-bobo-01.jpg",
+        "assets/products/helmet-visors/hv-bobo-02.jpg"
+      ],
+      "imageAlt": "Visors for BOBO Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for BOBO Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for bobo helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "ruroc-atlas-compatible-visor",
+      "name": "Visors for RUROC Helmets (Aftermarket)",
+      "model": "ATLAS 3.0 / 4.0",
+      "productType": "Model-compatible replacement helmet visor",
+      "summary": "Aftermarket replacement visors listed for RUROC ATLAS 3.0 and 4.0 helmets, shown in clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos.",
+      "description": "The supplier's visor catalogue lists shield options for RUROC helmets covering ATLAS 3.0 / 4.0. Catalogue photos show clear, dark smoke, mirrored and iridescent finishes shown in the catalogue photos. Every fitment is confirmed against the exact helmet revision before sampling. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Supplier-listed fit: ATLAS 3.0 / 4.0",
+        "Clear, smoke and mirrored/iridescent finishes shown",
+        "Anti-fog pin options discussed per model",
+        "Sample fitment check before bulk order"
+      ],
+      "specifications": [
+        {
+          "label": "Fit reference",
+          "value": "ATLAS 3.0 / 4.0"
+        },
+        {
+          "label": "Finish options",
+          "value": "Clear, dark smoke, mirrored and iridescent shown"
+        },
+        {
+          "label": "Material",
+          "value": "Polycarbonate (final grade confirmed per order)"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and production revision",
+        "Visor mounting and pin-lock compatibility",
+        "Optical class and impact requirements for the destination market",
+        "Tint legality for road use in the destination market",
+        "Packaging protection against scratches"
+      ],
+      "image": "assets/products/helmet-visors/hv-ruroc-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-ruroc-01.jpg",
+        "assets/products/helmet-visors/hv-ruroc-02.jpg"
+      ],
+      "imageAlt": "Visors for RUROC Helmets (Aftermarket) — supplier catalogue photos",
+      "seoTitle": "Visors for RUROC Helmets (Aftermarket) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about visors for ruroc helmets (aftermarket): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
+    },
+    {
+      "category": "helmet-visors",
+      "slug": "helmet-rear-spoiler-range",
+      "name": "Helmet Rear Spoiler Range (Model-Compatible)",
+      "model": "Arai RX-7V / Signet-X style, HJC RPHA 11 / RPHA 70 (HJ-26), SHOEI Z8, AGV Pista GP RR style",
+      "productType": "Helmet rear spoiler (model-compatible)",
+      "summary": "Four supplier-made rear spoiler lines styled for Arai RX-7V/Signet-X, HJC RPHA 11/70 (HJ-26), SHOEI Z8 and AGV Pista GP RR helmets, shown painted and unpainted.",
+      "description": "The supplier offers rear spoilers matched by helmet family rather than universal trim parts: an Arai RX-7V/Signet-X profile, an HJC RPHA 11/RPHA 70 HJ-26 piece, a SHOEI Z8 spoiler and an AGV Pista GP RR style option. Finishes and drilling are confirmed against the customer's helmet revision before bulk orders. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer.",
+      "features": [
+        "Four helmet-family spoiler profiles",
+        "Painted and unpainted options shown",
+        "Model-specific mounting, not universal trim",
+        "Sample fitment check recommended"
+      ],
+      "specifications": [
+        {
+          "label": "Spoiler lines",
+          "value": "Arai RX-7V/Signet-X style, HJC RPHA 11/70 (HJ-26), SHOEI Z8, AGV Pista GP RR style"
+        },
+        {
+          "label": "Finish",
+          "value": "Painted and unpainted options shown in catalogue"
+        },
+        {
+          "label": "Mounting",
+          "value": "Matched to each helmet family; confirm drilling with a sample"
+        }
+      ],
+      "confirmBeforeOrder": [
+        "Exact helmet model and revision (spoilers are model-specific)",
+        "Paint finish and colour code",
+        "Mounting holes versus the customer's helmet",
+        "Carton protection for painted surfaces"
+      ],
+      "image": "assets/products/helmet-visors/hv-spoiler-arai-01.jpg",
+      "images": [
+        "assets/products/helmet-visors/hv-spoiler-arai-01.jpg",
+        "assets/products/helmet-visors/hv-spoiler-arai-02.jpg",
+        "assets/products/helmet-visors/hv-spoiler-rpha11-01.jpg",
+        "assets/products/helmet-visors/hv-spoiler-rpha11-02.jpg",
+        "assets/products/helmet-visors/hv-spoiler-z8-01.jpg",
+        "assets/products/helmet-visors/hv-spoiler-z8-02.jpg",
+        "assets/products/helmet-visors/hv-spoiler-pista-01.jpg",
+        "assets/products/helmet-visors/hv-spoiler-pista-02.jpg"
+      ],
+      "imageAlt": "Model-compatible motorcycle helmet rear spoilers — supplier catalogue photos",
+      "seoTitle": "Helmet Rear Spoiler Range (Model-Compatible) Sourcing | Taotao Sourcing",
+      "metaDescription": "Ask about helmet rear spoiler range (model-compatible): fitment list, finishes, samples, packaging and documents checked before you commit.",
+      "moq": "To be confirmed per model and finish",
+      "sample": "Recommended; fit must be verified on the exact helmet",
+      "lead_time": "To be confirmed per order quantity",
+      "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
+      "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
     }
   ]
 }
