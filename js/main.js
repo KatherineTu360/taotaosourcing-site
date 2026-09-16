@@ -58,3 +58,55 @@ if (form) {
     window.open(url, '_blank', 'noopener');
   });
 }
+
+// Sourcing video library (index.html #sourcing-video)
+const videoFrame = document.getElementById('videoFrame');
+const videoPicker = document.getElementById('videoPicker');
+if (videoFrame && videoPicker) {
+  const facade = document.getElementById('videoFacade');
+  const captionTitle = document.getElementById('videoCaptionTitle');
+  const captionMeta = document.getElementById('videoCaptionMeta');
+  const noteEl = document.getElementById('videoNote');
+  const notes = {};
+  videoPicker.querySelectorAll('button').forEach((btn) => {
+    const note = btn.getAttribute('data-note');
+    if (note) notes[btn.getAttribute('data-yt')] = note;
+  });
+
+  const embed = (yt) => {
+    videoFrame.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + yt +
+      '?autoplay=1&rel=0&playsinline=1" title="Katherine Tu sourcing video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>';
+  };
+
+  const select = (btn) => {
+    const yt = btn.getAttribute('data-yt');
+    const title = btn.getAttribute('data-title');
+    const dur = btn.getAttribute('duration');
+    videoPicker.querySelectorAll('button').forEach((b) => {
+      b.classList.toggle('active', b === btn);
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+    captionTitle.textContent = title;
+    captionMeta.innerHTML = dur + ' · <a href="https://www.youtube.com/watch?v=' + yt +
+      '" target="_blank" rel="noreferrer">Watch on YouTube ↗</a> · ' +
+      '<a href="https://www.youtube.com/@TuKatherine/videos" target="_blank" rel="noreferrer">View all videos ↗</a>';
+    noteEl.textContent = notes[yt] || '';
+    embed(yt);
+  };
+
+  facade.addEventListener('click', () => embed(facade.getAttribute('data-yt')));
+  videoPicker.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-yt]');
+    if (btn) select(btn);
+  });
+
+  const search = document.getElementById('videoSearch');
+  if (search) {
+    search.addEventListener('input', () => {
+      const q = search.value.trim().toLowerCase();
+      videoPicker.querySelectorAll('button').forEach((btn) => {
+        btn.hidden = q && !btn.getAttribute('data-title').toLowerCase().includes(q);
+      });
+    });
+  }
+}
