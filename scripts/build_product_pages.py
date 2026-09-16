@@ -363,6 +363,8 @@ def main() -> None:
         raise SystemExit("Duplicate product slug found")
     generated = []
     for category_slug, category in categories.items():
+        if category.get("albumPage"):
+            continue
         category_products = [item for item in products if item["category"] == category_slug]
         if not category_products and not category.get("holdMessage"):
             raise SystemExit(f"No product records or hold message for category: {category_slug}")

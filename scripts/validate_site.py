@@ -145,7 +145,7 @@ def main() -> None:
             errors.append(f"products.html missing category link: {detail_name}")
         detail_html = detail_path.read_text(encoding="utf-8")
         category_products = [item for item in data["products"] if item["category"] == category["slug"]]
-        if not category_products and not category.get("holdMessage"):
+        if not category_products and not category.get("holdMessage") and not category.get("albumPage"):
             errors.append(f"{category['slug']}: no products and no hold message")
         for item in category_products:
             product_name = f"product-{item['slug']}.html"
