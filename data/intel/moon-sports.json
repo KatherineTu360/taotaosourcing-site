@@ -1,0 +1,810 @@
+{
+"source": "跨速/MOON sports helmet 2604.pdf (50p), CE+CPSC全系",
+"models": [
+{
+"model": "AR01",
+"type": "Road cycling, in-mould 250g",
+"sizes": "M 55-58/L 58-61",
+"page": 5,
+"zone": "left"
+},
+{
+"model": "AR3",
+"type": "Road cycling 250g",
+"sizes": "M/L",
+"page": 5,
+"zone": "right"
+},
+{
+"model": "AR37",
+"type": "Road cycling 250g",
+"sizes": "M/L",
+"page": 6,
+"zone": "left"
+},
+{
+"model": "HB102",
+"type": "Road cycling 250g",
+"sizes": "M/L",
+"page": 6,
+"zone": "right"
+},
+{
+"model": "FT19",
+"type": "Road cycling aero 250g",
+"sizes": "M/L",
+"page": 7,
+"zone": "left"
+},
+{
+"model": "HB101",
+"type": "Road cycling 250g",
+"sizes": "M/L",
+"page": 7,
+"zone": "right"
+},
+{
+"model": "HB92",
+"type": "Road cycling with visor 250g",
+"sizes": "M/L",
+"page": 8,
+"zone": "left"
+},
+{
+"model": "HB3-1",
+"type": "Road nano ultra-light, detachable visor 250g",
+"sizes": "M/L/XL 55-63",
+"page": 8,
+"zone": "right"
+},
+{
+"model": "HB90",
+"type": "Road cycling (Mips) 250g",
+"sizes": "M/L",
+"page": 9,
+"zone": "left"
+},
+{
+"model": "YM03",
+"type": "Road cycling 255g",
+"sizes": "L 58-61",
+"page": 9,
+"zone": "right"
+},
+{
+"model": "MV100",
+"type": "Road cycling tail light 260g",
+"sizes": "M/L",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "MV96",
+"type": "Road, magnetic color-changing visor + tail light 310g",
+"sizes": "M/L",
+"page": 10,
+"zone": "right"
+},
+{
+"model": "MV99",
+"type": "Road cycling 250g",
+"sizes": "M/L",
+"page": 11,
+"zone": "left"
+},
+{
+"model": "HY97",
+"type": "Road, lenses + tail light 250g",
+"sizes": "S/M/L",
+"page": 11,
+"zone": "right"
+},
+{
+"model": "HB98",
+"type": "Road cycling 265g",
+"sizes": "M/L/XL",
+"page": 12,
+"zone": "top-left"
+},
+{
+"model": "MV53",
+"type": "Road cycling 250g",
+"sizes": "M/L/XL",
+"page": 12,
+"zone": "top-right"
+},
+{
+"model": "MV29",
+"type": "Road cycling 250g",
+"sizes": "M/L/XL",
+"page": 12,
+"zone": "bottom-left"
+},
+{
+"model": "KS29SP",
+"type": "Road cycling PVC/PC+EPS 250g",
+"sizes": "S-XL",
+"page": 12,
+"zone": "bottom-right"
+},
+{
+"model": "MV37",
+"type": "Road ultra-light 200g tail light",
+"sizes": "M/L",
+"page": 13,
+"zone": "top-left"
+},
+{
+"model": "MV49",
+"type": "Road cycling 250g",
+"sizes": "M/L/XL",
+"page": 13,
+"zone": "top-right"
+},
+{
+"model": "HB3-8",
+"type": "Road cycling Mips 275g",
+"sizes": "S/M/L",
+"page": 13,
+"zone": "bottom-left"
+},
+{
+"model": "MV32",
+"type": "Road Mips 250g",
+"sizes": "M/L",
+"page": 13,
+"zone": "bottom-right"
+},
+{
+"model": "HB25",
+"type": "Sports/urban cycling 250g",
+"sizes": "S-XL",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "KS22",
+"type": "Sports/urban tail light 250g",
+"sizes": "S/M/L",
+"page": 14,
+"zone": "right"
+},
+{
+"model": "SKS-3",
+"type": "Open-face MTB 520g",
+"sizes": "M/L",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "SKS113",
+"type": "Open-face MTB 250g",
+"sizes": "M/L",
+"page": 15,
+"zone": "right"
+},
+{
+"model": "SKS31",
+"type": "MTB 520g",
+"sizes": "M/L",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "SKS32",
+"type": "MTB 250g",
+"sizes": "S/M/L",
+"page": 16,
+"zone": "right"
+},
+{
+"model": "KS33",
+"type": "MTB 350g",
+"sizes": "M/L",
+"page": 17,
+"zone": "top-left"
+},
+{
+"model": "KS39",
+"type": "MTB 350g",
+"sizes": "S/M/L",
+"page": 17,
+"zone": "top-right"
+},
+{
+"model": "HB3-7",
+"type": "MTB 310g",
+"sizes": "M/L/XL",
+"page": 17,
+"zone": "bottom-left"
+},
+{
+"model": "KS32SP",
+"type": "MTB 310g",
+"sizes": "S/M/L",
+"page": 17,
+"zone": "bottom-right"
+},
+{
+"model": "KS30",
+"type": "MTB 350g",
+"sizes": "M/L",
+"page": 18,
+"zone": "left"
+},
+{
+"model": "KS31",
+"type": "MTB 250g",
+"sizes": "M/L",
+"page": 18,
+"zone": "left-center"
+},
+{
+"model": "HB3-9",
+"type": "MTB 250g",
+"sizes": "M/L",
+"page": 18,
+"zone": "right-center"
+},
+{
+"model": "HB3-5",
+"type": "MTB 270g (kids ver. p43)",
+"sizes": "M/L",
+"page": 18,
+"zone": "right"
+},
+{
+"model": "HB3-6",
+"type": "MTB 250g",
+"sizes": "M/L",
+"page": 19,
+"zone": "top-left"
+},
+{
+"model": "HB3-3",
+"type": "MTB 250g",
+"sizes": "M/L",
+"page": 19,
+"zone": "top-right"
+},
+{
+"model": "TY04",
+"type": "Helmet with lenses 250g",
+"sizes": "M/L",
+"page": 19,
+"zone": "bottom"
+},
+{
+"model": "KS09",
+"type": "Helmet with lenses 240g",
+"sizes": "M 56-58/L/XL",
+"page": 20,
+"zone": "left"
+},
+{
+"model": "KS28",
+"type": "Helmet, flip goggles + tail light (NTA8776)",
+"sizes": "S-XL",
+"page": 20,
+"zone": "center"
+},
+{
+"model": "MV88",
+"type": "Helmet with lenses (Mips)",
+"sizes": "M/L",
+"page": 20,
+"zone": "right"
+},
+{
+"model": "HB3-2",
+"type": "LED tail light 250g",
+"sizes": "S/M/L",
+"page": 21,
+"zone": "left"
+},
+{
+"model": "FT10",
+"type": "LED tail light 250g",
+"sizes": "M/L",
+"page": 21,
+"zone": "right"
+},
+{
+"model": "BH39",
+"type": "LED helmet family set 250g",
+"sizes": "S/M/L",
+"page": 22,
+"zone": "left"
+},
+{
+"model": "FT09",
+"type": "E-bike with lenses (NTA8776) 310g",
+"sizes": "M/L",
+"page": 22,
+"zone": "right"
+},
+{
+"model": "FT11",
+"type": "E-bike helmet (NTA8776) 250g",
+"sizes": "S/M/L",
+"page": 23,
+"zone": "left"
+},
+{
+"model": "FT09C",
+"type": "Smart e-bike helmet 250g",
+"sizes": "S/M/L",
+"page": 23,
+"zone": "right"
+},
+{
+"model": "W3",
+"type": "Smart BT camera helmet 1080P GPS WiFi",
+"sizes": "adult",
+"page": 24,
+"zone": "top"
+},
+{
+"model": "HB3-1S",
+"type": "Smart LED music helmet",
+"sizes": "M/L/XL",
+"page": 24,
+"zone": "bottom"
+},
+{
+"model": "FT03",
+"type": "Smart helmet 230g (NTA8776)",
+"sizes": "S/M/L",
+"page": 25,
+"zone": "left"
+},
+{
+"model": "FT04",
+"type": "Smart helmet 250g (NTA8776)",
+"sizes": "S/M/L",
+"page": 25,
+"zone": "center"
+},
+{
+"model": "MTV23",
+"type": "Smart helmet Type-C 250g (NTA8776)",
+"sizes": "M/L",
+"page": 25,
+"zone": "right"
+},
+{
+"model": "FT01",
+"type": "Smart helmet 250g",
+"sizes": "S/M/L",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "FT06C",
+"type": "Smart, turn-signal sync (NTA8776) 250g",
+"sizes": "M/L",
+"page": 26,
+"zone": "right"
+},
+{
+"model": "FT02",
+"type": "Smart helmet USB charger",
+"sizes": "S/M/L",
+"page": 27,
+"zone": "bottom"
+},
+{
+"model": "ASP013",
+"type": "Smart helmet 250g",
+"sizes": "S/M/L",
+"page": 27,
+"zone": "top-left"
+},
+{
+"model": "ASP020",
+"type": "Smart helmet with camera 290g",
+"sizes": "S/M/L",
+"page": 27,
+"zone": "top-right"
+},
+{
+"model": "ASP015",
+"type": "Smart helmet 275g",
+"sizes": "S/M/L",
+"page": 28,
+"zone": "right-center"
+},
+{
+"model": "ASP011",
+"type": "Smart helmet Mips 250g",
+"sizes": "S/M/L",
+"page": 28,
+"zone": "right-bottom"
+},
+{
+"model": "KS35",
+"type": "City helmet tail light 250g",
+"sizes": "S/M/L",
+"page": 28,
+"zone": "left-half"
+},
+{
+"model": "HS60",
+"type": "City helmet ABS/EPS 250g",
+"sizes": "M/L",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "FK111B",
+"type": "City helmet 250g",
+"sizes": "S/M/L",
+"page": 29,
+"zone": "center"
+},
+{
+"model": "HB15",
+"type": "City helmet 250g",
+"sizes": "M/L",
+"page": 29,
+"zone": "right"
+},
+{
+"model": "KS83",
+"type": "City helmet 250g",
+"sizes": "M/L",
+"page": 30,
+"zone": "top-left"
+},
+{
+"model": "HS66",
+"type": "City helmet with lenses 250g (kids p40)",
+"sizes": "M/L",
+"page": 30,
+"zone": "top-right"
+},
+{
+"model": "HB103",
+"type": "Commuter helmet 250g",
+"sizes": "M/L",
+"page": 30,
+"zone": "bottom"
+},
+{
+"model": "FA05",
+"type": "Folding commuter 245g",
+"sizes": "XS-L 48-61",
+"page": 31,
+"zone": "left"
+},
+{
+"model": "KS60",
+"type": "Commuter 250g",
+"sizes": "XS-L",
+"page": 31,
+"zone": "left-center"
+},
+{
+"model": "KS13",
+"type": "Triathlon aero 245g",
+"sizes": "M/L",
+"page": 31,
+"zone": "right-center"
+},
+{
+"model": "KS01",
+"type": "Triathlon aero 250g",
+"sizes": "M/L",
+"page": 31,
+"zone": "right"
+},
+{
+"model": "KS02A",
+"type": "Triathlon aero 302g",
+"sizes": "L 58-61",
+"page": 32,
+"zone": "bottom"
+},
+{
+"model": "FT89",
+"type": "Full-face kids 3-10y, removable + tail light 350g",
+"sizes": "48-57cm",
+"page": 32,
+"zone": "top"
+},
+{
+"model": "KS05B",
+"type": "Downhill full-face adult ABS/EPS 780g",
+"sizes": "XS-XXL 53-64",
+"page": 33,
+"zone": "left"
+},
+{
+"model": "SKS217",
+"type": "Downhill full-face 450g",
+"sizes": "M/L",
+"page": 33,
+"zone": "right"
+},
+{
+"model": "KS03B",
+"type": "Downhill full-face, disassemble chin 450g",
+"sizes": "S/M/L",
+"page": 34,
+"zone": "left"
+},
+{
+"model": "KS11",
+"type": "Downhill full-face, disassemble chin 450g",
+"sizes": "S/M/L",
+"page": 34,
+"zone": "right"
+},
+{
+"model": "JY04W",
+"type": "Water rescue EVA 380g",
+"sizes": "M/L",
+"page": 35,
+"zone": "left"
+},
+{
+"model": "JY05W",
+"type": "Water rescue EVA 435g",
+"sizes": "M/L",
+"page": 35,
+"zone": "right"
+},
+{
+"model": "MTV12",
+"type": "Freestyle/skate 400g",
+"sizes": "XS-M 48-58",
+"page": 36,
+"zone": "left"
+},
+{
+"model": "MTV28",
+"type": "Freestyle/skate 230g",
+"sizes": "XS 44-48/S 46-50",
+"page": 36,
+"zone": "right"
+},
+{
+"model": "MTV26B",
+"type": "Freestyle/skate 230g",
+"sizes": "XS/M",
+"page": 37,
+"zone": "top-left"
+},
+{
+"model": "MTV01",
+"type": "Freestyle/skate 440g",
+"sizes": "S/M",
+"page": 37,
+"zone": "top-center"
+},
+{
+"model": "MTV18S",
+"type": "Freestyle/skate 250g",
+"sizes": "S/M",
+"page": 37,
+"zone": "top-right"
+},
+{
+"model": "MTV26",
+"type": "Freestyle/skate 230g",
+"sizes": "XS-L",
+"page": 38,
+"zone": "top"
+},
+{
+"model": "HB3-4",
+"type": "Junior helmet 230g",
+"sizes": "S 48-52/M 52-55",
+"page": 38,
+"zone": "bottom"
+},
+{
+"model": "MV11",
+"type": "Junior 240g",
+"sizes": "S 50-53/M 53-56",
+"page": 39,
+"zone": "top-left"
+},
+{
+"model": "MB11",
+"type": "Junior 230g",
+"sizes": "S/M",
+"page": 39,
+"zone": "top-right"
+},
+{
+"model": "KS87",
+"type": "Kids 250g",
+"sizes": "XS 44-48-M 52-56",
+"page": 39,
+"zone": "bottom"
+},
+{
+"model": "HB5-5",
+"type": "Kids tail light 220g",
+"sizes": "XS-M",
+"page": 40,
+"zone": "left"
+},
+{
+"model": "HS66K",
+"type": "Kids city 220g",
+"sizes": "S/M",
+"page": 40,
+"zone": "right"
+},
+{
+"model": "KS16",
+"type": "Kids 235g",
+"sizes": "S/M",
+"page": 41,
+"zone": "top-left"
+},
+{
+"model": "MA2",
+"type": "Kids Mips 235g",
+"sizes": "XS/M",
+"page": 41,
+"zone": "top-center"
+},
+{
+"model": "KS61",
+"type": "Kids 205g",
+"sizes": "XS/S",
+"page": 41,
+"zone": "top-right"
+},
+{
+"model": "HB6-2",
+"type": "Kids 235g",
+"sizes": "XS-M",
+"page": 42,
+"zone": "top-left"
+},
+{
+"model": "HB6-5",
+"type": "Kids 220g",
+"sizes": "S/M",
+"page": 42,
+"zone": "top-right"
+},
+{
+"model": "HB5-2",
+"type": "Kids 235g",
+"sizes": "S/M",
+"page": 42,
+"zone": "bottom-left"
+},
+{
+"model": "MV12K",
+"type": "Kids 220g",
+"sizes": "S-L 48-58",
+"page": 42,
+"zone": "bottom-right"
+},
+{
+"model": "KS15",
+"type": "Kids 230g",
+"sizes": "S/M",
+"page": 43,
+"zone": "top-left"
+},
+{
+"model": "HB3-5K",
+"type": "Kids 220g",
+"sizes": "S/M",
+"page": 43,
+"zone": "top-right"
+},
+{
+"model": "HB8",
+"type": "Kids detachable brim 235g",
+"sizes": "XS/M",
+"page": 43,
+"zone": "bottom-right"
+},
+{
+"model": "MV6-2",
+"type": "Kids 220g",
+"sizes": "XS/M",
+"page": 43,
+"zone": "bottom-left"
+},
+{
+"model": "MV6-3",
+"type": "Kids 235g",
+"sizes": "XS/M",
+"page": 44,
+"zone": "top-left"
+},
+{
+"model": "HB5-3",
+"type": "Kids 235g",
+"sizes": "S/M",
+"page": 44,
+"zone": "top-right"
+},
+{
+"model": "MV7",
+"type": "Kids (animal ver. p46) 230g",
+"sizes": "S/M",
+"page": 44,
+"zone": "bottom-left"
+},
+{
+"model": "HB10",
+"type": "Kids 235g",
+"sizes": "XS/M",
+"page": 44,
+"zone": "bottom-right"
+},
+{
+"model": "MV5-2",
+"type": "Kids tail light 235g",
+"sizes": "S/M",
+"page": 45,
+"zone": "top-left"
+},
+{
+"model": "HB6-3",
+"type": "Kids tail light 235g",
+"sizes": "S/M",
+"page": 45,
+"zone": "top-right"
+},
+{
+"model": "MV4",
+"type": "Kids 230g",
+"sizes": "S/M",
+"page": 45,
+"zone": "bottom-left"
+},
+{
+"model": "MB10",
+"type": "Kids 200g",
+"sizes": "S 48-52",
+"page": 45,
+"zone": "bottom-right"
+},
+{
+"model": "MV7A",
+"type": "Animal kids helmet series (6 prints)",
+"sizes": "S/M",
+"page": 46,
+"zone": "full"
+},
+{
+"model": "MTV12A",
+"type": "Animal kids helmet (Mickey club)",
+"sizes": "S/M",
+"page": 47,
+"zone": "full"
+},
+{
+"model": "KLM",
+"type": "Animal kids 220g",
+"sizes": "XS-M",
+"page": 48,
+"zone": "top-left"
+},
+{
+"model": "BHC1",
+"type": "Protector set elbow/knee/wrist (BHC-1/2/5, MC-3/4)",
+"sizes": "kids/adult",
+"page": 48,
+"zone": "bottom-right"
+},
+{
+"model": "PANKING",
+"type": "Locked helmet (combination lock, Panking-1..9 variants)",
+"sizes": "M/L",
+"page": 49,
+"zone": "full"
+}
+]
+}

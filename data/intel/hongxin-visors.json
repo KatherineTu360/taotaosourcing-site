@@ -1,0 +1,445 @@
+{
+"source": "鸿鑫泰/Taotao Catalogue 2026(Visors).pdf (15p), 每页5行, 主图居中",
+"models": [
+{
+"model": "AGV K1/K1S/K3SV/K5/K5S",
+"brand": "AGV",
+"page": 1,
+"row": 1
+},
+{
+"model": "AGV K5 PLUS",
+"brand": "AGV",
+"page": 1,
+"row": 2
+},
+{
+"model": "AGV K6/K6S",
+"brand": "AGV",
+"page": 1,
+"row": 3
+},
+{
+"model": "AGV PISTA",
+"brand": "AGV",
+"page": 1,
+"row": 4
+},
+{
+"model": "AGV NEW STYLE K3/K4",
+"brand": "AGV",
+"page": 1,
+"row": 5
+},
+{
+"model": "HJC C70 (HJ20M)",
+"brand": "HJC",
+"page": 2,
+"row": 1
+},
+{
+"model": "HJC I10/I70 (HJ31)",
+"brand": "HJC",
+"page": 2,
+"row": 2
+},
+{
+"model": "HJC HJ26 (RPHA11)",
+"brand": "HJC",
+"page": 2,
+"row": 3
+},
+{
+"model": "HJC HJ42 (RPHA12)",
+"brand": "HJC",
+"page": 2,
+"row": 4
+},
+{
+"model": "HJC i90/i91 (HJ33)",
+"brand": "HJC",
+"page": 2,
+"row": 5
+},
+{
+"model": "HJC HJ34P (C10)",
+"brand": "HJC",
+"page": 3,
+"row": 1
+},
+{
+"model": "HJC HJ17 (C91)",
+"brand": "HJC",
+"page": 3,
+"row": 2
+},
+{
+"model": "HJC HJ38 (i71)",
+"brand": "HJC",
+"page": 3,
+"row": 3
+},
+{
+"model": "Scorpion EXO R1 520/1400",
+"brand": "Scorpion EXO",
+"page": 3,
+"row": 4
+},
+{
+"model": "Scorpion EXO R420",
+"brand": "Scorpion EXO",
+"page": 3,
+"row": 5
+},
+{
+"model": "SHARK Spartan GT/GT PRO/RS",
+"brand": "SHARK",
+"page": 4,
+"row": 1
+},
+{
+"model": "SHARK SKWAL",
+"brand": "SHARK",
+"page": 4,
+"row": 2
+},
+{
+"model": "SHARK GP",
+"brand": "SHARK",
+"page": 4,
+"row": 3
+},
+{
+"model": "SHARK i3/D-Skwal 3/Ridill 2",
+"brand": "SHARK",
+"page": 4,
+"row": 4
+},
+{
+"model": "SHOEI Z7",
+"brand": "SHOEI",
+"page": 5,
+"row": 1
+},
+{
+"model": "SHOEI X14",
+"brand": "SHOEI",
+"page": 5,
+"row": 2
+},
+{
+"model": "SHOEI Z8/X15",
+"brand": "SHOEI",
+"page": 5,
+"row": 3
+},
+{
+"model": "SHOEI GT-Air I/II (CNS-1)",
+"brand": "SHOEI",
+"page": 5,
+"row": 4
+},
+{
+"model": "SHOEI Neotec 2 (CNS-3 side-open)",
+"brand": "SHOEI",
+"page": 5,
+"row": 5
+},
+{
+"model": "SHOEI Neotec 3 (CNS-3C center-open)",
+"brand": "SHOEI",
+"page": 6,
+"row": 1
+},
+{
+"model": "SHOEI Hornet ADV (A6)",
+"brand": "SHOEI",
+"page": 6,
+"row": 2
+},
+{
+"model": "SHOEI Glamster (CPB-1V)",
+"brand": "SHOEI",
+"page": 6,
+"row": 3
+},
+{
+"model": "SHOEI JC",
+"brand": "SHOEI",
+"page": 6,
+"row": 4
+},
+{
+"model": "KYT R2R",
+"brand": "KYT",
+"page": 6,
+"row": 5
+},
+{
+"model": "KYT TT-REVO",
+"brand": "KYT",
+"page": 6,
+"row": 6
+},
+{
+"model": "ICON IC-06 (wing)",
+"brand": "Icon",
+"page": 7,
+"row": 1
+},
+{
+"model": "NOLAN X-803",
+"brand": "Nolan",
+"page": 7,
+"row": 2
+},
+{
+"model": "Arai RX-7X",
+"brand": "Arai",
+"page": 7,
+"row": 3
+},
+{
+"model": "Arai Tour Cross 5",
+"brand": "Arai",
+"page": 7,
+"row": 4
+},
+{
+"model": "Arai Tour-Cross 3 (TX3/XD4)",
+"brand": "Arai",
+"page": 7,
+"row": 5
+},
+{
+"model": "Arai VZ-RAM",
+"brand": "Arai",
+"page": 8,
+"row": 1
+},
+{
+"model": "LS2 FF801/FF397/FF813",
+"brand": "LS2",
+"page": 8,
+"row": 2
+},
+{
+"model": "LS2 FF808",
+"brand": "LS2",
+"page": 8,
+"row": 3
+},
+{
+"model": "LS2 FF811",
+"brand": "LS2",
+"page": 8,
+"row": 4
+},
+{
+"model": "LS2 353/320/328/800",
+"brand": "LS2",
+"page": 8,
+"row": 5
+},
+{
+"model": "LS2 352/802/358 (center-open)",
+"brand": "LS2",
+"page": 9,
+"row": 1
+},
+{
+"model": "LS2 OF626",
+"brand": "LS2",
+"page": 9,
+"row": 2
+},
+{
+"model": "LS2 OF618",
+"brand": "LS2",
+"page": 9,
+"row": 3
+},
+{
+"model": "LS2 OF603",
+"brand": "LS2",
+"page": 9,
+"row": 4
+},
+{
+"model": "LS2 OF608",
+"brand": "LS2",
+"page": 9,
+"row": 5
+},
+{
+"model": "LS2 FF906",
+"brand": "LS2",
+"page": 10,
+"row": 1
+},
+{
+"model": "LS2 FF908",
+"brand": "LS2",
+"page": 10,
+"row": 2
+},
+{
+"model": "LS2 FF910",
+"brand": "LS2",
+"page": 10,
+"row": 3
+},
+{
+"model": "LS2 MX701",
+"brand": "LS2",
+"page": 10,
+"row": 4
+},
+{
+"model": "MT V-12/Targo",
+"brand": "MT",
+"page": 10,
+"row": 5
+},
+{
+"model": "MT V-14 (Revenge 2/Rapide Pro/Targo)",
+"brand": "MT",
+"page": 11,
+"row": 1
+},
+{
+"model": "MT V-14B (Revenge 2S)",
+"brand": "MT",
+"page": 11,
+"row": 2
+},
+{
+"model": "MT V-28B (Thunder 4SV)",
+"brand": "MT",
+"page": 11,
+"row": 3
+},
+{
+"model": "MT Rimiy 935/SH4000/V-25B",
+"brand": "MT",
+"page": 11,
+"row": 4
+},
+{
+"model": "MT V-18B",
+"brand": "MT",
+"page": 11,
+"row": 5
+},
+{
+"model": "MT V-18C",
+"brand": "MT",
+"page": 12,
+"row": 1
+},
+{
+"model": "MT V-29/KRE+ carbon",
+"brand": "MT",
+"page": 12,
+"row": 2
+},
+{
+"model": "MT V-32 (JARAMA)",
+"brand": "MT",
+"page": 12,
+"row": 3
+},
+{
+"model": "MT V31",
+"brand": "MT",
+"page": 12,
+"row": 4
+},
+{
+"model": "MT V31B",
+"brand": "MT",
+"page": 12,
+"row": 5
+},
+{
+"model": "Alpinestars Supertech R10",
+"brand": "Alpinestars",
+"page": 13,
+"row": 1
+},
+{
+"model": "Motorax R50S",
+"brand": "Motorax",
+"page": 13,
+"row": 2
+},
+{
+"model": "Bell RS-1",
+"brand": "Bell",
+"page": 13,
+"row": 3
+},
+{
+"model": "Bell bubble flat visor",
+"brand": "Bell",
+"page": 13,
+"row": 4
+},
+{
+"model": "Bubble visor REGULAR (3-snap)",
+"brand": "generic",
+"page": 13,
+"row": 5
+},
+{
+"model": "BOBO wind visor",
+"brand": "BOBO",
+"page": 14,
+"row": 1
+},
+{
+"model": "RUROC Atlas 3.0/4.0",
+"brand": "Ruroc",
+"page": 14,
+"row": 2
+},
+{
+"model": "Arai spoiler (RX-7V/Signet-X)",
+"brand": "Arai spoiler",
+"page": 14,
+"row": 3
+},
+{
+"model": "HJC RPHA11 HJ-26 spoiler",
+"brand": "HJC spoiler",
+"page": 14,
+"row": 4
+},
+{
+"model": "SHOEI Z8 spoiler",
+"brand": "SHOEI spoiler",
+"page": 14,
+"row": 5
+},
+{
+"model": "AGV PISTA GP RR spoiler",
+"brand": "AGV spoiler",
+"page": 15,
+"row": 1
+}
+],
+"liangyu_public_molds": [
+"KYT GP/NFJ/NFR/KYOTO/VENDETTA",
+"AGV K3/K4",
+"GPR SOL275",
+"LS2 FF352/FF384/FF351/FF369",
+"LS2 353/302/358/FW3/FF353/FF320/FF328/OF800",
+"S600/S650/S700/S700S/S800/S900/S900C/Ridill/ZEUS",
+"SHOEI Z7/Z8",
+"HJC I70/I10",
+"R50S/R50/GSB361",
+"GIVI-11/GIVI-30",
+"MT Thunder 4/AXXIS EAGLE/EAGLE SV/DARKEN/ASX V18B",
+"CR05/RX-7/RX-7X/NFR/NFJ/ARC"
+]
+}

@@ -1,0 +1,40 @@
+{
+"source": "美程金利/美程电子产品册 ENG 2025.pdf (2p)",
+"models": [
+{
+"model": "M609",
+"type": "Full-face, single visor, double rear spoiler",
+"cert": "DOT FMVSS218 + ECE 22.06 + CCC",
+"page": 1,
+"zone": "center-right"
+},
+{
+"model": "M901",
+"type": "New motorcycle helmet model",
+"cert": "per panel",
+"page": 1,
+"zone": "bottom"
+},
+{
+"model": "MC-DVH",
+"type": "Double visor half helmet",
+"cert": "ABS + PC shield",
+"page": 2,
+"zone": "panel-2"
+},
+{
+"model": "MC-VSV",
+"type": "Single visor vintage open-face",
+"cert": "ABS",
+"page": 2,
+"zone": "panel-1"
+},
+{
+"model": "MC-DVQ",
+"type": "Double visor half helmet, quick release",
+"cert": "ABS",
+"page": 2,
+"zone": "panel-4"
+}
+]
+}

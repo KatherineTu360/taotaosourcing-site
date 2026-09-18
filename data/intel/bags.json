@@ -1,0 +1,922 @@
+{
+"source": "金吉尔包包 BAG2/25W NEW BAGS/NEW MODEL BAGS, 无官方款号, ID=册名+页码",
+"models": [
+{
+"id": "BAG2-P01",
+"type": "shoulder",
+"material": "leather",
+"page": 1,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P02",
+"type": "shoulder",
+"material": "leather",
+"page": 2,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P03",
+"type": "top-handle",
+"material": "leather",
+"page": 3,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P04",
+"type": "top-handle",
+"material": "leather",
+"page": 4,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P05",
+"type": "shoulder",
+"material": "leather",
+"page": 5,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P06",
+"type": "clutch",
+"material": "leather",
+"page": 6,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P07",
+"type": "top-handle",
+"material": "leather",
+"page": 7,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P08",
+"type": "tote",
+"material": "leather",
+"page": 8,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P09",
+"type": "hobo",
+"material": "leather",
+"page": 9,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P10",
+"type": "crossbody",
+"material": "leather",
+"page": 10,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P11",
+"type": "shoulder",
+"material": "leather",
+"page": 11,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P12",
+"type": "top-handle",
+"material": "leather",
+"page": 12,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P13",
+"type": "clutch",
+"material": "leather",
+"page": 13,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P14",
+"type": "shoulder",
+"material": "leather",
+"page": 14,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P15",
+"type": "hobo",
+"material": "leather",
+"page": 15,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P16",
+"type": "hobo",
+"material": "leather",
+"page": 16,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P17",
+"type": "clutch",
+"material": "leather",
+"page": 17,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P18",
+"type": "shoulder",
+"material": "leather",
+"page": 18,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P19",
+"type": "shoulder",
+"material": "leather",
+"page": 19,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P20",
+"type": "shoulder",
+"material": "leather",
+"page": 20,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P21",
+"type": "top-handle",
+"material": "leather",
+"page": 21,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P22",
+"type": "tote",
+"material": "leather",
+"page": 22,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P23",
+"type": "top-handle",
+"material": "leather",
+"page": 23,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P24",
+"type": "bucket",
+"material": "straw",
+"page": 24,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P25",
+"type": "bucket",
+"material": "straw",
+"page": 25,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P26",
+"type": "tote",
+"material": "straw",
+"page": 26,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P27",
+"type": "shoulder",
+"material": "straw",
+"page": 27,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P28",
+"type": "bucket",
+"material": "straw",
+"page": 28,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P29",
+"type": "bucket",
+"material": "straw",
+"page": 29,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P30",
+"type": "bucket",
+"material": "straw",
+"page": 30,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P31",
+"type": "shoulder",
+"material": "straw",
+"page": 31,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P32",
+"type": "top-handle",
+"material": "leather",
+"page": 32,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P33",
+"type": "shoulder",
+"material": "suede",
+"page": 33,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P34",
+"type": "hobo",
+"material": "suede",
+"page": 34,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P35",
+"type": "shoulder",
+"material": "leather",
+"page": 35,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P36",
+"type": "shoulder",
+"material": "leather",
+"page": 36,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P37",
+"type": "hobo",
+"material": "leather",
+"page": 37,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P38",
+"type": "tote",
+"material": "leather",
+"page": 38,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P39",
+"type": "hobo",
+"material": "suede",
+"page": 39,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P40",
+"type": "hobo",
+"material": "leather",
+"page": 40,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P41",
+"type": "crossbody",
+"material": "leather",
+"page": 41,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P42",
+"type": "hobo",
+"material": "suede",
+"page": 42,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P43",
+"type": "tote",
+"material": "leather",
+"page": 43,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P44",
+"type": "hobo",
+"material": "leather",
+"page": 44,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P45",
+"type": "tote",
+"material": "leather",
+"page": 45,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P46",
+"type": "bucket",
+"material": "leather",
+"page": 46,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P47",
+"type": "tote",
+"material": "suede",
+"page": 47,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P48",
+"type": "hobo",
+"material": "leather",
+"page": 48,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P49",
+"type": "bucket",
+"material": "leather",
+"page": 49,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P50",
+"type": "clutch",
+"material": "leather",
+"page": 50,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P51",
+"type": "top-handle",
+"material": "leather",
+"page": 51,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P52",
+"type": "top-handle",
+"material": "leather",
+"page": 52,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P53",
+"type": "tote",
+"material": "leather",
+"page": 53,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P54",
+"type": "hobo",
+"material": "leather",
+"page": 54,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P55",
+"type": "crossbody",
+"material": "leather",
+"page": 55,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P56",
+"type": "tote",
+"material": "straw",
+"page": 56,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P57",
+"type": "shoulder",
+"material": "leather",
+"page": 57,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P58",
+"type": "shoulder",
+"material": "leather",
+"page": 58,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P59",
+"type": "shoulder",
+"material": "leather",
+"page": 59,
+"catalog": "BAG2"
+},
+{
+"id": "BAG2-P60",
+"type": "shoulder",
+"material": "leather",
+"page": 60,
+"catalog": "BAG2"
+},
+{
+"id": "NB25-P01",
+"type": "shoulder",
+"material": "leather",
+"page": 1,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P02",
+"type": "hobo",
+"material": "leather",
+"page": 2,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P03",
+"type": "shoulder",
+"material": "snake",
+"page": 3,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P04",
+"type": "shoulder",
+"material": "leather",
+"page": 4,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P05",
+"type": "top-handle",
+"material": "suede",
+"page": 5,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P06",
+"type": "top-handle",
+"material": "suede",
+"page": 6,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P07",
+"type": "hobo",
+"material": "leather",
+"page": 7,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P08",
+"type": "hobo",
+"material": "leather",
+"page": 8,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P09",
+"type": "tote",
+"material": "lambskin",
+"page": 9,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P10",
+"type": "tote",
+"material": "suede",
+"page": 10,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P11",
+"type": "hobo",
+"material": "suede",
+"page": 11,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P12",
+"type": "tote",
+"material": "suede",
+"page": 12,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P13",
+"type": "top-handle",
+"material": "suede",
+"page": 13,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P14",
+"type": "hobo",
+"material": "leather",
+"page": 14,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P15",
+"type": "bucket",
+"material": "suede",
+"page": 15,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P16",
+"type": "bucket",
+"material": "suede",
+"page": 16,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P17",
+"type": "tote",
+"material": "suede",
+"page": 17,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P18",
+"type": "top-handle",
+"material": "suede",
+"page": 18,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P19",
+"type": "tote",
+"material": "canvas",
+"page": 19,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P20",
+"type": "tote",
+"material": "suede",
+"page": 20,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P21",
+"type": "tote",
+"material": "leopard",
+"page": 21,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P22",
+"type": "top-handle",
+"material": "leather",
+"page": 22,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P23",
+"type": "top-handle",
+"material": "leather",
+"page": 23,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P24",
+"type": "hobo",
+"material": "leather",
+"page": 24,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P25",
+"type": "shoulder",
+"material": "leather",
+"page": 25,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P26",
+"type": "tote",
+"material": "leather",
+"page": 26,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P27",
+"type": "hobo",
+"material": "suede",
+"page": 27,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P28",
+"type": "shoulder",
+"material": "leather",
+"page": 28,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P29",
+"type": "crossbody",
+"material": "leather",
+"page": 29,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P30",
+"type": "top-handle",
+"material": "leather",
+"page": 30,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P31",
+"type": "clutch",
+"material": "leather",
+"page": 31,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P32",
+"type": "top-handle",
+"material": "leather",
+"page": 32,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P33",
+"type": "clutch",
+"material": "leather",
+"page": 33,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P34",
+"type": "bucket",
+"material": "leather",
+"page": 34,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P35",
+"type": "tote",
+"material": "leather",
+"page": 35,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P36",
+"type": "tote",
+"material": "leather",
+"page": 36,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P37",
+"type": "hobo",
+"material": "leather",
+"page": 37,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P38",
+"type": "tote",
+"material": "leather",
+"page": 38,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P39",
+"type": "tote",
+"material": "leather",
+"page": 39,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P40",
+"type": "tote",
+"material": "canvas",
+"page": 40,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P41",
+"type": "tote",
+"material": "leather",
+"page": 41,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P42",
+"type": "top-handle",
+"material": "leather",
+"page": 42,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P43",
+"type": "tote",
+"material": "leather",
+"page": 43,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P44",
+"type": "tote",
+"material": "suede",
+"page": 44,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P45",
+"type": "bucket",
+"material": "leather",
+"page": 45,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P46",
+"type": "bucket",
+"material": "leather",
+"page": 46,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P47",
+"type": "hobo",
+"material": "leather",
+"page": 47,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P48",
+"type": "shoulder",
+"material": "leather",
+"page": 48,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P49",
+"type": "tote",
+"material": "leather",
+"page": 49,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NB25-P50",
+"type": "tote",
+"material": "leather",
+"page": 50,
+"catalog": "25W-NEW-BAGS"
+},
+{
+"id": "NMB-P1",
+"type": "shoulder",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P2a",
+"type": "tote",
+"material": "leather",
+"page": 2,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P2b",
+"type": "shoulder",
+"material": "suede",
+"page": 2,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P3",
+"type": "tote",
+"material": "leather",
+"page": 3,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P4",
+"type": "top-handle",
+"material": "leather",
+"page": 4,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P5",
+"type": "tote",
+"material": "canvas",
+"page": 5,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P6",
+"type": "top-handle",
+"material": "leather",
+"page": 6,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P7",
+"type": "crossbody",
+"material": "leather",
+"page": 7,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P8",
+"type": "clutch",
+"material": "leather",
+"page": 8,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P9",
+"type": "top-handle",
+"material": "leather",
+"page": 9,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P10",
+"type": "shoulder",
+"material": "suede",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P11",
+"type": "crossbody",
+"material": "suede",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P12",
+"type": "shoulder",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P13",
+"type": "hobo",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P14",
+"type": "backpack",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P15",
+"type": "backpack",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P16",
+"type": "bucket",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P17",
+"type": "bucket",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P18",
+"type": "tote",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P19",
+"type": "hobo",
+"material": "leather",
+"page": 1,
+"catalog": "NEW-MODEL-BAGS"
+},
+{
+"id": "NMB-P20",
+"type": "shoulder",
+"material": "leather",
+"page": 2,
+"catalog": "NEW-MODEL-BAGS"
+}
+]
+}

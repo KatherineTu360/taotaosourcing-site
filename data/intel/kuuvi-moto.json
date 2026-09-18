@@ -1,0 +1,374 @@
+{
+"source": "跨速/KUUVI moto helmet 25 S.pdf (51p)",
+"models": [
+{
+"model": "FK108",
+"type": "Full-face double visor",
+"shell": "ABS 1500g",
+"sizes": "M/L/XL 57-62",
+"cert": "ECE 22.06+DOT+CCC printed",
+"page": 9,
+"zone": "left grid"
+},
+{
+"model": "KU936",
+"type": "Full-face double visor, carbon",
+"shell": "carbon fiber+ABS 1500g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT+ECE 22.06",
+"page": 10,
+"zone": "right"
+},
+{
+"model": "FK218",
+"type": "Full-face double visor starter",
+"shell": "ABS 1500g",
+"sizes": "M-XXL 57-64",
+"cert": "ECE 22.06+DOT+CCC",
+"page": 11,
+"zone": "left grid"
+},
+{
+"model": "FK117",
+"type": "Racing full-face, 12K carbon",
+"shell": "12K carbon fiber 1590g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT+ECE 22.06",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "FK112",
+"type": "Flip-up modular double visor",
+"shell": "ABS 1590g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT",
+"page": 14,
+"zone": "right"
+},
+{
+"model": "KU965A",
+"type": "Flip-up modular four seasons",
+"shell": "ABS 1590g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT",
+"page": 15,
+"zone": "right"
+},
+{
+"model": "KU129",
+"type": "Off-road rally double lens",
+"shell": "ABS 1400g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT",
+"page": 16,
+"zone": "right grid"
+},
+{
+"model": "KS08",
+"type": "Off-road cross country starter",
+"shell": "ABS 780g",
+"sizes": "M/L 57-60",
+"cert": "CCC",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "KU901",
+"type": "Off-road cross country, 12K carbon",
+"shell": "12K carbon fiber 780g",
+"sizes": "M/L/XL 57-62",
+"cert": "CCC",
+"page": 18,
+"zone": "center"
+},
+{
+"model": "KS001",
+"type": "Off-road cross country starter",
+"shell": "ABS 1000g",
+"sizes": "M/L/XL 57-62",
+"cert": "CCC",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "KS05",
+"type": "Off-road cross country, carbon",
+"shell": "carbon fiber 1400g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT+ECE 22.06+CCC",
+"page": 20,
+"zone": "right"
+},
+{
+"model": "KS03M",
+"type": "Off-road trial, removable chin (PC shell)",
+"shell": "PC shell",
+"sizes": "S/M/L 53-61",
+"cert": "none printed",
+"page": 21,
+"zone": "left"
+},
+{
+"model": "KU07",
+"type": "Vintage full-face",
+"shell": "glass fiber 1455g",
+"sizes": "M-XXL 57-64",
+"cert": "ECE 22.06+DOT+CCC",
+"page": 22,
+"zone": "right grid"
+},
+{
+"model": "KU07-T",
+"type": "Vintage full-face, 3K carbon",
+"shell": "3K carbon fiber 1390g",
+"sizes": "M-XXL 57-64",
+"cert": "ECE 22.06+DOT+CCC",
+"page": 23,
+"zone": "left"
+},
+{
+"model": "FF07",
+"type": "Vintage motard full-face with mask/peak",
+"shell": "3K carbon fiber 1250g",
+"sizes": "M-XXL 57-64",
+"cert": "CCC",
+"page": 24,
+"zone": "center"
+},
+{
+"model": "KU08",
+"type": "Vintage open-face Harley 3/4, bubble shield",
+"shell": "glass fiber 1250g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT+CCC",
+"page": 25,
+"zone": "right grid"
+},
+{
+"model": "KU600",
+"type": "Vintage open-face Harley, carbon",
+"shell": "3K carbon fiber 1100g",
+"sizes": "M-XXL 57-64",
+"cert": "CCC",
+"page": 26,
+"zone": "center"
+},
+{
+"model": "KU701",
+"type": "Vintage open-face Harley entry, peak",
+"shell": "glass fiber 1590g",
+"sizes": "M-XXL 57-64",
+"cert": "ECE 22.06+DOT",
+"page": 27,
+"zone": "center"
+},
+{
+"model": "FK01",
+"type": "Vintage jet open-face commuter",
+"shell": "ABS 1590g",
+"sizes": "M-XXL 57-64",
+"cert": "ECE 22.06+DOT+CCC",
+"page": 28,
+"zone": "right"
+},
+{
+"model": "FK02",
+"type": "Vintage jet open-face commuter",
+"shell": "ABS 1590g",
+"sizes": "M-XXL 57-64",
+"cert": "ECE 22.06+DOT+CCC",
+"page": 29,
+"zone": "left grid"
+},
+{
+"model": "FG-01",
+"type": "Vintage half helmet",
+"shell": "ABS 600g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT+CCC",
+"page": 30,
+"zone": "left"
+},
+{
+"model": "KU500",
+"type": "Vintage half helmet, 3K carbon",
+"shell": "3K carbon fiber 750g",
+"sizes": "M-XXL 57-64",
+"cert": "CCC",
+"page": 31,
+"zone": "right grid"
+},
+{
+"model": "FK203",
+"type": "Open-face 3/4 double lens, BT-ready",
+"shell": "ABS 800g",
+"sizes": "one size",
+"cert": "CCC",
+"page": 32,
+"zone": "center"
+},
+{
+"model": "FK110",
+"type": "Open-face pilot 3/4",
+"shell": "ABS 1050g",
+"sizes": "M/L/XL 57-62",
+"cert": "CCC",
+"page": 33,
+"zone": "left"
+},
+{
+"model": "BH03",
+"type": "Open-face 3/4 simple",
+"shell": "ABS 550g",
+"sizes": "XS-XXL 54-64",
+"cert": "CCC",
+"page": 34,
+"zone": "center"
+},
+{
+"model": "BH02",
+"type": "Open-face 3/4, scarf+taillight option",
+"shell": "ABS 1050g",
+"sizes": "one size",
+"cert": "DOT+CCC",
+"page": 35,
+"zone": "left"
+},
+{
+"model": "FK113",
+"type": "Half-face with lights",
+"shell": "ABS 550g",
+"sizes": "one size",
+"cert": "CCC",
+"page": 36,
+"zone": "center"
+},
+{
+"model": "FK102",
+"type": "Half-face urban commuting",
+"shell": "ABS 550g",
+"sizes": "one size",
+"cert": "CCC",
+"page": 37,
+"zone": "left"
+},
+{
+"model": "FK99",
+"type": "Half-face urban commuting",
+"shell": "ABS 550g",
+"sizes": "one size",
+"cert": "CCC",
+"page": 38,
+"zone": "center"
+},
+{
+"model": "FK107",
+"type": "Half-face commuter, scarf+taillight",
+"shell": "ABS 600g",
+"sizes": "one size",
+"cert": "CCC",
+"page": 39,
+"zone": "left"
+},
+{
+"model": "KU636",
+"type": "Smart full-face, AI voice BT Type-C",
+"shell": "ABS 1580g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT ECE+CCC",
+"page": 40,
+"zone": "center"
+},
+{
+"model": "FK07",
+"type": "Smart Bluetooth open-face, LED taillight",
+"shell": "ABS 550g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT ECE+CCC",
+"page": 41,
+"zone": "left grid"
+},
+{
+"model": "FT08",
+"type": "Smart Bluetooth open-face",
+"shell": "ABS 550g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT ECE+CCC",
+"page": 42,
+"zone": "right grid"
+},
+{
+"model": "KU128",
+"type": "Kids full-face, cartoon graphics",
+"shell": "ABS 1000g",
+"sizes": "free size 46-52",
+"cert": "CCC",
+"page": 43,
+"zone": "left grid"
+},
+{
+"model": "M3",
+"type": "Kids open-face",
+"shell": "ABS 700g",
+"sizes": "free size 52-55",
+"cert": "CCC",
+"page": 44,
+"zone": "right grid"
+},
+{
+"model": "FK106",
+"type": "Kids half-face",
+"shell": "ABS 470g",
+"sizes": "free size 46-52",
+"cert": "CCC",
+"page": 45,
+"zone": "left grid"
+},
+{
+"model": "IRONMAN",
+"type": "Novelty flip-up (Iron Man)",
+"shell": "ABS 1160g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT+ECE",
+"page": 46,
+"zone": "center"
+},
+{
+"model": "HIPHOP",
+"type": "Novelty retro cap half helmet",
+"shell": "ABS 580g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT+ECE",
+"page": 47,
+"zone": "left"
+},
+{
+"model": "SKULL",
+"type": "Novelty skull open-face, flip mask",
+"shell": "ABS 700g",
+"sizes": "M-XXL 57-64",
+"cert": "DOT+ECE",
+"page": 48,
+"zone": "center"
+},
+{
+"model": "BATMAN",
+"type": "Novelty Batman open-face",
+"shell": "ABS 580g",
+"sizes": "M/L/XL 57-62",
+"cert": "DOT+ECE",
+"page": 49,
+"zone": "left"
+},
+{
+"model": "LP01",
+"type": "Gift mini simulation helmet",
+"shell": "ABS 172x136x138mm",
+"sizes": "mini",
+"cert": "none",
+"page": 50,
+"zone": "right"
+}
+]
+}

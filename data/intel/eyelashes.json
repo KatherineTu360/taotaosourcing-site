@@ -1,0 +1,30 @@
+{
+"source": "睫毛/国内款(99图) + 外贸款(108图), 图片网格无款号",
+"models": [
+{
+"id": "CN-CL6P",
+"type": "6P cluster lashes, glue-free (domestic line)",
+"note": "6p免胶 series, multiple curls/lengths"
+},
+{
+"id": "CN-CL10P",
+"type": "10P cluster lashes, glue-free (domestic line)",
+"note": "10p免胶 series, main volume line"
+},
+{
+"id": "CN-CL30P",
+"type": "30P cluster lashes, glue-free (domestic line)",
+"note": "30p免胶 dense series"
+},
+{
+"id": "CN-GLUE",
+"type": "Cluster lash glue (domestic line)",
+"note": "配套胶水"
+},
+{
+"id": "EXP-LASH-A",
+"type": "Export cluster lash trays, 4.5-15mm lengths",
+"note": "外贸款 multiple lengths/curls, 100+ variants"
+}
+]
+}

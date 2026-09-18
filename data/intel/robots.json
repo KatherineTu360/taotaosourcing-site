@@ -1,0 +1,15 @@
+{
+"source": "储能电池/Eraergy + 机器人 folder (application videos)",
+"models": [
+{
+"id": "ROBOT-PALLETISING",
+"type": "Carton palletising robot application",
+"note": "existing detail page"
+},
+{
+"id": "ROBOT-PRESS",
+"type": "Press machine tending robot application",
+"note": "existing detail page"
+}
+]
+}

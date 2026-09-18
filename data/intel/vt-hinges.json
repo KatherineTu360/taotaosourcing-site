@@ -1,0 +1,257 @@
+{
+"source": "VT维他重型铰链/2024版-沃特五金品牌产品画册.pdf (47p)",
+"models": [
+{
+"model": "VT-358",
+"group": "friction",
+"spec": "50kg; 88°; sash 400-600x400-1500mm; 30k+ cycles; wind 1500N; left/right universal",
+"page": 12
+},
+{
+"model": "VT-KZ",
+"group": "friction",
+"spec": "Quick-install concealed hinge; 168°; 10kg; 15k cycles (suite item)",
+"page": 12
+},
+{
+"model": "VT-353C",
+"group": "friction",
+"spec": "60kg (200% of GB); 88°; C/K groove; 40k+ cycles; 4mm arm; silent damper; L/R",
+"page": 14
+},
+{
+"model": "VT-351F",
+"group": "concealed",
+"spec": "15kg; 165°; sash 400-800x400-1500mm; solid rivet die-cast",
+"page": 14
+},
+{
+"model": "VT-331C",
+"group": "friction",
+"spec": "70kg (230% GB); 88°; C groove; 50k+ cycles; 5mm arm; 800x2000mm sash",
+"page": 16
+},
+{
+"model": "VT-351D",
+"group": "concealed",
+"spec": "15kg; 165°; 21.5mm install depth; C groove",
+"page": 16
+},
+{
+"model": "VT-331B",
+"group": "friction",
+"spec": "SUS304; 13.5mm groove (VT-331B-13.5); 88°; 70k+ cycles; test sash 850x2000; dual 5.0 + triple windproof",
+"page": 19
+},
+{
+"model": "VT-335B",
+"group": "friction",
+"spec": "SUS304; 23mm groove (VT-335B-23); 88°; 70k+ cycles; test sash 850x2000",
+"page": 19
+},
+{
+"model": "VT-332",
+"group": "friction",
+"spec": "SUS304; 13.5mm groove (VT-332-22); 88°; 70k+ cycles; 100kg+ wind; test sash 850x2000",
+"page": 21
+},
+{
+"model": "VT-180A",
+"group": "concealed",
+"spec": "SUS304; 23/13.5 groove variants; 180°; 70k+ cycles; 100kg+; glass/screen universal",
+"page": 22
+},
+{
+"model": "VT-180B",
+"group": "concealed",
+"spec": "SUS304; 4.0 series, 23/13.5 variants; 180°; 50k+ cycles; 70kg+; test sash 750x1500",
+"page": 23
+},
+{
+"model": "VT-330A",
+"group": "tophung",
+"spec": "Adjustable damping stay; SUS304; 13.5/23 variants; 88°; 70k+; 100kg+; test sash 900x2000",
+"page": 24
+},
+{
+"model": "VT-330B",
+"group": "tophung",
+"spec": "Zero-damping stay; SUS304; 13.5/23 variants; 88°; 70k+; 100kg+; 900x2000",
+"page": 25
+},
+{
+"model": "VT-333A",
+"group": "tophung",
+"spec": "Damped top-hung stay; 45° open; 70k+; 100kg+; 1000x2000; L/R",
+"page": 26
+},
+{
+"model": "VT-333B",
+"group": "tophung",
+"spec": "Damped top-hung stay; 38° open; 70k+; 1000x2000; L/R",
+"page": 27
+},
+{
+"model": "VT-337",
+"group": "tophung",
+"spec": "No-damping 5.0 top-hung hinge; 23 groove; 70°; 100k+; 100kg+; 1000x2000; L/R",
+"page": 28
+},
+{
+"model": "VT-353A",
+"group": "friction",
+"spec": "SUS304; 13.5/23 variants; 88°; 70k+; 150kg+; windproof patent; 850x2000",
+"page": 29
+},
+{
+"model": "VT-351A",
+"group": "concealed",
+"spec": "All-steel adjustable; SUS304; 13.5/23 variants; 165°; 70k+; 80kg+; in-swing; 850x2000",
+"page": 31
+},
+{
+"model": "VT-351C",
+"group": "concealed",
+"spec": "Screen-door version; SUS304; 165°; 70k+; 850x2000",
+"page": 32
+},
+{
+"model": "VT-351D2",
+"group": "concealed",
+"spec": "Screen-door version; SUS304; 165°; 70k+; 750x1500",
+"page": 33
+},
+{
+"model": "VT-355",
+"group": "friction",
+"spec": "All-steel internal adjustable; 13.5/23 variants; 88°; 70k+; casement door/window; L/R; 750x1800",
+"page": 34
+},
+{
+"model": "VT-336",
+"group": "friction",
+"spec": "Dust-proof heavy hinge; 13.5/23 variants; 88°; 30k+; 750x1800",
+"page": 35
+},
+{
+"model": "VT-315B",
+"group": "lockcase",
+"spec": "Stainless lock case; H=7.5-35cm 11 specs; in-swing window/door",
+"page": 37
+},
+{
+"model": "VT-315",
+"group": "lockcase",
+"spec": "Stainless lock case; H=7.5-35 11 specs; in-swing window/door",
+"page": 38
+},
+{
+"model": "VT-315C",
+"group": "lockcase",
+"spec": "Premium lock case; 8-35mm groove coverage; anti-pull structure; 11 specs",
+"page": 39
+},
+{
+"model": "VT-2368",
+"group": "handle",
+"spec": "Aluminium handle; square spindle; deep grey/cherry brown; CNC hollow base",
+"page": 41
+},
+{
+"model": "VT-2369",
+"group": "handle",
+"spec": "Aluminium handle; square spindle; deep grey/cherry brown",
+"page": 41
+},
+{
+"model": "VT-2386",
+"group": "handle",
+"spec": "CNC aluminium handle; mystery black/space grey; fluorocarbon coated",
+"page": 42
+},
+{
+"model": "VT-2396",
+"group": "handle",
+"spec": "Aluminium handle; fluorocarbon; legend black/space grey (suite item)",
+"page": 13
+},
+{
+"model": "VT-2397",
+"group": "handle",
+"spec": "Aluminium handle; fluorocarbon; legend black/space grey",
+"page": 13
+},
+{
+"model": "VT-2056B",
+"group": "espag",
+"spec": "Espagnolette set, premium; SUS304; deep-wing anti-jump; C/K groove (suite)",
+"page": 13
+},
+{
+"model": "VT-2056C",
+"group": "espag",
+"spec": "Espagnolette set; SUS304; large-card fixing; anti-skew (suite)",
+"page": 15
+},
+{
+"model": "VT-2051A",
+"group": "espag",
+"spec": "Espagnolette set; SUS304; 8-35mm groove coverage (suite)",
+"page": 17
+},
+{
+"model": "VT-2046",
+"group": "espag",
+"spec": "Anti-pry four-piece set, 23 groove; SUS304",
+"page": 44
+},
+{
+"model": "VT-2045",
+"group": "espag",
+"spec": "Anti-pry four-piece set, Euro groove; SUS304",
+"page": 44
+},
+{
+"model": "VT-517",
+"group": "espag",
+"spec": "Euro-groove anti-pry strike; SUS304",
+"page": 45
+},
+{
+"model": "VT-518",
+"group": "espag",
+"spec": "23-groove anti-pry strike; SUS304",
+"page": 45
+},
+{
+"model": "VT-520",
+"group": "espag",
+"spec": "All-steel Euro four-piece set; SUS304",
+"page": 45
+},
+{
+"model": "VT-521",
+"group": "espag",
+"spec": "All-steel 23-groove four-piece set; SUS304",
+"page": 45
+},
+{
+"model": "VT-SZB",
+"group": "suite",
+"spec": "Zunbiao suite: VT-358 + quick-install hinge + VT-315C + VT-2396/2397 + VT-2056B",
+"page": 13
+},
+{
+"model": "VT-ZXS",
+"group": "suite",
+"spec": "Zunxiang suite: VT-353C + VT-351F + VT-315B + VT-2396/2397 + VT-2056C",
+"page": 15
+},
+{
+"model": "VT-ZSS",
+"group": "suite",
+"spec": "Zunshang suite: VT-331C + VT-351D + VT-315B + VT-2368/2369 + VT-2051A",
+"page": 17
+}
+]
+}

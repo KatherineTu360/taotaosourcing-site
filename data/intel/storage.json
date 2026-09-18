@@ -1,0 +1,59 @@
+{
+"source": "储能电池/Eraergy introductions (18p)",
+"models": [
+{
+"model": "Tank Mini",
+"type": "Compact mobile storage robot",
+"spec": "~30kWh semi-solid LFP; 30kW discharge; V2L 20kVA; 950x670x1200mm",
+"page": 6
+},
+{
+"model": "Energy Tank 100 Pro",
+"type": "Mobile storage robot 104kWh",
+"spec": "104kWh LFP; V2G 105kW; V2E 120kW; V2L 20kW; IP55; GB38031/UN38.3",
+"page": 7
+},
+{
+"model": "Energy Tank 100 Ultra",
+"type": "Mobile storage robot 104kWh van-body",
+"spec": "104kWh; V2G 105kW; V2E 120kW; 665.6V; IP55",
+"page": 8
+},
+{
+"model": "Energy Tank 200 Pro",
+"type": "Mobile storage robot 200.2kWh",
+"spec": "200.2kWh 1P192S; V2G 120kW; V2E 120kW/250A; cont. 160kW; IP55",
+"page": 9
+},
+{
+"model": "Energy Station 200KW",
+"type": "Grid-connected dual-gun DC charging PCS",
+"spec": "200kW AC 400V; DC 630-800V 150Ax2; 97.5% eff.; IP54",
+"page": 10
+},
+{
+"model": "Energy Flow 100KVA",
+"type": "Mobile PCS / portable power gateway",
+"spec": "100kVA; AC 200/380V; DC 615-900V 150A; 130kg casters; IP54",
+"page": 11
+},
+{
+"model": "ERAERGY-GO",
+"type": "Mobile charge-storage robot solution",
+"spec": "L4 ADAS platform: Tank + Station + Flow + App fleet dispatch",
+"page": 4
+},
+{
+"model": "PKG-DLINE",
+"type": "Mobile power dedicated line package 200KW",
+"spec": "110/220/400VAC; 100% off-grid; fleet auto-dispatch",
+"page": 14
+},
+{
+"model": "PKG-TEMP",
+"type": "Temporary off-grid power package",
+"spec": "Tank + Flow; <25dB; 70% energy cost saving vs diesel",
+"page": 15
+}
+]
+}

@@ -1,0 +1,502 @@
+{
+"source": "永宝头盔（骑行头盔）/永宝产品清单.pdf (16p), 每页4-6行",
+"models": [
+{
+"model": "HO-11P",
+"type": "Kids/adult bicycle helmet, ABS spray paint",
+"sizes": "XS-XXL",
+"page": 1,
+"row": 1
+},
+{
+"model": "HO-11M",
+"type": "Kids/adult bicycle helmet, ABS matte",
+"sizes": "XS-XXL",
+"page": 1,
+"row": 2
+},
+{
+"model": "YB-31",
+"type": "Skateboard helmet",
+"sizes": "L/XL",
+"page": 1,
+"row": 3
+},
+{
+"model": "HO-06",
+"type": "Road cycling in-mould, 16 vents 57-62cm",
+"sizes": "adult",
+"page": 1,
+"row": 4
+},
+{
+"model": "HO-210",
+"type": "Road cycling in-mould 200g",
+"sizes": "adult",
+"page": 2,
+"row": 1
+},
+{
+"model": "HO-191",
+"type": "Kids 6-piece protective gear set",
+"sizes": "kids",
+"page": 2,
+"row": 2
+},
+{
+"model": "YB-05",
+"type": "MTB in-mould with visor 270g",
+"sizes": "adult",
+"page": 2,
+"row": 3
+},
+{
+"model": "YB-006",
+"type": "City commuter, detachable goggle + light 310g",
+"sizes": "adult",
+"page": 2,
+"row": 4
+},
+{
+"model": "HO-99",
+"type": "Road/MTB PC shell 24 vents 290g",
+"sizes": "adult",
+"page": 2,
+"row": 5
+},
+{
+"model": "YB-17",
+"type": "Road cycling in-mould 210g",
+"sizes": "adult",
+"page": 3,
+"row": 1
+},
+{
+"model": "HO-186",
+"type": "Cycling in-mould 280g",
+"sizes": "adult",
+"page": 3,
+"row": 2
+},
+{
+"model": "HO-108",
+"type": "Cycling in-mould 210g",
+"sizes": "adult",
+"page": 3,
+"row": 3
+},
+{
+"model": "HO-109",
+"type": "Road/MTB 265g",
+"sizes": "adult",
+"page": 3,
+"row": 4
+},
+{
+"model": "YB-69",
+"type": "Aero road, hot-press pad 250g",
+"sizes": "adult",
+"page": 3,
+"row": 5
+},
+{
+"model": "HO-89",
+"type": "City commuter, light option 280g",
+"sizes": "adult",
+"page": 4,
+"row": 1
+},
+{
+"model": "YB-11",
+"type": "Detachable goggle + light 290g",
+"sizes": "adult",
+"page": 4,
+"row": 2
+},
+{
+"model": "YB-13",
+"type": "Goggle helmet 293g CPSC1203",
+"sizes": "adult",
+"page": 4,
+"row": 3
+},
+{
+"model": "YB-16",
+"type": "Magnetic goggle helmet 290g",
+"sizes": "adult",
+"page": 4,
+"row": 4
+},
+{
+"model": "YB-15",
+"type": "Mountain/road, buckle light option 270g",
+"sizes": "adult",
+"page": 4,
+"row": 5
+},
+{
+"model": "YB-96",
+"type": "Magnetic goggle + rechargeable light 310g",
+"sizes": "adult",
+"page": 5,
+"row": 1
+},
+{
+"model": "YB-19",
+"type": "Magnetic goggle + LED 280g",
+"sizes": "adult",
+"page": 5,
+"row": 2
+},
+{
+"model": "HO-86",
+"type": "Goggle + rechargeable light 310g",
+"sizes": "adult",
+"page": 5,
+"row": 3
+},
+{
+"model": "HO-86L",
+"type": "Large-brim version of HO-86",
+"sizes": "adult",
+"page": 5,
+"row": 4
+},
+{
+"model": "YB-28",
+"type": "MTB one-piece PC 260g",
+"sizes": "adult",
+"page": 5,
+"row": 5
+},
+{
+"model": "YB-90",
+"type": "Large-brim MTB, detachable goggle 310g",
+"sizes": "adult",
+"page": 6,
+"row": 1
+},
+{
+"model": "HO-85",
+"type": "Goggle + rechargeable light 300g",
+"sizes": "adult",
+"page": 6,
+"row": 2
+},
+{
+"model": "HO-209",
+"type": "E-bike retro half helmet ABS+EPS 350g",
+"sizes": "adult",
+"page": 6,
+"row": 3
+},
+{
+"model": "YZ-X001",
+"type": "E-bike helmet PC+EPS 280g",
+"sizes": "adult",
+"page": 6,
+"row": 4
+},
+{
+"model": "YB-07",
+"type": "MTB 340g 14 vents",
+"sizes": "adult",
+"page": 6,
+"row": 5
+},
+{
+"model": "HO-196",
+"type": "Cycling in-mould 210g",
+"sizes": "adult",
+"page": 6,
+"row": 6
+},
+{
+"model": "HO-028",
+"type": "USB rechargeable buckle light 194g",
+"sizes": "adult",
+"page": 7,
+"row": 1
+},
+{
+"model": "HO-888",
+"type": "USB rechargeable light 310g",
+"sizes": "adult",
+"page": 7,
+"row": 2
+},
+{
+"model": "YD-82",
+"type": "ABS custom 450g CE/EN1078/CPC/CCCF",
+"sizes": "adult",
+"page": 7,
+"row": 3
+},
+{
+"model": "HO-022",
+"type": "Lightweight 190g",
+"sizes": "adult",
+"page": 7,
+"row": 4
+},
+{
+"model": "HO-03",
+"type": "Ultra light 170-175g",
+"sizes": "adult",
+"page": 8,
+"row": 1
+},
+{
+"model": "YZ-B-091-L1",
+"type": "Large-brim MTB 300g",
+"sizes": "adult",
+"page": 8,
+"row": 2
+},
+{
+"model": "YZ-A001",
+"type": "Road with goggle 280g",
+"sizes": "adult",
+"page": 8,
+"row": 3
+},
+{
+"model": "YZ-A002",
+"type": "Road 273g",
+"sizes": "adult",
+"page": 8,
+"row": 4
+},
+{
+"model": "YZ-A002G",
+"type": "Road glow-in-the-dark 273g",
+"sizes": "adult",
+"page": 9,
+"row": 1
+},
+{
+"model": "YZ-A003",
+"type": "Road aero EN1078/CPSC/ASTM 273g",
+"sizes": "adult",
+"page": 9,
+"row": 2
+},
+{
+"model": "YZ-F002",
+"type": "Urban casual duck-brim 280g",
+"sizes": "adult",
+"page": 9,
+"row": 3
+},
+{
+"model": "HO-111",
+"type": "Adult ski ABS+EPS+PC",
+"sizes": "adult",
+"page": 10,
+"row": 1
+},
+{
+"model": "YB-29",
+"type": "Kids ski",
+"sizes": "kids",
+"page": 10,
+"row": 2
+},
+{
+"model": "YB-98",
+"type": "Adult ski, detachable ear pads 340g",
+"sizes": "adult",
+"page": 10,
+"row": 3
+},
+{
+"model": "HO-269",
+"type": "Adult ski 320g",
+"sizes": "adult",
+"page": 10,
+"row": 4
+},
+{
+"model": "YB-18",
+"type": "Ski 480g",
+"sizes": "adult",
+"page": 11,
+"row": 1
+},
+{
+"model": "YB-289",
+"type": "Ski ABS+PC 447g",
+"sizes": "adult",
+"page": 11,
+"row": 2
+},
+{
+"model": "YZ-X001S",
+"type": "Ski with goggle ABS+PC 430g",
+"sizes": "adult",
+"page": 11,
+"row": 3
+},
+{
+"model": "YZ-B-056-L1",
+"type": "MTB full-face 600g carbon option",
+"sizes": "adult",
+"page": 11,
+"row": 4
+},
+{
+"model": "YZ-E001",
+"type": "Climbing helmet",
+"sizes": "adult",
+"page": 12,
+"row": 1
+},
+{
+"model": "YB-02",
+"type": "Equestrian ASTM F1163-23",
+"sizes": "adult",
+"page": 12,
+"row": 2
+},
+{
+"model": "YB-03",
+"type": "Equestrian",
+"sizes": "adult",
+"page": 12,
+"row": 3
+},
+{
+"model": "YZ-D001",
+"type": "Kids equestrian VG1/EN1384+ASTM",
+"sizes": "kids",
+"page": 12,
+"row": 4
+},
+{
+"model": "YB-10",
+"type": "Smart helmet BT + turn signals + remote",
+"sizes": "adult",
+"page": 13,
+"row": 1
+},
+{
+"model": "H2",
+"type": "Smart helmet USB + Bluetooth",
+"sizes": "adult",
+"page": 13,
+"row": 2
+},
+{
+"model": "HO-09L",
+"type": "Kids full-face balance-bike, lightning print + light",
+"sizes": "kids",
+"page": 13,
+"row": 3
+},
+{
+"model": "HO-09S",
+"type": "Kids full-face, star print + light",
+"sizes": "kids",
+"page": 13,
+"row": 4
+},
+{
+"model": "HO-09G",
+"type": "Kids full-face, graffiti + light",
+"sizes": "kids",
+"page": 14,
+"row": 1
+},
+{
+"model": "HO-11PC",
+"type": "Kids PC helmet, luminous paint",
+"sizes": "kids",
+"page": 14,
+"row": 2
+},
+{
+"model": "YB-88",
+"type": "Kids skating/scooter/bike 190g",
+"sizes": "kids",
+"page": 14,
+"row": 3
+},
+{
+"model": "HO-102",
+"type": "Kids city/half 550g",
+"sizes": "kids",
+"page": 14,
+"row": 4
+},
+{
+"model": "YB-62",
+"type": "Kids bike ABS 250g",
+"sizes": "kids",
+"page": 14,
+"row": 5
+},
+{
+"model": "YB-65",
+"type": "Kids skating/bike PC+EPS 250g",
+"sizes": "kids",
+"page": 14,
+"row": 6
+},
+{
+"model": "YB-68",
+"type": "Kids skating/bike 180g",
+"sizes": "kids",
+"page": 15,
+"row": 1
+},
+{
+"model": "HO-169",
+"type": "Kids bike 292-300g",
+"sizes": "kids",
+"page": 15,
+"row": 2
+},
+{
+"model": "HO-168",
+"type": "Kids bike 394g ages 6-14",
+"sizes": "kids",
+"page": 15,
+"row": 3
+},
+{
+"model": "HO-165",
+"type": "Kids printed ladybug/animal 190-260g",
+"sizes": "kids",
+"page": 15,
+"row": 4
+},
+{
+"model": "YD-39",
+"type": "Kids small round helmet 210g",
+"sizes": "kids",
+"page": 15,
+"row": 5
+},
+{
+"model": "HO-055",
+"type": "Kids skating/bike 190g",
+"sizes": "kids",
+"page": 16,
+"row": 1
+},
+{
+"model": "YZ-C-010",
+"type": "Kids cartoon panda/tiger",
+"sizes": "kids",
+"page": 16,
+"row": 2
+},
+{
+"model": "YZ-C001",
+"type": "Kids 3D animal/dinosaur 250-300g",
+"sizes": "kids",
+"page": 16,
+"row": 3
+}
+]
+}

@@ -1,0 +1,1634 @@
+{
+"source": "空气能产品 4 catalogs (Luckingstar/Ruixing 同集团) + notes",
+"models": [
+{
+"model": "LWH-3.6",
+"book": "hotwater",
+"type": "Domestic hot water, split",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.6-11.6kW",
+"page": 7,
+"zone": "left"
+},
+{
+"model": "LWH-5.3",
+"book": "hotwater",
+"type": "Domestic hot water, split",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.6-11.6kW",
+"page": 7,
+"zone": "left"
+},
+{
+"model": "LWH-8.0",
+"book": "hotwater",
+"type": "Domestic hot water, split",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.6-11.6kW",
+"page": 7,
+"zone": "left"
+},
+{
+"model": "LWH-10.5",
+"book": "hotwater",
+"type": "Domestic hot water, split",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.6-11.6kW",
+"page": 7,
+"zone": "left"
+},
+{
+"model": "LWH-11.6",
+"book": "hotwater",
+"type": "Domestic hot water, split",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.6-11.6kW",
+"page": 7,
+"zone": "left"
+},
+{
+"model": "LWH-3.8-B",
+"book": "hotwater",
+"type": "Domestic hot water, monobloc",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.8-16.5kW",
+"page": 8,
+"zone": "left"
+},
+{
+"model": "LWH-5.3-B",
+"book": "hotwater",
+"type": "Domestic hot water, monobloc",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.8-16.5kW",
+"page": 8,
+"zone": "left"
+},
+{
+"model": "LWH-8.0-B",
+"book": "hotwater",
+"type": "Domestic hot water, monobloc",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.8-16.5kW",
+"page": 8,
+"zone": "left"
+},
+{
+"model": "LWH-11.4-B",
+"book": "hotwater",
+"type": "Domestic hot water, monobloc",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.8-16.5kW",
+"page": 8,
+"zone": "left"
+},
+{
+"model": "LWH-16.5-B",
+"book": "hotwater",
+"type": "Domestic hot water, monobloc",
+"refrigerant": "R410A/R134a era",
+"capacity": "3.8-16.5kW",
+"page": 8,
+"zone": "left"
+},
+{
+"model": "LWH15-150L",
+"book": "hotwater",
+"type": "All-in-one domestic hot water",
+"refrigerant": "R134a",
+"capacity": "3.5kW+2kW, 150/200L",
+"page": 9,
+"zone": "left"
+},
+{
+"model": "LWH15-200L",
+"book": "hotwater",
+"type": "All-in-one domestic hot water",
+"refrigerant": "R134a",
+"capacity": "3.5kW+2kW, 150/200L",
+"page": 9,
+"zone": "left"
+},
+{
+"model": "LWH20-250L",
+"book": "hotwater",
+"type": "All-in-one domestic hot water",
+"refrigerant": "R134a",
+"capacity": "3.75kW+2kW, 250/300L",
+"page": 9,
+"zone": "left"
+},
+{
+"model": "LWH20-300L",
+"book": "hotwater",
+"type": "All-in-one domestic hot water",
+"refrigerant": "R134a",
+"capacity": "3.75kW+2kW, 250/300L",
+"page": 9,
+"zone": "left"
+},
+{
+"model": "LWH-14DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-24DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-37DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-38DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-53DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-58DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-75DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-95DCB",
+"book": "hotwater",
+"type": "Commercial hot water",
+"refrigerant": "R410A",
+"capacity": "11.4-95.8kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "LWH-9.8DC-F",
+"book": "hotwater",
+"type": "EVI low-ambient hot water/heating -25C",
+"refrigerant": "R410A",
+"capacity": "9.5-73.8kW",
+"page": 11,
+"zone": "left"
+},
+{
+"model": "LWH-19DC-F",
+"book": "hotwater",
+"type": "EVI low-ambient hot water/heating -25C",
+"refrigerant": "R410A",
+"capacity": "9.5-73.8kW",
+"page": 11,
+"zone": "left"
+},
+{
+"model": "LWH-26DC-F",
+"book": "hotwater",
+"type": "EVI low-ambient hot water/heating -25C",
+"refrigerant": "R410A",
+"capacity": "9.5-73.8kW",
+"page": 11,
+"zone": "left"
+},
+{
+"model": "LWH-39DC-F",
+"book": "hotwater",
+"type": "EVI low-ambient hot water/heating -25C",
+"refrigerant": "R410A",
+"capacity": "9.5-73.8kW",
+"page": 11,
+"zone": "left"
+},
+{
+"model": "LWH-73DC-F",
+"book": "hotwater",
+"type": "EVI low-ambient hot water/heating -25C",
+"refrigerant": "R410A",
+"capacity": "9.5-73.8kW",
+"page": 11,
+"zone": "left"
+},
+{
+"model": "LWH-12HTC",
+"book": "hotwater",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "12.7-82.8kW",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "LWH-27HTC",
+"book": "hotwater",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "12.7-82.8kW",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "LWH-35HTC",
+"book": "hotwater",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "12.7-82.8kW",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "LWH-51HTC",
+"book": "hotwater",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "12.7-82.8kW",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "LWH-61HTC",
+"book": "hotwater",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "12.7-82.8kW",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "LWH-72HTC",
+"book": "hotwater",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "12.7-82.8kW",
+"page": 12,
+"zone": "left"
+},
+{
+"model": "LWH-025SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-05SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-07SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-13SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-21SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-25SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-32SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-50SWC",
+"book": "hotwater",
+"type": "Water-source hot water",
+"refrigerant": "R410A",
+"capacity": "12.5-103.5kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "LWH-100L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-150L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-200L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-250L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-300L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-400L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-500L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-1000L-B",
+"book": "hotwater",
+"type": "Pressurized water tank",
+"refrigerant": "-",
+"capacity": "100-1000L",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "R290-6kW",
+"book": "luckingstar",
+"type": "R290 DC-inverter heating/cooling/DHW monobloc (Ultimate)",
+"refrigerant": "R290",
+"capacity": "6.8-27.9kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "R290-9kW",
+"book": "luckingstar",
+"type": "R290 DC-inverter heating/cooling/DHW monobloc (Ultimate)",
+"refrigerant": "R290",
+"capacity": "6.8-27.9kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "R290-12kW",
+"book": "luckingstar",
+"type": "R290 DC-inverter heating/cooling/DHW monobloc (Ultimate)",
+"refrigerant": "R290",
+"capacity": "6.8-27.9kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "R290-16kW",
+"book": "luckingstar",
+"type": "R290 DC-inverter heating/cooling/DHW monobloc (Ultimate)",
+"refrigerant": "R290",
+"capacity": "6.8-27.9kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "R290-20kW",
+"book": "luckingstar",
+"type": "R290 DC-inverter heating/cooling/DHW monobloc (Ultimate)",
+"refrigerant": "R290",
+"capacity": "6.8-27.9kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "R290-25kW",
+"book": "luckingstar",
+"type": "R290 DC-inverter heating/cooling/DHW monobloc (Ultimate)",
+"refrigerant": "R290",
+"capacity": "6.8-27.9kW",
+"page": 10,
+"zone": "left"
+},
+{
+"model": "4HW1.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "4-16kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "6HW1.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "4-16kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "8HW1.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "4-16kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "12HW1.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "4-16kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "16HW1.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "4-16kW",
+"page": 13,
+"zone": "left"
+},
+{
+"model": "15HW1.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "15-25kW",
+"page": 13,
+"zone": "right"
+},
+{
+"model": "15HW1.6PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "15-25kW",
+"page": 13,
+"zone": "right"
+},
+{
+"model": "15HW2.0PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "15-25kW",
+"page": 13,
+"zone": "right"
+},
+{
+"model": "20HW2.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "15-25kW",
+"page": 13,
+"zone": "right"
+},
+{
+"model": "25HW2.2PEN5",
+"book": "luckingstar",
+"type": "R32 DC-inverter heating/cooling monobloc (Elite)",
+"refrigerant": "R32",
+"capacity": "15-25kW",
+"page": 13,
+"zone": "right"
+},
+{
+"model": "LWH-17BU/R290EH",
+"book": "luckingstar",
+"type": "R290 commercial UltraHeat monobloc 75C",
+"refrigerant": "R290",
+"capacity": "16.8-100kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "LWH-33BU/R290EH",
+"book": "luckingstar",
+"type": "R290 commercial UltraHeat monobloc 75C",
+"refrigerant": "R290",
+"capacity": "16.8-100kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "5HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "5-13kW",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "9HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "5-13kW",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "13HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "5-13kW",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "15HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "15-35kW",
+"page": 16,
+"zone": "right"
+},
+{
+"model": "17HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "15-35kW",
+"page": 16,
+"zone": "right"
+},
+{
+"model": "20HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "15-35kW",
+"page": 16,
+"zone": "right"
+},
+{
+"model": "25HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "15-35kW",
+"page": 16,
+"zone": "right"
+},
+{
+"model": "35HW-CD-Na",
+"book": "luckingstar",
+"type": "Full DC-inverter pool heat pump (Herring)",
+"refrigerant": "R32",
+"capacity": "15-35kW",
+"page": 16,
+"zone": "right"
+},
+{
+"model": "LWH-F030L-A",
+"book": "luckingstar",
+"type": "Mini SPA pool heat pump",
+"refrigerant": "R32/R410A",
+"capacity": "3-5kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "LWH-F050L-A",
+"book": "luckingstar",
+"type": "Mini SPA pool heat pump",
+"refrigerant": "R32/R410A",
+"capacity": "3-5kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "LWH-F050L-B",
+"book": "luckingstar",
+"type": "Mini SPA pool heat pump",
+"refrigerant": "R32/R410A",
+"capacity": "3-5kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "LWH-15BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-25BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-45BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-65BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-90BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-115BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-155BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "LWH-190BCB",
+"book": "luckingstar",
+"type": "Commercial pool heat pump",
+"refrigerant": "R410A",
+"capacity": "15.3-190kW",
+"page": 17,
+"zone": "right"
+},
+{
+"model": "RS-3GD/YT",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-5GD/YT",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-6GDCKP",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-05DKC",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-075DKC",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-10DKC",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-15DKC",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-20DKC1",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-30DKC1",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water",
+"refrigerant": "R410A",
+"capacity": "13.5-176.5kW",
+"page": 14,
+"zone": "left"
+},
+{
+"model": "RS-50DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water, large frame",
+"refrigerant": "R410A",
+"capacity": "49.2-216kW",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "RS-100DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water, large frame",
+"refrigerant": "R410A",
+"capacity": "49.2-216kW",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "RS-200DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water, large frame",
+"refrigerant": "R410A",
+"capacity": "49.2-216kW",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "RS-250DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water, large frame",
+"refrigerant": "R410A",
+"capacity": "49.2-216kW",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "RS-300DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water, large frame",
+"refrigerant": "R410A",
+"capacity": "49.2-216kW",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "RS-400DCZ1V",
+"book": "ruixing-c",
+"type": "Commercial cycle hot water, large frame",
+"refrigerant": "R410A",
+"capacity": "49.2-216kW",
+"page": 15,
+"zone": "left"
+},
+{
+"model": "RS-20DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial EVI cycle hot water -25C",
+"refrigerant": "R410A",
+"capacity": "76.5kW class",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "RS-25DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial EVI cycle hot water -25C",
+"refrigerant": "R410A",
+"capacity": "76.5kW class",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "RS-30DCZ1H",
+"book": "ruixing-c",
+"type": "Commercial EVI cycle hot water -25C",
+"refrigerant": "R410A",
+"capacity": "76.5kW class",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "RS-40DCZ1V",
+"book": "ruixing-c",
+"type": "Commercial EVI cycle hot water -25C",
+"refrigerant": "R410A",
+"capacity": "76.5kW class",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "RS-120DCZ1W",
+"book": "ruixing-c",
+"type": "Commercial EVI cycle hot water -25C",
+"refrigerant": "R410A",
+"capacity": "76.5kW class",
+"page": 16,
+"zone": "left"
+},
+{
+"model": "RS-03WDCBZY",
+"book": "ruixing-c",
+"type": "Commercial DC-inverter hot water ultra-low temp",
+"refrigerant": "R410A/R32",
+"capacity": "11.5-84.6kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "RS-10WDCBZ5Y",
+"book": "ruixing-c",
+"type": "Commercial DC-inverter hot water ultra-low temp",
+"refrigerant": "R410A/R32",
+"capacity": "11.5-84.6kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "RS-20WCBZY",
+"book": "ruixing-c",
+"type": "Commercial DC-inverter hot water ultra-low temp",
+"refrigerant": "R410A/R32",
+"capacity": "11.5-84.6kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "RS-50WCBZY",
+"book": "ruixing-c",
+"type": "Commercial DC-inverter hot water ultra-low temp",
+"refrigerant": "R410A/R32",
+"capacity": "11.5-84.6kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "RS-75WCBZY",
+"book": "ruixing-c",
+"type": "Commercial DC-inverter hot water ultra-low temp",
+"refrigerant": "R410A/R32",
+"capacity": "11.5-84.6kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "RS-200WCBZH",
+"book": "ruixing-c",
+"type": "Commercial DC-inverter hot water ultra-low temp",
+"refrigerant": "R410A/R32",
+"capacity": "11.5-84.6kW",
+"page": 17,
+"zone": "left"
+},
+{
+"model": "RS-10JPCXB",
+"book": "ruixing-c",
+"type": "SPA/pond/spring pool heat pump",
+"refrigerant": "R410A",
+"capacity": "20.5-116kW",
+"page": 18,
+"zone": "left"
+},
+{
+"model": "RS-40JPCX1H",
+"book": "ruixing-c",
+"type": "SPA/pond/spring pool heat pump",
+"refrigerant": "R410A",
+"capacity": "20.5-116kW",
+"page": 18,
+"zone": "left"
+},
+{
+"model": "RS-120JPCX1H",
+"book": "ruixing-c",
+"type": "SPA/pond/spring pool heat pump",
+"refrigerant": "R410A",
+"capacity": "20.5-116kW",
+"page": 18,
+"zone": "left"
+},
+{
+"model": "RS-100PDYT",
+"book": "ruixing-c",
+"type": "SPA/pond/spring pool heat pump",
+"refrigerant": "R410A",
+"capacity": "20.5-116kW",
+"page": 18,
+"zone": "left"
+},
+{
+"model": "RS-100GZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, low-temp type",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-150GZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, low-temp type",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-200GZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, low-temp type",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-250GZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, low-temp type",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-300GZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, low-temp type",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-500GZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, low-temp type",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-100GCZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-200GCZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-250GCZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-300GCZ1H",
+"book": "ruixing-c",
+"type": "Swimming pool heat pump, ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "45.7-236kW",
+"page": 19,
+"zone": "left"
+},
+{
+"model": "RS-05GBCN",
+"book": "ruixing-c",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "13.5-65kW",
+"page": 20,
+"zone": "left"
+},
+{
+"model": "RS-10GBCNH",
+"book": "ruixing-c",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "13.5-65kW",
+"page": 20,
+"zone": "left"
+},
+{
+"model": "RS-20GBCNH",
+"book": "ruixing-c",
+"type": "High-temperature hot water 80C",
+"refrigerant": "R134a",
+"capacity": "13.5-65kW",
+"page": 20,
+"zone": "left"
+},
+{
+"model": "RN-30VPFFS/NN(1)",
+"book": "ruixing-h",
+"type": "Low-ambient hydronic fan heater",
+"refrigerant": "R32",
+"capacity": "3.9-6.5kW",
+"page": 23,
+"zone": "left"
+},
+{
+"model": "RN-40VPFFS/NN(2)",
+"book": "ruixing-h",
+"type": "Low-ambient hydronic fan heater",
+"refrigerant": "R32",
+"capacity": "3.9-6.5kW",
+"page": 23,
+"zone": "left"
+},
+{
+"model": "RN-40VPFFS/NN(1)",
+"book": "ruixing-h",
+"type": "Low-ambient hydronic fan heater",
+"refrigerant": "R32",
+"capacity": "3.9-6.5kW",
+"page": 23,
+"zone": "left"
+},
+{
+"model": "RN-65VPFFS/NN(1)",
+"book": "ruixing-h",
+"type": "Low-ambient hydronic fan heater",
+"refrigerant": "R32",
+"capacity": "3.9-6.5kW",
+"page": 23,
+"zone": "left"
+},
+{
+"model": "RN-030HVC1ZCY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-050HVC1ZCY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-060HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-080HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-090HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-100HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-088HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter heating/cooling monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "10-20kW",
+"page": 24,
+"zone": "left"
+},
+{
+"model": "RN-120HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "24-36kW",
+"page": 25,
+"zone": "left"
+},
+{
+"model": "RN-130HVC1ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "24-36kW",
+"page": 25,
+"zone": "left"
+},
+{
+"model": "RN-120HVC2ZY",
+"book": "ruixing-h",
+"type": "Residential EVI DC-inverter monobloc -40C",
+"refrigerant": "R410A",
+"capacity": "24-36kW",
+"page": 25,
+"zone": "left"
+},
+{
+"model": "RN-H015VBL2ZY",
+"book": "ruixing-h",
+"type": "Residential EVI inverter 220V",
+"refrigerant": "R410A",
+"capacity": "10-23kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H018VBL2ZY",
+"book": "ruixing-h",
+"type": "Residential EVI inverter 220V",
+"refrigerant": "R410A",
+"capacity": "10-23kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H020VBL2ZY",
+"book": "ruixing-h",
+"type": "Residential EVI inverter 220V",
+"refrigerant": "R410A",
+"capacity": "10-23kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H023VBL2ZY",
+"book": "ruixing-h",
+"type": "Residential EVI inverter 220V",
+"refrigerant": "R410A",
+"capacity": "10-23kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H015VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H018VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H020VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H026VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H028VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H032VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H036VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-H045VRZY",
+"book": "ruixing-h",
+"type": "Residential inverter heating/cooling monobloc",
+"refrigerant": "R410A",
+"capacity": "12.5-45kW",
+"page": 26,
+"zone": "left"
+},
+{
+"model": "RN-10VBL2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-15VBL2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-18VBL2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-22VBL2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-15VR2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-23VB2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-30VB2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-36VB2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-36VR2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-40VR2NS",
+"book": "ruixing-h",
+"type": "Ultra-low temp inverter air-cooled chilled water unit",
+"refrigerant": "R32",
+"capacity": "10-42kW",
+"page": 27,
+"zone": "left"
+},
+{
+"model": "RN-H14VRELP",
+"book": "ruixing-h",
+"type": "DC-inverter two-supply (heating+cooling) unit",
+"refrigerant": "R410A",
+"capacity": "14.2-33kW",
+"page": 28,
+"zone": "left"
+},
+{
+"model": "RN-H17VREP",
+"book": "ruixing-h",
+"type": "DC-inverter two-supply (heating+cooling) unit",
+"refrigerant": "R410A",
+"capacity": "14.2-33kW",
+"page": 28,
+"zone": "left"
+},
+{
+"model": "RN-H20VREP",
+"book": "ruixing-h",
+"type": "DC-inverter two-supply (heating+cooling) unit",
+"refrigerant": "R410A",
+"capacity": "14.2-33kW",
+"page": 28,
+"zone": "left"
+},
+{
+"model": "RN-H26VREP",
+"book": "ruixing-h",
+"type": "DC-inverter two-supply (heating+cooling) unit",
+"refrigerant": "R410A",
+"capacity": "14.2-33kW",
+"page": 28,
+"zone": "left"
+},
+{
+"model": "RN-H33VREP",
+"book": "ruixing-h",
+"type": "DC-inverter two-supply (heating+cooling) unit",
+"refrigerant": "R410A",
+"capacity": "14.2-33kW",
+"page": 28,
+"zone": "left"
+},
+{
+"model": "RN-75RZ1H",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-90RZ1H",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-H90RZ1W",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-H160RZ1W",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-H170RZ1W",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-H330RZ1W",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-H550RZ1W",
+"book": "ruixing-h",
+"type": "Commercial integral heating heat pump ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "70-550kW",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "RN-60VB2ZY",
+"book": "ruixing-h",
+"type": "Commercial inverter heating+cooling ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "60-360kW",
+"page": 30,
+"zone": "left"
+},
+{
+"model": "RN-90VB2ZY",
+"book": "ruixing-h",
+"type": "Commercial inverter heating+cooling ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "60-360kW",
+"page": 30,
+"zone": "left"
+},
+{
+"model": "RN-130VB2ZY",
+"book": "ruixing-h",
+"type": "Commercial inverter heating+cooling ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "60-360kW",
+"page": 30,
+"zone": "left"
+},
+{
+"model": "RN-240VB2ZW",
+"book": "ruixing-h",
+"type": "Commercial inverter heating+cooling ultra-low temp",
+"refrigerant": "R410A",
+"capacity": "60-360kW",
+"page": 30,
+"zone": "left"
+}
+]
+}

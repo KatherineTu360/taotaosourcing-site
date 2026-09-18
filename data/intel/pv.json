@@ -1,0 +1,89 @@
+{
+"source": "光伏产品/隆盛通达画册.pdf (18p)",
+"models": [
+{
+"model": "HDG-MOUNT",
+"type": "Hot-dip galvanized PV mounting",
+"spec": "HDG C-channel rails & brackets; 40-50yr life; full process line",
+"page": 9
+},
+{
+"model": "ZAM-TUBE",
+"type": "Zinc-aluminum-magnesium square tube",
+"spec": "Zn-Al-Mg coating; 5-10x HDG corrosion life; self-healing cut edges",
+"page": 9
+},
+{
+"model": "CARPORT-1",
+"type": "PV carport, single-column (single/double bay)",
+"spec": "steel modular; ref 5000mm span x 3000mm height",
+"page": 10
+},
+{
+"model": "CARPORT-2",
+"type": "PV carport, double-column",
+"spec": "single/double bay; double-car options",
+"page": 10
+},
+{
+"model": "CARPORT-Y",
+"type": "PV carport, Y-type column",
+"spec": "Y-type column series",
+"page": 10
+},
+{
+"model": "FIXED",
+"type": "Fixed-tilt ground mounting",
+"spec": "front/rear posts, tilted beams, purlins, braces; fixed/adjustable/pitched forms",
+"page": 11
+},
+{
+"model": "TRACK-1A",
+"type": "Horizontal single-axis tracker",
+"spec": "tracking systems incl. jack/slider-rod/push-rod/push-pull drives",
+"page": 11
+},
+{
+"model": "TRACK-SA",
+"type": "Tilted single-axis tracker",
+"spec": "tilted single-axis tracking",
+"page": 11
+},
+{
+"model": "TRACK-DA",
+"type": "Dual-axis tracker",
+"spec": "dual-axis tracking",
+"page": 11
+},
+{
+"model": "TRACK-ADJ",
+"type": "Seasonally adjustable fixed-tilt",
+"spec": "adjustable via jack/slider/push drives",
+"page": 11
+},
+{
+"model": "BIPV",
+"type": "BIPV waterproof mounting",
+"spec": "integrated waterproof cross/main channels; drainage + generation",
+"page": 12
+},
+{
+"model": "FLEX",
+"type": "Flexible cable-strung mounting",
+"spec": "prestressed cables + pylons; large span, high clearance",
+"page": 12
+},
+{
+"model": "FLOAT",
+"type": "Floating PV mounting",
+"spec": "HDPE floats; ≥150kg/m2 buoyancy; wind 42m/s; snow 1kN/m2",
+"page": 12
+},
+{
+"model": "CZU-PURLIN",
+"type": "C/Z/U purlins & PV accessories",
+"spec": "cold-formed purlins, clamps, fasteners, system parts",
+"page": 1
+}
+]
+}

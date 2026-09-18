@@ -1,0 +1,425 @@
+{
+"source": "跨速/MOON Ski helmet 2025电子.pdf (33p): 滑雪/雪镜/马术/水上/攀岩/速滑冰球/护具",
+"models": [
+{
+"model": "MS108",
+"type": "Ski, removable visor + vent switch, in-mould 550g",
+"sizes": "S-L",
+"page": 3,
+"zone": "bottom"
+},
+{
+"model": "MS106",
+"type": "Ski, removable visor, XL fit 544g",
+"sizes": "M-XL",
+"page": 4,
+"zone": "top"
+},
+{
+"model": "MS105",
+"type": "Ski, lifting visor, XL fit 550g",
+"sizes": "M/XL",
+"page": 4,
+"zone": "bottom"
+},
+{
+"model": "MS99",
+"type": "Ski, removable visor XL 400g",
+"sizes": "S-XL",
+"page": 5,
+"zone": "top"
+},
+{
+"model": "MS97",
+"type": "Ski, removable visor XL, ABS out-mould 500g",
+"sizes": "M/XL",
+"page": 5,
+"zone": "bottom"
+},
+{
+"model": "MTV17SK",
+"type": "Ski, removable visor, out-mould 484g",
+"sizes": "M/L",
+"page": 6,
+"zone": "top"
+},
+{
+"model": "MS100",
+"type": "Ski, removable visor + vent switch 400g",
+"sizes": "M/L",
+"page": 6,
+"zone": "bottom"
+},
+{
+"model": "MS95",
+"type": "Ski, removable visor + vents, XL (Mips opt) 400g",
+"sizes": "M/XL",
+"page": 7,
+"zone": "top"
+},
+{
+"model": "MS95B",
+"type": "Kids ski visor, vents + LED 400g",
+"sizes": "S/M",
+"page": 7,
+"zone": "bottom"
+},
+{
+"model": "MS96",
+"type": "Ski, 4 vent switches XL 400g",
+"sizes": "S-XL",
+"page": 8,
+"zone": "top"
+},
+{
+"model": "MS102",
+"type": "Ski, vent switches 504g",
+"sizes": "M/L",
+"page": 8,
+"zone": "bottom"
+},
+{
+"model": "MS103",
+"type": "Ski, vent switch XL 447g",
+"sizes": "M/XL",
+"page": 9,
+"zone": "top"
+},
+{
+"model": "MS91",
+"type": "Ski brim, out-mould 508g",
+"sizes": "S-L",
+"page": 9,
+"zone": "bottom"
+},
+{
+"model": "MTV20",
+"type": "Ski hard-shell XL 400g",
+"sizes": "M/XL",
+"page": 10,
+"zone": "top"
+},
+{
+"model": "MTV18SK",
+"type": "Youth ski removable visor 360g",
+"sizes": "S/M/L 48-59",
+"page": 10,
+"zone": "bottom"
+},
+{
+"model": "MTV12SK",
+"type": "Ski hard-shell XL 400g",
+"sizes": "S-XL",
+"page": 11,
+"zone": "top"
+},
+{
+"model": "MS90",
+"type": "Ski in-mould 400g",
+"sizes": "M/L",
+"page": 11,
+"zone": "bottom"
+},
+{
+"model": "MS98",
+"type": "Kids ski 400g",
+"sizes": "XS/S 44-52",
+"page": 12,
+"zone": "top"
+},
+{
+"model": "SW1",
+"type": "Kids ski fun prints/mohawk 400g",
+"sizes": "XS-M",
+"page": 12,
+"zone": "bottom"
+},
+{
+"model": "MS101",
+"type": "Ski adults+kids 400g",
+"sizes": "S-L",
+"page": 13,
+"zone": "top"
+},
+{
+"model": "MS86",
+"type": "Ski adults+kids vent switches 400g",
+"sizes": "XS-L",
+"page": 13,
+"zone": "bottom"
+},
+{
+"model": "MS85",
+"type": "Ski adults+kids hard-shell 400g",
+"sizes": "XS-L",
+"page": 14,
+"zone": "top"
+},
+{
+"model": "MS88",
+"type": "Ski vent switches 400g",
+"sizes": "S-L",
+"page": 14,
+"zone": "bottom"
+},
+{
+"model": "JY05B",
+"type": "Race snow, extended ear + rear protection 400g",
+"sizes": "M/L",
+"page": 15,
+"zone": "top"
+},
+{
+"model": "MS82",
+"type": "Race snow kids graphics 400g",
+"sizes": "S-L 52-61",
+"page": 15,
+"zone": "bottom"
+},
+{
+"model": "ASP016",
+"type": "Smart ski BT/wifi/music USB 400g",
+"sizes": "M-XL",
+"page": 16,
+"zone": "top"
+},
+{
+"model": "ASP018",
+"type": "Smart ski BT + removable visor 360g",
+"sizes": "S-L",
+"page": 16,
+"zone": "bottom"
+},
+{
+"model": "SK88",
+"type": "Ski goggles adult double-layer anti-fog (EN174)",
+"sizes": "adult",
+"page": 17,
+"zone": "bottom"
+},
+{
+"model": "SK694",
+"type": "Ski goggles adult double-layer (EN174)",
+"sizes": "adult",
+"page": 18,
+"zone": "top"
+},
+{
+"model": "SK687",
+"type": "Ski goggles kids double-layer (EN174)",
+"sizes": "kids",
+"page": 18,
+"zone": "bottom"
+},
+{
+"model": "GK79",
+"type": "Snow goggles adult magnetic lens (9 magnets)",
+"sizes": "adult",
+"page": 19,
+"zone": "top"
+},
+{
+"model": "GK80",
+"type": "Snow goggles adult anti-impact chrome (EN174)",
+"sizes": "adult",
+"page": 19,
+"zone": "bottom"
+},
+{
+"model": "GK57",
+"type": "Snow goggles kids double lens anti-fog (EN174)",
+"sizes": "children",
+"page": 20,
+"zone": "top"
+},
+{
+"model": "GK61",
+"type": "Snow goggles kids spherical UV (EN174)",
+"sizes": "children",
+"page": 20,
+"zone": "bottom"
+},
+{
+"model": "MK01",
+"type": "Equestrian removable visor, out-mould 300g",
+"sizes": "M/L",
+"page": 21,
+"zone": "bottom"
+},
+{
+"model": "MSU05",
+"type": "Equestrian kids, in-mould 280g (EN1384)",
+"sizes": "S/M",
+"page": 22,
+"zone": "top"
+},
+{
+"model": "MSU03",
+"type": "Equestrian out-mould 300g",
+"sizes": "M/L",
+"page": 22,
+"zone": "bottom"
+},
+{
+"model": "MSU04",
+"type": "Equestrian out-mould 300g",
+"sizes": "M/L",
+"page": 23,
+"zone": "top"
+},
+{
+"model": "MS01",
+"type": "Equestrian VG1, in/out-mould 350g",
+"sizes": "hat S/M/L",
+"page": 23,
+"zone": "bottom-left"
+},
+{
+"model": "MS02",
+"type": "Equestrian adults+child VG1 350g",
+"sizes": "hat S/M/L",
+"page": 23,
+"zone": "bottom-right"
+},
+{
+"model": "MS06",
+"type": "Equestrian VG1 out-mould 350g",
+"sizes": "hat S/M/L",
+"page": 24,
+"zone": "top-left"
+},
+{
+"model": "MS07",
+"type": "Equestrian VG1 in-mould 350g",
+"sizes": "hat S/M/L",
+"page": 24,
+"zone": "top-right"
+},
+{
+"model": "MS08",
+"type": "Equestrian VG1 in-mould 350g",
+"sizes": "hat S/M/L",
+"page": 24,
+"zone": "bottom-left"
+},
+{
+"model": "MS09",
+"type": "Equestrian VG1 in-mould 350g",
+"sizes": "hat S/M/L",
+"page": 24,
+"zone": "bottom-right"
+},
+{
+"model": "JY04",
+"type": "Water sports, in-mould 380g",
+"sizes": "M/L",
+"page": 25,
+"zone": "bottom"
+},
+{
+"model": "JY05",
+"type": "Water sports ear-protect 485g",
+"sizes": "M/L",
+"page": 26,
+"zone": "top"
+},
+{
+"model": "MTV16",
+"type": "Water sports removable ear 440g",
+"sizes": "S-L",
+"page": 26,
+"zone": "bottom-left"
+},
+{
+"model": "MTV12B",
+"type": "Water sports 400g",
+"sizes": "S-XL",
+"page": 26,
+"zone": "bottom-right"
+},
+{
+"model": "PY02",
+"type": "Climbing EPP+ABS+EPS 230g",
+"sizes": "M/L",
+"page": 27,
+"zone": "bottom"
+},
+{
+"model": "PY01",
+"type": "Climbing in-mould 500g",
+"sizes": "M/L",
+"page": 28,
+"zone": "top"
+},
+{
+"model": "HB16",
+"type": "Climbing in-mould 260g",
+"sizes": "M/L",
+"page": 28,
+"zone": "bottom-left"
+},
+{
+"model": "HB12",
+"type": "Climbing in-mould 260g",
+"sizes": "M/L",
+"page": 28,
+"zone": "bottom-right"
+},
+{
+"model": "MM03",
+"type": "Speed skating out-mould 260g",
+"sizes": "M/L",
+"page": 29,
+"zone": "left"
+},
+{
+"model": "MM08",
+"type": "Speed skating in/out 280g",
+"sizes": "M/L",
+"page": 29,
+"zone": "right"
+},
+{
+"model": "MM04",
+"type": "Speed skating in-mould 280g",
+"sizes": "M/L",
+"page": 30,
+"zone": "top"
+},
+{
+"model": "HB08",
+"type": "Hockey helmet with steel cage 350g",
+"sizes": "hat S/M/L",
+"page": 30,
+"zone": "bottom-left"
+},
+{
+"model": "PC03",
+"type": "SP2 protective jacket",
+"sizes": "adult",
+"page": 31,
+"zone": "top-left"
+},
+{
+"model": "PJ01",
+"type": "SP2 protective vest",
+"sizes": "adult",
+"page": 31,
+"zone": "top-right"
+},
+{
+"model": "PJA03",
+"type": "Protective jacket adult (PJA-01/02/03)",
+"sizes": "adult",
+"page": 32,
+"zone": "top"
+},
+{
+"model": "PJK03",
+"type": "Protective jacket kids (PJK-01/02/03)",
+"sizes": "kids",
+"page": 32,
+"zone": "bottom"
+}
+]
+}

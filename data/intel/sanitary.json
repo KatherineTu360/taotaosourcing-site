@@ -1,0 +1,2693 @@
+{
+"source": "郝总/25HEEKK new catalogue出口.pdf (HEEK洁具, 16p) + 2025HP整体卫浴画册.pdf (11p)",
+"models": [
+{
+"model": "HP-2001C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "HP-2002C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2213B",
+"group": "smart",
+"spec": "Smart toilet B variant",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2213C",
+"group": "smart",
+"spec": "Smart toilet C variant",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2208B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2208C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2209B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2209C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2230B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2230C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2014B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2014C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 3,
+"book": "heekk"
+},
+{
+"model": "2217B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2217C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2212B",
+"group": "smart",
+"spec": "Smart toilet gold edition",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2212C",
+"group": "smart",
+"spec": "Smart toilet gold edition",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2206B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2206C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2205B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2201B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2201C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "2218CHJ",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 4,
+"book": "heekk"
+},
+{
+"model": "W02B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2236B",
+"group": "smart",
+"spec": "Smart toilet gray edge",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2236C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2235B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2235C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2103C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2203B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2021CF",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2216B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2216C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2215B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2215C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2232B",
+"group": "smart",
+"spec": "Smart toilet black",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2232C",
+"group": "smart",
+"spec": "Smart toilet black",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2106B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2106C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2057B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2057C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2242B",
+"group": "smart",
+"spec": "Smart toilet white",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2242C",
+"group": "smart",
+"spec": "Smart toilet white",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2240B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2240C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2044B",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2044C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2214C",
+"group": "smart",
+"spec": "Smart toilet",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2235BB",
+"group": "smart",
+"spec": "Smart toilet black edge",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2235CB",
+"group": "smart",
+"spec": "Smart toilet black edge",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2046B",
+"group": "smart",
+"spec": "Smart toilet gray edge",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2046C",
+"group": "smart",
+"spec": "Smart toilet gray edge",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2033B",
+"group": "smart",
+"spec": "Smart toilet white",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "2033C",
+"group": "smart",
+"spec": "Smart toilet white",
+"page": 5,
+"book": "heekk"
+},
+{
+"model": "1002A",
+"group": "bidet",
+"spec": "Bidet seat A",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1002B",
+"group": "bidet",
+"spec": "Bidet seat B",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1201A",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1201C",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1033A",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1033C",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1034A",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1034C",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "SH237U",
+"group": "bidet",
+"spec": "Bidet seat SH237U",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "SH237V",
+"group": "bidet",
+"spec": "Bidet seat SH237V",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "SH08SV2",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "SH08SV3",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "SH08SU2",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "SH08SU3",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1024",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1025",
+"group": "bidet",
+"spec": "Bidet seat",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1024M",
+"group": "bidet",
+"spec": "Bidet seat M",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1025M",
+"group": "bidet",
+"spec": "Bidet seat M",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1024R",
+"group": "bidet",
+"spec": "Bidet seat R",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "1025R",
+"group": "bidet",
+"spec": "Bidet seat R",
+"page": 6,
+"book": "heekk"
+},
+{
+"model": "HP-2301",
+"group": "toilet",
+"spec": "Rimless one-piece toilet",
+"page": 7,
+"book": "heekk"
+},
+{
+"model": "HP-2302",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 7,
+"book": "heekk"
+},
+{
+"model": "HP-2303",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 7,
+"book": "heekk"
+},
+{
+"model": "HP-2304",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 7,
+"book": "heekk"
+},
+{
+"model": "HP-2305",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 7,
+"book": "heekk"
+},
+{
+"model": "HP-2306",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 7,
+"book": "heekk"
+},
+{
+"model": "HP-8001",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8005",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8006",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8011",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8216",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8218",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8219",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8220",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8015",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8273",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8321",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8603",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8221",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8230",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6001",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6002",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8606",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8612",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8615",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8203",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6003",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6004",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6005",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6006",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8204",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8205",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8206",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8214",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6007",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-6011",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8243",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8244",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 8,
+"book": "heekk"
+},
+{
+"model": "HP-8245",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8246",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8247",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8248",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2062S",
+"group": "toilet",
+"spec": "Two-piece toilet S",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2401T",
+"group": "toilet",
+"spec": "Two-piece toilet T",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2802",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2808",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8249",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8501",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8502",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-8503",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2809",
+"group": "toilet",
+"spec": "Two-piece toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-505",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-505YB",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-506",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T027",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T035",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T036",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T045",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-588",
+"group": "toilet",
+"spec": "Compact toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-633",
+"group": "toilet",
+"spec": "Toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2062SF",
+"group": "toilet",
+"spec": "Two-piece toilet F",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2808F",
+"group": "toilet",
+"spec": "Two-piece toilet F",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T302",
+"group": "toilet",
+"spec": "Toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T660",
+"group": "toilet",
+"spec": "Toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T670",
+"group": "toilet",
+"spec": "Toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-T970",
+"group": "toilet",
+"spec": "Toilet",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "Y1",
+"group": "cistern",
+"spec": "Cistern Y1",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "Y2",
+"group": "cistern",
+"spec": "Cistern Y2",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "Y3",
+"group": "cistern",
+"spec": "Cistern Y3",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "Y4",
+"group": "cistern",
+"spec": "Cistern Y4",
+"page": 9,
+"book": "heekk"
+},
+{
+"model": "HP-2313",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2312",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2311",
+"group": "toilet",
+"spec": "One-piece toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2620",
+"group": "toilet",
+"spec": "Toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-630",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-631",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-632",
+"group": "wallhung",
+"spec": "Wall-hung toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2621",
+"group": "toilet",
+"spec": "Toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2622",
+"group": "toilet",
+"spec": "Toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2622P",
+"group": "toilet",
+"spec": "Toilet P",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-2308",
+"group": "toilet",
+"spec": "Toilet",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-403",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-405",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-406",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-407",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-504S",
+"group": "basin",
+"spec": "Basin with pedestal S",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-504T",
+"group": "basin",
+"spec": "Basin with pedestal T",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-507T",
+"group": "basin",
+"spec": "Basin with pedestal T",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-508T",
+"group": "basin",
+"spec": "Basin with pedestal T",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-408",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-409",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-434",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-435",
+"group": "basin",
+"spec": "Wall-mounted basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-609",
+"group": "basin",
+"spec": "Wall-mounted basin 2.5L",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-531",
+"group": "basin",
+"spec": "Hanging pan/counter basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-533",
+"group": "basin",
+"spec": "Hanging pan",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-625",
+"group": "basin",
+"spec": "Basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-437",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-451",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-452",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-453",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 10,
+"book": "heekk"
+},
+{
+"model": "HP-4400",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4401",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4403",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4417",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4415",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4418",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4419",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4420",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4421",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-4412",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-229",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-260",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-211",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-220",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-221",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-222",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-223",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-228",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-282",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-283",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-285",
+"group": "basin",
+"spec": "Pedestal basin",
+"page": 11,
+"book": "heekk"
+},
+{
+"model": "HP-X162",
+"group": "basin",
+"spec": "Under-counter/art basin X series",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X182",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X202",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X212",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X22-2",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X24-2",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X14-4",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X18-4",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X232",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X241",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X242",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X141",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-XY16",
+"group": "basin",
+"spec": "Art basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-XY18",
+"group": "basin",
+"spec": "Art basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-XS040",
+"group": "basin",
+"spec": "Art basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X161",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X171",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X181",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X201",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7220",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7222",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7007",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7002",
+"group": "basin",
+"spec": "Countertop basin A/B",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X18-2",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X20-2",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-X21-2",
+"group": "basin",
+"spec": "Under-counter basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7011",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7025",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7025A",
+"group": "basin",
+"spec": "Countertop basin A",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-7050",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 12,
+"book": "heekk"
+},
+{
+"model": "HP-CS-SERIES",
+"group": "basin",
+"spec": "Art basin series HP-CS001~CS139",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7044-35",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7047-42",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7048-60",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7040-35",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7031-40",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7032-40",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7033-40",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7034-35",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7035-40",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7036-35",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7037-35",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-7039-40",
+"group": "basin",
+"spec": "Countertop basin",
+"page": 13,
+"book": "heekk"
+},
+{
+"model": "HP-531BW",
+"group": "pan",
+"spec": "Hanging pan BW finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531XY",
+"group": "pan",
+"spec": "Hanging pan XY finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531SYC",
+"group": "pan",
+"spec": "Hanging pan SYC finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531HWZG",
+"group": "pan",
+"spec": "Hanging pan HWZG finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531HW",
+"group": "pan",
+"spec": "Hanging pan HW finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531HBW",
+"group": "pan",
+"spec": "Hanging pan HBW finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531JXBT",
+"group": "pan",
+"spec": "Hanging pan JXBT finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531JXHT",
+"group": "pan",
+"spec": "Hanging pan JXHT finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531LS",
+"group": "pan",
+"spec": "Hanging pan LS finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531LW",
+"group": "pan",
+"spec": "Hanging pan LW finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531XBL",
+"group": "pan",
+"spec": "Hanging pan XBL finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531LHWL1",
+"group": "pan",
+"spec": "Hanging pan LHWL1 finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531LHWL2",
+"group": "pan",
+"spec": "Hanging pan LHWL2 finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-531XCTL",
+"group": "pan",
+"spec": "Hanging pan XCTL finish",
+"page": 16,
+"book": "heekk"
+},
+{
+"model": "HP-5001",
+"group": "urinal",
+"spec": "Floor-standing urinal with lid 390x300x1020mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5002",
+"group": "urinal",
+"spec": "Urinal 380x430x690mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5004",
+"group": "urinal",
+"spec": "Wall-hung urinal 330x310x1050mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5006",
+"group": "urinal",
+"spec": "Wall-hung urinal 480x310x780mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5007",
+"group": "urinal",
+"spec": "Urinal 330x330x980mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5009",
+"group": "urinal",
+"spec": "Urinal 380x470x1000mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5032",
+"group": "urinal",
+"spec": "Urinal 270x360x850mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-5039",
+"group": "urinal",
+"spec": "Urinal 280x320x610mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7301",
+"group": "basin",
+"spec": "Pedestal basin (diamond) 480x480x840mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7308",
+"group": "basin",
+"spec": "Pedestal basin 405x405x820mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7309",
+"group": "basin",
+"spec": "Pedestal basin 505x445x855mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7328",
+"group": "basin",
+"spec": "Pedestal basin 400x400x830mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7418",
+"group": "mop",
+"spec": "Mop tub 390x410x430mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7419",
+"group": "mop",
+"spec": "Mop tub 335x415x400mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7420",
+"group": "mop",
+"spec": "Mop tub double-tap 480x330x400mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "HP-7421",
+"group": "mop",
+"spec": "Mop tub with legs 480x345x485mm",
+"page": 1,
+"book": "hp2025"
+},
+{
+"model": "MQ120",
+"group": "cistern",
+"spec": "Concealed cistern, height-adjustable 90-120cm, 20+ panel finishes",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6501",
+"group": "squat",
+"spec": "Squat pan, front baffle 590x450x210mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6503",
+"group": "squat",
+"spec": "Squat pan 520x420x180mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6508",
+"group": "squat",
+"spec": "Squat pan 530x430x190mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6508S",
+"group": "squat",
+"spec": "Squat pan 500x430x230mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6511S",
+"group": "squat",
+"spec": "Squat pan 580x480x230mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6512S",
+"group": "squat",
+"spec": "Squat pan 580x445x230mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6516",
+"group": "squat",
+"spec": "Squat pan 550x430x130mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6516S",
+"group": "squat",
+"spec": "Squat pan 560x460x220mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6560",
+"group": "squat",
+"spec": "Squat pan front-drain 580x325x165mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-6560S",
+"group": "squat",
+"spec": "Squat pan 500x430x185mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-010J",
+"group": "cistern",
+"spec": "Wall-hung dual-use flusher 360x120x375mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-011",
+"group": "cistern",
+"spec": "Flush tank 386x120x360mm",
+"page": 2,
+"book": "hp2025"
+},
+{
+"model": "HP-10001",
+"group": "shower",
+"spec": "Shower column 3-function, chrome",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10002",
+"group": "shower",
+"spec": "Shower column 3-function chrome (+4-fn HP-10002-4)",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10003",
+"group": "shower",
+"spec": "Shower column 3-function chrome",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10004",
+"group": "shower",
+"spec": "Shower column 4-function chrome",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10005",
+"group": "shower",
+"spec": "Shower column 4-function chrome",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10006",
+"group": "shower",
+"spec": "Shower column 4-function gun grey",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10007",
+"group": "shower",
+"spec": "Shower column 3-function gun grey",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10008",
+"group": "shower",
+"spec": "Shower column 4-function gun grey",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10009",
+"group": "shower",
+"spec": "Shower column 4-function digital/lamp gun grey",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10010",
+"group": "shower",
+"spec": "Shower column 4-function gun grey",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10011",
+"group": "shower",
+"spec": "Shower column 4-function gun grey",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-10012",
+"group": "shower",
+"spec": "Shower column 4-function digital gun grey",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10013",
+"group": "shower",
+"spec": "Shower column 4-function digital gun grey",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10014",
+"group": "shower",
+"spec": "Shower column 4-function gun grey",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10015",
+"group": "shower",
+"spec": "Shower column 4-function dual-temp digital lamp",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10016",
+"group": "shower",
+"spec": "Shower column 4-function digital",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10017",
+"group": "shower",
+"spec": "Shower column 4-function digital",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10018",
+"group": "shower",
+"spec": "Shower column 4-function digital cream",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10019",
+"group": "shower",
+"spec": "Shower column 3-function digital lamp gun grey",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-10020",
+"group": "shower",
+"spec": "Shower column 4-function digital, white/gun grey",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-10021",
+"group": "shower",
+"spec": "Shower column 4-function digital",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-10022",
+"group": "shower",
+"spec": "Shower column 4-function digital, gun grey/chrome",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-10023",
+"group": "shower",
+"spec": "Shower column 4-function digital",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-10024",
+"group": "shower",
+"spec": "Shower column 4-function digital",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-10025",
+"group": "shower",
+"spec": "Shower column 4-function digital, 4 finishes",
+"page": 4,
+"book": "hp2025"
+},
+{
+"model": "HP-10026",
+"group": "shower",
+"spec": "Shower column 3-function digital, 3 finishes",
+"page": 4,
+"book": "hp2025"
+},
+{
+"model": "HP-10027",
+"group": "shower",
+"spec": "Shower column 3-function digital",
+"page": 4,
+"book": "hp2025"
+},
+{
+"model": "HP-10028",
+"group": "shower",
+"spec": "Shower column 4-function digital, chrome/brushed gold",
+"page": 4,
+"book": "hp2025"
+},
+{
+"model": "HP-10029",
+"group": "shower",
+"spec": "Shower column 4-function digital lamp",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-11001",
+"group": "shower",
+"spec": "Thermostatic shower column 3-function digital",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-11002",
+"group": "shower",
+"spec": "Thermostatic shower column 3-function digital",
+"page": 3,
+"book": "hp2025"
+},
+{
+"model": "HP-11003",
+"group": "shower",
+"spec": "Thermostatic shower column 4-function digital lamp",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-11004",
+"group": "shower",
+"spec": "Thermostatic shower 3-function digital lamp",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-11005",
+"group": "shower",
+"spec": "Thermostatic shower column 4-function digital lamp",
+"page": 5,
+"book": "hp2025"
+},
+{
+"model": "HP-50001",
+"group": "shower",
+"spec": "Concealed shower set chrome",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50002",
+"group": "shower",
+"spec": "Concealed shower set white",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50003",
+"group": "shower",
+"spec": "Concealed shower set chrome",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50004",
+"group": "shower",
+"spec": "Concealed shower set chrome",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50005",
+"group": "shower",
+"spec": "Concealed shower set gun grey",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50006",
+"group": "shower",
+"spec": "Concealed shower set white",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50007",
+"group": "shower",
+"spec": "Concealed shower set gun grey",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-50008",
+"group": "shower",
+"spec": "Concealed shower set white",
+"page": 6,
+"book": "hp2025"
+},
+{
+"model": "HP-20001",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20002",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20003",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20004",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20005",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20006",
+"group": "faucet",
+"spec": "Basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20007",
+"group": "faucet",
+"spec": "Basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20008",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20009",
+"group": "faucet",
+"spec": "Basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20010",
+"group": "faucet",
+"spec": "Pull-out basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20013",
+"group": "faucet",
+"spec": "Pull-out basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20014",
+"group": "faucet",
+"spec": "Pull-out basin faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20017",
+"group": "faucet",
+"spec": "Basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20018",
+"group": "faucet",
+"spec": "Digital pull-out basin faucet white",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20019",
+"group": "faucet",
+"spec": "Digital pull-out basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20020",
+"group": "faucet",
+"spec": "Pull-out basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20021",
+"group": "faucet",
+"spec": "Pull-out basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20022",
+"group": "faucet",
+"spec": "Basin faucet, 4 finishes",
+"page": 7,
+"book": "hp2025"
+},
+{
+"model": "HP-20023",
+"group": "faucet",
+"spec": "Basin faucet, 4 finishes",
+"page": 7,
+"book": "hp2025"
+},
+{
+"model": "HP-20024",
+"group": "faucet",
+"spec": "Basin faucet, 4 finishes",
+"page": 7,
+"book": "hp2025"
+},
+{
+"model": "HP-20025",
+"group": "faucet",
+"spec": "Basin faucet, 7 finishes",
+"page": 7,
+"book": "hp2025"
+},
+{
+"model": "HP-20026",
+"group": "faucet",
+"spec": "Basin faucet, 5 finishes",
+"page": 7,
+"book": "hp2025"
+},
+{
+"model": "HP-20027",
+"group": "faucet",
+"spec": "Basin faucet thin/short spindle, 4 finishes",
+"page": 8,
+"book": "hp2025"
+},
+{
+"model": "HP-20028",
+"group": "faucet",
+"spec": "Basin faucet thin/short spindle, 4 finishes",
+"page": 8,
+"book": "hp2025"
+},
+{
+"model": "HP-20029",
+"group": "faucet",
+"spec": "Basin faucet, 7 finishes",
+"page": 8,
+"book": "hp2025"
+},
+{
+"model": "HP-20030",
+"group": "faucet",
+"spec": "Basin faucet, 5 finishes",
+"page": 8,
+"book": "hp2025"
+},
+{
+"model": "HP-20031",
+"group": "faucet",
+"spec": "Basin faucet, 4 finishes",
+"page": 8,
+"book": "hp2025"
+},
+{
+"model": "HP-20032",
+"group": "faucet",
+"spec": "Basin faucet, 3 finishes",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-20033",
+"group": "faucet",
+"spec": "Digital basin faucet, cream/gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21001",
+"group": "faucet",
+"spec": "Kitchen faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21002",
+"group": "faucet",
+"spec": "Kitchen faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21003",
+"group": "faucet",
+"spec": "Kitchen faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21004",
+"group": "faucet",
+"spec": "Kitchen faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21005",
+"group": "faucet",
+"spec": "Kitchen faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21006",
+"group": "faucet",
+"spec": "Pull-out kitchen faucet chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21007",
+"group": "faucet",
+"spec": "Pull-out kitchen faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21008",
+"group": "faucet",
+"spec": "Pull-out kitchen faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21009",
+"group": "faucet",
+"spec": "Pull-out kitchen faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21010",
+"group": "faucet",
+"spec": "Pull-out kitchen faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-21011",
+"group": "faucet",
+"spec": "Kitchen/basin faucet gun grey",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-31001",
+"group": "faucet",
+"spec": "Bib tap chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-31002",
+"group": "faucet",
+"spec": "Bib tap chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-31003",
+"group": "faucet",
+"spec": "Bib tap chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-30001",
+"group": "faucet",
+"spec": "Angle valve chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-30002",
+"group": "faucet",
+"spec": "Angle valve chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-30003",
+"group": "faucet",
+"spec": "Angle valve chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-30004",
+"group": "faucet",
+"spec": "Angle valve chrome",
+"page": 9,
+"book": "hp2025"
+},
+{
+"model": "HP-60001",
+"group": "accessory",
+"spec": "Bathroom accessory set 5-pc gun grey",
+"page": 10,
+"book": "hp2025"
+},
+{
+"model": "HP-60002",
+"group": "accessory",
+"spec": "Bathroom accessory set 5-pc chrome",
+"page": 10,
+"book": "hp2025"
+},
+{
+"model": "HP-60003",
+"group": "accessory",
+"spec": "Bathroom accessory set 5-pc gun grey",
+"page": 10,
+"book": "hp2025"
+},
+{
+"model": "HP-60004",
+"group": "accessory",
+"spec": "Bathroom accessory set 5-pc gun grey",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-60005",
+"group": "accessory",
+"spec": "Bathroom accessory set 5-pc chrome",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80001",
+"group": "accessory",
+"spec": "Floor drain 10x10cm chrome/gun grey",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80002",
+"group": "accessory",
+"spec": "Floor drain 10x10cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80003",
+"group": "accessory",
+"spec": "Floor drain grid 10x10cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80004",
+"group": "accessory",
+"spec": "Floor drain linear grid 10x10cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80005",
+"group": "accessory",
+"spec": "Floor drain square panel 10x10cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80006",
+"group": "accessory",
+"spec": "Floor drain with elbow 10x10cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80007",
+"group": "accessory",
+"spec": "Linear floor drain 10x15cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80008",
+"group": "accessory",
+"spec": "Linear floor drain 8x20cm",
+"page": 11,
+"book": "hp2025"
+},
+{
+"model": "HP-80009",
+"group": "accessory",
+"spec": "Linear floor drain 8x30cm",
+"page": 11,
+"book": "hp2025"
+}
+]
+}

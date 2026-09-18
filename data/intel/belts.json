@@ -1,0 +1,1089 @@
+{
+"source": "金吉尔包包皮带4册, 无官方款号, ID=册名+页码",
+"models": [
+{
+"id": "NB25W-01",
+"type": "womens-pin",
+"page": 1,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-02",
+"type": "womens-slide",
+"page": 2,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-03",
+"type": "womens-slide",
+"page": 3,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-04",
+"type": "womens-oval",
+"page": 4,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-05",
+"type": "womens-oval",
+"page": 5,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-06",
+"type": "unisex-pin",
+"page": 6,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-07",
+"type": "womens-charm",
+"page": 7,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-08",
+"type": "womens-oval",
+"page": 8,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-09",
+"type": "womens-pin",
+"page": 9,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-10",
+"type": "unisex-pin",
+"page": 10,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-11",
+"type": "unisex-pin",
+"page": 11,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-12",
+"type": "unisex-pin",
+"page": 12,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-13",
+"type": "womens-frame",
+"page": 13,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-14",
+"type": "womens-pin",
+"page": 14,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-15",
+"type": "womens-pin-wide",
+"page": 15,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-16",
+"type": "womens-corset",
+"page": 16,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-17",
+"type": "womens-double",
+"page": 17,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-18",
+"type": "womens-pin",
+"page": 18,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-19",
+"type": "womens-ring",
+"page": 19,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-20",
+"type": "womens-ring",
+"page": 20,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-21",
+"type": "womens-pin",
+"page": 21,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-22",
+"type": "womens-o-ring",
+"page": 22,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-23",
+"type": "womens-horsebit",
+"page": 23,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-24",
+"type": "womens-mariner",
+"page": 24,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-25",
+"type": "womens-plaque",
+"page": 25,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-26",
+"type": "womens-pin",
+"page": 26,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-27",
+"type": "womens-bezel",
+"page": 27,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-28",
+"type": "unisex-pin",
+"page": 28,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-29",
+"type": "womens-pin",
+"page": 29,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-30",
+"type": "womens-arch",
+"page": 30,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-31",
+"type": "womens-pin",
+"page": 31,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-32",
+"type": "womens-pin",
+"page": 32,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-33",
+"type": "womens-pin",
+"page": 33,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-34",
+"type": "womens-pin",
+"page": 34,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-35",
+"type": "womens-square",
+"page": 35,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-36",
+"type": "womens-slide",
+"page": 36,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-37",
+"type": "womens-pin",
+"page": 37,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-38",
+"type": "womens-teardrop",
+"page": 38,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-39",
+"type": "womens-square-wide",
+"page": 39,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-40",
+"type": "womens-check",
+"page": 40,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-41",
+"type": "womens-asym",
+"page": 41,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-42",
+"type": "womens-double",
+"page": 42,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-43",
+"type": "womens-double",
+"page": 43,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-44",
+"type": "womens-woven",
+"page": 44,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-45",
+"type": "womens-pin",
+"page": 45,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-46",
+"type": "unisex-pin",
+"page": 46,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-47",
+"type": "womens-pin",
+"page": 47,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-48",
+"type": "womens-oval-pin",
+"page": 48,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-49",
+"type": "unisex-square",
+"page": 49,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-50",
+"type": "womens-stirrup",
+"page": 50,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-51",
+"type": "womens-slide",
+"page": 51,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "NB25W-52",
+"type": "mens-square",
+"page": 52,
+"catalog": "25W-NEW-BELTS"
+},
+{
+"id": "B1-01",
+"type": "womens-pin",
+"page": 1,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-02",
+"type": "womens-pin",
+"page": 2,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-03",
+"type": "womens-pin",
+"page": 3,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-04",
+"type": "womens-studded-pin",
+"page": 4,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-05",
+"type": "womens-slide-skinny",
+"page": 5,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-06",
+"type": "womens-studded-wide",
+"page": 6,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-07",
+"type": "womens-charm-linked",
+"page": 7,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-08",
+"type": "womens-western-concho",
+"page": 8,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-09",
+"type": "womens-pin",
+"page": 9,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-10",
+"type": "womens-micro-skinny",
+"page": 10,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-11",
+"type": "womens-h-buckle",
+"page": 11,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-12",
+"type": "womens-plaque",
+"page": 12,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-13",
+"type": "womens-d-ring",
+"page": 13,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-14",
+"type": "womens-micro-skinny",
+"page": 14,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-15",
+"type": "womens-horsebit",
+"page": 15,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-16",
+"type": "womens-pin",
+"page": 16,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-17",
+"type": "womens-arch-pin",
+"page": 17,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-18",
+"type": "womens-frame",
+"page": 18,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-19",
+"type": "womens-pin",
+"page": 19,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-20",
+"type": "womens-pin",
+"page": 20,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-21",
+"type": "womens-square-pin",
+"page": 21,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-22",
+"type": "womens-western-pin",
+"page": 22,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-23",
+"type": "womens-grommet",
+"page": 23,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-24",
+"type": "womens-o-ring",
+"page": 24,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-25",
+"type": "womens-oval-wide",
+"page": 25,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-26",
+"type": "womens-rounded-rect",
+"page": 26,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-27",
+"type": "womens-square-wide",
+"page": 27,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-28",
+"type": "womens-pin",
+"page": 28,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-29",
+"type": "womens-braided",
+"page": 29,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-30",
+"type": "womens-pin-skinny",
+"page": 30,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-31",
+"type": "womens-extra-wide",
+"page": 31,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-32",
+"type": "womens-extra-wide",
+"page": 32,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-33",
+"type": "womens-micro-skinny",
+"page": 33,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-34",
+"type": "womens-logo-plaque",
+"page": 34,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-35",
+"type": "womens-corset-knot",
+"page": 35,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-36",
+"type": "womens-plaque",
+"page": 36,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-37",
+"type": "womens-pin",
+"page": 37,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-38",
+"type": "womens-oval-wide",
+"page": 38,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-39",
+"type": "womens-braided",
+"page": 39,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "B1-40",
+"type": "womens-eyelet-ring",
+"page": 40,
+"catalog": "BELT1",
+"width": true
+},
+{
+"id": "MB-01",
+"type": "mens-pin-casual",
+"page": 1,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-02",
+"type": "mens-pin-dress",
+"page": 2,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-03",
+"type": "mens-pin-dress",
+"page": 3,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-04",
+"type": "mens-pin-dress",
+"page": 4,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-05",
+"type": "mens-pin-dress",
+"page": 5,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-06",
+"type": "mens-pin-dress",
+"page": 6,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-07",
+"type": "mens-reversible-pin",
+"page": 7,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-08",
+"type": "mens-pin-dress",
+"page": 8,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-09",
+"type": "mens-pin-dress",
+"page": 9,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-10",
+"type": "mens-pin-casual-wide",
+"page": 10,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-11",
+"type": "mens-pin-dress",
+"page": 11,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-12",
+"type": "mens-auto",
+"page": 12,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-13",
+"type": "mens-auto",
+"page": 13,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-14",
+"type": "mens-auto",
+"page": 14,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-15",
+"type": "mens-auto",
+"page": 15,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-16",
+"type": "mens-auto",
+"page": 16,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-17",
+"type": "mens-auto",
+"page": 17,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-18",
+"type": "mens-auto",
+"page": 18,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-19",
+"type": "mens-auto",
+"page": 19,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-20",
+"type": "mens-auto",
+"page": 20,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-21",
+"type": "mens-auto",
+"page": 21,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-22",
+"type": "mens-pin-dress",
+"page": 22,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-23",
+"type": "mens-saffiano-pin",
+"page": 23,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-24",
+"type": "mens-golf-pin",
+"page": 24,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-25",
+"type": "mens-golf-pin",
+"page": 25,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-26",
+"type": "mens-golf-reversible",
+"page": 26,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-27",
+"type": "mens-golf-reversible",
+"page": 27,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-28",
+"type": "mens-webbing",
+"page": 28,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-29",
+"type": "mens-webbing-reversible",
+"page": 29,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-30",
+"type": "mens-braided-reversible",
+"page": 30,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-31",
+"type": "mens-braided-stretch",
+"page": 31,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-32",
+"type": "mens-pin-dress",
+"page": 32,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-33",
+"type": "mens-pin-dress",
+"page": 33,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-34",
+"type": "mens-suede-pin",
+"page": 34,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-35",
+"type": "mens-pin-dress",
+"page": 35,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-36",
+"type": "mens-casual-clasp",
+"page": 36,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-37",
+"type": "mens-pin-dress",
+"page": 37,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-38",
+"type": "mens-pin-dress",
+"page": 38,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-39",
+"type": "mens-pin-casual-wide",
+"page": 39,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-40",
+"type": "mens-western",
+"page": 40,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-41",
+"type": "mens-suede-pin",
+"page": 41,
+"catalog": "MENS-BELT"
+},
+{
+"id": "MB-42",
+"type": "mens-suede-pin",
+"page": 42,
+"catalog": "MENS-BELT"
+},
+{
+"id": "WB-01",
+"type": "womens-pin",
+"page": 1,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-02",
+"type": "womens-pin-wide",
+"page": 2,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-03",
+"type": "womens-pin",
+"page": 3,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-04",
+"type": "womens-suede-pin-skinny",
+"page": 4,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-05",
+"type": "womens-stirrup-skinny",
+"page": 5,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-06",
+"type": "womens-suede-pin-skinny",
+"page": 6,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-07",
+"type": "womens-pin",
+"page": 7,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-08",
+"type": "womens-suede-oval-skinny",
+"page": 8,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-09",
+"type": "womens-pin-skinny",
+"page": 9,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-10",
+"type": "womens-knot-skinny",
+"page": 10,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-11",
+"type": "womens-pin-skinny-coil",
+"page": 11,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-12",
+"type": "womens-covered-skinny",
+"page": 12,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-13",
+"type": "womens-pin-skinny",
+"page": 13,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-14",
+"type": "womens-frame-patent",
+"page": 14,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-15",
+"type": "womens-western-skinny",
+"page": 15,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-16",
+"type": "womens-sculptural-skinny",
+"page": 16,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-17",
+"type": "womens-double-pin",
+"page": 17,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-18",
+"type": "womens-molten-skinny",
+"page": 18,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-19",
+"type": "womens-pin-wide",
+"page": 19,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-20",
+"type": "womens-braided-crescent",
+"page": 20,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-21",
+"type": "womens-pin",
+"page": 21,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-22",
+"type": "womens-western-skinny",
+"page": 22,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-23",
+"type": "womens-suede-bead-keeper",
+"page": 23,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-24",
+"type": "womens-pin",
+"page": 24,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-25",
+"type": "womens-oval-wide",
+"page": 25,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-26",
+"type": "womens-pin",
+"page": 26,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-27",
+"type": "womens-pin",
+"page": 27,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-28",
+"type": "womens-double-ring",
+"page": 28,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-29",
+"type": "womens-pin-wide",
+"page": 29,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-30",
+"type": "womens-pin-skinny",
+"page": 30,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-31",
+"type": "womens-pin",
+"page": 31,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-32",
+"type": "womens-pin",
+"page": 32,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-33",
+"type": "womens-plaque-skinny",
+"page": 33,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-34",
+"type": "womens-extra-wide",
+"page": 34,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-35",
+"type": "womens-pin-2w",
+"page": 35,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-36",
+"type": "womens-pin-skinny",
+"page": 36,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-37",
+"type": "womens-o-ring-2w",
+"page": 37,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-38",
+"type": "womens-pin-2w",
+"page": 38,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-39",
+"type": "womens-pin-skinny",
+"page": 39,
+"catalog": "WOMENS-BELT"
+},
+{
+"id": "WB-40",
+"type": "womens-sculptural-skinny",
+"page": 40,
+"catalog": "WOMENS-BELT"
+}
+]
+}

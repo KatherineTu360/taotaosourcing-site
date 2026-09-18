@@ -1,0 +1,317 @@
+{
+"source": "电热棒/美日手册2024 (106p)",
+"models": [
+{
+"model": "MR-166",
+"group": "enamel",
+"spec": "Enamel flange element 230V/2000W, Φ93 SS flange",
+"page": 8
+},
+{
+"model": "MR-171",
+"group": "enamel",
+"spec": "Enamel screw-in element 220V/2000W",
+"page": 9
+},
+{
+"model": "MR-185",
+"group": "enamel",
+"spec": "Enamel element with plastic base 220V/2000-4500W",
+"page": 10
+},
+{
+"model": "MR-169",
+"group": "enamel",
+"spec": "Enamel flange element 230V/1800W (variants to 3200W)",
+"page": 11
+},
+{
+"model": "MR-186",
+"group": "enamel",
+"spec": "Enamel square-flange element 2000/3000W",
+"page": 13
+},
+{
+"model": "MR-TY",
+"group": "enamel",
+"spec": "Universal enamel element 220V/3000W",
+"page": 15
+},
+{
+"model": "MR-176",
+"group": "enamel",
+"spec": "Enamel oval-flange element 2500W",
+"page": 16
+},
+{
+"model": "MR00054",
+"group": "enamel",
+"spec": "Enamel dry-burning element 230V/2000W",
+"page": 17
+},
+{
+"model": "MR-X7",
+"group": "enamel",
+"spec": "Enamel integral-machine element 220V/2000W",
+"page": 18
+},
+{
+"model": "MR-002E",
+"group": "enamel",
+"spec": "Enamel kitchen/water heater element 2000W",
+"page": 19
+},
+{
+"model": "MR-187",
+"group": "enamel",
+"spec": "Enamel long element with Mg rod 220V/1500W",
+"page": 20
+},
+{
+"model": "MR00009",
+"group": "enamel",
+"spec": "Enamel element 220V/2000W",
+"page": 23
+},
+{
+"model": "MR-188",
+"group": "enamel",
+"spec": "Enamel element 220V/2500W",
+"page": 24
+},
+{
+"model": "MR-69",
+"group": "enamel",
+"spec": "Enamel compact element 220V/1500W",
+"page": 25
+},
+{
+"model": "MR-144E",
+"group": "enamel",
+"spec": "Enamel element 2000W+2000W",
+"page": 27
+},
+{
+"model": "MR-120S",
+"group": "storage",
+"spec": "Storage element 230V/800W+12V/100Wx2",
+"page": 30
+},
+{
+"model": "MR-002S",
+"group": "storage",
+"spec": "Storage water heating element 2000-3200W family",
+"page": 31
+},
+{
+"model": "MR-67",
+"group": "storage",
+"spec": "Storage triangle-flange element 220V/2000W",
+"page": 32
+},
+{
+"model": "MR-184",
+"group": "storage",
+"spec": "Storage oval-flange element 2500W",
+"page": 33
+},
+{
+"model": "MR-116",
+"group": "storage",
+"spec": "Storage element with Mg rod 220V/1500W",
+"page": 34
+},
+{
+"model": "MR-90",
+"group": "storage",
+"spec": "Storage element with temp probe 220V/2000W",
+"page": 37
+},
+{
+"model": "MR-183",
+"group": "storage",
+"spec": "Storage long element 220V/1500W",
+"page": 38
+},
+{
+"model": "MR-188S",
+"group": "storage",
+"spec": "Storage element Φ8.5 220V/2500W",
+"page": 39
+},
+{
+"model": "MR-143S",
+"group": "storage",
+"spec": "Storage element 220V/2000-3200W",
+"page": 42
+},
+{
+"model": "MR-134",
+"group": "storage",
+"spec": "Storage S-shape element 220V/2000W",
+"page": 45
+},
+{
+"model": "MR-TYS",
+"group": "storage",
+"spec": "Universal storage element 3000W",
+"page": 46
+},
+{
+"model": "MR-153",
+"group": "storage",
+"spec": "Storage high-power element 220V/4500W",
+"page": 51
+},
+{
+"model": "MR-138",
+"group": "storage",
+"spec": "Storage slim element 220V/3000W",
+"page": 52
+},
+{
+"model": "MR-101",
+"group": "storage",
+"spec": "Storage element 220V/1500W",
+"page": 55
+},
+{
+"model": "MR-189",
+"group": "storage",
+"spec": "Water dispenser element 220V/750W",
+"page": 57
+},
+{
+"model": "MR-SU8E8849",
+"group": "storage",
+"spec": "Storage flange element 230V/2000W",
+"page": 58
+},
+{
+"model": "MR-SU8E8535",
+"group": "storage",
+"spec": "Storage flange element 230V/1200-2000W",
+"page": 59
+},
+{
+"model": "MR-002K",
+"group": "minikitchen",
+"spec": "Mini kitchen element 220V/1000-2000W family",
+"page": 62
+},
+{
+"model": "MR-143K",
+"group": "minikitchen",
+"spec": "Mini kitchen element 220V/1500-2000W",
+"page": 64
+},
+{
+"model": "MR-120K",
+"group": "minikitchen",
+"spec": "Mini kitchen element 110/220V 1500W",
+"page": 70
+},
+{
+"model": "MR-57",
+"group": "minikitchen",
+"spec": "Mini kitchen element 220V/1000W",
+"page": 69
+},
+{
+"model": "MR-43",
+"group": "instant",
+"spec": "Instant tankless element 220V/7000W",
+"page": 74
+},
+{
+"model": "MR-116I",
+"group": "instant",
+"spec": "Instant element 3x2000W 380V/6000W",
+"page": 75
+},
+{
+"model": "MR-09",
+"group": "instant",
+"spec": "Instant element with swage pipe 220V/2200-2500W",
+"page": 76
+},
+{
+"model": "MR-77T",
+"group": "instant",
+"spec": "Instant SS tube element 220V/5500W",
+"page": 77
+},
+{
+"model": "MR-73T",
+"group": "instant",
+"spec": "Instant SS tube element 220V/5500W",
+"page": 78
+},
+{
+"model": "MR-175",
+"group": "instant",
+"spec": "Instant element 220V/5500W",
+"page": 80
+},
+{
+"model": "MR-24",
+"group": "instant",
+"spec": "Instant element with aluminum sleeve",
+"page": 81
+},
+{
+"model": "MR-105",
+"group": "castalu",
+"spec": "Cast aluminum steam/dual body 1500W-10000W",
+"page": 84
+},
+{
+"model": "MR-132K",
+"group": "castalu",
+"spec": "Cast aluminum mini-kitchen body 1500-4500W",
+"page": 85
+},
+{
+"model": "MR-77C",
+"group": "castalu",
+"spec": "Dual-mode cast aluminum body 220V/5500W laser welded",
+"page": 88
+},
+{
+"model": "MR-73C",
+"group": "castalu",
+"spec": "Cast aluminum instant body 8500-12000W",
+"page": 87
+},
+{
+"model": "MR-72",
+"group": "castalu",
+"spec": "Instantaneous cast aluminum body 8500-9500W",
+"page": 92
+},
+{
+"model": "MR-144C",
+"group": "castalu",
+"spec": "Cast aluminum instant body 6500-8500W",
+"page": 94
+},
+{
+"model": "MR-163",
+"group": "pipes",
+"spec": "SS connecting pipe Φ18x0.6 304 (S20ZH.02/S24ZH.02/S28HU06-BXG)",
+"page": 100
+},
+{
+"model": "MR-77ES5",
+"group": "pipes",
+"spec": "SS long connecting tube Φ9.5x0.6 ES5-5520",
+"page": 101
+},
+{
+"model": "MR-149",
+"group": "pipes",
+"spec": "SS inlet/outlet pipe Φ12.7x0.6",
+"page": 102
+}
+]
+}

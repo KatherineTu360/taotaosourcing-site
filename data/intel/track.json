@@ -1,0 +1,95 @@
+{
+"source": "体育跑道/领跑新材料画册 (26p)",
+"models": [
+{
+"model": "LP-BREATHABLE",
+"group": "track",
+"spec": "Breathable type: rubber granule+glue base, PU granule top; porous elastic; schools/gym paths",
+"page": 10
+},
+{
+"model": "LP-HYBRID",
+"group": "track",
+"spec": "Hybrid type: IAAF-recognized mixed structure; 9 performance properties",
+"page": 11
+},
+{
+"model": "LP-FULLPU",
+"group": "track",
+"spec": "Full PU type: pure PU self-knot texture; professional competition grade",
+"page": 11
+},
+{
+"model": "LP-SEMI",
+"group": "track",
+"spec": "Semi-prefab roll goods for track & court; even force, fast install",
+"page": 15
+},
+{
+"model": "LP-SILIPU",
+"group": "court",
+"spec": "Silicon PU court; rebound >90%; multi-ball sports",
+"page": 13
+},
+{
+"model": "LP-ACRYLIC-H",
+"group": "court",
+"spec": "Hard court acrylic; UV stable; low maintenance",
+"page": 14
+},
+{
+"model": "LP-ACRYLIC-F",
+"group": "court",
+"spec": "Flexible acrylic; 6-8yr life; renovatable",
+"page": 14
+},
+{
+"model": "LP-EPR-5050",
+"group": "prefab",
+"spec": "EPR prefab sports surface 50x50cm t10mm; GB36246-2018",
+"page": 17
+},
+{
+"model": "LP-EPR-6161",
+"group": "prefab",
+"spec": "EPR prefab sports surface 61x61cm t13mm; GB36246-2018",
+"page": 17
+},
+{
+"model": "LP-EPDM",
+"group": "prefab",
+"spec": "EPDM colored rubber, poured-in-place; custom patterns",
+"page": 16
+},
+{
+"model": "LP-511",
+"group": "coating",
+"spec": "Artificial grass adhesive LPTARTAN 511/519=1:9; low VOC",
+"page": 15
+},
+{
+"model": "LP-FLOOR-PS",
+"group": "coating",
+"spec": "Water-based anti-slip wear-resistant polysilane floor coating; -40~120C",
+"page": 18
+},
+{
+"model": "LP-WALL-PS",
+"group": "coating",
+"spec": "Water-based purifying polysilane interior/exterior wall paint; nano-silver",
+"page": 18
+},
+{
+"model": "LP-ANTI-CORR",
+"group": "coating",
+"spec": "Water-based anti-corrosion heat-insulation polysilane paint; over-rust application",
+"page": 19
+},
+{
+"model": "LP-ASPHALT",
+"group": "coating",
+"spec": "Asphalt pavement recoloring; waterborne PU; 500m2/day",
+"page": 19
+}
+]
+}

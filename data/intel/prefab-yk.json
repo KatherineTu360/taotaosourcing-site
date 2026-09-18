@@ -1,0 +1,41 @@
+{
+"source": "屋子Edison彭总/2026ESO意墅YK系列图册.pdf (21p)",
+"models": [
+{
+"model": "YK-1",
+"type": "Compact studio pod",
+"spec": "L4300xW3500xH3000mm; 14.2-15㎡; 10kW; open studio layout; optional solar + deck",
+"page": 10
+},
+{
+"model": "YK-2",
+"type": "Chinese tea pavilion",
+"spec": "L5500xW4500xH5400mm; 24.8㎡; 10kW; four-side glass curtain wall",
+"page": 11
+},
+{
+"model": "YK-3",
+"type": "Studio unit with bar/lounge",
+"spec": "L6000-6600xW3300xH3000mm; 22㎡; 10kW; water bar + reception",
+"page": 12
+},
+{
+"model": "YK-4",
+"type": "One-bedroom unit",
+"spec": "L10000xW3300xH3000mm; 33㎡; 2-3 pax; bath/kitchen/living/bed; solar option",
+"page": 13
+},
+{
+"model": "YK-5",
+"type": "Bar lounge unit",
+"spec": "L9600xW3300xH3000mm; 32㎡; 10kW; front bar + open rear deck with tub",
+"page": 14
+},
+{
+"model": "YK-6",
+"type": "One-bedroom double-module",
+"spec": "L6600xW6600xH3000mm; 43.6㎡; 2-3 pax; dual module",
+"page": 15
+}
+]
+}

@@ -1,0 +1,281 @@
+{
+"source": "郝总/钢结构宣传册.pdf (26p), 型钢产品 p18-p26",
+"models": [
+{
+"model": "TD-A",
+"group": "deck",
+"spec": "Reinforced truss decking TD-A; chord Φ6-14; base S250/Z120 t0.4-0.8; height 70-200mm; length 1000-12000mm",
+"page": 21
+},
+{
+"model": "TD-B",
+"group": "deck",
+"spec": "Reinforced truss decking TD-B; 200mm node pitch; support rebar weld shear ≥2000N",
+"page": 21
+},
+{
+"model": "C-purlin",
+"group": "purlin",
+"spec": "C-section purlin C8-C30; H80-300 x B40-80 x t1.5-3.0mm; galvanized; custom holes",
+"page": 22
+},
+{
+"model": "Z-purlin",
+"group": "purlin",
+"spec": "Z-section purlin Z10-Z30; H190-300 x flange 45-86 x t1.5-3.0mm; lapping holes",
+"page": 22
+},
+{
+"model": "YX42-180-745",
+"group": "deck",
+"spec": "750 closed floor deck; effective 745mm; feed 1219; t0.8/1.0/1.2",
+"page": 22
+},
+{
+"model": "YX65-226-675",
+"group": "deck",
+"spec": "680 closed floor deck; effective 675mm; feed 1219; t0.8/1.0/1.2",
+"page": 22
+},
+{
+"model": "YX40-185-555",
+"group": "deck",
+"spec": "555 closed floor deck; effective 555mm; feed 1050; t0.8/1.0/1.2",
+"page": 22
+},
+{
+"model": "YX76-295-880",
+"group": "deck",
+"spec": "880 galvanized open deck; effective 880mm; feed 1219; t0.8/1.0/1.2",
+"page": 22
+},
+{
+"model": "YX76-305-915",
+"group": "deck",
+"spec": "Open deck 915; feed 1250; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YXB65-220-660",
+"group": "deck",
+"spec": "Closed deck 660; feed 1200; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YX76-305-600",
+"group": "deck",
+"spec": "Open deck 600; feed 1000; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YXB50-200-600",
+"group": "deck",
+"spec": "Closed deck 600; feed 1000; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YX76-305-490",
+"group": "deck",
+"spec": "Open deck 490; feed 1100; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YXB40-185-740",
+"group": "deck",
+"spec": "Closed deck 740; feed 1200; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YZX65-170-510",
+"group": "deck",
+"spec": "Closed deck 510; feed 1000; t0.8/1.0/1.2",
+"page": 23
+},
+{
+"model": "YXB90-340",
+"group": "deck",
+"spec": "Closed load-bearing deck 340; feed 625; t1.2/2.0/2.5",
+"page": 23
+},
+{
+"model": "YX51-325-970",
+"group": "deck",
+"spec": "970 galvanized deck; effective 970mm; feed 1219; t0.8/1.0/1.2",
+"page": 24
+},
+{
+"model": "YX25-207-830",
+"group": "roof",
+"spec": "830 glazed roof tile; effective 830mm; feed 1000; t0.4/0.5/0.6",
+"page": 24
+},
+{
+"model": "YX15-478",
+"group": "roof",
+"spec": "478 concealed-clip roof panel; effective 478mm; feed 600; t0.4/0.5/0.6",
+"page": 24
+},
+{
+"model": "YX15-410-820",
+"group": "roof",
+"spec": "820 concealed-clip roof panel; effective 820mm; feed 1000; t0.4/0.5/0.6",
+"page": 24
+},
+{
+"model": "YX5-380-760",
+"group": "roof",
+"spec": "760 concealed-clip roof/wall tile; effective 760mm; feed 1000; t0.4/0.5/0.6",
+"page": 24
+},
+{
+"model": "S-373",
+"group": "wall",
+"spec": "373 concealed-clip wall panel; effective 373mm; feed 500; t0.4/0.5/0.6",
+"page": 24
+},
+{
+"model": "YX25-210-840",
+"group": "wall",
+"spec": "Wall/liner panel 840(1050); feed 1050/1200; t0.4/0.5/0.6",
+"page": 24
+},
+{
+"model": "YX35-125-750",
+"group": "wall",
+"spec": "Insulation wall panel 750(675); feed 1000/1200; t0.5/0.6",
+"page": 24
+},
+{
+"model": "SP-950",
+"group": "sandwich",
+"spec": "950 sandwich panel (rock wool/foam/PU); effective 950mm; feed 1000",
+"page": 25
+},
+{
+"model": "SP-850",
+"group": "sandwich",
+"spec": "850 foam concealed-clip sandwich; effective 850mm; feed 1000",
+"page": 25
+},
+{
+"model": "SP-830PU",
+"group": "sandwich",
+"spec": "830 PU foam glazed tile sandwich; effective 830mm; feed 1000",
+"page": 25
+},
+{
+"model": "SP-1050",
+"group": "sandwich",
+"spec": "1050 sandwich panel (foam/PU); effective 1050mm; feed 1200",
+"page": 25
+},
+{
+"model": "SP-1150",
+"group": "sandwich",
+"spec": "1150 sandwich panel (rock wool/foam/PU); effective 1150mm; feed 1200",
+"page": 25
+},
+{
+"model": "YX9-100-900",
+"group": "wall",
+"spec": "Insulation/liner wall panel 900; feed 1000; t0.4/0.5/0.6",
+"page": 25
+},
+{
+"model": "YX38-152-914",
+"group": "roof",
+"spec": "Roof/deck panel 914; feed 1200; t0.5-1.2",
+"page": 25
+},
+{
+"model": "YXZ25-249-992",
+"group": "wall",
+"spec": "Wall panel 992; feed 1200; t0.5/0.6/0.8",
+"page": 25
+},
+{
+"model": "YX25-210-840C",
+"group": "roof",
+"spec": "Curved & ventilation panel 840 (glazed arc); feed 1000; t0.4/0.5/0.6",
+"page": 25
+},
+{
+"model": "YX12-225-900",
+"group": "wall",
+"spec": "900 wall/liner single tile; feed 1000; t0.4/0.5/0.6",
+"page": 26
+},
+{
+"model": "YX-2Y-18-63.5-825",
+"group": "wall",
+"spec": "Corrugated curved wall panel 825; feed 1000; t0.5",
+"page": 26
+},
+{
+"model": "YX-LH-38-333-999",
+"group": "wall",
+"spec": "Wall/roof panel 999; feed 1200; t0.5/0.6/0.8",
+"page": 26
+},
+{
+"model": "YX51-390-783",
+"group": "roof",
+"spec": "Standing-seam roof 783; feed 1000; t0.5/0.6/0.8",
+"page": 26
+},
+{
+"model": "YX50-290-870",
+"group": "wall",
+"spec": "Wall panel 870; feed 1000; t0.5/0.6/0.8",
+"page": 26
+},
+{
+"model": "YX61-500",
+"group": "roof",
+"spec": "Standing-seam roof 500; feed 600; t0.5/0.6/0.8",
+"page": 26
+},
+{
+"model": "YX-ZH-35-270-810",
+"group": "wall",
+"spec": "Wall panel 810(980); feed 1080/980; t0.5/0.6/0.8",
+"page": 26
+},
+{
+"model": "YX31.5-135-810",
+"group": "wall",
+"spec": "Corrugated wall panel 810; feed 1000; t0.5/0.6/0.8",
+"page": 26
+},
+{
+"model": "FRP830",
+"group": "daylight",
+"spec": "FRP 830 daylighting panel, matches color-coated profiles",
+"page": 18
+},
+{
+"model": "FRP380",
+"group": "daylight",
+"spec": "FRP 380 daylighting panel",
+"page": 18
+},
+{
+"model": "PC-830",
+"group": "daylight",
+"spec": "PC skylight panel",
+"page": 18
+},
+{
+"model": "ACC-KIT",
+"group": "accessory",
+"spec": "Fastener & trim kit: anchor bolts, self-tapping screws, high-strength hex bolts, trims & gutters, ventilation ball, clip holders, glass/rock wool, purlin rods",
+"page": 19
+},
+{
+"model": "FAB-MEMBER",
+"group": "fabrication",
+"spec": "Fabricated steel members: welded box columns/beams, wind-tower sections, space/curved/pipe trusses, metro station steel",
+"page": 4
+}
+]
+}

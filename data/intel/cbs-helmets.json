@@ -1,0 +1,179 @@
+{
+ "source": "创博cbs/CBS Catalogue 2026-Vicky.pdf (14p) + Taotao Catalogue 2026(Helmets).pdf",
+ "models": [
+  {
+   "model": "F607",
+   "type": "Full-face, single visor",
+   "shell": "ABS, one shell",
+   "sizes": "XS-XXL",
+   "cert": "DOT printed",
+   "page": 3,
+   "zone": "right",
+   "images_dir": "F607"
+  },
+  {
+   "model": "F609",
+   "type": "Full-face, double visor",
+   "shell": "ABS, one shell",
+   "sizes": "XS-XXL",
+   "cert": "ECE 22.06 + DOT printed",
+   "page": 4,
+   "zone": "right",
+   "images_dir": "F609"
+  },
+  {
+   "model": "F605",
+   "type": "Full-face, double visor",
+   "shell": "FRP/carbon, two shells",
+   "sizes": "XS-XXL",
+   "cert": "ECE 22.06 + DOT printed",
+   "page": 5,
+   "zone": "left",
+   "images_dir": "F605"
+  },
+  {
+   "model": "F606",
+   "type": "Full-face, single visor",
+   "shell": "FRP/carbon, two shells",
+   "sizes": "XS-XXL",
+   "cert": "ECE 22.06 + DOT printed",
+   "page": 5,
+   "zone": "center-right",
+   "images_dir": "F606"
+  },
+  {
+   "model": "F611",
+   "type": "Full-face, single visor",
+   "shell": "FRP/carbon, one shell",
+   "sizes": "XS-XXL",
+   "cert": "DOT printed",
+   "page": 6,
+   "zone": "center"
+  },
+  {
+   "model": "F616",
+   "type": "Full-face sport, spoiler",
+   "shell": "not stated",
+   "sizes": "XS-XXL",
+   "cert": "per panel",
+   "page": 6,
+   "zone": "right",
+   "images_dir": "F616"
+  },
+  {
+   "model": "F617",
+   "type": "Full-face sport/racing, double visor",
+   "shell": "not stated",
+   "sizes": "XS-XXL",
+   "cert": "per panel",
+   "page": 7,
+   "zone": "left",
+   "images_dir": "F617"
+  },
+  {
+   "model": "F618",
+   "type": "Full-face sport/racing",
+   "shell": "not stated",
+   "sizes": "XS-XXL",
+   "cert": "per panel",
+   "page": 7,
+   "zone": "right",
+   "images_dir": "F618"
+  },
+  {
+   "model": "M902",
+   "type": "Flip-up modular, double visor",
+   "shell": "ABS, one shell",
+   "sizes": "XS-XXL",
+   "cert": "ECE 22.06 + DOT printed",
+   "page": 8,
+   "zone": "center"
+  },
+  {
+   "model": "M906",
+   "type": "Full-face racing",
+   "shell": "not stated",
+   "sizes": "XS-XXL",
+   "cert": "per panel",
+   "page": 9,
+   "zone": "left",
+   "images_dir": "M906"
+  },
+  {
+   "model": "MX801",
+   "type": "Off-road motocross, peak",
+   "shell": "not stated",
+   "sizes": "per panel",
+   "cert": "per panel",
+   "page": 9,
+   "zone": "right",
+   "images_dir": "MX801"
+  },
+  {
+   "model": "P126",
+   "type": "Open-face 3/4, double visor",
+   "shell": "ABS, one shell",
+   "sizes": "XS-XXL",
+   "cert": "ECE 22.06 + DOT printed",
+   "page": 10,
+   "zone": "left",
+   "images_dir": "P126"
+  },
+  {
+   "model": "P128",
+   "type": "Junior open-face",
+   "shell": "not stated",
+   "sizes": "YS 49-50 / YM 51-52 / YL 53-54",
+   "cert": "per panel",
+   "page": 11,
+   "zone": "left",
+   "images_dir": "P128"
+  },
+  {
+   "model": "P121",
+   "type": "Junior open-face",
+   "shell": "not stated",
+   "sizes": "YS 49-50 / YM 51-52 / YL 53-54",
+   "cert": "per panel",
+   "page": 11,
+   "zone": "right"
+  },
+  {
+   "model": "P122",
+   "type": "Open-face vintage jet, single visor",
+   "shell": "FRP/carbon, two shells",
+   "sizes": "XS-XXL",
+   "cert": "DOT printed",
+   "page": 12,
+   "zone": "left"
+  },
+  {
+   "model": "P103",
+   "type": "Open-face 3/4, single visor (peak + standard)",
+   "shell": "ABS, one shell",
+   "sizes": "XS-XXL",
+   "cert": "ECE 22.06 + DOT printed",
+   "page": 13,
+   "zone": "left"
+  },
+  {
+   "model": "P152",
+   "type": "Half-shell shorty, drop-down inner visor",
+   "shell": "not stated",
+   "sizes": "per panel",
+   "cert": "per panel",
+   "page": 14,
+   "zone": "left"
+  },
+  {
+   "model": "P118",
+   "type": "Open-face/half, inner single visor (P118-1 carbon version)",
+   "shell": "ABS; P118-1 FRP two shells",
+   "sizes": "S-XXL",
+   "cert": "DOT printed",
+   "page": 14,
+   "zone": "right"
+  }
+ ],
+ "note": "2024 catalog = same lineup as Taotao 2026 subset. MX802 postdates catalogs."
+}

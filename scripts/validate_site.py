@@ -145,11 +145,14 @@ def main() -> None:
             errors.append(f"products.html missing category link: {detail_name}")
         detail_html = detail_path.read_text(encoding="utf-8")
         category_products = [item for item in data["products"] if item["category"] == category["slug"]]
-        if not category_products and not category.get("holdMessage") and not category.get("albumPage"):
+        if not category_products and not category.get("holdMessage") and not category.get("albumPage") and not category.get("groups"):
             errors.append(f"{category['slug']}: no products and no hold message")
+        # v2 hierarchy: product links may live on leaf category-* pages
+        leaf_pages = list(ROOT.glob(f"category-{category['slug']}--*.html"))
+        leaf_html = "\n".join(p.read_text(encoding="utf-8") for p in leaf_pages)
         for item in category_products:
             product_name = f"product-{item['slug']}.html"
-            if product_name not in detail_html:
+            if product_name not in detail_html and product_name not in leaf_html:
                 errors.append(f"{detail_name}: missing product link {product_name}")
 
     unknown_categories = {item["category"] for item in data["products"]} - category_slugs
@@ -163,6 +166,10 @@ def main() -> None:
             errors.append(f"sitemap missing {url}")
     for category in data["categories"]:
         url = f"https://taotaosourcing.com/detail-{category['slug']}.html"
+        if url not in sitemap:
+            errors.append(f"sitemap missing {url}")
+    for page in ROOT.glob("category-*.html"):
+        url = f"https://taotaosourcing.com/{page.name}"
         if url not in sitemap:
             errors.append(f"sitemap missing {url}")
 

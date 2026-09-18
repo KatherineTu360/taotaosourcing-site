@@ -1,0 +1,197 @@
+{
+"source": "户外地板: 几何立方铝芯产品册(119p) + JHLF二代共挤报价表 + Decking quotation xlsx",
+"models": [
+{
+"model": "LFM14025K6",
+"group": "coex",
+"spec": "3D-texture round-hole 6-core decking 140x25mm; 3.08m2/m3; 3.08kg/m usage; WPC 2nd-gen co-extruded",
+"page": 3
+},
+{
+"model": "LFM15023K7",
+"group": "coex",
+"spec": "3D-texture round-hole 7-core decking 150x23mm",
+"page": 4
+},
+{
+"model": "LFM13823K6A",
+"group": "coex",
+"spec": "Round-hole decking, single-face texture 138x23mm",
+"page": 5
+},
+{
+"model": "LFM14521K7",
+"group": "coex",
+"spec": "Round-hole dual-color decking 145x21mm",
+"page": 6
+},
+{
+"model": "LFM13823K6B",
+"group": "coex",
+"spec": "Gold-flow texture round-hole decking 138x23mm",
+"page": 7
+},
+{
+"model": "LFM14023SX",
+"group": "coex",
+"spec": "Gold-flow solid decking 140x23mm dual-color",
+"page": 8
+},
+{
+"model": "LXD-14525",
+"group": "core",
+"spec": "Double-sided aluminum-core decking 145x25mm; PVC+embedded aluminum+ASA; 5500N/500mm",
+"page": 41
+},
+{
+"model": "LXD-14522",
+"group": "core",
+"spec": "Solid aluminum-core decking 145x22mm",
+"page": 45
+},
+{
+"model": "GXD-14525",
+"group": "core",
+"spec": "Double-sided steel-core decking 145x25mm",
+"page": 45
+},
+{
+"model": "GXD-15025",
+"group": "core",
+"spec": "Semi-solid steel-core decking 150x25mm",
+"page": 45
+},
+{
+"model": "LXD-15025",
+"group": "core",
+"spec": "Semi-solid aluminum-core decking 150x25mm",
+"page": 45
+},
+{
+"model": "ASA-14021",
+"group": "asa",
+"spec": "ASA co-extruded 7-hole flooring 140x21mm",
+"page": 58
+},
+{
+"model": "ASA-11316",
+"group": "asa",
+"spec": "ASA co-extruded wall panel 113x16mm (exposed 100x16)",
+"page": 59
+},
+{
+"model": "ASA-17717",
+"group": "asa",
+"spec": "ASA co-extruded wall panel 190x17mm (exposed 177x17)",
+"page": 59
+},
+{
+"model": "ASA-18020",
+"group": "asa",
+"spec": "ASA co-extruded fence panel 180x20mm",
+"page": 58
+},
+{
+"model": "LFM18024",
+"group": "wallfence",
+"spec": "Gold-flow fence board 180x24mm",
+"page": 9
+},
+{
+"model": "LFM9024",
+"group": "wallfence",
+"spec": "Gold-flow fence board 90x24mm",
+"page": 10
+},
+{
+"model": "LFM21826",
+"group": "wallfence",
+"spec": "Co-extruded great-wall panel 218x26mm",
+"page": 11
+},
+{
+"model": "LFM16921",
+"group": "wallfence",
+"spec": "Co-extruded double-sided great-wall panel 169x21mm",
+"page": 12
+},
+{
+"model": "LXF-17717",
+"group": "wallfence",
+"spec": "Aluminum-core wall panel 190x17mm (exposed 177x17)",
+"page": 51
+},
+{
+"model": "LXF-5050",
+"group": "trim",
+"spec": "L-shaped aluminum-core corner trim 50x50mm",
+"page": 56
+},
+{
+"model": "LXF-10010",
+"group": "trim",
+"spec": "Flat aluminum-core panel 100x10mm",
+"page": 55
+},
+{
+"model": "LXF-8045-F",
+"group": "trim",
+"spec": "Square aluminum-core handrail 80x45mm",
+"page": 57
+},
+{
+"model": "DBPJ-170",
+"group": "acc",
+"spec": "Zinc-aluminum-magnesium joist 60x30x1.0mm",
+"page": 49
+},
+{
+"model": "DBPJ-171",
+"group": "acc",
+"spec": "Plum self-drilling screw 20x6x4.2mm",
+"page": 49
+},
+{
+"model": "DBPJ-171-1",
+"group": "acc",
+"spec": "Single-side buckle 25x11x5mm (3mm gap)",
+"page": 49
+},
+{
+"model": "DBPJ-171-2",
+"group": "acc",
+"spec": "Buckle 5mm gap 40x23x11mm",
+"page": 49
+},
+{
+"model": "DBPJ-171-3",
+"group": "acc",
+"spec": "Square buckle 3mm gap 40x36x11mm",
+"page": 49
+},
+{
+"model": "DBPJ-171-4",
+"group": "acc",
+"spec": "Cross self-drilling screw 32x8x4.2mm",
+"page": 49
+},
+{
+"model": "DBPJ-171-6",
+"group": "acc",
+"spec": "Aluminum T-clip 6mm with screw",
+"page": 49
+},
+{
+"model": "DBPJ-172",
+"group": "acc",
+"spec": "Adjustable pedestal 90-140/140-200/440-490mm",
+"page": 49
+},
+{
+"model": "DBPJ-174",
+"group": "acc",
+"spec": "Joist screw 12#x1-inch",
+"page": 49
+}
+]
+}

@@ -1,0 +1,125 @@
+{
+"source": "门窗/铝门窗图册/Aluminum Doors and Windows (Taotao Trading) 20p = 鑫中哲 24p 同系列",
+"models": [
+{
+"model": "TC76",
+"group": "window",
+"spec": "Thermal-break two-track sliding window; 5+12A+5 IGU; frame 1.4/sash 2.0mm; 6063-T5",
+"page": 2
+},
+{
+"model": "TC115",
+"group": "window",
+"spec": "Thermal-break six-track sliding window; 5+12A+5; sash 2.0mm; 115mm wall; 304SS rollers",
+"page": 3
+},
+{
+"model": "DW-128",
+"group": "window",
+"spec": "Thermal-break six-track floating panoramic sliding; 5+15A+5; 2.0mm; 128mm; max sash 2.2m",
+"page": 4
+},
+{
+"model": "DW-100",
+"group": "window",
+"spec": "Non-thermal-break three-track sliding (budget); 5+9A+5; frame 1.2/sash 1.3mm",
+"page": 5
+},
+{
+"model": "TZ110C",
+"group": "window",
+"spec": "Thermal-break outward casement system window; 5+20A+5; 2.0mm; 110mm; CMECH hardware",
+"page": 6
+},
+{
+"model": "PC110",
+"group": "window",
+"spec": "Thermal-break casement system window with sub-frame; 5+20A+5; 2.0mm; 110mm; CMECH",
+"page": 7
+},
+{
+"model": "PC120",
+"group": "window",
+"spec": "Flagship casement system window; 5+20A+5; 2.0mm (3.0mm option); 120mm; CMECH",
+"page": 8
+},
+{
+"model": "WP92PS",
+"group": "window",
+"spec": "Double inward-opening tilt-turn system window; 5+20A+5; 2.0mm; 92mm; 5 seals; CMECH",
+"page": 9
+},
+{
+"model": "WP118PS",
+"group": "window",
+"spec": "Large-format tilt-turn system window; 5+20A+5; 2.0mm; 118mm; 5 seals",
+"page": 10
+},
+{
+"model": "DW-116SP",
+"group": "door",
+"spec": "Sliding side-pressure door; 5+20A+5; 2.0/2.0mm; 5mm side-pressure sealing",
+"page": 11
+},
+{
+"model": "DW-4068",
+"group": "door",
+"spec": "Medium-narrow sliding door; 5+20A+5; frame 1.8/sash 3.0mm; 40x68 visible",
+"page": 12
+},
+{
+"model": "DW-4075",
+"group": "door",
+"spec": "Thermal-break lift-slide door; 5+20A+5; 2.0/2.2mm; 45/75 visible",
+"page": 13
+},
+{
+"model": "DW-5070",
+"group": "door",
+"spec": "Heavy-duty sliding door; 5+20A+5; 1.8/3.0mm; 46/70 visible",
+"page": 14
+},
+{
+"model": "DW-5090",
+"group": "door",
+"spec": "Heavy-duty thermal-break sliding door; 5+20A+5; 2.0/3.0mm; CMECH; 46/92 visible",
+"page": 15
+},
+{
+"model": "DW-7096",
+"group": "door",
+"spec": "Flagship thermal-break lift-slide door; 5+20A+5; 2.2/2.2mm; 46/96 visible",
+"page": 16
+},
+{
+"model": "DW-PS",
+"group": "door",
+"spec": "Interior system sliding door; 8mm single glass; 1.4/2.0mm; OPK three-linkage",
+"page": 17
+},
+{
+"model": "DW-4048",
+"group": "door",
+"spec": "Light luxury medium-narrow casement door; 4+15A+4; 1.4/1.4mm; 48mm sash visible",
+"page": 18
+},
+{
+"model": "DW-4068C",
+"group": "door",
+"spec": "Light luxury medium-narrow casement door; 4+15A+4; 1.4/1.4mm; 68mm sash visible",
+"page": 19
+},
+{
+"model": "DW-16S",
+"group": "door",
+"spec": "Ultra-narrow interior sliding door; 16mm profile; single glass",
+"page": 20
+},
+{
+"model": "DW-16W",
+"group": "door",
+"spec": "Ultra-narrow interior swing door; 16mm profile; single glass",
+"page": 20
+}
+]
+}

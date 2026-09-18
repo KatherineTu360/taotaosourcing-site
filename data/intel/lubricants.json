@@ -1,0 +1,281 @@
+{
+"source": "润滑油/广东精创产品画册.pdf (10p/5 spreads)",
+"models": [
+{
+"model": "C501/C502/C503",
+"group": "casting",
+"spec": "Eco refining slag remover for brass; 1-3kg/t",
+"page": 2
+},
+{
+"model": "JCJL-2",
+"group": "casting",
+"spec": "High-efficiency refining slag remover; 1-3kg/t",
+"page": 2
+},
+{
+"model": "JCJL-3",
+"group": "casting",
+"spec": "Special refining slag remover for brass, mirror finish",
+"page": 2
+},
+{
+"model": "JCXH-3-15",
+"group": "casting",
+"spec": "Phosphorizer (SGS, no arsenic); 0.5-4kg/t",
+"page": 2
+},
+{
+"model": "JCXH-3-9",
+"group": "casting",
+"spec": "Phosphorizer for oxygen-free copper production",
+"page": 2
+},
+{
+"model": "Rc301",
+"group": "casting",
+"spec": "Complex rare-earth modifier for copper alloys",
+"page": 2
+},
+{
+"model": "CQ100/CQ101/CQ102",
+"group": "casting",
+"spec": "Degassing agents for brass/red copper/bronze; 0.5-1kg/t",
+"page": 2
+},
+{
+"model": "JCFG-1",
+"group": "casting",
+"spec": "Covering agent for brass/lead brass, 30-100mm layer",
+"page": 3
+},
+{
+"model": "T003",
+"group": "casting",
+"spec": "Semi-continuous casting lubricant coating",
+"page": 3
+},
+{
+"model": "T006",
+"group": "casting",
+"spec": "Copper strip release agent (high-temp resistant)",
+"page": 3
+},
+{
+"model": "CuBe6",
+"group": "casting",
+"spec": "Copper-beryllium master alloy 4-6% Be",
+"page": 3
+},
+{
+"model": "HB701",
+"group": "casting",
+"spec": "Anti-dezincification additive for lead-free brass",
+"page": 3
+},
+{
+"model": "JC688",
+"group": "casting",
+"spec": "Imported resin sand casting binder; 1.5-2%",
+"page": 3
+},
+{
+"model": "JC256",
+"group": "casting",
+"spec": "Dry powder resin binder for sand cores; 2-2.5%",
+"page": 3
+},
+{
+"model": "JC901/JC902",
+"group": "casting",
+"spec": "Curing agent for resin sand cores; 15-20%",
+"page": 3
+},
+{
+"model": "JC3C/JC3C2",
+"group": "casting",
+"spec": "Core-box release agents (water/solvent); 30-100g/m2",
+"page": 3
+},
+{
+"model": "K4T77",
+"group": "casting",
+"spec": "Resin sand toughening agent; 30-50g/m2",
+"page": 3
+},
+{
+"model": "JCY201/JCY202",
+"group": "casting",
+"spec": "Die-cold release agents (silicone / non-silicone); 1:80-150",
+"page": 3
+},
+{
+"model": "K601/K603",
+"group": "degrease",
+"spec": "Metal strip degreaser for copper/brass; 0.5-2%",
+"page": 4
+},
+{
+"model": "K681-3",
+"group": "degrease",
+"spec": "Normal-temp degreaser for copper/aluminum strip spray lines; 0.5-3%",
+"page": 4
+},
+{
+"model": "K692/K806/K805",
+"group": "degrease",
+"spec": "Acidic degreaser for copper/aluminum strip; 0.5-5%",
+"page": 4
+},
+{
+"model": "K602",
+"group": "degrease",
+"spec": "Neutral liquid degreaser, copper/brass/white copper; 0.5-2%",
+"page": 4
+},
+{
+"model": "K610",
+"group": "degrease",
+"spec": "Neutral low-foam degreaser, long bath life; 0.5-2%",
+"page": 4
+},
+{
+"model": "K606/K620",
+"group": "degrease",
+"spec": "Alkaline liquid degreaser for FATA double-bath lines; 0.5-1.5%",
+"page": 5
+},
+{
+"model": "K608/K630",
+"group": "degrease",
+"spec": "Neutral degreaser, no corrosion on copper/aluminum; 5-30%",
+"page": 5
+},
+{
+"model": "K679",
+"group": "degrease",
+"spec": "Alkaline copper/aluminum/stainless degreaser series; 0.5-2%/3-5%",
+"page": 5
+},
+{
+"model": "K690/K681",
+"group": "degrease",
+"spec": "Alkaline aluminum degreaser 60-80C; 0.5-5%",
+"page": 5
+},
+{
+"model": "K700",
+"group": "degrease",
+"spec": "Motor shell degreasing + rust-preventive cleaner; 5-10%",
+"page": 5
+},
+{
+"model": "K702",
+"group": "degrease",
+"spec": "Stainless steel liquid degreaser 150-400m/min; alkalinity 5-10",
+"page": 6
+},
+{
+"model": "K722",
+"group": "degrease",
+"spec": "Stainless normal-temp strong degreaser; 5-10%",
+"page": 6
+},
+{
+"model": "K709",
+"group": "degrease",
+"spec": "Silicon steel/bronze-clad copper strip degreaser 150-200m/min",
+"page": 6
+},
+{
+"model": "K900",
+"group": "degrease",
+"spec": "Copper/alloy surface cleaning degreaser; 1-3%",
+"page": 6
+},
+{
+"model": "JCFX-Z68",
+"group": "degrease",
+"spec": "Water-based high-efficiency anti-rust cast-iron cleaner; 5-20%",
+"page": 6
+},
+{
+"model": "MC200/MC300/MC1000",
+"group": "oils",
+"spec": "Aluminum strip rolling oil additives (5/6/18 cSt); 3-10%",
+"page": 9
+},
+{
+"model": "H107",
+"group": "oils",
+"spec": "Synthetic copper-aluminum rolling coolant; 5-10%",
+"page": 9
+},
+{
+"model": "JC1020",
+"group": "oils",
+"spec": "Aluminum alloy cutting emulsion; 5-15%",
+"page": 9
+},
+{
+"model": "L-HM32/46/68",
+"group": "oils",
+"spec": "Anti-wear hydraulic oil (high/low temp)",
+"page": 9
+},
+{
+"model": "CKC/GCKD 150/220/320/460",
+"group": "oils",
+"spec": "Medium/industrial gear oils",
+"page": 9
+},
+{
+"model": "JCFUF-518",
+"group": "oils",
+"spec": "Fully synthetic dry-film lubricant for aerospace/electronics",
+"page": 9
+},
+{
+"model": "HC-220/320/460",
+"group": "oils",
+"spec": "High-temp chain oil for coating/printing/drying lines",
+"page": 10
+},
+{
+"model": "HD-300/320",
+"group": "oils",
+"spec": "Heat-transfer oil for chemical/asphalt/concrete industries",
+"page": 10
+},
+{
+"model": "SP-OIL",
+"group": "oils",
+"spec": "Oil/water-based spindle oils for machine tools; 2-5%",
+"page": 10
+},
+{
+"model": "EDM-OIL",
+"group": "oils",
+"spec": "Spark-erosion (EDM) machine oil, high flash point >110C",
+"page": 10
+},
+{
+"model": "TX-5",
+"group": "oils",
+"spec": "No.5 textile machine oil",
+"page": 10
+},
+{
+"model": "JCRG300",
+"group": "oils",
+"spec": "Stainless steel cleaning/cutting oil; 5-30%",
+"page": 10
+},
+{
+"model": "JC1010",
+"group": "oils",
+"spec": "Anti-rust emulsion oil for ferrous metals; 2-10%",
+"page": 10
+}
+]
+}

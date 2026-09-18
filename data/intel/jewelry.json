@@ -1,0 +1,30 @@
+{
+"source": "首饰包装杨总 showroom photos; existing 5 curated products",
+"models": [
+{
+"id": "JW-GIFTBOX",
+"type": "Rigid jewelry gift boxes",
+"note": "existing detail"
+},
+{
+"id": "JW-WOOD",
+"type": "Wood-look jewelry boxes",
+"note": "existing detail"
+},
+{
+"id": "JW-BOOK",
+"type": "Book-style jewelry organizers",
+"note": "existing detail"
+},
+{
+"id": "JW-TRAVEL",
+"type": "Travel jewelry cases",
+"note": "existing detail"
+},
+{
+"id": "JW-TRAY",
+"type": "Jewelry display trays & props",
+"note": "existing detail"
+}
+]
+}

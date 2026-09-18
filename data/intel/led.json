@@ -1,0 +1,125 @@
+{
+"source": "LED电子屏幕 xlsx summary + catalog-7M.pdf + tri-fold/updown pdfs",
+"models": [
+{
+"model": "HB-SP2.5",
+"type": "Indoor movable LED poster board",
+"spec": "640x960mm; P2.5; 256x384P; max 240W/avg 85W",
+"page": 8
+},
+{
+"model": "HB-SP1.86",
+"type": "Indoor movable LED poster board",
+"spec": "640x960mm; P1.86; 344x516P",
+"page": 8
+},
+{
+"model": "HB-SP1.53",
+"type": "Indoor movable LED poster board",
+"spec": "640x960mm; P1.53; 416x624P",
+"page": 8
+},
+{
+"model": "HB-SP1.25",
+"type": "Indoor movable LED poster board",
+"spec": "640x960mm; P1.25; 512x768P",
+"page": 8
+},
+{
+"model": "P2",
+"type": "Outdoor movable LED poster board",
+"spec": "640x960mm; P2; 320x480P",
+"page": 8
+},
+{
+"model": "P2.5",
+"type": "Outdoor movable LED poster board",
+"spec": "640x960mm; P2.5; 256x384P; 600W/180W",
+"page": 8
+},
+{
+"model": "P3.0",
+"type": "Outdoor movable LED poster board",
+"spec": "640x960mm; P3.0; 208x312P",
+"page": 8
+},
+{
+"model": "HB-D2.5",
+"type": "Standalone LED poster display",
+"spec": "655x2000mm; P2.5; 256x768P",
+"page": 8
+},
+{
+"model": "HB-X1.25",
+"type": "Up-down foldable LED poster",
+"spec": "640x1920mm; P1.25; 43kg; ≥800nits; IP31",
+"page": 5
+},
+{
+"model": "HB-X1.53",
+"type": "Up-down foldable LED poster",
+"spec": "640x1920mm; P1.53; 43kg",
+"page": 5
+},
+{
+"model": "HB-X1.86",
+"type": "Up-down foldable LED poster",
+"spec": "640x1920mm; P1.86; 43kg",
+"page": 5
+},
+{
+"model": "HB-X2.5",
+"type": "Up-down foldable LED poster",
+"spec": "640x1920mm; P2.5; 43kg",
+"page": 5
+},
+{
+"model": "HB-XZD1.25",
+"type": "Tri-fold double-sided LED poster",
+"spec": "1280x1920mm; P1.25; 78kg; IP31",
+"page": 6
+},
+{
+"model": "HB-XZD1.53",
+"type": "Tri-fold double-sided LED poster",
+"spec": "1280x1920mm; P1.53; 78kg",
+"page": 6
+},
+{
+"model": "HB-XZD1.86",
+"type": "Tri-fold double-sided LED poster",
+"spec": "1280x1920mm; P1.86; 78kg",
+"page": 6
+},
+{
+"model": "HB-XZD2.5",
+"type": "Tri-fold double-sided LED poster",
+"spec": "1280x1920mm; P2.5; 78kg",
+"page": 6
+},
+{
+"model": "HB-CN-BATTERY",
+"type": "Battery foldable LED poster",
+"spec": "battery-powered foldable series (per supplier table)",
+"page": 8
+},
+{
+"model": "P1.87-OD",
+"type": "Outdoor all-aluminum foldable LED poster (coming soon)",
+"spec": "module 320x180mm; 16:9; rainproof ultra-light",
+"page": 8
+},
+{
+"model": "P2.5-OD",
+"type": "Outdoor all-aluminum foldable LED poster (coming soon)",
+"spec": "module 320x180mm",
+"page": 8
+},
+{
+"model": "P3.0-OD",
+"type": "Outdoor all-aluminum foldable LED poster (coming soon)",
+"spec": "module 320x180mm",
+"page": 8
+}
+]
+}

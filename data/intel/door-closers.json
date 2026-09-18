@@ -1,0 +1,95 @@
+{
+"source": "川金门控科技有限公司图册.pdf (22p) = Door Closer-Taotao Trading版同型号",
+"models": [
+{
+"model": "CJ051",
+"group": "surface",
+"spec": "Fire-rated surface-mounted closer, small square 132x19mm; 25-45kg (heavy 40-65kg); door 500-800mm; 150,000 cycles; AW/AD options",
+"page": 5
+},
+{
+"model": "CJ061-S",
+"group": "surface",
+"spec": "Fire-rated surface closer, medium square 162x19mm; 45-65kg (60-85kg HD); door 600-1000mm; 150,000 cycles",
+"page": 6
+},
+{
+"model": "CJ061-R",
+"group": "surface",
+"spec": "Fire-rated surface closer, medium round body 162x19mm; 45-65kg; door 600-1000mm; 150,000 cycles",
+"page": 7
+},
+{
+"model": "CJ071",
+"group": "surface",
+"spec": "Fire-rated surface closer, large square 188x19mm; 65-85kg (80-90kg HD); door 600-1100mm; 150,000 cycles",
+"page": 8
+},
+{
+"model": "CJ5011-S",
+"group": "high-grade",
+"spec": "High-grade fire closer, small square 132x19mm; 25-45kg (40-65kg HD); 500-800mm; 300,000 cycles; 2M internals; German seal ring",
+"page": 11
+},
+{
+"model": "CJ5011-R",
+"group": "high-grade",
+"spec": "High-grade fire closer, small round 132x19mm; 25-45kg; 500-800mm; 300,000 cycles",
+"page": 12
+},
+{
+"model": "CJ5022-S",
+"group": "high-grade",
+"spec": "High-grade fire closer, medium square 162x19mm; 45-65kg (60-85kg HD); 600-1000mm; 300,000 cycles",
+"page": 13
+},
+{
+"model": "CJ5022-R",
+"group": "high-grade",
+"spec": "High-grade fire closer, medium round 162x19mm; 45-65kg; 600-1000mm; 300,000 cycles",
+"page": 14
+},
+{
+"model": "CJ5033-S",
+"group": "high-grade",
+"spec": "High-grade fire closer, large square 188x19mm; 65-85kg (80-90kg HD); 600-1100mm; 300,000 cycles",
+"page": 15
+},
+{
+"model": "CJ5033-R",
+"group": "high-grade",
+"spec": "High-grade fire closer, large round 188x19mm; 65-85kg; 600-1100mm; 300,000 cycles",
+"page": 16
+},
+{
+"model": "CJ2022",
+"group": "concealed",
+"spec": "Concealed round closer 262x20mm; 35-65kg; door 1000-1200mm; 300,000 cycles; AW/AD 90°",
+"page": 17
+},
+{
+"model": "CJ2122",
+"group": "concealed",
+"spec": "Concealed square closer 262x30mm; 35-65kg; door 1000-1200mm; 300,000 cycles",
+"page": 18
+},
+{
+"model": "CJ3023",
+"group": "special",
+"spec": "Triangular body surface closer 202x19mm; 40-65kg; ≤1000mm; full-auto AW only; 300,000 cycles",
+"page": 19
+},
+{
+"model": "CJ8133",
+"group": "special",
+"spec": "Quadrilateral body closer 195x38mm; 45-65kg; ≤1000mm; full-auto AW; 300,000 cycles",
+"page": 20
+},
+{
+"model": "CJ8133-S",
+"group": "special",
+"spec": "Quadrilateral body with slide-rail arm; 45-65kg; ≤1000mm; full-auto AW; 300,000 cycles",
+"page": 21
+}
+]
+}
