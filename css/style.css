@@ -1170,3 +1170,16 @@ a { color: var(--navy); text-decoration: none; }
 .catalog-product-card.model-card .catalog-product-media img {
   object-fit: contain; background: #fff;
 }
+
+/* ---- model detail pages (MX802-style template) ---- */
+.model-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.model-gallery img:first-child { grid-column: 1 / -1; width: 100%; border-radius: 10px; border: 1px solid var(--line, #e3e8f0); object-fit: contain; background: #fff; }
+.model-gallery img { width: 100%; border-radius: 10px; border: 1px solid var(--line, #e3e8f0); object-fit: contain; background: #fff; }
+.benefit-list { display: grid; gap: 14px; }
+.benefit h3 { font-size: 1rem; margin: 0 0 4px; }
+.benefit p { margin: 0; color: var(--muted, #555); font-size: .95rem; }
+.model-section { margin-top: 34px; }
+.model-section h2 { font-size: 1.35rem; margin-bottom: 12px; }
+.model-faq details { border: 1px solid var(--line, #e3e8f0); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; background: #fff; }
+.model-faq summary { font-weight: 700; cursor: pointer; }
+.model-faq p { margin: 10px 0 0; color: var(--muted, #555); }

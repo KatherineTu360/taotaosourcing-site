@@ -203,6 +203,7 @@ def resolve_group_models(rules, intel, used, log):
                 "source": src,
                 "page": e.get("page"),
                 "image": img,
+                "_raw": e,
             })
     return entries
 
@@ -303,14 +304,18 @@ def model_card(entry, product_ref=None, cat_slug=None, group_path=None):
     img = (f'<img src="{esc(entry["image"])}" alt="{esc(entry["name"])} catalog reference" loading="lazy">'
            if entry.get("image") else
            '<div class="model-img-placeholder" aria-hidden="true"><span>Photo on request</span></div>')
-    detail_link = ""
+    detail_href = entry.get("detail") or (product_ref and f"product-{product_ref['slug']}.html") or (group_path or "#")
     if product_ref:
         detail_link = f'<a class="more" href="product-{esc(product_ref["slug"])}.html">Full product details →</a>'
+    elif entry.get("detail"):
+        detail_link = f'<a class="more" href="{esc(entry["detail"])}">View details →</a>'
+    else:
+        detail_link = ""
     page_ref = f'<span class="model-source">Catalog p.{entry["page"]}</span>' if entry.get("page") else ""
     wa = f"https://wa.me/{WHATSAPP}?text=" + __import__("urllib.parse", fromlist=["quote"]).quote(
         f"Hello Katherine, I'm interested in {entry['model']}. Target market and quantity: ")
     return f"""        <article class="catalog-product-card model-card">
-          <a class="catalog-product-media" href="{esc(product_ref and 'product-' + product_ref['slug'] + '.html' or (group_path or '#'))}">
+          <a class="catalog-product-media" href="{esc(detail_href)}">
             {img}
           </a>
           <div class="catalog-product-body">
@@ -468,7 +473,11 @@ def main():
         for x in leftovers[:40]:
             print("  LEFTOVER", x)
 
-    # URL assignment + asset copy + rendering
+    # Phase A: URL assignment + gallery copy + detail slug allocation
+    from build_model_pages import allocate_slug, copy_gallery, render_model_detail
+    taken_slugs = set(products_by_slug) | {"index", "products", "contact", "about", "privacy"}
+    detail_tasks = []
+    render_tasks = []
     for cat in catalog["categories"]:
         cslug = cat["slug"]
         groups = GROUPS.get(cslug)
@@ -476,22 +485,22 @@ def main():
             continue
         cat["groups"] = []
         for grp in groups:
-            if grp["subs"]:
-                leaves = grp["subs"]
-                grp_url = f"category-{cslug}--{grp['slug']}.html"
-            else:
-                leaves = [grp]
-                grp_url = f"category-{cslug}--{grp['slug']}.html"
+            leaves = grp["subs"] or [grp]
+            grp_url = f"category-{cslug}--{grp['slug']}.html"
             grp["_url_file"] = grp_url
 
             total_models = 0
             for sub in leaves:
                 slug_parts = f"{cslug}--{grp['slug']}" + (f"--{sub['slug']}" if grp["subs"] else "")
                 sub["_url_file"] = f"category-{slug_parts}.html"
-                # copy images
                 for e in sub["_entries"]:
                     if e.get("image"):
                         e["image"] = copy_image(Path(e["image"]), cslug, slug_parts.replace("--", "-"), e["slug"])
+                    if "detail" not in e:
+                        page_slug = allocate_slug(e["slug"], taken_slugs)
+                        e["detail"] = f"product-{page_slug}.html"
+                    e["gallery"] = copy_gallery(str(e["id"]), e["detail"][len("product-"):-len(".html")])
+                    detail_tasks.append((e, cat, grp, sub, sub["_entries"]))
                 total_models += len(sub["_entries"]) + len(sub["_products"])
                 for p in sub["_products"]:
                     unlinked_products.discard(p["slug"])
@@ -502,6 +511,12 @@ def main():
                 for e in sub["_entries"]:
                     if e.get("image"):
                         cover = e["image"]
+                        break
+                if cover:
+                    break
+                for e in sub["_entries"]:
+                    if e.get("gallery"):
+                        cover = e["gallery"][0]
                         break
                 if cover:
                     break
@@ -520,17 +535,41 @@ def main():
                 "url": grp_url, "cover": cover, "totalModels": total_models,
             })
 
-            # write sub pages first, then group page
+            # collect hierarchy render tasks
             if grp["subs"]:
                 for sub in grp["subs"]:
-                    chain = [(cat["title"], f"detail-{cslug}.html"), (grp["title"], grp_url)]
-                    crumbs = [("Home", DOMAIN + "/"), ("Products", DOMAIN + "/products.html"),
-                              (cat["title"], f"{DOMAIN}/detail-{cslug}.html"),
-                              (grp["title"], f"{DOMAIN}/{grp_url}"), (sub["title"], f"{DOMAIN}/{sub['_url_file']}")]
-                    (ROOT / sub["_url_file"]).write_text(
-                        render_model_list(cat, grp, sub, chain, crumbs), encoding="utf-8")
-                    generated_pages.append(sub["_url_file"])
-                # group page renders sub cards: reuse render_group_cards with subs as cards
+                    render_tasks.append(("leaf", cat, grp, sub, grp_url))
+                render_tasks.append(("group", cat, grp, None, grp_url))
+            else:
+                render_tasks.append(("leaf", cat, grp, grp, grp_url))
+
+    # Phase B: render model detail pages (siblings need slugs first)
+    for e, cat, grp, sub, siblings in detail_tasks:
+        page_slug = e["detail"][len("product-"):-len(".html")]
+        (ROOT / e["detail"]).write_text(
+            render_model_detail(e, cat, grp, sub, siblings, page_slug,
+                                page_head, header, footer, breadcrumb_json, esc, WHATSAPP, DOMAIN),
+            encoding="utf-8")
+        generated_pages.append(e["detail"])
+
+    # Phase C: render hierarchy pages
+    for cat in catalog["categories"]:
+        cslug = cat["slug"]
+        if not GROUPS.get(cslug):
+            continue
+        for kind, cat, grp, sub, grp_url in [t for t in render_tasks if t[1]["slug"] == cslug]:
+            if kind == "leaf":
+                chain = ([(cat["title"], f"detail-{cslug}.html"), (grp["title"], grp_url)]
+                         if grp["subs"] else [(cat["title"], f"detail-{cslug}.html")])
+                crumbs = [("Home", DOMAIN + "/"), ("Products", DOMAIN + "/products.html"),
+                          (cat["title"], f"{DOMAIN}/detail-{cslug}.html")]
+                if grp["subs"]:
+                    crumbs.append((grp["title"], f"{DOMAIN}/{grp_url}"))
+                crumbs.append((sub["title"], f"{DOMAIN}/{sub['_url_file']}"))
+                (ROOT / sub["_url_file"]).write_text(
+                    render_model_list(cat, grp, sub, chain, crumbs), encoding="utf-8")
+                generated_pages.append(sub["_url_file"])
+            elif kind == "group":
                 sub_cards = []
                 for sub in grp["subs"]:
                     cover = next((e["image"] for e in sub["_entries"] if e.get("image")),
@@ -547,20 +586,10 @@ def main():
                                         (grp["title"], f"{DOMAIN}/{grp_url}")],
                                        back_link=f"detail-{cslug}.html", back_label=cat["title"]), encoding="utf-8")
                 generated_pages.append(grp_url)
-            else:
-                chain = [(cat["title"], f"detail-{cslug}.html")]
-                crumbs = [("Home", DOMAIN + "/"), ("Products", DOMAIN + "/products.html"),
-                          (cat["title"], f"{DOMAIN}/detail-{cslug}.html"),
-                          (grp["title"], f"{DOMAIN}/{grp_url}")]
-                (ROOT / grp_url).write_text(
-                    render_model_list(cat, grp, grp, chain, crumbs), encoding="utf-8")
-                generated_pages.append(grp_url)
-
         # rewrite detail-{category}.html as group-card page
         detail_file = f"detail-{cslug}.html"
         gcards = []
         for grp in cat["groups"]:
-            note = f'{len(grp["subs"])} sub-categories · {grp["totalModels"]} models' if grp["subs"] else f'{grp["totalModels"]} models'
             gcards.append({
                 "title": grp["title"], "intro": grp["intro"], "cover": grp["cover"],
                 "_url_file": grp["url"], "total_models": grp["totalModels"], "subs": grp["subs"],
@@ -583,7 +612,11 @@ def main():
                           "    <priority>0.7</priority>", "  </url>"])
     if start in sm:
         before, rest = sm.split(start, 1)
-        sm = before + start + "\n" + "\n".join(new_block) + rest
+        existing_locs = set(re.findall(r"<loc>([^<]+)</loc>", sm))
+        fresh = [u for u in new_block
+                 if f"<loc>{DOMAIN}/" not in u or
+                    re.search(r"<loc>([^<]+)</loc>", u).group(1) not in existing_locs]
+        sm = before + start + "\n" + "\n".join(fresh) + rest
     sitemap_path.write_text(sm)
 
     # persist v2 data
