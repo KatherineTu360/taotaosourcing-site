@@ -128,7 +128,15 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
         crumbs.append((group["title"], f"{DOMAIN}/{group['_url_file']}"))
     crumbs.append(((sub.get("title") or group["title"]), f"{DOMAIN}/{sub['_url_file']}"))
     crumbs.append((title, canonical))
-    schema = breadcrumb_json(crumbs)
+    faq_schema = json.dumps({
+        "@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": q.format(m=entry["model"]),
+             "acceptedAnswer": {"@type": "Answer", "text": a}}
+            for q, a in FAQS
+        ],
+    }, ensure_ascii=False, separators=(",", ":"))
+    schema = breadcrumb_json(crumbs) + '</script><script type="application/ld+json">' + faq_schema
     trail = " / ".join(f'<a href="{u}">{esc(t)}</a>' for t, u in crumbs[:-1]) + f" / {esc(title)}"
 
     return f"""{page_head(c["seo_title"], c["meta_desc"], canonical, gallery[0] if gallery else "assets/logo.png")}

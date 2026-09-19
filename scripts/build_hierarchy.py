@@ -27,7 +27,7 @@ INTEL = DATA / "intel"
 ASSETS = ROOT / "assets" / "products"
 DOMAIN = "https://taotaosourcing.com"
 WHATSAPP = "8616626662274"
-TODAY = "2026-09-18"
+TODAY = "2026-09-19"
 
 IMG_DIRS = {
     "cbs-helmets": "helmets/cbs-helmets", "kuuvi-moto": "helmets/kuuvi-moto",
@@ -252,6 +252,10 @@ def page_head(title, description, canonical, image):
   <meta property="og:url" content="{esc(canonical)}">
   <meta property="og:image" content="{esc(img_url)}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{esc(title)}">
+  <meta name="twitter:description" content="{esc(description)}">
+  <meta property="og:site_name" content="Taotao Sourcing">
+  <meta property="og:locale" content="en_US">
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" href="css/style.css">
 </head>"""
@@ -349,6 +353,17 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
         </article>""")
     cards_html = "\n".join(cards)
     schema = breadcrumb_json(breadcrumbs)
+    itemlist = json.dumps({
+        "@context": "https://schema.org", "@type": "ItemList",
+        "name": parent_title,
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1,
+             "name": g.get("title", ""), "url": f"{DOMAIN}/{g.get('_url_file', '')}"}
+            for i, g in enumerate(groups)
+        ],
+    }, ensure_ascii=False, separators=(",", ":"))
+    schema = schema + f'</script><script type="application/ld+json">{itemlist}'
+
     return f"""{page_head(f"{parent_title} | Taotao Sourcing", f"Browse {parent_title} sub-categories and full model lists reviewed from supplier catalogs.", parent_url, groups[0]["cover"] if groups else "assets/logo.png")}
 {header()}
   <main>
@@ -396,6 +411,17 @@ def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
     count = len(entries) + len(products)
     trail = " / ".join(f'<a href="{u}">{esc(t)}</a>' for t, u in parent_chain) + f" / {esc(title)}"
     schema = breadcrumb_json(breadcrumbs)
+    list_items = [{"@type": "ListItem", "position": i + 1, "name": e["name"],
+                   "url": f"{DOMAIN}/{e.get('detail') or sub['_url_file']}"}
+                  for i, e in enumerate(entries)]
+    list_items += [{"@type": "ListItem", "position": len(list_items) + i + 1, "name": p["name"],
+                    "url": f"{DOMAIN}/product-{p['slug']}.html"}
+                   for i, p in enumerate(products)]
+    itemlist = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
+                           "name": title, "numberOfItems": len(list_items),
+                           "itemListElement": list_items},
+                          ensure_ascii=False, separators=(",", ":"))
+    schema = schema + f'</script><script type="application/ld+json">{itemlist}' + "\n"
     note = '<p class="source-note">Model lists are transcribed from the reviewed supplier catalogs; specifications and certification documents are re-confirmed per order. Entries without photos are quoted with catalog pages on request.</p>'
     return f"""{page_head(f"{title} — All Models | Taotao Sourcing", f"Complete {title} model list ({count} models) reviewed from supplier catalogs, with specs and inquiry entry.", canonical, (entries[0]["image"] if entries and entries[0].get("image") else (products[0]["image"] if products else "assets/logo.png")))}
 {header()}
@@ -617,6 +643,8 @@ def main():
                  if f"<loc>{DOMAIN}/" not in u or
                     re.search(r"<loc>([^<]+)</loc>", u).group(1) not in existing_locs]
         sm = before + start + "\n" + "\n".join(fresh) + rest
+    sm = re.sub(r'(<loc>https://taotaosourcing\.com/product-[a-z0-9-]+\.html</loc>\s*<lastmod>)[^<]+',
+                r'\g<1>' + TODAY, sm)
     sitemap_path.write_text(sm)
 
     # persist v2 data
