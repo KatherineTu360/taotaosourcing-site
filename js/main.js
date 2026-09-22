@@ -17,8 +17,64 @@ if (navToggle && mainNav) {
   });
 }
 
-// Inquiry form → WhatsApp with pre-filled message
-// (no backend needed; nothing is stored server-side)
+// Inquiry form → structured lead pipeline + WhatsApp/email handoff.
+// Journey tracking comes from js/b2b-client.mjs (shared with taotaotrading).
+const INQUIRY_ENDPOINT = 'https://www.taotaotrading.com/api/inquiries';
+const INQUIRY_CONFIG = 'https://www.taotaotrading.com/api/inquiries/config';
+
+// Load the shared tracker once on every page; it is consent-gated and stores
+// nothing until the buyer accepts optional measurement in the privacy panel.
+import('./b2b-client.mjs').then(async (m) => {
+  window.__ttB2B = m;
+  const tracker = m.mountTracking('taotao_sourcing');
+  window.__ttTracker = tracker;
+  m.mountConsent(tracker);
+  const box = document.getElementById('ttTurnstile');
+  if (!box) return;
+  try {
+    const res = await fetch(INQUIRY_CONFIG, { signal: AbortSignal.timeout(8000) });
+    const config = await res.json();
+    if (config.enabled && config.turnstile_site_key && !config.test_mode) {
+      window.__ttChallenge = await m.mountChallenge(config, box);
+      window.__ttChallengeRequired = true;
+    }
+  } catch (e) { /* pipeline offline — forms fall back to direct channels */ }
+}).catch(() => { /* tracking unavailable — form keeps working */ });
+
+// Compact human-readable journey for the WhatsApp/email message, so the
+// inquiry itself carries context even before the structured record is read.
+function journeyText() {
+  const tracker = window.__ttTracker;
+  if (!tracker) return '';
+  let snap;
+  try { snap = tracker.snapshot(); } catch (e) { return ''; }
+  if (!snap.consent.analytics && !snap.consent.ads) return '';
+  const pages = [...new Set(snap.events.map((e) => e.page))].slice(0, 10);
+  const ctas = {};
+  snap.events.filter((e) => e.type === 'cta_click').forEach((e) => {
+    const k = e.cta_name || e.cta_id || 'CTA';
+    ctas[k] = (ctas[k] || 0) + 1;
+  });
+  const src = snap.first || {};
+  const source = src.gclid ? 'Google Ads click'
+    : src.utm_source ? 'Campaign: ' + src.utm_source
+    : src.referrer_host ? 'Referral: ' + src.referrer_host
+    : 'Direct visit';
+  const mins = snap.events.length > 1
+    ? Math.round((Date.parse(snap.events[snap.events.length - 1].at) - Date.parse(snap.events[0].at)) / 60000)
+    : 0;
+  const lines = [
+    '',
+    '--- Inquiry journey (auto-attached) ---',
+    'First visit: ' + String(src.at || '').slice(0, 10) + (mins ? ' (' + mins + ' min on site)' : ''),
+    'Source: ' + source,
+    'Landing page: ' + (src.page || 'n/a'),
+    'Pages viewed (' + pages.length + '): ' + pages.join(' -> '),
+    Object.keys(ctas).length ? 'CTA clicks: ' + Object.entries(ctas).map(([k, v]) => '"' + k + '"' + (v > 1 ? ' x' + v : '')).join('; ') : '',
+  ];
+  return lines.filter(Boolean).join('\n');
+}
+
 const form = document.getElementById('inquiryForm');
 if (form) {
   const query = new URLSearchParams(window.location.search);
@@ -31,24 +87,45 @@ if (form) {
       message.value = `Product / model: ${requestedProduct}\nTarget market: \nEstimated quantity: \nRequired specifications or documents: `;
     }
   }
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const val = (id) => {
       const el = document.getElementById(id);
       return el ? el.value.trim() : '';
     };
+    const channel = e.submitter && e.submitter.value;
+    const client = window.__ttB2B;
+    // Structured receipt through the shared inquiry pipeline. If the pipeline
+    // is disabled or unreachable, the WhatsApp/email fallback still carries
+    // the full inquiry — nothing is lost.
+    if (client && window.__ttTracker) {
+      try {
+        const fields = {
+          name: val('name'),
+          company: val('company'),
+          contact: val('contact'),
+          country: val('country'),
+          product: val('interest'),
+          message: val('message'),
+          ...client.formContext(),
+        };
+        const token = window.__ttChallenge ? window.__ttChallenge.token() : '';
+        await client.sendInquiry(INQUIRY_ENDPOINT, 'taotao_sourcing', 'contact_form', fields, window.__ttTracker, token);
+      } catch (err) { /* receipt failed — direct channel below still works */ }
+    }
     const parts = [
       'Hi Katherine,',
       '',
       `Name: ${val('name')}`,
       val('company') && `Company: ${val('company')}`,
       val('country') && `Country/Region: ${val('country')}`,
+      val('contact') && `Contact: ${val('contact')}`,
       val('interest') && `Interest: ${val('interest')}`,
       '',
       `Requirement: ${val('message')}`,
+      journeyText(),
     ].filter(Boolean);
     const message = parts.join('\n');
-    const channel = e.submitter && e.submitter.value;
     if (channel === 'email') {
       const subject = val('interest') ? `Sourcing inquiry: ${val('interest')}` : 'Sourcing inquiry';
       window.location.href = 'mailto:rabieternity@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);

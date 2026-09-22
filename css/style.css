@@ -1183,3 +1183,13 @@ a { color: var(--navy); text-decoration: none; }
 .model-faq details { border: 1px solid var(--line, #e3e8f0); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; background: #fff; }
 .model-faq summary { font-weight: 700; cursor: pointer; }
 .model-faq p { margin: 10px 0 0; color: var(--muted, #555); }
+
+/* ===== Consent panel + Turnstile ===== */
+.tt-consent { position: fixed; left: 16px; right: 16px; bottom: 16px; max-width: 470px; margin: 0 auto; background: #fff; color: #17263f; border: 1px solid #d8e0ee; border-radius: 12px; padding: 18px 20px; box-shadow: 0 12px 40px rgba(2, 16, 45, 0.18); z-index: 90; font-size: 0.92rem; }
+.tt-consent strong { display: block; color: var(--navy); margin-bottom: 6px; }
+.tt-consent p { color: #4a5a75; line-height: 1.55; margin: 0 0 10px; }
+.tt-consent label { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
+.tt-consent div { display: flex; gap: 10px; margin-top: 12px; }
+.tt-consent button { flex: 1; border: 1px solid var(--navy); background: #fff; color: var(--navy); border-radius: 8px; padding: 8px 10px; font: inherit; font-weight: 600; cursor: pointer; }
+.tt-consent button:hover { background: #eef3fb; }
+.tt-turnstile { min-height: 0; margin: 4px 0 12px; }
