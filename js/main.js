@@ -17,125 +17,6 @@ if (navToggle && mainNav) {
   });
 }
 
-// Inquiry form → structured lead pipeline + WhatsApp/email handoff.
-// Journey tracking comes from js/b2b-client.mjs (shared with taotaotrading).
-const INQUIRY_ENDPOINT = 'https://www.taotaotrading.com/api/inquiries';
-const INQUIRY_CONFIG = 'https://www.taotaotrading.com/api/inquiries/config';
-
-// Load the shared tracker once on every page; it is consent-gated and stores
-// nothing until the buyer accepts optional measurement in the privacy panel.
-import('./b2b-client.mjs').then(async (m) => {
-  window.__ttB2B = m;
-  const tracker = m.mountTracking('taotao_sourcing');
-  window.__ttTracker = tracker;
-  m.mountConsent(tracker);
-  const box = document.getElementById('ttTurnstile');
-  if (!box) return;
-  try {
-    const res = await fetch(INQUIRY_CONFIG, { signal: AbortSignal.timeout(8000) });
-    const config = await res.json();
-    if (config.enabled && config.turnstile_site_key && !config.test_mode) {
-      window.__ttChallenge = await m.mountChallenge(config, box);
-      window.__ttChallengeRequired = true;
-    }
-  } catch (e) { /* pipeline offline — forms fall back to direct channels */ }
-}).catch(() => { /* tracking unavailable — form keeps working */ });
-
-// Compact human-readable journey for the WhatsApp/email message, so the
-// inquiry itself carries context even before the structured record is read.
-function journeyText() {
-  const tracker = window.__ttTracker;
-  if (!tracker) return '';
-  let snap;
-  try { snap = tracker.snapshot(); } catch (e) { return ''; }
-  if (!snap.consent.analytics && !snap.consent.ads) return '';
-  const pages = [...new Set(snap.events.map((e) => e.page))].slice(0, 10);
-  const ctas = {};
-  snap.events.filter((e) => e.type === 'cta_click').forEach((e) => {
-    const k = e.cta_name || e.cta_id || 'CTA';
-    ctas[k] = (ctas[k] || 0) + 1;
-  });
-  const src = snap.first || {};
-  const source = src.gclid ? 'Google Ads click'
-    : src.utm_source ? 'Campaign: ' + src.utm_source
-    : src.referrer_host ? 'Referral: ' + src.referrer_host
-    : 'Direct visit';
-  const mins = snap.events.length > 1
-    ? Math.round((Date.parse(snap.events[snap.events.length - 1].at) - Date.parse(snap.events[0].at)) / 60000)
-    : 0;
-  const lines = [
-    '',
-    '--- Inquiry journey (auto-attached) ---',
-    'First visit: ' + String(src.at || '').slice(0, 10) + (mins ? ' (' + mins + ' min on site)' : ''),
-    'Source: ' + source,
-    'Landing page: ' + (src.page || 'n/a'),
-    'Pages viewed (' + pages.length + '): ' + pages.join(' -> '),
-    Object.keys(ctas).length ? 'CTA clicks: ' + Object.entries(ctas).map(([k, v]) => '"' + k + '"' + (v > 1 ? ' x' + v : '')).join('; ') : '',
-  ];
-  return lines.filter(Boolean).join('\n');
-}
-
-const form = document.getElementById('inquiryForm');
-if (form) {
-  const query = new URLSearchParams(window.location.search);
-  const requestedProduct = query.get('product');
-  if (requestedProduct) {
-    const interest = document.getElementById('interest');
-    const message = document.getElementById('message');
-    if (interest) interest.value = 'Product catalog item / model';
-    if (message && !message.value) {
-      message.value = `Product / model: ${requestedProduct}\nTarget market: \nEstimated quantity: \nRequired specifications or documents: `;
-    }
-  }
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const val = (id) => {
-      const el = document.getElementById(id);
-      return el ? el.value.trim() : '';
-    };
-    const channel = e.submitter && e.submitter.value;
-    const client = window.__ttB2B;
-    // Structured receipt through the shared inquiry pipeline. If the pipeline
-    // is disabled or unreachable, the WhatsApp/email fallback still carries
-    // the full inquiry — nothing is lost.
-    if (client && window.__ttTracker) {
-      try {
-        const fields = {
-          name: val('name'),
-          company: val('company'),
-          contact: val('contact'),
-          country: val('country'),
-          product: val('interest'),
-          message: val('message'),
-          ...client.formContext(),
-        };
-        const token = window.__ttChallenge ? window.__ttChallenge.token() : '';
-        await client.sendInquiry(INQUIRY_ENDPOINT, 'taotao_sourcing', 'contact_form', fields, window.__ttTracker, token);
-      } catch (err) { /* receipt failed — direct channel below still works */ }
-    }
-    const parts = [
-      'Hi Katherine,',
-      '',
-      `Name: ${val('name')}`,
-      val('company') && `Company: ${val('company')}`,
-      val('country') && `Country/Region: ${val('country')}`,
-      val('contact') && `Contact: ${val('contact')}`,
-      val('interest') && `Interest: ${val('interest')}`,
-      '',
-      `Requirement: ${val('message')}`,
-      journeyText(),
-    ].filter(Boolean);
-    const message = parts.join('\n');
-    if (channel === 'email') {
-      const subject = val('interest') ? `Sourcing inquiry: ${val('interest')}` : 'Sourcing inquiry';
-      window.location.href = 'mailto:rabieternity@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
-      return;
-    }
-    const url = 'https://wa.me/8616626662274?text=' + encodeURIComponent(message);
-    window.open(url, '_blank', 'noopener');
-  });
-}
-
 // Sourcing video library (index.html #sourcing-video)
 const videoFrame = document.getElementById('videoFrame');
 const videoPicker = document.getElementById('videoPicker');
@@ -187,3 +68,31 @@ if (videoFrame && videoPicker) {
     });
   }
 }
+
+
+// Shared consent-gated inquiry integration. Kept separate from product-page generation.
+import('./b2b-client.mjs').then(async ({mountTracking,mountConsent,formContext,sendInquiry,mountChallenge})=>{
+  const tracker=mountTracking('taotao_sourcing');mountConsent(tracker);
+  const preferences=document.createElement('button');preferences.type='button';preferences.textContent='Privacy choices';preferences.className='tt-privacy-settings';preferences.onclick=()=>window.dispatchEvent(new Event('taotao:open-analytics-preferences'));(document.querySelector('footer')||document.body).append(preferences);
+  document.querySelectorAll('a[href*="contact.html"]').forEach(link=>{
+    const url=new URL(link.href,location.href);if(url.origin!==location.origin)return;
+    url.searchParams.set('from',location.pathname);
+    if(location.pathname.startsWith('/product-')){const product=document.querySelector('h1')?.textContent.trim();if(product&&!url.searchParams.has('product'))url.searchParams.set('product',product.slice(0,160));const modelRow=Array.from(document.querySelectorAll('.spec-table tr')).find(row=>/Model/.test(row.querySelector('th')?.textContent||''));const model=modelRow?.querySelector('td')?.textContent.trim();if(model)url.searchParams.set('model',model.slice(0,100));}
+    link.href=url.href;
+  });
+  const form=document.getElementById('inquiryForm');if(!form)return;
+  const context=formContext(),query=new URLSearchParams(location.search);
+  const status=document.getElementById('inquiryStatus'),button=form.querySelector('button[type="submit"]');
+  form.elements.product.value=context.product;form.elements.model.value=context.model;
+  if(context.product)form.elements.interest.value='Product catalog item / model';
+  const endpoint=location.hostname==='localhost'||location.hostname==='127.0.0.1'?'http://localhost:4178/api/inquiries':'https://www.taotaotrading.com/api/inquiries';
+  let busy=false,challenge={token:()=>'',reset:()=>{}};
+  try{const response=await fetch(endpoint+'/config',{credentials:'omit'});const config=await response.json();button.disabled=!config.enabled;status.textContent=config.enabled?(config.test_mode?'TEST environment — no production conversion uploads.':''):'Online inquiry receipt is not enabled yet. Use the direct contact links.';if(config.enabled)challenge=await mountChallenge(config,document.getElementById('inquiryChallenge'));}catch{status.textContent='Online receipt is unavailable. Use the direct contact links or retry later.';}
+  form.addEventListener('submit',async event=>{
+    event.preventDefault();if(busy)return;busy=true;button.disabled=true;button.textContent='Sending…';status.textContent='Sending your sourcing request…';
+    const fields=Object.fromEntries(new FormData(form));fields.product=fields.product||fields.interest;delete fields.interest;fields.origin_page=query.get('from')||context.page;fields.cta_id=context.cta_id;
+    try{const result=await sendInquiry(endpoint,'taotao_sourcing','sourcing_inquiry',fields,tracker,challenge.token());status.textContent='Request received. Reference: '+result.lead_id+'. Katherine can now review your requirements.';}
+    catch(error){status.textContent=error.message||'We could not confirm receipt. Retry with the same details.';challenge.reset();}
+    finally{busy=false;button.disabled=false;button.textContent='Request a sourcing assessment';}
+  });
+}).catch(()=>{const status=document.getElementById('inquiryStatus');if(status)status.textContent='Online form could not load. Please use the direct contact links.';});

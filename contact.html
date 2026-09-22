@@ -54,32 +54,26 @@
       <!-- ===== Form ===== -->
       <div class="form-card">
         <h2 style="font-size:1.3rem; color:var(--navy-ink); margin-bottom:6px;">Inquiry form</h2>
-        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:22px;">Choose WhatsApp or
-        email below. Your message is prepared for you and is not sent until you confirm it in
-        the selected app.</p>
+        <p style="font-size:0.9rem; color:var(--muted); margin-bottom:22px;">Share your product or supplier-check requirement. Katherine will reply with the next information needed for a quotation or scoped assessment.</p>
         <form id="inquiryForm">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your name *</label>
-              <input type="text" id="name" name="name" required placeholder="e.g. John Smith">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" maxlength="200" autocomplete="name" placeholder="e.g. John Smith">
             </div>
             <div class="form-group">
               <label for="company">Company</label>
-              <input type="text" id="company" name="company" placeholder="Company / shop name">
+              <input type="text" id="company" name="company" maxlength="200" autocomplete="organization" placeholder="Company / shop name">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label for="country">Country / region</label>
-              <input type="text" id="country" name="country" placeholder="e.g. Germany">
-            </div>
-                        <div class="form-group">
-              <label for="contact">Email or WhatsApp number *</label>
-              <input type="text" id="contact" name="contact" required placeholder="e.g. john@company.com or +49 …">
+              <input type="text" id="country" name="country" maxlength="100" autocomplete="country-name" placeholder="e.g. Germany">
             </div>
             <div class="form-group">
-              <label for="interest">I'm interested in *</label>
-              <select id="interest" name="interest" required>
+              <label for="interest">I'm interested in</label>
+              <select id="interest" name="interest">
                 <option value="" disabled selected>Select one…</option>
                 <option>Product catalog item / model</option>
                 <option>Building products &amp; hardware</option>
@@ -99,21 +93,19 @@
           </div>
           <div class="form-group">
             <label for="message">Your requirement *</label>
-            <textarea id="message" name="message" rows="5" required
+            <textarea id="message" name="message" rows="5" required maxlength="4000"
               placeholder="Product models or description, estimated quantity, target market, and any deadlines…"></textarea>
           </div>
-          <div id="ttTurnstile" class="tt-turnstile" aria-label="Security check"></div>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px;">
-            <button type="submit" name="channel" value="whatsapp" class="btn btn-wa" style="width:100%; justify-content:center;">
-              Send via WhatsApp →
-            </button>
-            <button type="submit" name="channel" value="email" class="btn btn-ghost" style="width:100%; justify-content:center;">
-              Send by Email →
-            </button>
-          </div>
-          <p class="form-note">Prefer email or LinkedIn? Use the buttons on the right — same
-          inbox, same reply speed. Your details are never shared or sold (see
-          <a href="privacy.html">privacy note</a>).</p>
+          <div class="form-group"><label for="contact">Email or WhatsApp with country code *</label><input id="contact" name="contact" required maxlength="200" autocomplete="email" placeholder="buyer@company.com or +44…"></div>
+          <div class="form-row"><div class="form-group"><label for="product">Product</label><input id="product" name="product" maxlength="160"></div><div class="form-group"><label for="model">Model</label><input id="model" name="model" maxlength="100"></div></div>
+          <div class="form-row"><div class="form-group"><label for="quantity">Estimated quantity (optional)</label><input id="quantity" name="quantity" inputmode="numeric" maxlength="100"></div><div class="form-group"><label for="market">Target market (optional)</label><input id="market" name="market" maxlength="100"></div></div>
+          <div class="form-group"><label for="customization">Customization (optional)</label><input id="customization" name="customization" maxlength="200" placeholder="Logo, packaging, specifications"></div>
+          <label class="tt-honeypot" aria-hidden="true">Leave empty<input name="website" tabindex="-1" autocomplete="off"></label>
+          <div id="inquiryChallenge"></div>
+          <button type="submit" disabled data-cta-id="sourcing:form:submit" data-cta-name="Request a sourcing assessment" class="btn btn-red">Request a sourcing assessment</button>
+          <p id="inquiryStatus" role="status" aria-live="polite">Checking online inquiry availability…</p>
+          <p class="form-note">Your details are used to respond to your request. Optional tracking is separate. See our <a href="privacy.html">privacy note</a>.</p>
+          <p><a data-cta-id="sourcing:form:whatsapp" href="https://wa.me/8616626662274" target="_blank" rel="noreferrer">Open WhatsApp</a> · <a data-cta-id="sourcing:form:email" href="mailto:rabieternity@gmail.com">Open email</a></p>
         </form>
       </div>
 

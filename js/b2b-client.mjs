@@ -12,6 +12,7 @@ export function createTracker(w, siteId, now = Date.now) {
   const write = (k,v) => { try { w.localStorage.setItem(k,JSON.stringify(v)); } catch { /* incomplete journey, form still works */ } };
   function consent() {
     const c = read(consentKey);
+    if(c && c.expires_at<=now()){try{w.localStorage.removeItem(consentKey);w.localStorage.removeItem(key);}catch{}memory=null;}
     return c && c.expires_at > now() ? c : { analytics:false, ads:false, at:null };
   }
   function changeConsent(analytics, ads) {
@@ -40,12 +41,13 @@ export function createTracker(w, siteId, now = Date.now) {
   function state() {
     const c=consent(); if(!c.analytics && !c.ads) return null;
     let s=read(key)||memory;
-    if(!s || s.expires_at<=now() || s.site_id!==siteId) s={version:VERSION,site_id:siteId,visitor_id:id(),first:source(),expires_at:now()+90*DAY,ad_clicks:[],events:[],truncated:false};
+    if(s?.expires_at<=now()){try{w.localStorage.removeItem(key);}catch{}s=null;memory=null;}
+    if(!s || s.site_id!==siteId) s={version:VERSION,site_id:siteId,visitor_id:id(),first:source(),expires_at:now()+90*DAY,ad_clicks:[],events:[],truncated:false};
     if(!s.session || now()-s.session.last_at>30*60000) s.session={id:id(),source:source(),last_at:now()};
     const src=source(), signature=JSON.stringify([...CLICK_IDS,...PARAMS].map(p=>src[p]||''));
     if(src.kind==='campaign' && signature!==s.session.signature) {
       s.session.source=src;s.session.signature=signature;
-      if(c.ads && CLICK_IDS.some(p=>src[p])) s.ad_clicks.push({...src,click_id:id()});
+      if(c.ads && CLICK_IDS.some(p=>src[p]) && !s.ad_clicks.some(old=>CLICK_IDS.some(p=>src[p]&&src[p]===old[p]))) s.ad_clicks.push({...src,click_id:id()});
     }
     s.session.last_at=now();
     if(s.ad_clicks.length>20 || s.events.length>60) s.truncated=true;
@@ -59,13 +61,13 @@ export function createTracker(w, siteId, now = Date.now) {
     if(s.events.length>60){s.events=s.events.slice(-60);s.truncated=true;}
     write(key,s);
   }
-  function page() {
+  function page(force=false) {
     const s=state();if(!s)return;
-    if(lastPath!==w.location.pathname){lastPath=w.location.pathname;event('page_view');}else write(key,s);
+    if(force || lastPath!==w.location.pathname){lastPath=w.location.pathname;event('page_view');w.dispatchEvent(new w.CustomEvent('tt:page'));}else write(key,s);
   }
   function cta(ctaId,name,channel='form') {
     if(lastClick===ctaId && now()-lastClickAt<1000)return;
-    lastClick=ctaId;lastClickAt=now();event('cta_click',{cta_id:clean(ctaId,100),cta_name:clean(name,100),channel});
+    lastClick=ctaId;lastClickAt=now();event('cta_click',{cta_id:clean(ctaId,100),cta_name:clean(name,100),channel});w.dispatchEvent(new w.CustomEvent('tt:cta',{detail:{cta_id:clean(ctaId,100),channel}}));
   }
   function snapshot() {
     const c=consent(),s=state();
@@ -83,9 +85,9 @@ export function mountTracking(siteId) {
   for(const k of ['tt_lead_first_v1','tt_lead_trace_v1','tt_lead_cta_v1']) {try{localStorage.removeItem(k);sessionStorage.removeItem(k);}catch{}}
   const tag=()=>document.querySelectorAll('a[href],button[type="submit"]').forEach(el=>{
     const href=el.getAttribute('href')||'submit';
-    if(!/contact|#quote|#sourcing-request|wa\.me|mailto:|tel:|submit/.test(href))return;
-    const section=el.closest('section[id],header,footer,form');
-    const slot=section?.id||section?.tagName.toLowerCase()||'page';
+    if(!el.dataset.ctaId&&!/contact|#quote|#sourcing-request|wa\.me|mailto:|tel:|submit/.test(href))return;
+    const section=el.closest('section,header,footer,form');
+    const slot=section?.id||(section?section.tagName.toLowerCase()+':'+hash(section.className+(section.querySelector('h1,h2,h3')?.textContent||'')):'page');
     if(!el.dataset.ctaId)el.dataset.ctaId=`${siteId}:${slot}:${hash(href.split('?')[0]+el.textContent.trim())}`;
     el.dataset.ctaName=el.dataset.ctaName||el.textContent.trim().slice(0,100)||el.getAttribute('aria-label')||'Contact';
   });
@@ -95,12 +97,13 @@ export function mountTracking(siteId) {
     const channel=/wa\.me/.test(href)?'whatsapp':/^mailto:/.test(href)?'email':/^tel:/.test(href)?'phone':'form';
     t.cta(el.dataset.ctaId,el.dataset.ctaName,channel);
     // Only product context is retained as necessary form state. No visitor/ad identifier is linked across domains.
-    if(channel==='form') try {sessionStorage.setItem('tt:inquiry-context',JSON.stringify({page:location.pathname,product:el.dataset.product||'',model:el.dataset.model||'',cta_id:el.dataset.ctaId}));}catch{}
+    if(channel==='form' && el.getAttribute('type')!=='submit') {const previous=window.__ttInquiryContext||{};const c={page:location.pathname,product:el.dataset.product||previous.product||'',model:el.dataset.model||previous.model||'',cta_id:el.dataset.ctaId};window.__ttInquiryContext=c;try {sessionStorage.setItem('tt:inquiry-context',JSON.stringify(c));}catch{}window.dispatchEvent(new CustomEvent('tt:inquiry-context',{detail:c}));}
   },true);
   for(const method of ['pushState','replaceState']) {
     const original=history[method];history[method]=function(...args){const result=original.apply(this,args);t.page();tag();return result;};
   }
   window.addEventListener('popstate',()=>{t.page();tag();});
+  window.addEventListener('pageshow',e=>{if(e.persisted){t.page(true);tag();}});
   window.addEventListener('storage',e=>{if(e.key?.endsWith(':consent'))window.dispatchEvent(new CustomEvent('tt:consent',{detail:t.consent()}));});
   t.page();tag();return t;
 }
@@ -120,9 +123,9 @@ export function mountConsent(t) {
   return ()=>{window.removeEventListener('taotao:open-analytics-preferences',show);panel?.remove();};
 }
 export function formContext() {
-  let c={};try{c=JSON.parse(sessionStorage.getItem('tt:inquiry-context')||'{}');}catch{}
+  let c=window.__ttInquiryContext||{};try{c=JSON.parse(sessionStorage.getItem('tt:inquiry-context')||'{}');}catch{}
   const q=new URLSearchParams(location.search);
-  return {page:c.page||location.pathname,product:clean(q.get('product')||c.product,160),model:clean(q.get('model')||c.model,100),cta_id:clean(c.cta_id,100)};
+  return {page:new URLSearchParams(location.search).get('from')||c.page||location.pathname,product:clean(q.get('product')||c.product,160),model:clean(q.get('model')||c.model,100),cta_id:clean(c.cta_id,100)};
 }
 // One key per unchanged payload, including after an uncertain network result or page reload.
 // Only a hash and random key persist in session storage; no customer fields are saved there.

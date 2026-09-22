@@ -1184,12 +1184,13 @@ a { color: var(--navy); text-decoration: none; }
 .model-faq summary { font-weight: 700; cursor: pointer; }
 .model-faq p { margin: 10px 0 0; color: var(--muted, #555); }
 
-/* ===== Consent panel + Turnstile ===== */
-.tt-consent { position: fixed; left: 16px; right: 16px; bottom: 16px; max-width: 470px; margin: 0 auto; background: #fff; color: #17263f; border: 1px solid #d8e0ee; border-radius: 12px; padding: 18px 20px; box-shadow: 0 12px 40px rgba(2, 16, 45, 0.18); z-index: 90; font-size: 0.92rem; }
-.tt-consent strong { display: block; color: var(--navy); margin-bottom: 6px; }
-.tt-consent p { color: #4a5a75; line-height: 1.55; margin: 0 0 10px; }
-.tt-consent label { display: flex; align-items: center; gap: 8px; margin: 6px 0; }
-.tt-consent div { display: flex; gap: 10px; margin-top: 12px; }
-.tt-consent button { flex: 1; border: 1px solid var(--navy); background: #fff; color: var(--navy); border-radius: 8px; padding: 8px 10px; font: inherit; font-weight: 600; cursor: pointer; }
-.tt-consent button:hover { background: #eef3fb; }
-.tt-turnstile { min-height: 0; margin: 4px 0 12px; }
+/* Shared inquiry and privacy controls */
+.tt-consent { position:fixed; z-index:100; bottom:1rem; left:1rem; width:min(32rem,calc(100vw - 2rem)); max-height:80vh; overflow:auto; padding:1.2rem; background:#fff; color:#18293c; box-shadow:0 4px 32px #0003; border:1px solid #9aafc4; border-radius:10px; font:16px/1.5 system-ui; }
+.tt-consent p { margin:.65rem 0; }.tt-consent label { display:block; padding:.35rem 0; }.tt-consent input { width:auto; margin-right:.5rem; }
+.tt-consent button { padding:.6rem .8rem; margin:.5rem .5rem 0 0; min-height:44px; background:#123b64; color:white; border:0; border-radius:4px; cursor:pointer; font:inherit; }
+.tt-honeypot { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+.tt-form-status { overflow-wrap:anywhere; line-height:1.5; font-size:1rem; }
+#homepage_sourcing_brief input,#homepage_sourcing_brief textarea,#homepage_sourcing_brief select { font-size:16px; min-height:44px; }
+#homepage_sourcing_brief button:disabled { opacity:.55; cursor:wait; }
+
+#inquiryForm input,#inquiryForm select,#inquiryForm textarea {font-size:16px;min-height:44px;} #inquiryStatus {overflow-wrap:anywhere;} .tt-privacy-settings {margin:1rem;min-height:44px;padding:.5rem 1rem;}
