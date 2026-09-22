@@ -151,6 +151,6 @@ export async function mountChallenge(config,container) {
     });
     await window.__ttChallengeReady;
   }
-  let token='';const widget=window.turnstile.render(container,{sitekey:config.turnstile_site_key,action:'inquiry',callback:v=>{token=v;},'expired-callback':()=>{token='';},'error-callback':()=>{token='';}});
+  let token='';const widget=window.turnstile.render(container,{sitekey:config.turnstile_site_key,size:container.clientWidth<300?'compact':'normal',action:'inquiry',callback:v=>{token=v;},'expired-callback':()=>{token='';},'error-callback':()=>{token='';}});
   return {token:()=>token,reset:()=>{token='';window.turnstile.reset(widget);},remove:()=>window.turnstile.remove(widget)};
 }
