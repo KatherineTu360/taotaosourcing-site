@@ -71,7 +71,7 @@ if (videoFrame && videoPicker) {
 
 
 // Shared consent-gated inquiry integration. Kept separate from product-page generation.
-import('./b2b-client.mjs').then(async ({mountTracking,mountConsent,formContext,sendInquiry,mountChallenge})=>{
+import('./b2b-client.mjs?v=20260922-b2b2').then(async ({mountTracking,mountConsent,formContext,sendInquiry,mountChallenge})=>{
   const tracker=mountTracking('taotao_sourcing');mountConsent(tracker);
   const preferences=document.createElement('button');preferences.type='button';preferences.textContent='Privacy choices';preferences.className='tt-privacy-settings';preferences.onclick=()=>window.dispatchEvent(new Event('taotao:open-analytics-preferences'));(document.querySelector('footer')||document.body).append(preferences);
   document.querySelectorAll('a[href*="contact.html"]').forEach(link=>{
