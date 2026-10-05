@@ -52,7 +52,10 @@ RUN_IMG = Path("/Users/katherinetu/CODEX/独立站/website-optimization/run/taot
 
 # Keep this supplier catalogue as an internal source record only. Its models,
 # images and generated pages must not be included in the public site.
-PUBLICLY_EXCLUDED_SOURCES = {"yongbao"}
+PUBLICLY_EXCLUDED_SOURCES = {"meicheng", "yongbao"}
+# Source-specific group pages generated before a supplier was excluded must not
+# remain in the public sitemap.
+PUBLICLY_EXCLUDED_PAGE_PATHS = {"category-helmets--motorcycle--meicheng-city.html"}
 
 
 def esc(v):
@@ -651,6 +654,13 @@ def main():
     for slug in excluded_product_slugs():
         sm = re.sub(
             rf"\s*<url>\s*<loc>{re.escape(DOMAIN)}/product-{re.escape(slug)}\.html</loc>.*?</url>\s*",
+            "\n",
+            sm,
+            flags=re.S,
+        )
+    for path in PUBLICLY_EXCLUDED_PAGE_PATHS:
+        sm = re.sub(
+            rf"\s*<url>\s*<loc>{re.escape(DOMAIN)}/{re.escape(path)}</loc>.*?</url>\s*",
             "\n",
             sm,
             flags=re.S,

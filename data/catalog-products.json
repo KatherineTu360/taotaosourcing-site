@@ -15,7 +15,7 @@
     {
      "slug": "motorcycle",
      "title": "Motorcycle Helmets",
-     "intro": "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from the CBS and KUUVI lines, plus the Meicheng city range. Certification printed on each model varies (ECE 22.06, DOT, CCC); request the model-specific certificate before committing.",
+     "intro": "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from the CBS and KUUVI lines. Certification printed on each model varies (ECE 22.06, DOT, CCC); request the model-specific certificate before committing.",
      "subs": [
       {
        "slug": "full-face-touring",
@@ -79,18 +79,11 @@
        "intro": "Licensed-style flip-up and character helmets plus mini gift helmets.",
        "url": "category-helmets--motorcycle--novelty-gift.html",
        "modelCount": 4
-      },
-      {
-       "slug": "meicheng-city",
-       "title": "Meicheng City & Cruiser",
-       "intro": "DOT + ECE 22.06 certified full-face and half helmets from the Meicheng line.",
-       "url": "category-helmets--motorcycle--meicheng-city.html",
-       "modelCount": 5
       }
      ],
      "url": "category-helmets--motorcycle.html",
      "cover": "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-touring/f607.jpg",
-     "totalModels": 70
+     "totalModels": 65
     },
     {
      "slug": "cycling-sports",

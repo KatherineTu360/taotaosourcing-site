@@ -32,7 +32,7 @@ def contains(*frags):
 GROUPS = {
     "helmets": [
         g("motorcycle", "Motorcycle Helmets",
-          "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from the CBS and KUUVI lines, plus the Meicheng city range. Certification printed on each model varies (ECE 22.06, DOT, CCC); request the model-specific certificate before committing.", subs=[
+          "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from the CBS and KUUVI lines. Certification printed on each model varies (ECE 22.06, DOT, CCC); request the model-specific certificate before committing.", subs=[
             g("full-face-touring", "Full-Face Touring & Carbon", "Road-focused full-face platforms in ABS and FRP/carbon shell options, single- and double-visor.", models=[
                 m("cbs-helmets", keys=["F605","F606","F607","F609","F611"]),
                 m("catalog", keys=["f607-full-face-motorcycle-helmet","f609-double-visor-full-face-helmet"]),
@@ -68,9 +68,6 @@ GROUPS = {
             ]),
             g("novelty-gift", "Novelty & Gift", "Licensed-style flip-up and character helmets plus mini gift helmets.", models=[
                 m("kuuvi-moto", keys=["HIPHOP","SKULL","BATMAN","LP01"]),
-            ]),
-            g("meicheng-city", "Meicheng City & Cruiser", "DOT + ECE 22.06 certified full-face and half helmets from the Meicheng line.", models=[
-                m("meicheng", keys=["M609","M901","MC-DVH","MC-VSV","MC-DVQ"]),
             ]),
         ]),
         g("cycling-sports", "Cycling & Sports Helmets",
