@@ -50,6 +50,10 @@ CATALOG_IMG = {
 }
 RUN_IMG = Path("/Users/katherinetu/CODEX/独立站/website-optimization/run/taotaosourcing-hierarchy-2026-09-18/extracted_images")
 
+# Keep this supplier catalogue as an internal source record only. Its models,
+# images and generated pages must not be included in the public site.
+PUBLICLY_EXCLUDED_SOURCES = {"yongbao"}
+
 
 def esc(v):
     return html.escape(str(v), quote=True)
@@ -63,6 +67,8 @@ def slugify(s):
 def load_intel():
     data = {}
     for f in INTEL.glob("*.json"):
+        if f.stem in PUBLICLY_EXCLUDED_SOURCES:
+            continue
         data[f.stem] = json.loads(f.read_text())
     return data
 
@@ -98,6 +104,18 @@ def find_image(source, entry):
         return None
     src = RUN_IMG / rel / f"{slug}.jpg"
     return src if src.exists() and image_ok(src) else None
+
+
+def excluded_product_slugs():
+    """Product-page slugs that must also be removed from the public sitemap."""
+    slugs = set()
+    for source in PUBLICLY_EXCLUDED_SOURCES:
+        path = INTEL / f"{source}.json"
+        if not path.exists():
+            continue
+        for entry in json.loads(path.read_text()).get("models", []):
+            slugs.add(slugify(entry.get("id") or entry.get("model")))
+    return slugs
 
 
 TYPE_WORDS = {
@@ -630,6 +648,13 @@ def main():
     # sitemap: add hierarchy pages
     sitemap_path = ROOT / "sitemap.xml"
     sm = sitemap_path.read_text()
+    for slug in excluded_product_slugs():
+        sm = re.sub(
+            rf"\s*<url>\s*<loc>{re.escape(DOMAIN)}/product-{re.escape(slug)}\.html</loc>.*?</url>\s*",
+            "\n",
+            sm,
+            flags=re.S,
+        )
     start = "  <!-- GENERATED PRODUCT URLS END -->"
     new_block = []
     for name in generated_pages:

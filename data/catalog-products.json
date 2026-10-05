@@ -102,42 +102,42 @@
        "title": "Road Cycling",
        "intro": "In-mould road helmets from 170 g ultra-light to aero and Mips-equipped versions, with taillight and magnetic visor options.",
        "url": "category-helmets--cycling-sports--road.html",
-       "modelCount": 40
+       "modelCount": 23
       },
       {
        "slug": "mtb",
        "title": "Mountain Bike (MTB)",
        "intro": "Open-face and large-peak MTB helmets, in-mould and out-mould.",
        "url": "category-helmets--cycling-sports--mtb.html",
-       "modelCount": 19
+       "modelCount": 14
       },
       {
        "slug": "downhill-fullface",
        "title": "Downhill & Full-Face",
        "intro": "Full-face downhill and kids full-face helmets with removable chin options.",
        "url": "category-helmets--cycling-sports--downhill-fullface.html",
-       "modelCount": 6
+       "modelCount": 5
       },
       {
        "slug": "city-commuter",
        "title": "City & Commuter",
        "intro": "Urban commuting helmets, folding commuter models and goggle-equipped city helmets with rechargeable lights.",
        "url": "category-helmets--cycling-sports--city-commuter.html",
-       "modelCount": 26
+       "modelCount": 12
       },
       {
        "slug": "e-bike",
        "title": "E-Bike (NTA 8776)",
        "intro": "E-bike helmets certified/tested against NTA 8776 where marked, with lens and smart variants.",
        "url": "category-helmets--cycling-sports--e-bike.html",
-       "modelCount": 5
+       "modelCount": 3
       },
       {
        "slug": "smart-camera",
        "title": "Smart & Camera",
        "intro": "Bluetooth, camera, LED-music and turn-signal smart helmets.",
        "url": "category-helmets--cycling-sports--smart-camera.html",
-       "modelCount": 14
+       "modelCount": 12
       },
       {
        "slug": "visor-led",
@@ -165,12 +165,12 @@
        "title": "Kids & Junior Cycling",
        "intro": "Children's cycling, balance-bike and animal-print helmets, 180-300 g class.",
        "url": "category-helmets--cycling-sports--kids.html",
-       "modelCount": 48
+       "modelCount": 29
       }
      ],
      "url": "category-helmets--cycling-sports.html",
      "cover": "assets/products/hierarchy/helmets/helmets-cycling-sports-road/ar01.jpg",
-     "totalModels": 175
+     "totalModels": 115
     },
     {
      "slug": "snow-sports",
@@ -182,14 +182,14 @@
        "title": "Adult Ski & Snowboard",
        "intro": "In-mould and hard-shell adult ski helmets, visor-ready models with Shield-X lenses.",
        "url": "category-helmets--snow-sports--ski-adult.html",
-       "modelCount": 25
+       "modelCount": 20
       },
       {
        "slug": "ski-kids",
        "title": "Kids & Youth Ski",
        "intro": "Kids ski helmets with visor, mohawk prints and LED taillight options.",
        "url": "category-helmets--snow-sports--ski-kids.html",
-       "modelCount": 6
+       "modelCount": 4
       },
       {
        "slug": "race-snow",
@@ -208,7 +208,7 @@
      ],
      "url": "category-helmets--snow-sports.html",
      "cover": "assets/products/hierarchy/helmets/helmets-snow-sports-ski-adult/ms108.jpg",
-     "totalModels": 42
+     "totalModels": 35
     },
     {
      "slug": "specialty-sports",
@@ -220,14 +220,14 @@
        "title": "Equestrian",
        "intro": "Riding helmets with removable visors, VG1 and EN 1384 / ASTM F1163 marked models, adults and kids.",
        "url": "category-helmets--specialty-sports--equestrian.html",
-       "modelCount": 13
+       "modelCount": 10
       },
       {
        "slug": "climbing",
        "title": "Climbing",
        "intro": "Lightweight EPP/PC climbing helmets.",
        "url": "category-helmets--specialty-sports--climbing.html",
-       "modelCount": 5
+       "modelCount": 4
       },
       {
        "slug": "water-sports",
@@ -253,7 +253,7 @@
      ],
      "url": "category-helmets--specialty-sports.html",
      "cover": "assets/products/hierarchy/helmets/helmets-specialty-sports-equestrian/mk01.jpg",
-     "totalModels": 32
+     "totalModels": 28
     }
    ]
   },

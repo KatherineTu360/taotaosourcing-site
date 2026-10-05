@@ -34,9 +34,10 @@
     .pcard-body .more:hover { color: var(--red-dark); }
 
     .pcard-media { position: relative; height: 210px; overflow: hidden; background: #eef2f9; }
-    .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; }
+    .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; cursor: pointer; }
     .slides::-webkit-scrollbar { display: none; }
     .slides img { flex: 0 0 100%; width: 100%; height: 100%; object-fit: cover; scroll-snap-align: start; }
+    .slides:focus-visible { outline: 3px solid var(--red); outline-offset: -3px; }
     .pcard-media .placeholder {
       position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
       font-size: 3rem; background: linear-gradient(135deg, #0b3f8f, #01204e); color: rgba(255,255,255,0.9);
@@ -626,6 +627,26 @@
     document.querySelectorAll('.pcard-media').forEach(mediaBox => {
       const track = mediaBox.querySelector('.slides');
       if (!track) return;
+      const detailLink = mediaBox.closest('.pcard')?.querySelector('.pcard-body .more[href$=".html"]');
+      const destination = detailLink?.getAttribute('href');
+      if (destination) {
+        const title = mediaBox.closest('.pcard')?.querySelector('h3')?.textContent?.trim() || 'product details';
+        track.tabIndex = 0;
+        track.setAttribute('role', 'link');
+        track.setAttribute('aria-label', `Open ${title}`);
+        let pointerStart = null;
+        track.addEventListener('pointerdown', event => { pointerStart = event.clientX; });
+        track.addEventListener('pointerup', event => {
+          if (pointerStart !== null && Math.abs(event.clientX - pointerStart) < 8) window.location.href = destination;
+          pointerStart = null;
+        });
+        track.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            window.location.href = destination;
+          }
+        });
+      }
       const n = track.children.length;
       if (n <= 1) { mediaBox.classList.add('single'); return; }
       const dots = mediaBox.querySelector('.s-dots');
