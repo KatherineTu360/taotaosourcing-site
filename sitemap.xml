@@ -32,8 +32,14 @@
   </url>
   <url>
     <loc>https://taotaosourcing.com/articles.html</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taotaosourcing.com/article-us-bicycle-helmet-order-label-test-record-check.html</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
