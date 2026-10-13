@@ -275,6 +275,77 @@ a { color: var(--navy); text-decoration: none; }
 
 .fact span { font-size: 0.85rem; color: #9db2d1; }
 
+/* ---------- Buyer decision questions ---------- */
+
+.decision-section { background: #fff; }
+
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.decision-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  padding: 30px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--navy);
+  border-radius: var(--radius);
+}
+
+.decision-status {
+  align-self: flex-start;
+  color: var(--red);
+  background: #fbebeb;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.decision-card h3 {
+  color: var(--navy-ink);
+  font-size: 1.16rem;
+  line-height: 1.4;
+  margin: 26px 0 14px;
+}
+
+.decision-card p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  flex: 1;
+}
+
+.decision-card strong {
+  display: block;
+  color: var(--navy-ink);
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+  padding-top: 17px;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.decision-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.decision-cta > a:last-child {
+  color: var(--navy);
+  font-size: 0.94rem;
+  font-weight: 750;
+  border-bottom: 1px solid currentColor;
+}
+
 /* ---------- Sections ---------- */
 
 .section { padding: 84px 0; }
@@ -1057,6 +1128,8 @@ a { color: var(--navy); text-decoration: none; }
 
 @media (max-width: 1020px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .decision-grid { grid-template-columns: 1fr; }
+  .decision-card { min-height: 0; }
   .cols-4 { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: 1fr; max-width: 560px; }
   .step::after { display: none; }
@@ -1090,6 +1163,10 @@ a { color: var(--navy); text-decoration: none; }
   .nav-toggle { display: block; }
   .hero { padding: 60px 0 70px; }
   .section { padding: 60px 0; }
+  .decision-card { padding: 24px 20px; }
+  .decision-cta { align-items: stretch; flex-direction: column; }
+  .decision-cta .btn { justify-content: center; text-align: center; }
+  .decision-cta > a:last-child { align-self: flex-start; }
   .product-block { padding: 26px 22px; }
   .form-row { grid-template-columns: 1fr; }
   .cta-band { padding: 36px 26px; }
