@@ -32,8 +32,14 @@
   </url>
   <url>
     <loc>https://taotaosourcing.com/articles.html</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://taotaosourcing.com/article-china-supplier-ddp-us-importer-quote-check.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
