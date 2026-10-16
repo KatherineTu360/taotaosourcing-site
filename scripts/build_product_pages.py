@@ -9,6 +9,8 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 
+from image_privacy import public_image, public_images
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "catalog-products.json"
@@ -21,6 +23,7 @@ def esc(value: object) -> str:
 
 
 def page_head(title: str, description: str, canonical: str, image: str) -> str:
+    image = public_image(image)
     image_url = image if image.startswith("http") else f"{DOMAIN}/{image}"
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -144,9 +147,10 @@ def breadcrumb_json(items: list[tuple[str, str]]) -> str:
 
 def product_card(product: dict) -> str:
     badge = f'<span class="catalog-badge">{esc(product["model"])}</span>' if product.get("model") else ""
+    image = public_images(list(product.get("images") or []) + [product.get("image")])[0]
     return f"""        <article class="catalog-product-card">
           <a class="catalog-product-media" href="product-{esc(product['slug'])}.html">
-            <img src="{esc(product['image'])}" alt="{esc(product['imageAlt'])}" loading="lazy">
+            <img src="{esc(image)}" alt="{esc(product['imageAlt'])}" loading="lazy">
           </a>
           <div class="catalog-product-body">
             {badge}
@@ -171,12 +175,13 @@ def render_category(category: dict, products: list[dict]) -> str:
         )
     )
     inquiry = quote(f"Hello Katherine, I'm sourcing {category['title']}. My target market and estimated quantity are: ")
+    hero_image = public_image(category.get("heroImage"))
     schema = breadcrumb_json([
         ("Home", DOMAIN + "/"),
         ("Products", DOMAIN + "/products.html"),
         (category["title"], canonical),
     ])
-    return f"""{page_head(category['seoTitle'], category['metaDescription'], canonical, category['heroImage'])}
+    return f"""{page_head(category['seoTitle'], category['metaDescription'], canonical, hero_image)}
 {header()}
   <main>
     <section class="page-hero">
@@ -190,7 +195,7 @@ def render_category(category: dict, products: list[dict]) -> str:
       <div class="container">
         <p class="backlink"><a href="products.html">← Back to full catalog</a></p>
         <div class="catalog-intro-panel">
-          <img src="{esc(category['heroImage'])}" alt="{esc(category['heroAlt'])}">
+          <img src="{esc(hero_image)}" alt="{esc(category['heroAlt'])}">
           <div>
             <span class="catalog-eyebrow">Reviewed supplier material</span>
             <h2>{(str(len(products)) + ' reviewed product ' + ('page' if len(products) == 1 else 'pages')) if products else 'Source verification in progress'}</h2>
@@ -238,7 +243,8 @@ def render_product(product: dict, category: dict, related: list[dict]) -> str:
     features = "\n".join(f"              <li>{esc(item)}</li>" for item in product.get("features", []))
     checks = "\n".join(f"              <li>{esc(item)}</li>" for item in product.get("confirmBeforeOrder", []))
     gallery_parts = []
-    for i, path in enumerate(product.get("images") or [product["image"]]):
+    gallery_paths = public_images(product.get("images") or [product.get("image")])
+    for i, path in enumerate(gallery_paths):
         loading = ' loading="lazy"' if i else ""
         gallery_parts.append(
             f'          <img src="{esc(path)}" alt="{esc(product["imageAlt"])}"{loading}>'
@@ -252,7 +258,7 @@ def render_product(product: dict, category: dict, related: list[dict]) -> str:
         (product["name"], canonical),
     ])
     note = product.get("documentNote", "Specifications shown here come from the supplied catalog material. Confirm the final model, configuration and current documents before placing an order.")
-    return f"""{page_head(product['seoTitle'], product['metaDescription'], canonical, product['image'])}
+    return f"""{page_head(product['seoTitle'], product['metaDescription'], canonical, gallery_paths[0])}
 {header()}
   <main>
     <section class="page-hero product-page-hero">

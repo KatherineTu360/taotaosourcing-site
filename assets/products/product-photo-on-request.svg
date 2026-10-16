@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Product photo available on request</title>
+  <desc id="desc">Neutral Taotao Sourcing placeholder used when a source image contains supplier-identifying marks.</desc>
+  <rect width="1200" height="900" fill="#f4f7fb"/>
+  <rect x="88" y="88" width="1024" height="724" rx="36" fill="#ffffff" stroke="#d8e1ec" stroke-width="4"/>
+  <g fill="none" stroke="#31577a" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="430" y="238" width="340" height="252" rx="28"/>
+    <path d="M468 448l82-88 72 68 54-52 56 72"/>
+    <circle cx="676" cy="314" r="28"/>
+  </g>
+  <text x="600" y="610" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" fill="#17324d">Product photo available on request</text>
+  <text x="600" y="672" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" fill="#587089">Ask Katherine for model-specific, supplier-verified images.</text>
+</svg>

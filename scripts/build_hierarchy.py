@@ -18,6 +18,8 @@ import shutil
 import sys
 from pathlib import Path
 
+from image_privacy import public_image, public_images
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from hierarchy_config import GROUPS
 
@@ -258,6 +260,7 @@ def copy_image(src: Path, cat_slug: str, leaf_slug: str, slug: str) -> str | Non
 # ---------------------------------------------------------------------------
 
 def page_head(title, description, canonical, image):
+    image = public_image(image)
     img_url = image if str(image).startswith("http") else f"{DOMAIN}/{image}"
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -326,8 +329,12 @@ def breadcrumb_json(items):
 
 def model_card(entry, product_ref=None, cat_slug=None, group_path=None):
     model_badge = f'<span class="catalog-badge">{esc(entry["model"])}</span>'
-    img = (f'<img src="{esc(entry["image"])}" alt="{esc(entry["name"])} catalog reference" loading="lazy">'
-           if entry.get("image") else
+    candidates = list(entry.get("gallery") or [])
+    if entry.get("image"):
+        candidates.append(entry["image"])
+    image = public_images(candidates)[0] if candidates else None
+    img = (f'<img src="{esc(image)}" alt="{esc(entry["name"])} catalog reference" loading="lazy">'
+           if image else
            '<div class="model-img-placeholder" aria-hidden="true"><span>Photo on request</span></div>')
     detail_href = entry.get("detail") or (product_ref and f"product-{product_ref['slug']}.html") or (group_path or "#")
     if product_ref:
@@ -358,7 +365,7 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
     cards = []
     for grp in groups:
         count = grp.get("total_models", 0)
-        img = grp.get("cover") or "assets/logo.png"
+        img = public_image(grp.get("cover") or "assets/logo.png")
         href = grp["_url_file"]
         sub_note = f'{len(grp["subs"])} sub-categories' if grp["subs"] else f'{count} models'
         cards.append(f"""        <article class="catalog-product-card">

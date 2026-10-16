@@ -5,6 +5,7 @@ import shutil
 from pathlib import Path
 from urllib.parse import quote
 
+from image_privacy import public_image, public_images
 from model_copy import build as build_copy
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -76,9 +77,10 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
     canonical = f"{DOMAIN}/product-{canonical_slug}.html"
     wa_text = quote(f"Hello Katherine, I'm interested in {entry['model']}. Target market and quantity: ")
 
-    gallery = entry.get("gallery") or []
-    if not gallery and entry.get("image"):
-        gallery = [entry["image"]]
+    gallery_candidates = list(entry.get("gallery") or [])
+    if entry.get("image"):
+        gallery_candidates.append(entry["image"])
+    gallery = public_images(gallery_candidates)
     if gallery:
         main_img, thumbs = gallery[0], gallery[1:]
         gallery_html = (
@@ -107,7 +109,7 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
         href = sib.get("detail")
         if not href:
             continue
-        img = (sib.get("gallery") or [sib.get("image") or "assets/logo.png"])[0]
+        img = public_images(list(sib.get("gallery") or []) + [sib.get("image") or "assets/logo.png"])[0]
         related.append(
             '        <article class="catalog-product-card">\n'
             f'          <a class="catalog-product-media" href="{esc(href)}">\n'

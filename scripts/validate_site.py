@@ -10,6 +10,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
+from image_privacy import is_blocked_image
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DATA = ROOT / "data" / "catalog-products.json"
@@ -69,6 +71,7 @@ def main() -> None:
     canonicals = {}
     files = sorted(path for path in ROOT.glob("*.html") if not path.name.startswith("google"))
     forbidden = ["/Users/katherinetu/", "Dior", "Givenchy", "Chanel", "Loewe", "Miu Miu", "Goyard", "Louis Vuitton"]
+    image_ref = re.compile(r"assets/products/[A-Za-z0-9_./-]+\.(?:jpe?g|png|webp|svg)", re.I)
 
     for path in files:
         text = path.read_text(encoding="utf-8")
@@ -110,6 +113,9 @@ def main() -> None:
         for token in forbidden:
             if token.lower() in text.lower():
                 errors.append(f"{path.name}: forbidden token {token}")
+        for value in sorted(set(image_ref.findall(text))):
+            if is_blocked_image(value):
+                errors.append(f"{path.name}: blocked supplier-identifying image {value}")
         if path.name.startswith("product-"):
             if '"@type":"Product"' in text or '"@type": "Product"' in text:
                 errors.append(f"{path.name}: Product JSON-LD is not allowed without offer/review data")
