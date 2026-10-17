@@ -1,0 +1,3 @@
+# Supplier-identifying originals are preserved locally but must not be committed
+# or published with the website.
+_supplier-originals/

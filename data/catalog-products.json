@@ -1,6 +1,6 @@
 {
  "schemaVersion": 2,
- "generatedAt": "2026-09-19",
+ "generatedAt": "2026-10-17",
  "categories": [
   {
    "slug": "helmets",
@@ -15,7 +15,7 @@
     {
      "slug": "motorcycle",
      "title": "Motorcycle Helmets",
-     "intro": "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from the CBS and KUUVI lines. Certification printed on each model varies (ECE 22.06, DOT, CCC); request the model-specific certificate before committing.",
+     "intro": "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from reviewed source catalogues. Catalogue-listed certification markings vary by model; request model-specific documents and confirm target-market applicability before committing.",
      "subs": [
       {
        "slug": "full-face-touring",
@@ -88,7 +88,7 @@
     {
      "slug": "cycling-sports",
      "title": "Cycling & Sports Helmets",
-     "intro": "Road, MTB, city, e-bike, smart and kids cycling helmets from the MOON line (CE + CPSC across the range) and the Yongbao factory list. NTA 8776 applies to marked e-bike models.",
+     "intro": "Road, MTB, city, e-bike, smart and kids cycling helmets from reviewed source catalogues. CE, CPSC or NTA 8776 references apply only where listed for the specific model and still require document verification.",
      "subs": [
       {
        "slug": "road",
@@ -168,7 +168,7 @@
     {
      "slug": "snow-sports",
      "title": "Ski & Snow Sports",
-     "intro": "Ski and snowboard helmets with removable visors, vent control and race variants, plus EN 174 goggles. Certifications printed on the MOON ski line: CE, CPSC, ASTM; smart models add Bluetooth audio.",
+     "intro": "Ski and snowboard helmets with removable visors, vent control and race variants, plus goggles. Catalogue-listed CE, CPSC, ASTM or EN 174 references vary by model and require document verification; selected smart models list Bluetooth audio.",
      "subs": [
       {
        "slug": "ski-adult",
@@ -359,7 +359,7 @@
       {
        "slug": "public-mold",
        "title": "Public-Mold Visor Program",
-       "intro": "Liangyu public-mold visor families for volume programs; confirm tooling and brand fitment per project.",
+       "intro": "Reviewed public-mold visor families for volume programs; confirm tooling and helmet fitment per project.",
        "url": "category-helmet-visors--brand-visors--public-mold.html",
        "modelCount": 0
       }
@@ -474,7 +474,7 @@
      "intro": "150,000-cycle economy fire-door line with square and round bodies, 25-85 kg doors.",
      "subs": [],
      "url": "category-door-closers--surface-standard.html",
-     "cover": "assets/products/door-closers/cj051-no-logo.jpeg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 7
     },
     {
@@ -483,7 +483,7 @@
      "intro": "300,000-cycle high-grade line with upgraded internals, German seal rings and AW/AD options.",
      "subs": [],
      "url": "category-door-closers--surface-high-cycle.html",
-     "cover": "assets/products/door-closers/cj5011-r-no-logo.jpeg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 7
     },
     {
@@ -549,7 +549,7 @@
      "intro": "Stainless espagnolette lock cases in 11 centre heights (7.5-35 cm).",
      "subs": [],
      "url": "category-hinges--lock-cases.html",
-     "cover": "assets/products/hierarchy/hinges/hinges-lock-cases/vt-315b.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 3
     },
     {
@@ -558,7 +558,7 @@
      "intro": "Aluminium and CNC-machined handles with fluorocarbon finishes.",
      "subs": [],
      "url": "category-hinges--handles.html",
-     "cover": "assets/products/hierarchy/hinges/hinges-handles/vt-2368.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 5
     },
     {
@@ -567,7 +567,7 @@
      "intro": "Anti-pry espagnolette sets and strike plates for Euro and 23 mm grooves.",
      "subs": [],
      "url": "category-hinges--espag-sets.html",
-     "cover": "assets/products/hierarchy/hinges/hinges-espag-sets/vt-2056b.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 9
     },
     {
@@ -576,7 +576,7 @@
      "intro": "Matched full-window hardware suites (friction stay + concealed hinge + lock case + handles + espag set).",
      "subs": [],
      "url": "category-hinges--hardware-suites.html",
-     "cover": "assets/products/hierarchy/hinges/hinges-hardware-suites/vt-szb.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 3
     }
    ]
@@ -765,7 +765,7 @@
      "intro": "",
      "subs": [],
      "url": "category-prefab--studios.html",
-     "cover": "assets/products/hierarchy/prefab/prefab-studios/yk-1.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 4
     },
     {
@@ -859,7 +859,7 @@
       }
      ],
      "url": "category-sanitary--toilets.html",
-     "cover": "assets/products/hierarchy/sanitary/sanitary-toilets-one-piece/hp-2302.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 104
     },
     {
@@ -994,7 +994,7 @@
      "intro": "",
      "subs": [],
      "url": "category-sanitary--hanging-pans.html",
-     "cover": "assets/products/hierarchy/sanitary/sanitary-hanging-pans/hp-531jxbt.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 15
     },
     {
@@ -1081,7 +1081,7 @@
      "intro": "",
      "subs": [],
      "url": "category-pv--carports.html",
-     "cover": "assets/products/hierarchy/pv/pv-carports/carport-1.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 4
     },
     {
@@ -1129,7 +1129,7 @@
      "intro": "",
      "subs": [],
      "url": "category-storage--mobile-storage.html",
-     "cover": "assets/products/hierarchy/storage/storage-mobile-storage/tank-mini.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 6
     },
     {
@@ -1138,7 +1138,7 @@
      "intro": "",
      "subs": [],
      "url": "category-storage--pcs-charging.html",
-     "cover": "assets/products/hierarchy/storage/storage-pcs-charging/energy-station-200kw.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 4
     },
     {
@@ -1147,7 +1147,7 @@
      "intro": "",
      "subs": [],
      "url": "category-storage--power-packages.html",
-     "cover": "assets/products/hierarchy/storage/storage-power-packages/eraergy-go.jpg",
+     "cover": "assets/products/hierarchy/storage/storage-power-packages/mobile-power-go.jpg",
      "totalModels": 3
     }
    ]
@@ -1222,7 +1222,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heatpump--commercial-heating.html",
-     "cover": "assets/products/hierarchy/heatpump/heatpump-commercial-heating/rn-h14vrelp.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 16
     },
     {
@@ -1231,7 +1231,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heatpump--tanks.html",
-     "cover": "assets/products/hierarchy/heatpump/heatpump-tanks/lwh-100l-b.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 8
     }
    ]
@@ -1252,7 +1252,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heating--enamel-elements.html",
-     "cover": "assets/products/hierarchy/heating/heating-enamel-elements/mr-166.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 16
     },
     {
@@ -1261,7 +1261,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heating--storage-elements.html",
-     "cover": "assets/products/hierarchy/heating/heating-storage-elements/mr-120s.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 18
     },
     {
@@ -1270,7 +1270,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heating--mini-kitchen.html",
-     "cover": "assets/products/hierarchy/heating/heating-mini-kitchen/mr-002k.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 5
     },
     {
@@ -1318,7 +1318,7 @@
      "intro": "",
      "subs": [],
      "url": "category-led--movable-posters.html",
-     "cover": "assets/products/hierarchy/led/led-movable-posters/hb-sp2-5.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 9
     },
     {
@@ -1327,7 +1327,7 @@
      "intro": "",
      "subs": [],
      "url": "category-led--foldable-updown.html",
-     "cover": "assets/products/hierarchy/led/led-foldable-updown/hb-x1-25.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 5
     },
     {
@@ -1345,7 +1345,7 @@
      "intro": "",
      "subs": [],
      "url": "category-led--special-displays.html",
-     "cover": "assets/products/hierarchy/led/led-special-displays/hb-d2-5.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 6
     }
    ]
@@ -1402,7 +1402,7 @@
     {
      "slug": "style-gallery",
      "title": "2026 Style Gallery",
-     "intro": "Reference styles from the Dingsheng style sheet; each style is developed to your fabric, size spec and branding requirements.",
+     "intro": "Reference styles from a reviewed source sheet; each style is developed to your fabric, size specification and branding requirements.",
      "subs": [],
      "url": "category-apparel--style-gallery.html",
      "cover": "assets/products/gallery/ds-01.jpg",
@@ -1658,7 +1658,7 @@
      "intro": "",
      "subs": [],
      "url": "category-lubricants--casting-additives.html",
-     "cover": "assets/products/hierarchy/lubricants/lubricants-casting-additives/c501-c502-c503.jpg",
+     "cover": "assets/products/product-photo-on-request.svg",
      "totalModels": 19
     },
     {
@@ -1733,7 +1733,7 @@
     "Colour or graphic artwork",
     "Packaging specification"
    ],
-   "image": "assets/products/helmets/f607-catalog.jpg",
+   "image": "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-touring/f607.jpg",
    "imageAlt": "F607 ABS full-face motorcycle helmet for OEM sourcing",
    "seoTitle": "F607 Full-Face Motorcycle Helmet OEM Sourcing | Taotao Sourcing",
    "metaDescription": "Source the F607 ABS full-face motorcycle helmet. Ask about samples, colours, graphics, packaging and model-specific compliance documents.",
@@ -1782,7 +1782,7 @@
     "Artwork",
     "Packing method"
    ],
-   "image": "assets/products/helmets/f609-catalog.jpg",
+   "image": "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-touring/f609.jpg",
    "imageAlt": "F609 double-visor full-face motorcycle helmet",
    "seoTitle": "F609 Double-Visor Motorcycle Helmet Supplier | Taotao Sourcing",
    "metaDescription": "Explore the F609 ABS double-visor full-face helmet and request sample, OEM graphics, packaging and available compliance-document details.",
@@ -1831,7 +1831,7 @@
     "Shell-to-size allocation",
     "Logo and carton details"
    ],
-   "image": "assets/products/helmets/f611-f616-catalog.jpg",
+   "image": "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-sport-racing/f616.jpg",
    "imageAlt": "F616 two-shell double-visor full-face helmet",
    "seoTitle": "F616 Two-Shell Full-Face Helmet OEM | Taotao Sourcing",
    "metaDescription": "Request sourcing details for the F616 two-shell ABS full-face helmet, including samples, visor options, branding and available documents.",
@@ -1880,7 +1880,7 @@
     "Target-market certificate",
     "Replacement-parts list"
    ],
-   "image": "assets/products/helmets/fk108-catalog.jpg",
+   "image": "assets/products/gallery/fk108-1.jpg",
    "imageAlt": "FK108 double-visor ABS full-face motorcycle helmet",
    "seoTitle": "FK108 Double-Visor Full-Face Helmet Supplier | Taotao Sourcing",
    "metaDescription": "Compare the FK108 double-visor ABS helmet for street and adventure use. Request samples, OEM options and model-specific documents.",
@@ -2023,7 +2023,7 @@
     "Liner and ear-pad specification",
     "Packaging"
    ],
-   "image": "assets/products/helmets/ms108-ski-catalog.jpg",
+   "image": "assets/products/gallery/ms108-2.jpg",
    "imageAlt": "MS108 in-mould ski helmet with removable visor option",
    "seoTitle": "MS108 Ski Helmet OEM Sourcing | Taotao Sourcing",
    "metaDescription": "Explore the MS108 in-mould ski helmet with adjustable ventilation and a removable visor option. Request samples and available documents.",

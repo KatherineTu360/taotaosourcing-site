@@ -8,19 +8,19 @@ non-numeric, matching the published MX802 template voice.
 """
 
 SOURCE_LABEL = {
-    "cbs-helmets": "CBS helmet catalogue 2026", "kuuvi-moto": "KUUVI motorcycle helmet catalogue 2025",
-    "moon-sports": "MOON bicycle helmet catalogue 2026", "moon-ski": "MOON sports & ski catalogue 2025",
-    "meicheng": "Meicheng helmet brochure 2025", "yongbao": "Yongbao helmet product list",
-    "hongxin-visors": "Taotao visor catalogue 2026", "door-closers": "Chuanjin door closer catalogue",
-    "vt-hinges": "VOTA window hardware album 2024", "doors-windows": "Aluminum doors & windows catalogue",
-    "steel": "Steel structure brochure", "prefab-yk": "ESO YK prefab catalogue 2026",
-    "sanitary": "HEEK / HP sanitary-ware export catalogue", "heatpumps": "Luckingstar / Ruixing heat-pump catalogues",
-    "heating": "Meiri electric-heating handbook 2024", "led": "LED poster display catalogue",
-    "pv": "PV mounting structure album", "storage": "Eraergy mobile storage introduction",
-    "decking": "Geometry Cube decking album & quotation sheets", "track": "LP Tartan sports surface album",
-    "lubricants": "Jingchuang metal-processing fluids album", "bags": "Lady handbag reference books",
+    "cbs-helmets": "reviewed motorcycle-helmet source catalogue", "kuuvi-moto": "reviewed motorcycle-helmet source catalogue",
+    "moon-sports": "reviewed bicycle-helmet source catalogue", "moon-ski": "reviewed snow-sports helmet source catalogue",
+    "meicheng": "internal helmet source record", "yongbao": "internal helmet source record",
+    "hongxin-visors": "reviewed visor source catalogue", "door-closers": "reviewed door-closer source catalogue",
+    "vt-hinges": "reviewed window-hardware source catalogue", "doors-windows": "reviewed aluminum doors and windows source catalogue",
+    "steel": "reviewed steel-structure source brochure", "prefab-yk": "reviewed modular-prefab source catalogue",
+    "sanitary": "reviewed sanitary-ware source catalogue", "heatpumps": "reviewed heat-pump source catalogues",
+    "heating": "reviewed electric-heating source handbook", "led": "reviewed LED-display source catalogue",
+    "pv": "reviewed PV-mounting source catalogue", "storage": "reviewed mobile-energy-storage source introduction",
+    "decking": "reviewed decking source catalogue and quotation sheets", "track": "reviewed sports-surface source catalogue",
+    "lubricants": "reviewed metal-processing-fluids source catalogue", "bags": "reviewed handbag reference books",
     "belts": "Belt reference books", "slg": "Small leather goods reference books",
-    "apparel": "Dingsheng style sheet", "eyelashes": "Lash supplier workbooks",
+    "apparel": "reviewed apparel style sheet", "eyelashes": "reviewed lash supplier workbooks",
 }
 
 HELMET_SOURCES = ("cbs-helmets", "kuuvi-moto", "moon-sports", "moon-ski", "meicheng", "yongbao")
@@ -58,7 +58,7 @@ def build(source, entry):
             f"{model} is a {etype.lower()} recorded in the {label}. "
             + (f"The shell is {shell}. " if shell and "not" not in shell.lower() else "")
             + (f"Sizes: {sizes}. " if sizes else "")
-            + (f"The catalogue page carries {cert}. " if cert and "per panel" not in cert and "none" not in cert.lower() else "Certification markings follow the model-specific catalogue panel. ")
+            + (f"The source catalogue lists {cert}; model-specific documents and target-market applicability must be verified before ordering. " if cert and "per panel" not in cert and "none" not in cert.lower() else "Certification status and target-market applicability remain to be verified for this model. ")
             + "Colourways, graphics and packaging are confirmed against the order specification before production."
         ).strip()
         benefits = [
@@ -95,13 +95,13 @@ def build(source, entry):
         oem = "Logo printing and custom finishes are available subject to quantity. Send your project door schedule and target quantity for confirmation."
     elif source == "vt-hinges":
         overview = (
-            f"{model} is a window-hardware series recorded in the VOTA album. Configuration: {spec}. "
+            f"{model} is a window-hardware series recorded in the {label}. Configuration: {spec}. "
             "Groove system (13.5 mm / 23 mm / Euro), left/right handing and sash weight are confirmed per project window schedule."
         ).strip()
         benefits = [
             ("Stainless construction", "SUS304 material is the album baseline across the friction-stay and concealed ranges."),
             ("Load and cycle data", "Catalogue load ratings and cycle counts are matched to your sash dimensions before quoting."),
-            ("Suite compatibility", "Pairs with VOTA lock cases, handles and four-piece sets for a complete window hardware package."),
+            ("Suite compatibility", "Lock cases, handles and four-piece sets can be matched into a complete window-hardware package."),
         ]
         qc = "Checks cover sash-weight simulation, operation smoothness through the catalogue opening angle, screw-hole alignment and plating inspection."
         oem = "Custom lengths, packing and logo requirements are confirmed with the factory subject to quantity."

@@ -5,7 +5,7 @@ import shutil
 from pathlib import Path
 from urllib.parse import quote
 
-from image_privacy import public_image, public_images
+from image_privacy import is_blocked_image, public_image, public_images
 from model_copy import build as build_copy
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,8 +24,8 @@ FAQS = [
      "Lead time depends on order size and customization. We confirm a realistic delivery "
      "schedule in the quotation based on the factory's current production plan."),
     ("Can I review a sample of the {m} first?",
-     "Yes. Sample terms are confirmed in the quotation, and bulk production starts only "
-     "after the approved sample."),
+     "Sample availability, cost and timing are confirmed in the quotation. Any bulk "
+     "arrangement follows buyer approval of the applicable sample and agreed terms."),
     ("Which documents apply to the {m}?",
      "We request the model-specific documents that apply to your destination market from "
      "the supplier and share them before order confirmation."),
@@ -55,10 +55,13 @@ def copy_gallery(key, slug):
             continue
         suffix = f"-{i}" if i else ""
         dest = GALLERY_ASSETS / f"{slug}{suffix}.jpg"
+        public_path = f"assets/products/gallery/{dest.name}"
+        if is_blocked_image(public_path):
+            continue
         dest.parent.mkdir(parents=True, exist_ok=True)
         if not dest.exists():
             shutil.copy2(src, dest)
-        out.append(f"assets/products/gallery/{dest.name}")
+        out.append(public_path)
     return out
 
 

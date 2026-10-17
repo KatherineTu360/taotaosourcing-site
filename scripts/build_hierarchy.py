@@ -16,9 +16,10 @@ import json
 import re
 import shutil
 import sys
+from datetime import date
 from pathlib import Path
 
-from image_privacy import public_image, public_images
+from image_privacy import is_blocked_image, placeholder, public_image, public_images
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from hierarchy_config import GROUPS
@@ -29,7 +30,7 @@ INTEL = DATA / "intel"
 ASSETS = ROOT / "assets" / "products"
 DOMAIN = "https://taotaosourcing.com"
 WHATSAPP = "8616626662274"
-TODAY = "2026-09-19"
+TODAY = date.today().isoformat()
 
 IMG_DIRS = {
     "cbs-helmets": "helmets/cbs-helmets", "kuuvi-moto": "helmets/kuuvi-moto",
@@ -57,7 +58,13 @@ RUN_IMG = Path("/Users/katherinetu/CODEX/独立站/website-optimization/run/taot
 PUBLICLY_EXCLUDED_SOURCES = {"meicheng", "yongbao"}
 # Source-specific group pages generated before a supplier was excluded must not
 # remain in the public sitemap.
-PUBLICLY_EXCLUDED_PAGE_PATHS = {"category-helmets--motorcycle--meicheng-city.html"}
+PUBLICLY_EXCLUDED_PAGE_PATHS = {
+    "category-helmets--motorcycle--meicheng-city.html",
+    "product-eraergy-go.html",
+}
+PUBLIC_MODEL_ALIASES = {
+    "ERAERGY-GO": "MOBILE-POWER-GO",
+}
 
 
 def esc(v):
@@ -217,11 +224,16 @@ def resolve_group_models(rules, intel, used, log):
                 spec += f"; sizes {e['sizes']}" if spec else f"Sizes: {e['sizes']}"
             if e.get("cert"):
                 spec += f"; {e['cert']}"
+            public_mid = PUBLIC_MODEL_ALIASES.get(mid, mid)
+            public_entry = dict(e)
+            if public_mid != mid:
+                public_entry["id"] = public_mid
+                public_entry["model"] = public_mid
             entries.append({
-                "id": mid,
-                "slug": slugify(mid),
-                "name": entry_title(src, e),
-                "model": str(e.get("model") or mid),
+                "id": public_mid,
+                "slug": slugify(public_mid),
+                "name": entry_title(src, public_entry),
+                "model": str(public_entry.get("model") or public_mid),
                 "spec": spec or ("Style reference from the supplier catalog; material, width and finish are confirmed per order." if src in ("belts","bags","slg") else ""),
                 "source": src,
                 "page": e.get("page"),
@@ -250,9 +262,12 @@ def copy_image(src: Path, cat_slug: str, leaf_slug: str, slug: str) -> str | Non
     dest_dir = ASSETS / "hierarchy" / cat_slug / leaf_slug
     dest_dir.mkdir(parents=True, exist_ok=True)
     dest = dest_dir / f"{slug}.jpg"
+    public_path = f"assets/products/hierarchy/{cat_slug}/{leaf_slug}/{slug}.jpg"
+    if is_blocked_image(public_path):
+        return placeholder()
     if not dest.exists():
         shutil.copy2(src, dest)
-    return f"assets/products/hierarchy/{cat_slug}/{leaf_slug}/{slug}.jpg"
+    return public_path
 
 
 # ---------------------------------------------------------------------------

@@ -32,7 +32,7 @@ def contains(*frags):
 GROUPS = {
     "helmets": [
         g("motorcycle", "Motorcycle Helmets",
-          "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from the CBS and KUUVI lines. Certification printed on each model varies (ECE 22.06, DOT, CCC); request the model-specific certificate before committing.", subs=[
+          "Full-face, flip-up, off-road, vintage and open-face motorcycle helmet platforms from reviewed source catalogues. Catalogue-listed certification markings vary by model; request model-specific documents and confirm target-market applicability before committing.", subs=[
             g("full-face-touring", "Full-Face Touring & Carbon", "Road-focused full-face platforms in ABS and FRP/carbon shell options, single- and double-visor.", models=[
                 m("cbs-helmets", keys=["F605","F606","F607","F609","F611"]),
                 m("catalog", keys=["f607-full-face-motorcycle-helmet","f609-double-visor-full-face-helmet"]),
@@ -71,7 +71,7 @@ GROUPS = {
             ]),
         ]),
         g("cycling-sports", "Cycling & Sports Helmets",
-          "Road, MTB, city, e-bike, smart and kids cycling helmets from the MOON line (CE + CPSC across the range) and the Yongbao factory list. NTA 8776 applies to marked e-bike models.", subs=[
+          "Road, MTB, city, e-bike, smart and kids cycling helmets from reviewed source catalogues. CE, CPSC or NTA 8776 references apply only where listed for the specific model and still require document verification.", subs=[
             g("road", "Road Cycling", "In-mould road helmets from 170 g ultra-light to aero and Mips-equipped versions, with taillight and magnetic visor options.", models=[
                 m("moon-sports", keys=["AR01","AR3","AR37","HB102","FT19","HB101","HB92","HB3-1","HB90","YM03","MV100","MV96","MV99","HY97","HB98","MV53","MV29","KS29SP","MV37","MV49","HB3-8","MV32"]),
                 m("yongbao", keys=["HO-06","HO-210","YB-17","HO-186","HO-108","HO-109","YB-69","HO-99","HO-196","HO-022","HO-03","HO-028","HO-888","YZ-A001","YZ-A002","YZ-A002G","YZ-A003"]),
@@ -113,7 +113,7 @@ GROUPS = {
             ]),
         ]),
         g("snow-sports", "Ski & Snow Sports",
-          "Ski and snowboard helmets with removable visors, vent control and race variants, plus EN 174 goggles. Certifications printed on the MOON ski line: CE, CPSC, ASTM; smart models add Bluetooth audio.", subs=[
+          "Ski and snowboard helmets with removable visors, vent control and race variants, plus goggles. Catalogue-listed CE, CPSC, ASTM or EN 174 references vary by model and require document verification; selected smart models list Bluetooth audio.", subs=[
             g("ski-adult", "Adult Ski & Snowboard", "In-mould and hard-shell adult ski helmets, visor-ready models with Shield-X lenses.", models=[
                 m("moon-ski", keys=["MS108","MS106","MS105","MS99","MS97","MTV17SK","MS100","MS95","MS96","MS102","MS103","MS91","MTV20","MTV12SK","MS90","MS101","MS86","MS85","MS88"]),
                 m("yongbao", keys=["HO-111","YB-98","HO-269","YB-18","YB-289"]),
@@ -208,7 +208,7 @@ GROUPS = {
                 m("hongxin-visors", keys=["Bubble visor REGULAR (3-snap)","BOBO wind visor"]),
                 m("catalog", keys=["bubble-visor-open-face","bobo-wind-visor"]),
             ]),
-            g("public-mold", "Public-Mold Visor Program", "Liangyu public-mold visor families for volume programs; confirm tooling and brand fitment per project.", models=[
+            g("public-mold", "Public-Mold Visor Program", "Reviewed public-mold visor families for volume programs; confirm tooling and helmet fitment per project.", models=[
                 m("hongxin-visors", keys=["__public_molds__"]),
             ]),
         ]),
@@ -575,7 +575,7 @@ GROUPS = {
         g("sets-lounge", "Sets, Lounge & Dresses", models=[
             m("catalog", keys=["casual-tops-wide-leg","long-sleeve-lounge","tank-top-and-shorts","sleeveless-casual"]),
         ]),
-        g("style-gallery", "2026 Style Gallery", "Reference styles from the Dingsheng style sheet; each style is developed to your fabric, size spec and branding requirements.", models=[
+        g("style-gallery", "2026 Style Gallery", "Reference styles from a reviewed source sheet; each style is developed to your fabric, size specification and branding requirements.", models=[
             m("apparel", match=lambda model, e: model.startswith("DS-")),
         ]),
     ],

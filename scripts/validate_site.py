@@ -10,7 +10,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from image_privacy import is_blocked_image
+from image_privacy import is_blocked_image, rules
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -64,6 +64,12 @@ def local_target(value: str) -> str | None:
     return unquote(parsed.path)
 
 
+def contains_token(text: str, token: str) -> bool:
+    """Match a supplier token as a complete name, not inside another word."""
+    pattern = rf"(?<![A-Za-z0-9]){re.escape(token)}(?![A-Za-z0-9])"
+    return re.search(pattern, text, flags=re.IGNORECASE) is not None
+
+
 def main() -> None:
     errors = []
     warnings = []
@@ -71,6 +77,8 @@ def main() -> None:
     canonicals = {}
     files = sorted(path for path in ROOT.glob("*.html") if not path.name.startswith("google"))
     forbidden = ["/Users/katherinetu/", "Dior", "Givenchy", "Chanel", "Loewe", "Miu Miu", "Goyard", "Louis Vuitton"]
+    supplier_tokens = rules().get("blockedTextTokens", [])
+    blocked_public_files = rules().get("blockedPublicFiles", [])
     image_ref = re.compile(r"assets/products/[A-Za-z0-9_./-]+\.(?:jpe?g|png|webp|svg)", re.I)
 
     for path in files:
@@ -113,6 +121,9 @@ def main() -> None:
         for token in forbidden:
             if token.lower() in text.lower():
                 errors.append(f"{path.name}: forbidden token {token}")
+        for token in supplier_tokens:
+            if contains_token(text, token):
+                errors.append(f"{path.name}: supplier identity token {token}")
         for value in sorted(set(image_ref.findall(text))):
             if is_blocked_image(value):
                 errors.append(f"{path.name}: blocked supplier-identifying image {value}")
@@ -121,6 +132,26 @@ def main() -> None:
                 errors.append(f"{path.name}: Product JSON-LD is not allowed without offer/review data")
             if "wa.me/8616626662274?text=" not in text:
                 errors.append(f"{path.name}: missing product-specific WhatsApp link")
+
+    for image_path in sorted((ROOT / "assets" / "products").rglob("*")):
+        if not image_path.is_file():
+            continue
+        relative = image_path.relative_to(ROOT).as_posix()
+        if is_blocked_image(relative):
+            errors.append(f"blocked supplier-identifying source remains publicly addressable: {relative}")
+
+    for relative in blocked_public_files:
+        if (ROOT / relative).exists():
+            errors.append(f"blocked supplier-identifying page remains publicly addressable: {relative}")
+
+    config_path = ROOT / "_config.yml"
+    if not config_path.exists():
+        errors.append("missing _config.yml publish exclusions")
+    else:
+        config_text = config_path.read_text(encoding="utf-8")
+        for private_path in ("data", "scripts", "_supplier-originals"):
+            if not re.search(rf"^\s*-\s*{re.escape(private_path)}\s*$", config_text, flags=re.MULTILINE):
+                errors.append(f"_config.yml does not exclude {private_path}")
 
     data = json.loads(PUBLIC_DATA.read_text(encoding="utf-8"))
     private = json.loads(PRIVATE_MAP.read_text(encoding="utf-8"))

@@ -1,8 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16",
+  "updatedAt": "2026-10-17",
   "purpose": "Prevent source-supplier names, logos and contact details from appearing in public product imagery while preserving the original source files.",
   "placeholder": "assets/products/product-photo-on-request.svg",
+  "blockedTextTokens": [
+    "CBS",
+    "KUUVI",
+    "MOON",
+    "Meicheng",
+    "Yongbao",
+    "Hongxin",
+    "Chuanjin",
+    "VOTA",
+    "ESO YK",
+    "HEEK",
+    "Luckingstar",
+    "Ruixing",
+    "Meiri",
+    "Eraergy",
+    "Geometry Cube",
+    "LP Tartan",
+    "Jingchuang",
+    "Dingsheng",
+    "Liangyu"
+  ],
+  "blockedPublicFiles": [
+    "product-eraergy-go.html"
+  ],
   "blockedGlobs": [
     "assets/products/hierarchy/heatpump/**/rn-*.jpg",
     "assets/products/hierarchy/heatpump/**/rs-*.jpg",
@@ -145,6 +169,11 @@
     "w02b.jpg"
   ],
   "blockedPaths": [
+    "assets/products/helmets/f607-catalog.jpg",
+    "assets/products/helmets/f609-catalog.jpg",
+    "assets/products/helmets/f611-f616-catalog.jpg",
+    "assets/products/helmets/fk108-catalog.jpg",
+    "assets/products/helmets/ms108-ski-catalog.jpg",
     "assets/products/hierarchy/helmets/helmets-cycling-sports-road/hb92.jpg",
     "assets/products/hierarchy/helmets/helmets-motorcycle-flip-up-modular/m902.jpg",
     "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-sport-racing/ku936.jpg",

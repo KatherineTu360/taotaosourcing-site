@@ -1,0 +1,6 @@
+# Source records and supplier-identifying originals are used only at build time.
+# GitHub Pages must not expose them as public website files.
+exclude:
+  - data
+  - scripts
+  - _supplier-originals
