@@ -15,6 +15,7 @@ from image_privacy import is_blocked_image, rules
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_DATA = ROOT / "data" / "catalog-products.json"
+REPRESENTATIVE_DATA = ROOT / "data" / "representative-products.json"
 PRIVATE_MAP = Path(
     "/Users/katherinetu/CODEX/独立站/website-optimization/run/"
     "taotaosourcing-products-2026-09-13/publication-source-map.json"
@@ -31,6 +32,7 @@ class PageParser(HTMLParser):
         self.images = []
         self.canonicals = []
         self.descriptions = []
+        self.robots = []
 
     def handle_starttag(self, tag: str, attrs) -> None:
         values = dict(attrs)
@@ -45,8 +47,12 @@ class PageParser(HTMLParser):
                 self.images.append((values["src"], values.get("alt")))
         elif tag == "link" and values.get("rel") == "canonical":
             self.canonicals.append(values.get("href", ""))
-        elif tag == "meta" and values.get("name") == "description":
-            self.descriptions.append(values.get("content", ""))
+        elif tag == "meta":
+            name = values.get("name", "").lower()
+            if name == "description":
+                self.descriptions.append(values.get("content", ""))
+            elif name == "robots":
+                self.robots.append(values.get("content", "").lower())
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "title":
@@ -75,6 +81,7 @@ def main() -> None:
     warnings = []
     titles = {}
     canonicals = {}
+    parsers = {}
     files = sorted(path for path in ROOT.glob("*.html") if not path.name.startswith("google"))
     forbidden = ["/Users/katherinetu/", "Dior", "Givenchy", "Chanel", "Loewe", "Miu Miu", "Goyard", "Louis Vuitton"]
     supplier_tokens = rules().get("blockedTextTokens", [])
@@ -85,6 +92,7 @@ def main() -> None:
         text = path.read_text(encoding="utf-8")
         parser = PageParser()
         parser.feed(text)
+        parsers[path.name] = parser
         if parser.h1 != 1:
             errors.append(f"{path.name}: expected one H1, found {parser.h1}")
         title = "".join(parser.title).strip()
@@ -155,6 +163,23 @@ def main() -> None:
 
     data = json.loads(PUBLIC_DATA.read_text(encoding="utf-8"))
     private = json.loads(PRIVATE_MAP.read_text(encoding="utf-8"))
+    if not REPRESENTATIVE_DATA.exists():
+        errors.append("missing representative product manifest")
+        representative = {"leafGroups": [], "indexableHierarchyPages": [], "indexableProductPages": []}
+    else:
+        representative = json.loads(REPRESENTATIVE_DATA.read_text(encoding="utf-8"))
+    representative_products = set(representative.get("indexableProductPages", []))
+    representative_hierarchy = set(representative.get("indexableHierarchyPages", []))
+    for page_name in representative_products:
+        if not (ROOT / page_name).exists():
+            errors.append(f"missing representative product page: {page_name}")
+    for page_name, parser in parsers.items():
+        if any("noindex" in value for value in parser.robots):
+            continue
+        for href in parser.links:
+            target = local_target(href)
+            if target and Path(target).name.startswith("product-") and Path(target).name not in representative_products:
+                errors.append(f"{page_name}: indexable page links non-representative product {Path(target).name}")
     public_slugs = {item["slug"] for item in data["products"]}
     source_slugs = set(private["sourceMap"])
     missing_source = public_slugs - source_slugs
@@ -162,8 +187,10 @@ def main() -> None:
         errors.append(f"public products missing source map: {sorted(missing_source)}")
     for item in data["products"]:
         expected = ROOT / f"product-{item['slug']}.html"
-        if not expected.exists():
-            errors.append(f"missing generated product page: {expected.name}")
+        if expected.name in representative_products and not expected.exists():
+            errors.append(f"missing representative product page: {expected.name}")
+        if expected.name not in representative_products and expected.exists():
+            errors.append(f"non-representative generated product page remains: {expected.name}")
         if "internal source" in item.get("model", "").lower():
             errors.append(f"{item['slug']}: internal reference leaked into public model field")
         evidence = private["sourceMap"].get(item["slug"], [])
@@ -180,35 +207,79 @@ def main() -> None:
             continue
         if detail_name not in catalog_html:
             errors.append(f"products.html missing category link: {detail_name}")
-        detail_html = detail_path.read_text(encoding="utf-8")
         category_products = [item for item in data["products"] if item["category"] == category["slug"]]
         if not category_products and not category.get("holdMessage") and not category.get("albumPage") and not category.get("groups"):
             errors.append(f"{category['slug']}: no products and no hold message")
-        # v2 hierarchy: product links may live on leaf category-* pages
-        leaf_pages = list(ROOT.glob(f"category-{category['slug']}--*.html"))
-        leaf_html = "\n".join(p.read_text(encoding="utf-8") for p in leaf_pages)
         for item in category_products:
             product_name = f"product-{item['slug']}.html"
-            if product_name not in detail_html and product_name not in leaf_html:
-                errors.append(f"{detail_name}: missing product link {product_name}")
+            if product_name not in representative_products:
+                continue
+            leaf_pages = list(ROOT.glob(f"category-{category['slug']}--*.html"))
+            leaf_html = "\n".join(p.read_text(encoding="utf-8") for p in leaf_pages)
+            if product_name not in leaf_html:
+                errors.append(f"{detail_name}: representative product is not linked {product_name}")
 
     unknown_categories = {item["category"] for item in data["products"]} - category_slugs
     if unknown_categories:
         errors.append(f"products use unknown categories: {sorted(unknown_categories)}")
 
+    for leaf in representative.get("leafGroups", []):
+        reps = leaf.get("representatives", [])
+        if not 1 <= len(reps) <= representative.get("maxPerLeaf", 3):
+            errors.append(f"{leaf.get('page')}: expected 1-3 representatives, found {len(reps)}")
+            continue
+        leaf_path = ROOT / leaf["page"]
+        if not leaf_path.exists():
+            errors.append(f"missing representative leaf page: {leaf['page']}")
+            continue
+        leaf_html = leaf_path.read_text(encoding="utf-8")
+        for item in reps:
+            if item["page"] not in leaf_html:
+                errors.append(f"{leaf['page']}: missing representative link {item['page']}")
+
     sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
-    for item in data["products"]:
-        url = f"https://taotaosourcing.com/product-{item['slug']}.html"
-        if url not in sitemap:
-            errors.append(f"sitemap missing {url}")
-    for category in data["categories"]:
-        url = f"https://taotaosourcing.com/detail-{category['slug']}.html"
-        if url not in sitemap:
-            errors.append(f"sitemap missing {url}")
-    for page in ROOT.glob("category-*.html"):
+    sitemap_locs = re.findall(r"<loc>([^<]+)</loc>", sitemap)
+    sitemap_set = set(sitemap_locs)
+    if len(sitemap_locs) != len(sitemap_set):
+        errors.append(f"sitemap has {len(sitemap_locs) - len(sitemap_set)} duplicate URLs")
+
+    for page in ROOT.glob("product-*.html"):
+        parser = parsers.get(page.name)
+        noindex = parser and any("noindex" in value for value in parser.robots)
         url = f"https://taotaosourcing.com/{page.name}"
-        if url not in sitemap:
-            errors.append(f"sitemap missing {url}")
+        if page.name in representative_products:
+            if noindex:
+                errors.append(f"{page.name}: representative product must be indexable")
+            if url not in sitemap_set:
+                errors.append(f"sitemap missing representative product {url}")
+        else:
+            errors.append(f"non-representative product page remains: {page.name}")
+            if url in sitemap_set:
+                errors.append(f"sitemap contains non-representative product {url}")
+
+    for page in ROOT.glob("category-*.html"):
+        parser = parsers.get(page.name)
+        noindex = parser and any("noindex" in value for value in parser.robots)
+        url = f"https://taotaosourcing.com/{page.name}"
+        if page.name in representative_hierarchy:
+            if noindex:
+                errors.append(f"{page.name}: active hierarchy page must be indexable")
+            if url not in sitemap_set:
+                errors.append(f"sitemap missing active hierarchy page {url}")
+        else:
+            if not noindex:
+                errors.append(f"{page.name}: inactive hierarchy page must be noindex")
+            if url in sitemap_set:
+                errors.append(f"sitemap contains inactive hierarchy page {url}")
+
+    for page_name in representative_hierarchy:
+        path = ROOT / page_name
+        if not path.exists():
+            errors.append(f"missing indexable hierarchy page: {page_name}")
+            continue
+        url = f"https://taotaosourcing.com/{page_name}"
+        if url not in sitemap_set:
+            errors.append(f"sitemap missing indexable hierarchy page {url}")
 
     print(f"Checked {len(files)} HTML pages and {len(public_slugs)} public product records.")
     for item in warnings:

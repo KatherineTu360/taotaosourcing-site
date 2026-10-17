@@ -22,42 +22,42 @@
        "title": "Full-Face Touring & Carbon",
        "intro": "Road-focused full-face platforms in ABS and FRP/carbon shell options, single- and double-visor.",
        "url": "category-helmets--motorcycle--full-face-touring.html",
-       "modelCount": 7
+       "modelCount": 3
       },
       {
        "slug": "full-face-sport-racing",
        "title": "Full-Face Sport & Racing",
        "intro": "Sport and track full-face models, including 12K carbon racing shells.",
        "url": "category-helmets--motorcycle--full-face-sport-racing.html",
-       "modelCount": 13
+       "modelCount": 3
       },
       {
        "slug": "flip-up-modular",
        "title": "Flip-Up Modular",
        "intro": "Chin-bar modular helmets for touring and urban riders.",
        "url": "category-helmets--motorcycle--flip-up-modular.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "off-road",
        "title": "Off-Road & Motocross",
        "intro": "Peak-equipped off-road platforms from ABS entry shells to 12K carbon professional models, with removable-chin trial options.",
        "url": "category-helmets--motorcycle--off-road.html",
-       "modelCount": 8
+       "modelCount": 3
       },
       {
        "slug": "vintage-cruiser",
        "title": "Vintage & Cruiser",
        "intro": "Fiberglass and 3K carbon retro full-face and Harley-style 3/4 open-face helmets with bubble shields.",
        "url": "category-helmets--motorcycle--vintage-cruiser.html",
-       "modelCount": 5
+       "modelCount": 3
       },
       {
        "slug": "open-face-half",
        "title": "Open-Face & Half Shell",
        "intro": "3/4 open-face, jet and shorty half shells for city riding, including carbon jet versions.",
        "url": "category-helmets--motorcycle--open-face-half.html",
-       "modelCount": 16
+       "modelCount": 3
       },
       {
        "slug": "smart-bluetooth",
@@ -71,19 +71,19 @@
        "title": "Kids & Junior",
        "intro": "Children's full-face, open-face and half motorcycle helmets in cartoon graphics.",
        "url": "category-helmets--motorcycle--kids-junior.html",
-       "modelCount": 5
+       "modelCount": 3
       },
       {
        "slug": "novelty-gift",
        "title": "Novelty & Gift",
        "intro": "Licensed-style flip-up and character helmets plus mini gift helmets.",
        "url": "category-helmets--motorcycle--novelty-gift.html",
-       "modelCount": 4
+       "modelCount": 3
       }
      ],
      "url": "category-helmets--motorcycle.html",
-     "cover": "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-touring/f607.jpg",
-     "totalModels": 65
+     "cover": "assets/products/hierarchy/helmets/helmets-motorcycle-full-face-touring/f605.jpg",
+     "totalModels": 27
     },
     {
      "slug": "cycling-sports",
@@ -95,28 +95,28 @@
        "title": "Road Cycling",
        "intro": "In-mould road helmets from 170 g ultra-light to aero and Mips-equipped versions, with taillight and magnetic visor options.",
        "url": "category-helmets--cycling-sports--road.html",
-       "modelCount": 23
+       "modelCount": 3
       },
       {
        "slug": "mtb",
        "title": "Mountain Bike (MTB)",
        "intro": "Open-face and large-peak MTB helmets, in-mould and out-mould.",
        "url": "category-helmets--cycling-sports--mtb.html",
-       "modelCount": 14
+       "modelCount": 3
       },
       {
        "slug": "downhill-fullface",
        "title": "Downhill & Full-Face",
        "intro": "Full-face downhill and kids full-face helmets with removable chin options.",
        "url": "category-helmets--cycling-sports--downhill-fullface.html",
-       "modelCount": 5
+       "modelCount": 3
       },
       {
        "slug": "city-commuter",
        "title": "City & Commuter",
        "intro": "Urban commuting helmets, folding commuter models and goggle-equipped city helmets with rechargeable lights.",
        "url": "category-helmets--cycling-sports--city-commuter.html",
-       "modelCount": 12
+       "modelCount": 3
       },
       {
        "slug": "e-bike",
@@ -130,14 +130,14 @@
        "title": "Smart & Camera",
        "intro": "Bluetooth, camera, LED-music and turn-signal smart helmets.",
        "url": "category-helmets--cycling-sports--smart-camera.html",
-       "modelCount": 12
+       "modelCount": 3
       },
       {
        "slug": "visor-led",
        "title": "Visor & Taillight Series",
        "intro": "Helmet families with integrated lenses or LED taillights.",
        "url": "category-helmets--cycling-sports--visor-led.html",
-       "modelCount": 8
+       "modelCount": 3
       },
       {
        "slug": "aero-triathlon",
@@ -151,19 +151,19 @@
        "title": "Freestyle & Skate",
        "intro": "Skatepark and freestyle helmets in in-mould and out-mould builds.",
        "url": "category-helmets--cycling-sports--freestyle-skate.html",
-       "modelCount": 6
+       "modelCount": 3
       },
       {
        "slug": "kids",
        "title": "Kids & Junior Cycling",
        "intro": "Children's cycling, balance-bike and animal-print helmets, 180-300 g class.",
        "url": "category-helmets--cycling-sports--kids.html",
-       "modelCount": 29
+       "modelCount": 3
       }
      ],
      "url": "category-helmets--cycling-sports.html",
      "cover": "assets/products/hierarchy/helmets/helmets-cycling-sports-road/ar01.jpg",
-     "totalModels": 115
+     "totalModels": 30
     },
     {
      "slug": "snow-sports",
@@ -175,33 +175,33 @@
        "title": "Adult Ski & Snowboard",
        "intro": "In-mould and hard-shell adult ski helmets, visor-ready models with Shield-X lenses.",
        "url": "category-helmets--snow-sports--ski-adult.html",
-       "modelCount": 20
+       "modelCount": 3
       },
       {
        "slug": "ski-kids",
        "title": "Kids & Youth Ski",
        "intro": "Kids ski helmets with visor, mohawk prints and LED taillight options.",
        "url": "category-helmets--snow-sports--ski-kids.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "race-snow",
        "title": "Race & Smart Ski",
        "intro": "Race helmets with extended ear protection and Bluetooth smart ski models.",
        "url": "category-helmets--snow-sports--race-snow.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "goggles",
        "title": "Ski & Snow Goggles",
        "intro": "Adult and kids double-layer spherical goggles, magnetic-lens and anti-fog coated (EN 174 marked).",
        "url": "category-helmets--snow-sports--goggles.html",
-       "modelCount": 7
+       "modelCount": 3
       }
      ],
      "url": "category-helmets--snow-sports.html",
-     "cover": "assets/products/hierarchy/helmets/helmets-snow-sports-ski-adult/ms108.jpg",
-     "totalModels": 35
+     "cover": "assets/products/hierarchy/helmets/helmets-snow-sports-ski-adult/ms106.jpg",
+     "totalModels": 12
     },
     {
      "slug": "specialty-sports",
@@ -213,40 +213,40 @@
        "title": "Equestrian",
        "intro": "Riding helmets with removable visors, VG1 and EN 1384 / ASTM F1163 marked models, adults and kids.",
        "url": "category-helmets--specialty-sports--equestrian.html",
-       "modelCount": 10
+       "modelCount": 3
       },
       {
        "slug": "climbing",
        "title": "Climbing",
        "intro": "Lightweight EPP/PC climbing helmets.",
        "url": "category-helmets--specialty-sports--climbing.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "water-sports",
        "title": "Water Sports",
        "intro": "Whitewater and rescue helmets with EVA liners and ear protection.",
        "url": "category-helmets--specialty-sports--water-sports.html",
-       "modelCount": 6
+       "modelCount": 3
       },
       {
        "slug": "ice-hockey",
        "title": "Speed Skating & Hockey",
        "intro": "Speed skating helmets and caged hockey helmets.",
        "url": "category-helmets--specialty-sports--ice-hockey.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "protection",
        "title": "Body Protection",
        "intro": "SP2 back protectors, jackets and kids protector sets.",
        "url": "category-helmets--specialty-sports--protection.html",
-       "modelCount": 4
+       "modelCount": 3
       }
      ],
      "url": "category-helmets--specialty-sports.html",
      "cover": "assets/products/hierarchy/helmets/helmets-specialty-sports-equestrian/mk01.jpg",
-     "totalModels": 28
+     "totalModels": 15
     }
    ]
   },
@@ -270,42 +270,42 @@
        "title": "AGV-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--agv.html",
-       "modelCount": 7
+       "modelCount": 3
       },
       {
        "slug": "hjc",
        "title": "HJC-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--hjc.html",
-       "modelCount": 10
+       "modelCount": 3
       },
       {
        "slug": "shoei",
        "title": "SHOEI-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--shoei.html",
-       "modelCount": 11
+       "modelCount": 3
       },
       {
        "slug": "arai",
        "title": "Arai-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--arai.html",
-       "modelCount": 6
+       "modelCount": 3
       },
       {
        "slug": "ls2",
        "title": "LS2-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--ls2.html",
-       "modelCount": 14
+       "modelCount": 3
       },
       {
        "slug": "mt",
        "title": "MT-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--mt.html",
-       "modelCount": 12
+       "modelCount": 3
       },
       {
        "slug": "kyt",
@@ -319,7 +319,7 @@
        "title": "SHARK-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--shark.html",
-       "modelCount": 5
+       "modelCount": 3
       },
       {
        "slug": "scorpion-exo",
@@ -333,7 +333,7 @@
        "title": "Icon & Nolan-Compatible",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--icon-nolan.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "bell",
@@ -347,26 +347,19 @@
        "title": "Alpinestars, Motorax, Ruroc & More",
        "intro": "",
        "url": "category-helmet-visors--brand-visors--other-brands.html",
-       "modelCount": 7
+       "modelCount": 3
       },
       {
        "slug": "bubble-open-face",
        "title": "Bubble & Open-Face Visors",
        "intro": "3-snap bubble visors and open-face wind shields for vintage and city helmets.",
        "url": "category-helmet-visors--brand-visors--bubble-open-face.html",
-       "modelCount": 4
-      },
-      {
-       "slug": "public-mold",
-       "title": "Public-Mold Visor Program",
-       "intro": "Reviewed public-mold visor families for volume programs; confirm tooling and helmet fitment per project.",
-       "url": "category-helmet-visors--brand-visors--public-mold.html",
-       "modelCount": 0
+       "modelCount": 3
       }
      ],
      "url": "category-helmet-visors--brand-visors.html",
      "cover": "assets/products/hierarchy/helmet-visors/helmet-visors-brand-visors-agv/agv-k1-k1s-k3sv-k5-k5s.jpg",
-     "totalModels": 89
+     "totalModels": 39
     }
    ]
   },
@@ -390,7 +383,7 @@
        "title": "Thermal-Break Sliding Windows",
        "intro": "",
        "url": "category-doors-windows--windows--thermal-sliding.html",
-       "modelCount": 5
+       "modelCount": 3
       },
       {
        "slug": "standard-sliding",
@@ -404,12 +397,12 @@
        "title": "Casement & Tilt-Turn System Windows",
        "intro": "",
        "url": "category-doors-windows--windows--casement-tilt-turn.html",
-       "modelCount": 6
+       "modelCount": 3
       }
      ],
      "url": "category-doors-windows--windows.html",
      "cover": "assets/products/hierarchy/doors-windows/doors-windows-windows-thermal-sliding/tc76.jpg",
-     "totalModels": 12
+     "totalModels": 7
     },
     {
      "slug": "doors",
@@ -421,7 +414,7 @@
        "title": "Sliding & Side-Pressure Doors",
        "intro": "",
        "url": "category-doors-windows--doors--sliding-doors.html",
-       "modelCount": 4
+       "modelCount": 3
       },
       {
        "slug": "lift-slide",
@@ -454,7 +447,7 @@
      ],
      "url": "category-doors-windows--doors.html",
      "cover": "assets/products/hierarchy/doors-windows/doors-windows-doors-sliding-doors/dw-116sp.jpg",
-     "totalModels": 13
+     "totalModels": 12
     }
    ]
   },
@@ -474,8 +467,8 @@
      "intro": "150,000-cycle economy fire-door line with square and round bodies, 25-85 kg doors.",
      "subs": [],
      "url": "category-door-closers--surface-standard.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 7
+     "cover": "assets/products/door-closers/closer-1.jpg",
+     "totalModels": 2
     },
     {
      "slug": "surface-high-cycle",
@@ -483,8 +476,8 @@
      "intro": "300,000-cycle high-grade line with upgraded internals, German seal rings and AW/AD options.",
      "subs": [],
      "url": "category-door-closers--surface-high-cycle.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 7
+     "cover": "assets/products/door-closers/cj5011-r-no-logo.jpeg",
+     "totalModels": 2
     },
     {
      "slug": "concealed",
@@ -492,8 +485,8 @@
      "intro": "Hidden-installation closers for 1000-1200 mm doors.",
      "subs": [],
      "url": "category-door-closers--concealed.html",
-     "cover": "assets/products/hierarchy/door-closers/door-closers-concealed/cj2022.jpg",
-     "totalModels": 3
+     "cover": "assets/products/hierarchy/door-closers/door-closers-concealed/cj2122.jpg",
+     "totalModels": 2
     },
     {
      "slug": "special-shape",
@@ -523,7 +516,7 @@
      "subs": [],
      "url": "category-hinges--friction-stays.html",
      "cover": "assets/products/hierarchy/hinges/hinges-friction-stays/vt-358.jpg",
-     "totalModels": 11
+     "totalModels": 3
     },
     {
      "slug": "concealed-hinges",
@@ -532,7 +525,7 @@
      "subs": [],
      "url": "category-hinges--concealed-hinges.html",
      "cover": "assets/products/hierarchy/hinges/hinges-concealed-hinges/vt-kz.jpg",
-     "totalModels": 9
+     "totalModels": 3
     },
     {
      "slug": "top-hung-stays",
@@ -540,8 +533,8 @@
      "intro": "Damped and zero-damping top-hung window stays, 38-70 degree opening.",
      "subs": [],
      "url": "category-hinges--top-hung-stays.html",
-     "cover": "assets/products/hierarchy/hinges/hinges-top-hung-stays/vt-330a.jpg",
-     "totalModels": 6
+     "cover": "assets/products/hierarchy/hinges/hinges-top-hung-stays/vt-330b.jpg",
+     "totalModels": 3
     },
     {
      "slug": "lock-cases",
@@ -550,7 +543,7 @@
      "subs": [],
      "url": "category-hinges--lock-cases.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 3
+     "totalModels": 2
     },
     {
      "slug": "handles",
@@ -559,7 +552,7 @@
      "subs": [],
      "url": "category-hinges--handles.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 5
+     "totalModels": 2
     },
     {
      "slug": "espag-sets",
@@ -568,7 +561,7 @@
      "subs": [],
      "url": "category-hinges--espag-sets.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 9
+     "totalModels": 2
     },
     {
      "slug": "hardware-suites",
@@ -577,7 +570,7 @@
      "subs": [],
      "url": "category-hinges--hardware-suites.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 3
+     "totalModels": 2
     }
    ]
   },
@@ -597,8 +590,8 @@
      "intro": "",
      "subs": [],
      "url": "category-decking--co-extruded.html",
-     "cover": "assets/products/hierarchy/decking/decking-co-extruded/lfm14025k6.jpg",
-     "totalModels": 7
+     "cover": "assets/products/product-photo-on-request.svg",
+     "totalModels": 3
     },
     {
      "slug": "core-decking",
@@ -606,8 +599,8 @@
      "intro": "",
      "subs": [],
      "url": "category-decking--core-decking.html",
-     "cover": "assets/products/hierarchy/decking/decking-core-decking/lxd-14525.jpg",
-     "totalModels": 6
+     "cover": "assets/products/hierarchy/decking/decking-core-decking/lxd-14522.jpg",
+     "totalModels": 3
     },
     {
      "slug": "asa-decking",
@@ -615,8 +608,8 @@
      "intro": "",
      "subs": [],
      "url": "category-decking--asa-decking.html",
-     "cover": "assets/products/hierarchy/decking/decking-asa-decking/asa-14021.jpg",
-     "totalModels": 5
+     "cover": "assets/products/hierarchy/decking/decking-asa-decking/asa-11316.jpg",
+     "totalModels": 3
     },
     {
      "slug": "wall-fence",
@@ -625,7 +618,7 @@
      "subs": [],
      "url": "category-decking--wall-fence.html",
      "cover": "assets/products/hierarchy/decking/decking-wall-fence/lfm18024.jpg",
-     "totalModels": 5
+     "totalModels": 3
     },
     {
      "slug": "trims-handrails",
@@ -643,7 +636,7 @@
      "subs": [],
      "url": "category-decking--installation-system.html",
      "cover": "assets/products/hierarchy/decking/decking-installation-system/dbpj-170.jpg",
-     "totalModels": 9
+     "totalModels": 3
     }
    ]
   },
@@ -664,7 +657,7 @@
      "subs": [],
      "url": "category-steel--purlins.html",
      "cover": "assets/products/hierarchy/steel/steel-purlins/c-purlin.jpg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "truss-deck",
@@ -682,7 +675,7 @@
      "subs": [],
      "url": "category-steel--closed-deck.html",
      "cover": "assets/products/hierarchy/steel/steel-closed-deck/yx42-180-745.jpg",
-     "totalModels": 8
+     "totalModels": 3
     },
     {
      "slug": "open-deck",
@@ -691,7 +684,7 @@
      "subs": [],
      "url": "category-steel--open-deck.html",
      "cover": "assets/products/hierarchy/steel/steel-open-deck/yx76-295-880.jpg",
-     "totalModels": 6
+     "totalModels": 3
     },
     {
      "slug": "roof-panels",
@@ -700,7 +693,7 @@
      "subs": [],
      "url": "category-steel--roof-panels.html",
      "cover": "assets/products/hierarchy/steel/steel-roof-panels/yx25-207-830.jpg",
-     "totalModels": 9
+     "totalModels": 3
     },
     {
      "slug": "wall-panels",
@@ -709,7 +702,7 @@
      "subs": [],
      "url": "category-steel--wall-panels.html",
      "cover": "assets/products/hierarchy/steel/steel-wall-panels/s-373.jpg",
-     "totalModels": 11
+     "totalModels": 3
     },
     {
      "slug": "sandwich-panels",
@@ -718,7 +711,7 @@
      "subs": [],
      "url": "category-steel--sandwich-panels.html",
      "cover": "assets/products/hierarchy/steel/steel-sandwich-panels/sp-950.jpg",
-     "totalModels": 5
+     "totalModels": 3
     },
     {
      "slug": "daylighting",
@@ -765,8 +758,8 @@
      "intro": "",
      "subs": [],
      "url": "category-prefab--studios.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 4
+     "cover": "assets/products/prefab/prefab-1.jpg",
+     "totalModels": 2
     },
     {
      "slug": "tea-pavilion",
@@ -783,8 +776,8 @@
      "intro": "",
      "subs": [],
      "url": "category-prefab--one-bedroom.html",
-     "cover": "assets/products/hierarchy/prefab/prefab-one-bedroom/yk-4.jpg",
-     "totalModels": 4
+     "cover": "assets/products/prefab/prefab-1.jpg",
+     "totalModels": 2
     },
     {
      "slug": "bar-lounge",
@@ -817,19 +810,19 @@
        "title": "Smart Toilets",
        "intro": "",
        "url": "category-sanitary--smart-toilets--smart-toilet.html",
-       "modelCount": 54
+       "modelCount": 3
       },
       {
        "slug": "bidet-seats",
        "title": "Bidet Seats",
        "intro": "",
        "url": "category-sanitary--smart-toilets--bidet-seats.html",
-       "modelCount": 33
+       "modelCount": 3
       }
      ],
      "url": "category-sanitary--smart-toilets.html",
      "cover": "assets/products/hierarchy/sanitary/sanitary-smart-toilets-smart-toilet/2213b.jpg",
-     "totalModels": 87
+     "totalModels": 6
     },
     {
      "slug": "toilets",
@@ -841,26 +834,26 @@
        "title": "One-Piece Toilets",
        "intro": "",
        "url": "category-sanitary--toilets--one-piece.html",
-       "modelCount": 10
+       "modelCount": 2
       },
       {
        "slug": "two-piece",
        "title": "Two-Piece Toilets",
        "intro": "",
        "url": "category-sanitary--toilets--two-piece.html",
-       "modelCount": 82
+       "modelCount": 3
       },
       {
        "slug": "wall-hung",
        "title": "Wall-Hung Toilets",
        "intro": "",
        "url": "category-sanitary--toilets--wall-hung.html",
-       "modelCount": 12
+       "modelCount": 2
       }
      ],
      "url": "category-sanitary--toilets.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 104
+     "totalModels": 7
     },
     {
      "slug": "basins",
@@ -872,26 +865,26 @@
        "title": "Pedestal Basins",
        "intro": "",
        "url": "category-sanitary--basins--pedestal.html",
-       "modelCount": 33
+       "modelCount": 3
       },
       {
        "slug": "wall-counter",
        "title": "Wall-Hung & Countertop Basins",
        "intro": "",
        "url": "category-sanitary--basins--wall-counter.html",
-       "modelCount": 31
+       "modelCount": 3
       },
       {
        "slug": "art-undermount",
        "title": "Art & Under-Counter Basins",
        "intro": "",
        "url": "category-sanitary--basins--art-undermount.html",
-       "modelCount": 23
+       "modelCount": 3
       }
      ],
      "url": "category-sanitary--basins.html",
      "cover": "assets/products/hierarchy/sanitary/sanitary-basins-pedestal/hp-504s.jpg",
-     "totalModels": 87
+     "totalModels": 9
     },
     {
      "slug": "squat-urinal",
@@ -899,30 +892,23 @@
      "intro": "",
      "subs": [
       {
-       "slug": "squat-pans",
-       "title": "Squat Pans",
-       "intro": "",
-       "url": "category-sanitary--squat-urinal--squat-pans.html",
-       "modelCount": 0
-      },
-      {
        "slug": "urinals",
        "title": "Urinals",
        "intro": "",
        "url": "category-sanitary--squat-urinal--urinals.html",
-       "modelCount": 13
+       "modelCount": 3
       },
       {
        "slug": "mop-tubs",
        "title": "Mop Tubs",
        "intro": "",
        "url": "category-sanitary--squat-urinal--mop-tubs.html",
-       "modelCount": 4
+       "modelCount": 3
       }
      ],
      "url": "category-sanitary--squat-urinal.html",
      "cover": "assets/products/hierarchy/sanitary/sanitary-squat-urinal-urinals/hp-5002.jpg",
-     "totalModels": 17
+     "totalModels": 6
     },
     {
      "slug": "cisterns",
@@ -931,7 +917,7 @@
      "subs": [],
      "url": "category-sanitary--cisterns.html",
      "cover": "assets/products/hierarchy/sanitary/sanitary-cisterns/hp-010j.jpg",
-     "totalModels": 7
+     "totalModels": 2
     },
     {
      "slug": "showers",
@@ -943,7 +929,7 @@
        "title": "Shower Columns",
        "intro": "",
        "url": "category-sanitary--showers--shower-columns.html",
-       "modelCount": 23
+       "modelCount": 3
       },
       {
        "slug": "concealed-showers",
@@ -955,7 +941,7 @@
      ],
      "url": "category-sanitary--showers.html",
      "cover": "assets/products/hierarchy/sanitary/sanitary-showers-shower-columns/hp-10005.jpg",
-     "totalModels": 26
+     "totalModels": 6
     },
     {
      "slug": "faucets",
@@ -967,26 +953,26 @@
        "title": "Basin Faucets",
        "intro": "",
        "url": "category-sanitary--faucets--basin-faucets.html",
-       "modelCount": 29
+       "modelCount": 3
       },
       {
        "slug": "kitchen-faucets",
        "title": "Kitchen Faucets",
        "intro": "",
        "url": "category-sanitary--faucets--kitchen-faucets.html",
-       "modelCount": 10
+       "modelCount": 3
       },
       {
        "slug": "taps-valves",
        "title": "Bib Taps & Angle Valves",
        "intro": "",
        "url": "category-sanitary--faucets--taps-valves.html",
-       "modelCount": 6
+       "modelCount": 3
       }
      ],
      "url": "category-sanitary--faucets.html",
      "cover": "assets/products/hierarchy/sanitary/sanitary-faucets-basin-faucets/hp-20007.jpg",
-     "totalModels": 45
+     "totalModels": 9
     },
     {
      "slug": "hanging-pans",
@@ -994,17 +980,8 @@
      "intro": "",
      "subs": [],
      "url": "category-sanitary--hanging-pans.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 15
-    },
-    {
-     "slug": "bathroom-accessories",
-     "title": "Accessory Sets & Floor Drains",
-     "intro": "",
-     "subs": [],
-     "url": "category-sanitary--bathroom-accessories.html",
-     "cover": null,
-     "totalModels": 0
+     "cover": "assets/products/gallery/hp-533.jpg",
+     "totalModels": 2
     }
    ]
   },
@@ -1024,8 +1001,8 @@
      "intro": "",
      "subs": [],
      "url": "category-track--running-tracks.html",
-     "cover": "assets/products/hierarchy/track/track-running-tracks/lp-breathable.jpg",
-     "totalModels": 8
+     "cover": "assets/products/track/track-1.jpg",
+     "totalModels": 3
     },
     {
      "slug": "court-surfaces",
@@ -1043,7 +1020,7 @@
      "subs": [],
      "url": "category-track--rubber-surfaces.html",
      "cover": "assets/products/hierarchy/track/track-rubber-surfaces/lp-epr-5050.jpg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "coatings-adhesives",
@@ -1052,7 +1029,7 @@
      "subs": [],
      "url": "category-track--coatings-adhesives.html",
      "cover": "assets/products/hierarchy/track/track-coatings-adhesives/lp-511.jpg",
-     "totalModels": 5
+     "totalModels": 3
     }
    ]
   },
@@ -1082,7 +1059,7 @@
      "subs": [],
      "url": "category-pv--carports.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "tracking",
@@ -1091,7 +1068,7 @@
      "subs": [],
      "url": "category-pv--tracking.html",
      "cover": "assets/products/hierarchy/pv/pv-tracking/track-1a.jpg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "special-systems",
@@ -1100,7 +1077,7 @@
      "subs": [],
      "url": "category-pv--special-systems.html",
      "cover": "assets/products/hierarchy/pv/pv-special-systems/bipv.jpg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "materials",
@@ -1129,8 +1106,8 @@
      "intro": "",
      "subs": [],
      "url": "category-storage--mobile-storage.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 6
+     "cover": "assets/products/storage/energy-tank-100-pro.jpg",
+     "totalModels": 2
     },
     {
      "slug": "pcs-charging",
@@ -1138,8 +1115,8 @@
      "intro": "",
      "subs": [],
      "url": "category-storage--pcs-charging.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 4
+     "cover": "assets/products/storage/energy-flow.jpg",
+     "totalModels": 2
     },
     {
      "slug": "power-packages",
@@ -1169,7 +1146,7 @@
      "subs": [],
      "url": "category-heatpump--residential-hot-water.html",
      "cover": "assets/products/hierarchy/heatpump/heatpump-residential-hot-water/lwh-3-6.jpg",
-     "totalModels": 15
+     "totalModels": 3
     },
     {
      "slug": "residential-heating",
@@ -1178,7 +1155,7 @@
      "subs": [],
      "url": "category-heatpump--residential-heating.html",
      "cover": "assets/products/hierarchy/heatpump/heatpump-residential-heating/r290-6kw.jpg",
-     "totalModels": 34
+     "totalModels": 3
     },
     {
      "slug": "evi-cold-climate",
@@ -1187,7 +1164,7 @@
      "subs": [],
      "url": "category-heatpump--evi-cold-climate.html",
      "cover": "assets/products/hierarchy/heatpump/heatpump-evi-cold-climate/lwh-9-8dc-f.jpg",
-     "totalModels": 35
+     "totalModels": 3
     },
     {
      "slug": "commercial-hot-water",
@@ -1196,7 +1173,7 @@
      "subs": [],
      "url": "category-heatpump--commercial-hot-water.html",
      "cover": "assets/products/hierarchy/heatpump/heatpump-commercial-hot-water/lwh-14dcb.jpg",
-     "totalModels": 38
+     "totalModels": 3
     },
     {
      "slug": "high-temp",
@@ -1205,7 +1182,7 @@
      "subs": [],
      "url": "category-heatpump--high-temp.html",
      "cover": "assets/products/hierarchy/heatpump/heatpump-high-temp/lwh-12htc.jpg",
-     "totalModels": 6
+     "totalModels": 3
     },
     {
      "slug": "pool-spa",
@@ -1214,7 +1191,7 @@
      "subs": [],
      "url": "category-heatpump--pool-spa.html",
      "cover": "assets/products/hierarchy/heatpump/heatpump-pool-spa/5hw-cd-na.jpg",
-     "totalModels": 34
+     "totalModels": 3
     },
     {
      "slug": "commercial-heating",
@@ -1223,7 +1200,7 @@
      "subs": [],
      "url": "category-heatpump--commercial-heating.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 16
+     "totalModels": 2
     },
     {
      "slug": "tanks",
@@ -1232,7 +1209,7 @@
      "subs": [],
      "url": "category-heatpump--tanks.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 8
+     "totalModels": 2
     }
    ]
   },
@@ -1252,8 +1229,8 @@
      "intro": "",
      "subs": [],
      "url": "category-heating--enamel-elements.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 16
+     "cover": "assets/products/hierarchy/heating/heating-enamel-elements/mr-ty.jpg",
+     "totalModels": 3
     },
     {
      "slug": "storage-elements",
@@ -1261,8 +1238,8 @@
      "intro": "",
      "subs": [],
      "url": "category-heating--storage-elements.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 18
+     "cover": "assets/products/hierarchy/heating/heating-storage-elements/mr-116.jpg",
+     "totalModels": 3
     },
     {
      "slug": "mini-kitchen",
@@ -1270,8 +1247,8 @@
      "intro": "",
      "subs": [],
      "url": "category-heating--mini-kitchen.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 5
+     "cover": "assets/products/hierarchy/heating/heating-mini-kitchen/mr-120k.jpg",
+     "totalModels": 3
     },
     {
      "slug": "instant-elements",
@@ -1280,7 +1257,7 @@
      "subs": [],
      "url": "category-heating--instant-elements.html",
      "cover": "assets/products/hierarchy/heating/heating-instant-elements/mr-43.jpg",
-     "totalModels": 8
+     "totalModels": 3
     },
     {
      "slug": "cast-aluminum",
@@ -1289,7 +1266,7 @@
      "subs": [],
      "url": "category-heating--cast-aluminum.html",
      "cover": "assets/products/hierarchy/heating/heating-cast-aluminum/mr-105.jpg",
-     "totalModels": 7
+     "totalModels": 3
     },
     {
      "slug": "connecting-pipes",
@@ -1318,8 +1295,8 @@
      "intro": "",
      "subs": [],
      "url": "category-led--movable-posters.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 9
+     "cover": "assets/products/led/led-1.jpg",
+     "totalModels": 2
     },
     {
      "slug": "foldable-updown",
@@ -1328,7 +1305,7 @@
      "subs": [],
      "url": "category-led--foldable-updown.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 5
+     "totalModels": 3
     },
     {
      "slug": "trifold",
@@ -1337,7 +1314,7 @@
      "subs": [],
      "url": "category-led--trifold.html",
      "cover": "assets/products/hierarchy/led/led-trifold/hb-xzd1-25.jpg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "special-displays",
@@ -1346,7 +1323,7 @@
      "subs": [],
      "url": "category-led--special-displays.html",
      "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 6
+     "totalModels": 2
     }
    ]
   },
@@ -1367,7 +1344,7 @@
      "subs": [],
      "url": "category-robots--applications.html",
      "cover": "assets/products/robots/carton-palletizing.png",
-     "totalModels": 2
+     "totalModels": 1
     },
     {
      "slug": "machine-tending",
@@ -1376,7 +1353,7 @@
      "subs": [],
      "url": "category-robots--machine-tending.html",
      "cover": "assets/products/robots/machine-tending.png",
-     "totalModels": 2
+     "totalModels": 1
     }
    ]
   },
@@ -1397,7 +1374,7 @@
      "subs": [],
      "url": "category-apparel--sets-lounge.html",
      "cover": "assets/products/apparel/apparel-2.jpg",
-     "totalModels": 4
+     "totalModels": 3
     },
     {
      "slug": "style-gallery",
@@ -1406,7 +1383,7 @@
      "subs": [],
      "url": "category-apparel--style-gallery.html",
      "cover": "assets/products/gallery/ds-01.jpg",
-     "totalModels": 30
+     "totalModels": 3
     }
    ]
   },
@@ -1468,7 +1445,7 @@
      "subs": [],
      "url": "category-eyelashes--cluster-trays.html",
      "cover": null,
-     "totalModels": 5
+     "totalModels": 2
     }
    ]
   },
@@ -1494,49 +1471,49 @@
        "title": "Tote Bags",
        "intro": "",
        "url": "category-leather--handbags--totes.html",
-       "modelCount": 31
+       "modelCount": 3
       },
       {
        "slug": "shoulder",
        "title": "Shoulder Bags",
        "intro": "",
        "url": "category-leather--handbags--shoulder.html",
-       "modelCount": 28
+       "modelCount": 3
       },
       {
        "slug": "hobo",
        "title": "Hobo Bags",
        "intro": "",
        "url": "category-leather--handbags--hobo.html",
-       "modelCount": 22
+       "modelCount": 3
       },
       {
        "slug": "crossbody",
        "title": "Crossbody Bags",
        "intro": "",
        "url": "category-leather--handbags--crossbody.html",
-       "modelCount": 6
+       "modelCount": 3
       },
       {
        "slug": "top-handle",
        "title": "Top-Handle & Satchel",
        "intro": "",
        "url": "category-leather--handbags--top-handle.html",
-       "modelCount": 21
+       "modelCount": 3
       },
       {
        "slug": "bucket",
        "title": "Bucket Bags",
        "intro": "",
        "url": "category-leather--handbags--bucket.html",
-       "modelCount": 14
+       "modelCount": 3
       },
       {
        "slug": "clutch",
        "title": "Clutch & Evening",
        "intro": "",
        "url": "category-leather--handbags--clutch.html",
-       "modelCount": 7
+       "modelCount": 3
       },
       {
        "slug": "backpacks",
@@ -1548,7 +1525,7 @@
      ],
      "url": "category-leather--handbags.html",
      "cover": "assets/products/hierarchy/leather/leather-handbags-totes/bag2-p08.jpg",
-     "totalModels": 131
+     "totalModels": 23
     },
     {
      "slug": "belts",
@@ -1560,47 +1537,47 @@
        "title": "Men's Automatic Buckle",
        "intro": "",
        "url": "category-leather--belts--mens-automatic.html",
-       "modelCount": 10
+       "modelCount": 3
       },
       {
        "slug": "mens-pin",
        "title": "Men's Pin Buckle Dress & Casual",
        "intro": "",
        "url": "category-leather--belts--mens-pin.html",
-       "modelCount": 32
+       "modelCount": 3
       },
       {
        "slug": "mens-sport",
        "title": "Men's Golf, Webbing & Braided",
        "intro": "",
        "url": "category-leather--belts--mens-sport.html",
-       "modelCount": 11
+       "modelCount": 3
       },
       {
        "slug": "womens-skinny",
        "title": "Women's Skinny Belts",
        "intro": "",
        "url": "category-leather--belts--womens-skinny.html",
-       "modelCount": 23
+       "modelCount": 3
       },
       {
        "slug": "womens-wide",
        "title": "Women's Wide & Statement",
        "intro": "",
        "url": "category-leather--belts--womens-wide.html",
-       "modelCount": 22
+       "modelCount": 3
       },
       {
        "slug": "womens-classic",
        "title": "Women's Classic & Fashion Hardware",
        "intro": "",
        "url": "category-leather--belts--womens-classic.html",
-       "modelCount": 76
+       "modelCount": 3
       }
      ],
      "url": "category-leather--belts.html",
      "cover": "assets/products/hierarchy/leather/leather-belts-mens-automatic/mb-12.jpg",
-     "totalModels": 174
+     "totalModels": 18
     },
     {
      "slug": "small-leather-goods",
@@ -1612,33 +1589,33 @@
        "title": "Card Holders",
        "intro": "",
        "url": "category-leather--small-leather-goods--card-holders.html",
-       "modelCount": 24
+       "modelCount": 3
       },
       {
        "slug": "key-holders",
        "title": "Key Holders",
        "intro": "",
        "url": "category-leather--small-leather-goods--key-holders.html",
-       "modelCount": 20
+       "modelCount": 3
       },
       {
        "slug": "passport-covers",
        "title": "Passport Covers",
        "intro": "",
        "url": "category-leather--small-leather-goods--passport-covers.html",
-       "modelCount": 20
+       "modelCount": 3
       },
       {
        "slug": "wallets",
        "title": "Wallets",
        "intro": "",
        "url": "category-leather--small-leather-goods--wallets.html",
-       "modelCount": 16
+       "modelCount": 3
       }
      ],
      "url": "category-leather--small-leather-goods.html",
      "cover": "assets/products/hierarchy/leather/leather-small-leather-goods-card-holders/ch-p01.jpg",
-     "totalModels": 80
+     "totalModels": 12
     }
    ]
   },
@@ -1658,8 +1635,8 @@
      "intro": "",
      "subs": [],
      "url": "category-lubricants--casting-additives.html",
-     "cover": "assets/products/product-photo-on-request.svg",
-     "totalModels": 19
+     "cover": "assets/products/hierarchy/lubricants/lubricants-casting-additives/jcfg-1.jpg",
+     "totalModels": 3
     },
     {
      "slug": "cleaners-degreasers",
@@ -1668,7 +1645,7 @@
      "subs": [],
      "url": "category-lubricants--cleaners-degreasers.html",
      "cover": "assets/products/hierarchy/lubricants/lubricants-cleaners-degreasers/k601-k603.jpg",
-     "totalModels": 17
+     "totalModels": 3
     },
     {
      "slug": "industrial-oils",
@@ -1677,7 +1654,7 @@
      "subs": [],
      "url": "category-lubricants--industrial-oils.html",
      "cover": "assets/products/hierarchy/lubricants/lubricants-industrial-oils/mc200-mc300-mc1000.jpg",
-     "totalModels": 15
+     "totalModels": 3
     }
    ]
   },
@@ -6845,5 +6822,10 @@
    "oem_odm": "Tint, mirrored finish, printing and packaging options confirmed per inquiry.",
    "documentNote": "Fitment list and finishes come from the supplier's 2026 visor catalogue. Aftermarket replacement parts. Brand names describe supplier-listed helmet fit only and do not imply affiliation with or approval by the original helmet manufacturer. Finished-visor certification for the destination market must be evidenced separately."
   }
- ]
+ ],
+ "representativeMode": {
+  "maxPerLeaf": 3,
+  "leafGroups": 156,
+  "indexableProducts": 426
+ }
 }

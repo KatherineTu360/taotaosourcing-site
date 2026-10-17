@@ -233,7 +233,7 @@ GROUPS = {
         g("surface-standard", "Standard Surface-Mounted Closers",
           "150,000-cycle economy fire-door line with square and round bodies, 25-85 kg doors.", models=[
             m("door-closers", keys=["CJ051","CJ061-S","CJ061-R","CJ071"]),
-            m("catalog", keys=["cj051-compact-surface","cj061-medium-surface","cj5022-high-cycle"]),
+            m("catalog", keys=["cj051-compact-surface","cj061-medium-surface"]),
         ]),
         g("surface-high-cycle", "High-Cycle Heavy-Duty Closers",
           "300,000-cycle high-grade line with upgraded internals, German seal rings and AW/AD options.", models=[
@@ -562,11 +562,9 @@ GROUPS = {
 
     "robots": [
         g("applications", "Robot Application References", models=[
-            m("robots", keys=["ROBOT-PALLETISING"]),
             m("catalog", keys=["robot-carton-palletising"]),
         ]),
         g("machine-tending", "Press & Machine Tending", models=[
-            m("robots", keys=["ROBOT-PRESS"]),
             m("catalog", keys=["robot-press-machine"]),
         ]),
     ],

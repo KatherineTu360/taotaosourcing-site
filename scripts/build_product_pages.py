@@ -8,13 +8,14 @@ import json
 import re
 from datetime import date
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 from image_privacy import public_image, public_images
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "catalog-products.json"
+REPRESENTATIVE_PATH = ROOT / "data" / "representative-products.json"
 DOMAIN = "https://taotaosourcing.com"
 WHATSAPP = "8616626662274"
 TODAY = date.today().isoformat()
@@ -24,15 +25,16 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def page_head(title: str, description: str, canonical: str, image: str) -> str:
+def page_head(title: str, description: str, canonical: str, image: str, *, indexable: bool = True) -> str:
     image = public_image(image)
     image_url = image if image.startswith("http") else f"{DOMAIN}/{image}"
+    robots = "" if indexable else '  <meta name="robots" content="noindex,follow">\n'
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{esc(title)}</title>
+{robots}  <title>{esc(title)}</title>
   <meta name="description" content="{esc(description)}">
   <link rel="canonical" href="{esc(canonical)}">
   <meta property="og:title" content="{esc(title)}">
@@ -235,7 +237,7 @@ def spec_rows(product: dict) -> str:
     return "\n".join(f"            <tr><th>{esc(label)}</th><td>{esc(value)}</td></tr>" for label, value in rows)
 
 
-def render_product(product: dict, category: dict, related: list[dict]) -> str:
+def render_product(product: dict, category: dict, related: list[dict], *, indexable: bool = True) -> str:
     canonical = f"{DOMAIN}/product-{product['slug']}.html"
     inquiry_text = product.get("inquiryMessage") or (
         f"Hello Katherine, I'm interested in {product.get('model') or product['name']}. "
@@ -260,7 +262,7 @@ def render_product(product: dict, category: dict, related: list[dict]) -> str:
         (product["name"], canonical),
     ])
     note = product.get("documentNote", "Specifications shown here come from the supplied catalog material. Confirm the final model, configuration and current documents before placing an order.")
-    return f"""{page_head(product['seoTitle'], product['metaDescription'], canonical, gallery_paths[0])}
+    return f"""{page_head(product['seoTitle'], product['metaDescription'], canonical, gallery_paths[0], indexable=indexable)}
 {header()}
   <main>
     <section class="page-hero product-page-hero">
@@ -333,39 +335,38 @@ def render_product(product: dict, category: dict, related: list[dict]) -> str:
 def update_sitemap(generated: list[str]) -> None:
     path = ROOT / "sitemap.xml"
     existing = path.read_text(encoding="utf-8")
-    catalog = json.loads(DATA_PATH.read_text(encoding="utf-8"))
-    category_slugs = [item["slug"] for item in catalog["categories"]]
-    changed_urls = [
-        f"{DOMAIN}/",
-        f"{DOMAIN}/products.html",
-        f"{DOMAIN}/about.html",
-        f"{DOMAIN}/contact.html",
-    ] + [f"{DOMAIN}/detail-{slug}.html" for slug in category_slugs]
-    for url in changed_urls:
-        pattern = rf"(<loc>{re.escape(url)}</loc>\s*<lastmod>)[^<]+"
-        existing = re.sub(pattern, rf"\g<1>{TODAY}", existing)
-
-    marker_start = "  <!-- GENERATED PRODUCT URLS START -->"
-    marker_end = "  <!-- GENERATED PRODUCT URLS END -->"
-    block = [marker_start]
+    records = []
+    seen = set()
+    for block in re.findall(r"<url>.*?</url>", existing, flags=re.S):
+        match = re.search(r"<loc>([^<]+)</loc>", block)
+        if not match:
+            continue
+        loc = match.group(1)
+        if Path(urlparse(loc).path).name.startswith("product-"):
+            continue
+        if loc not in seen:
+            records.append(block.strip())
+            seen.add(loc)
     for name in generated:
-        block.extend([
-            "  <url>",
-            f"    <loc>{DOMAIN}/{name}</loc>",
-            f"    <lastmod>{TODAY}</lastmod>",
-            "    <changefreq>monthly</changefreq>",
-            "    <priority>0.7</priority>",
-            "  </url>",
-        ])
-    block.append(marker_end)
-    generated_xml = "\n".join(block)
-    if marker_start in existing:
-        before, rest = existing.split(marker_start, 1)
-        _, after = rest.split(marker_end, 1)
-        updated = before + generated_xml + after
-    else:
-        updated = existing.replace("</urlset>", generated_xml + "\n</urlset>")
-    path.write_text(updated, encoding="utf-8")
+        loc = f"{DOMAIN}/{name}"
+        if loc in seen:
+            continue
+        records.append(
+            "<url>\n"
+            f"    <loc>{loc}</loc>\n"
+            f"    <lastmod>{TODAY}</lastmod>\n"
+            "    <changefreq>monthly</changefreq>\n"
+            "    <priority>0.7</priority>\n"
+            "  </url>"
+        )
+        seen.add(loc)
+    body = "\n".join("  " + block.replace("\n", "\n  ") for block in records)
+    path.write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'{body}\n</urlset>\n',
+        encoding="utf-8",
+    )
 
 
 def main() -> None:
@@ -375,22 +376,38 @@ def main() -> None:
     slugs = [item["slug"] for item in products]
     if len(slugs) != len(set(slugs)):
         raise SystemExit("Duplicate product slug found")
+    representative = None
+    if REPRESENTATIVE_PATH.exists():
+        manifest = json.loads(REPRESENTATIVE_PATH.read_text(encoding="utf-8"))
+        representative = set(manifest.get("indexableProductPages", []))
     generated = []
+    built_categories = 0
     for category_slug, category in categories.items():
         if category.get("albumPage"):
             continue
         category_products = [item for item in products if item["category"] == category_slug]
         if not category_products and not category.get("holdMessage"):
             raise SystemExit(f"No product records or hold message for category: {category_slug}")
-        detail_name = f"detail-{category_slug}.html"
-        (ROOT / detail_name).write_text(render_category(category, category_products), encoding="utf-8")
+        if representative is None:
+            detail_name = f"detail-{category_slug}.html"
+            (ROOT / detail_name).write_text(render_category(category, category_products), encoding="utf-8")
+            built_categories += 1
         for product in category_products:
-            related = [item for item in category_products if item["slug"] != product["slug"]]
             name = f"product-{product['slug']}.html"
-            (ROOT / name).write_text(render_product(product, category, related), encoding="utf-8")
-            generated.append(name)
+            if representative is not None and name not in representative:
+                continue
+            related = [
+                item for item in category_products
+                if item["slug"] != product["slug"]
+                and (representative is None or f"product-{item['slug']}.html" in representative)
+            ]
+            indexable = representative is None or name in representative
+            (ROOT / name).write_text(
+                render_product(product, category, related, indexable=indexable), encoding="utf-8")
+            if indexable:
+                generated.append(name)
     update_sitemap(generated)
-    print(f"Built {len(categories)} category pages and {len(generated)} product pages.")
+    print(f"Built {built_categories} category pages and {len(generated)} representative product pages.")
 
 
 if __name__ == "__main__":

@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Build the hierarchical catalog: data/catalog-products.json v2 + navigation pages.
+"""Build the representative hierarchical catalog and navigation pages.
 
 Levels: products.html -> detail-{category}.html (group cards)
         -> category-{cat}--{group}.html (sub-group cards OR model list)
-        -> category-{cat}--{group}--{sub}.html (model list, ALL models shown)
+        -> category-{cat}--{group}--{sub}.html (2-3 representative products)
 
 Model entries come from data/intel/*.json (supplier catalog extractions).
-Existing detail products (data/catalog-products.json "products") are linked
-into their leaf groups. Every intel entry must be assigned exactly once.
+Existing detail products (data/catalog-products.json "products") are preferred
+when they represent a leaf group. Full source data is retained internally, while
+only a small buyer-facing shortlist is linked and indexable.
 """
 from __future__ import annotations
 
@@ -18,6 +19,7 @@ import shutil
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import urlparse
 
 from image_privacy import is_blocked_image, placeholder, public_image, public_images
 
@@ -31,6 +33,8 @@ ASSETS = ROOT / "assets" / "products"
 DOMAIN = "https://taotaosourcing.com"
 WHATSAPP = "8616626662274"
 TODAY = date.today().isoformat()
+REPRESENTATIVE_MAX = 3
+REPRESENTATIVE_PATH = DATA / "representative-products.json"
 
 IMG_DIRS = {
     "cbs-helmets": "helmets/cbs-helmets", "kuuvi-moto": "helmets/kuuvi-moto",
@@ -52,6 +56,16 @@ CATALOG_IMG = {
     "apparel": "apparel", "eyelashes": None,
 }
 RUN_IMG = Path("/Users/katherinetu/CODEX/独立站/website-optimization/run/taotaosourcing-hierarchy-2026-09-18/extracted_images")
+HQ_RUN = Path("/Users/katherinetu/CODEX/独立站/website-optimization/run/taotaosourcing-hierarchy-2026-09-18")
+GALLERY_MANIFEST = HQ_RUN / "gallery_manifest.json"
+GALLERY_INDEX = json.loads(GALLERY_MANIFEST.read_text()) if GALLERY_MANIFEST.exists() else {}
+
+# Exact-model images reviewed locally and confirmed free of supplier names,
+# logos and contact details. Keep this list deliberately small: a generic or
+# similar-looking product photo must never be presented as an exact model.
+PHOTO_OVERRIDES = {
+    "CJ5011-R": "assets/products/door-closers/cj5011-r-no-logo.jpeg",
+}
 
 # Keep this supplier catalogue as an internal source record only. Its models,
 # images and generated pages must not be included in the public site.
@@ -258,6 +272,82 @@ def link_catalog_products(rules, products_by_frag):
     return out
 
 
+def representative_key(kind, item):
+    """Return a stable leaf-level key so a curated page and raw model do not repeat."""
+    value = str(item.get("model") or item.get("id") or item.get("slug") or item.get("name") or "")
+    generic = ("to be confirmed", "no model code", "project-specific", "supplier catalog")
+    if not value or any(token in value.lower() for token in generic) or len(value) > 80:
+        value = str(item.get("slug") or item.get("name") or item.get("id") or value)
+    return re.sub(r"[^a-z0-9]+", "", value.lower()) or f"{kind}-{id(item)}"
+
+
+def product_has_public_photo(item):
+    for value in list(item.get("images") or []) + [item.get("image")]:
+        if not value or is_blocked_image(value):
+            continue
+        path = ROOT / str(value)
+        if path.exists() and image_ok(path):
+            return True
+    return False
+
+
+def entry_photo_override(item):
+    value = PHOTO_OVERRIDES.get(str(item.get("id") or item.get("model") or ""))
+    if not value or is_blocked_image(value):
+        return None
+    path = ROOT / value
+    return value if path.exists() and image_ok(path) else None
+
+
+def entry_has_public_photo(item, cat_slug, asset_leaf_slug):
+    if entry_photo_override(item):
+        return True
+    image = item.get("image")
+    if image:
+        source = Path(image)
+        target = f"assets/products/hierarchy/{cat_slug}/{asset_leaf_slug}/{item['slug']}.jpg"
+        if source.exists() and image_ok(source) and not is_blocked_image(target):
+            return True
+    rel_paths = GALLERY_INDEX.get(str(item["id"])) or []
+    for i, rel in enumerate(rel_paths):
+        source = HQ_RUN / rel
+        suffix = f"-{i}" if i else ""
+        target = f"assets/products/gallery/{item['slug']}{suffix}.jpg"
+        if source.exists() and image_ok(source) and not is_blocked_image(target):
+            return True
+    return False
+
+
+def choose_representatives(entries, products, cat_slug, asset_leaf_slug):
+    """Choose two or three representatives, prioritising clean product imagery."""
+    chosen_entries = []
+    chosen_products = []
+    seen = set()
+    candidates = []
+    for kind, items in (("product", products), ("entry", entries)):
+        for item in items:
+            key = representative_key(kind, item)
+            if key in seen:
+                continue
+            seen.add(key)
+            has_photo = (product_has_public_photo(item) if kind == "product" else
+                         entry_has_public_photo(item, cat_slug, asset_leaf_slug))
+            candidates.append((kind, item, has_photo))
+
+    clean = [candidate for candidate in candidates if candidate[2]]
+    fallback = [candidate for candidate in candidates if not candidate[2]]
+    selected = clean[:REPRESENTATIVE_MAX]
+    minimum = min(2, len(candidates))
+    if len(selected) < minimum:
+        selected.extend(fallback[:minimum - len(selected)])
+    for kind, item, _ in selected:
+        if kind == "product":
+            chosen_products.append(item)
+        else:
+            chosen_entries.append(item)
+    return chosen_entries, chosen_products
+
+
 def copy_image(src: Path, cat_slug: str, leaf_slug: str, slug: str) -> str | None:
     dest_dir = ASSETS / "hierarchy" / cat_slug / leaf_slug
     dest_dir.mkdir(parents=True, exist_ok=True)
@@ -382,7 +472,8 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
         count = grp.get("total_models", 0)
         img = public_image(grp.get("cover") or "assets/logo.png")
         href = grp["_url_file"]
-        sub_note = f'{len(grp["subs"])} sub-categories' if grp["subs"] else f'{count} models'
+        sub_note = (f'{len(grp["subs"])} product types' if grp["subs"] else
+                    f'{count} representative product' + ('' if count == 1 else 's'))
         cards.append(f"""        <article class="catalog-product-card">
           <a class="catalog-product-media" href="{href}">
             <img src="{esc(img)}" alt="{esc(grp['title'])} category photo" loading="lazy">
@@ -407,7 +498,7 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
     }, ensure_ascii=False, separators=(",", ":"))
     schema = schema + f'</script><script type="application/ld+json">{itemlist}'
 
-    return f"""{page_head(f"{parent_title} | Taotao Sourcing", f"Browse {parent_title} sub-categories and full model lists reviewed from supplier catalogs.", parent_url, groups[0]["cover"] if groups else "assets/logo.png")}
+    return f"""{page_head(f"{parent_title} | Taotao Sourcing", f"Browse {parent_title} product types and a focused shortlist of representative products for buyer review.", parent_url, groups[0]["cover"] if groups else "assets/logo.png")}
 {header()}
   <main>
     <section class="page-hero">
@@ -441,11 +532,11 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
 
 
 def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
-    """Render the final-level page: ALL models of this leaf group."""
+    """Render the final-level page: a focused representative shortlist."""
     title = sub["title"]
     canonical = f"{DOMAIN}/{sub['_url_file']}"
-    entries = sub["_entries"]
-    products = sub["_products"]
+    entries = sub["_public_entries"]
+    products = sub["_public_products"]
     cards = [model_card(e) for e in entries]
     cards += [model_card(
         {"id": p["slug"], "slug": p["slug"], "name": p["name"], "model": p.get("model") or p["name"],
@@ -465,14 +556,14 @@ def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
                            "itemListElement": list_items},
                           ensure_ascii=False, separators=(",", ":"))
     schema = schema + f'</script><script type="application/ld+json">{itemlist}' + "\n"
-    note = '<p class="source-note">Model lists are transcribed from the reviewed supplier catalogs; specifications and certification documents are re-confirmed per order. Entries without photos are quoted with catalog pages on request.</p>'
-    return f"""{page_head(f"{title} — All Models | Taotao Sourcing", f"Complete {title} model list ({count} models) reviewed from supplier catalogs, with specs and inquiry entry.", canonical, (entries[0]["image"] if entries and entries[0].get("image") else (products[0]["image"] if products else "assets/logo.png")))}
+    note = '<p class="source-note">This page shows a focused buyer-facing shortlist rather than every available model. Specifications, certification scope, MOQ and lead time are re-confirmed for the selected model and target market before quotation.</p>'
+    return f"""{page_head(f"{title} — Representative Products | Taotao Sourcing", f"Compare {count} representative {title} products and request a model-specific quotation, document check or broader shortlist.", canonical, (entries[0]["image"] if entries and entries[0].get("image") else (products[0]["image"] if products else "assets/logo.png")))}
 {header()}
   <main>
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / {trail}</div>
-        <span class="catalog-eyebrow">{count} models listed</span>
+        <span class="catalog-eyebrow">{count} representative product{'' if count == 1 else 's'}</span>
         <h1>{esc(title)}</h1>
         <p>{esc(sub.get('intro') or group.get('intro') or '')}</p>
       </div>
@@ -486,8 +577,8 @@ def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
         {note}
         <div class="cta-band">
           <div>
-            <h2>Ask about any model on this page</h2>
-            <p>Send the model numbers you need. We confirm availability, certification documents, MOQ and lead time per model with the supplier before quotation.</p>
+            <h2>Need this model or a broader shortlist?</h2>
+            <p>Send your target market, quantity and required documents. We can quote a representative model or prepare more suitable options from the retained internal catalogue.</p>
           </div>
           <div class="hero-actions">
             <a class="btn btn-red" href="contact.html">Start an Inquiry</a>
@@ -501,6 +592,57 @@ def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
 {footer()}"""
 
 
+def set_indexability(path: Path, indexable: bool) -> None:
+    """Keep legacy URLs available, but index only the representative catalogue."""
+    text = path.read_text(encoding="utf-8")
+    robots = re.compile(r'\s*<meta\s+name="robots"\s+content="noindex,follow"\s*/?>', re.I)
+    updated = robots.sub("", text)
+    if not indexable:
+        marker = '  <meta name="viewport" content="width=device-width, initial-scale=1.0">'
+        updated = updated.replace(marker, marker + '\n  <meta name="robots" content="noindex,follow">', 1)
+    if updated != text:
+        path.write_text(updated, encoding="utf-8")
+
+
+def sync_sitemap(indexable_pages):
+    """Keep core/article URLs and replace generated catalogue URLs without duplicates."""
+    sitemap_path = ROOT / "sitemap.xml"
+    existing = sitemap_path.read_text(encoding="utf-8")
+    records = []
+    seen = set()
+    for block in re.findall(r"<url>.*?</url>", existing, flags=re.S):
+        match = re.search(r"<loc>([^<]+)</loc>", block)
+        if not match:
+            continue
+        loc = match.group(1)
+        name = Path(urlparse(loc).path).name
+        if name.startswith(("product-", "category-", "detail-")):
+            continue
+        if loc not in seen:
+            records.append(block.strip())
+            seen.add(loc)
+    for name in indexable_pages:
+        loc = f"{DOMAIN}/{name}"
+        if loc in seen:
+            continue
+        records.append(
+            "<url>\n"
+            f"    <loc>{loc}</loc>\n"
+            f"    <lastmod>{TODAY}</lastmod>\n"
+            "    <changefreq>monthly</changefreq>\n"
+            "    <priority>0.7</priority>\n"
+            "  </url>"
+        )
+        seen.add(loc)
+    body = "\n".join("  " + block.replace("\n", "\n  ") for block in records)
+    sitemap_path.write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'{body}\n</urlset>\n',
+        encoding="utf-8",
+    )
+
+
 # ---------------------------------------------------------------------------
 
 def main():
@@ -510,7 +652,8 @@ def main():
     products_by_slug = {p["slug"]: p for p in products}
     used = set()
     unlinked_products = {p["slug"] for p in products}
-    generated_pages = []
+    generated_model_pages = []
+    generated_hierarchy_pages = []
 
     # resolve model entries per leaf group
     for cat_slug, groups in GROUPS.items():
@@ -522,10 +665,21 @@ def main():
                 for sub in grp["subs"]:
                     sub["_entries"] = resolve_group_models(sub["models"], intel, used, None)
                     sub["_products"] = link_catalog_products(sub["models"], products_by_slug)
+                    asset_leaf_slug = f"{cat_slug}-{grp['slug']}-{sub['slug']}"
+                    sub["_public_entries"], sub["_public_products"] = choose_representatives(
+                        sub["_entries"], sub["_products"], cat_slug, asset_leaf_slug)
                     grp["_sub_entries"][sub["slug"]] = sub
+                grp["_public_subs"] = [
+                    sub for sub in grp["subs"]
+                    if sub["_public_entries"] or sub["_public_products"]
+                ]
             else:
                 grp["_entries"] = resolve_group_models(grp["models"], intel, used, None)
                 grp["_products"] = link_catalog_products(grp["models"], products_by_slug)
+                asset_leaf_slug = f"{cat_slug}-{grp['slug']}"
+                grp["_public_entries"], grp["_public_products"] = choose_representatives(
+                    grp["_entries"], grp["_products"], cat_slug, asset_leaf_slug)
+                grp["_public_subs"] = []
 
     # coverage check
     total_intel = sum(len(v.get("models", [])) for v in intel.values())
@@ -555,6 +709,13 @@ def main():
         cat["groups"] = []
         for grp in groups:
             leaves = grp["subs"] or [grp]
+            public_leaves = (
+                grp["_public_subs"]
+                if grp["subs"]
+                else ([grp] if grp["_public_entries"] or grp["_public_products"] else [])
+            )
+            if not public_leaves:
+                continue
             grp_url = f"category-{cslug}--{grp['slug']}.html"
             grp["_url_file"] = grp_url
 
@@ -563,33 +724,38 @@ def main():
                 slug_parts = f"{cslug}--{grp['slug']}" + (f"--{sub['slug']}" if grp["subs"] else "")
                 sub["_url_file"] = f"category-{slug_parts}.html"
                 for e in sub["_entries"]:
-                    if e.get("image"):
+                    is_public = e in sub["_public_entries"]
+                    override = entry_photo_override(e) if is_public else None
+                    if override:
+                        e["image"] = override
+                    elif is_public and e.get("image"):
                         e["image"] = copy_image(Path(e["image"]), cslug, slug_parts.replace("--", "-"), e["slug"])
                     if "detail" not in e:
                         page_slug = allocate_slug(e["slug"], taken_slugs)
                         e["detail"] = f"product-{page_slug}.html"
-                    e["gallery"] = copy_gallery(str(e["id"]), e["detail"][len("product-"):-len(".html")])
-                    detail_tasks.append((e, cat, grp, sub, sub["_entries"]))
-                total_models += len(sub["_entries"]) + len(sub["_products"])
+                    if is_public:
+                        e["gallery"] = copy_gallery(str(e["id"]), e["detail"][len("product-"):-len(".html")])
+                        detail_tasks.append((e, cat, grp, sub, sub["_public_entries"]))
+                total_models += len(sub["_public_entries"]) + len(sub["_public_products"])
                 for p in sub["_products"]:
                     unlinked_products.discard(p["slug"])
 
             # group cover: first model image found in any leaf
             cover = None
-            for sub in leaves:
-                for e in sub["_entries"]:
+            for sub in public_leaves:
+                for e in sub["_public_entries"]:
                     if e.get("image"):
                         cover = e["image"]
                         break
                 if cover:
                     break
-                for e in sub["_entries"]:
+                for e in sub["_public_entries"]:
                     if e.get("gallery"):
                         cover = e["gallery"][0]
                         break
                 if cover:
                     break
-                for p in sub["_products"]:
+                for p in sub["_public_products"]:
                     cover = p.get("image")
                     break
                 if cover:
@@ -599,14 +765,14 @@ def main():
             cat["groups"].append({
                 "slug": grp["slug"], "title": grp["title"], "intro": grp.get("intro", ""),
                 "subs": [{"slug": s["slug"], "title": s["title"], "intro": s.get("intro", ""),
-                          "url": s["_url_file"], "modelCount": len(s["_entries"]) + len(s["_products"])}
-                         for s in grp["subs"]],
+                          "url": s["_url_file"], "modelCount": len(s["_public_entries"]) + len(s["_public_products"])}
+                         for s in public_leaves if grp["subs"]],
                 "url": grp_url, "cover": cover, "totalModels": total_models,
             })
 
             # collect hierarchy render tasks
             if grp["subs"]:
-                for sub in grp["subs"]:
+                for sub in public_leaves:
                     render_tasks.append(("leaf", cat, grp, sub, grp_url))
                 render_tasks.append(("group", cat, grp, None, grp_url))
             else:
@@ -619,7 +785,7 @@ def main():
             render_model_detail(e, cat, grp, sub, siblings, page_slug,
                                 page_head, header, footer, breadcrumb_json, esc, WHATSAPP, DOMAIN),
             encoding="utf-8")
-        generated_pages.append(e["detail"])
+        generated_model_pages.append(e["detail"])
 
     # Phase C: render hierarchy pages
     for cat in catalog["categories"]:
@@ -637,15 +803,15 @@ def main():
                 crumbs.append((sub["title"], f"{DOMAIN}/{sub['_url_file']}"))
                 (ROOT / sub["_url_file"]).write_text(
                     render_model_list(cat, grp, sub, chain, crumbs), encoding="utf-8")
-                generated_pages.append(sub["_url_file"])
+                generated_hierarchy_pages.append(sub["_url_file"])
             elif kind == "group":
                 sub_cards = []
-                for sub in grp["subs"]:
-                    cover = next((e["image"] for e in sub["_entries"] if e.get("image")),
-                                 sub["_products"][0]["image"] if sub["_products"] else None)
+                for sub in grp["_public_subs"]:
+                    cover = next((e["image"] for e in sub["_public_entries"] if e.get("image")),
+                                 sub["_public_products"][0]["image"] if sub["_public_products"] else None)
                     sub_cards.append({"title": sub["title"], "intro": sub.get("intro", ""),
                                       "cover": cover, "_url_file": sub["_url_file"],
-                                      "total_models": len(sub["_entries"]) + len(sub["_products"]),
+                                      "total_models": len(sub["_public_entries"]) + len(sub["_public_products"]),
                                       "subs": [], "slug": sub["slug"]})
                 (ROOT / grp_url).write_text(
                     render_group_cards(cat, sub_cards, f"{cat['title']} — {grp['title']}",
@@ -654,7 +820,7 @@ def main():
                                         (cat["title"], f"{DOMAIN}/detail-{cslug}.html"),
                                         (grp["title"], f"{DOMAIN}/{grp_url}")],
                                        back_link=f"detail-{cslug}.html", back_label=cat["title"]), encoding="utf-8")
-                generated_pages.append(grp_url)
+                generated_hierarchy_pages.append(grp_url)
         # rewrite detail-{category}.html as group-card page
         detail_file = f"detail-{cslug}.html"
         gcards = []
@@ -668,47 +834,80 @@ def main():
             render_group_cards(cat, gcards, cat["title"], f"{DOMAIN}/{detail_file}",
                                [("Home", DOMAIN + "/"), ("Products", DOMAIN + "/products.html"),
                                 (cat["title"], f"{DOMAIN}/{detail_file}")]), encoding="utf-8")
-        generated_pages.append(detail_file)
+        generated_hierarchy_pages.append(detail_file)
 
-    # sitemap: add hierarchy pages
-    sitemap_path = ROOT / "sitemap.xml"
-    sm = sitemap_path.read_text()
-    for slug in excluded_product_slugs():
-        sm = re.sub(
-            rf"\s*<url>\s*<loc>{re.escape(DOMAIN)}/product-{re.escape(slug)}\.html</loc>.*?</url>\s*",
-            "\n",
-            sm,
-            flags=re.S,
-        )
-    for path in PUBLICLY_EXCLUDED_PAGE_PATHS:
-        sm = re.sub(
-            rf"\s*<url>\s*<loc>{re.escape(DOMAIN)}/{re.escape(path)}</loc>.*?</url>\s*",
-            "\n",
-            sm,
-            flags=re.S,
-        )
-    start = "  <!-- GENERATED PRODUCT URLS END -->"
-    new_block = []
-    for name in generated_pages:
-        new_block.extend(["  <url>", f"    <loc>{DOMAIN}/{name}</loc>",
-                          f"    <lastmod>{TODAY}</lastmod>", "    <changefreq>monthly</changefreq>",
-                          "    <priority>0.7</priority>", "  </url>"])
-    if start in sm:
-        before, rest = sm.split(start, 1)
-        existing_locs = set(re.findall(r"<loc>([^<]+)</loc>", sm))
-        fresh = [u for u in new_block
-                 if f"<loc>{DOMAIN}/" not in u or
-                    re.search(r"<loc>([^<]+)</loc>", u).group(1) not in existing_locs]
-        sm = before + start + "\n" + "\n".join(fresh) + rest
-    sm = re.sub(r'(<loc>https://taotaosourcing\.com/product-[a-z0-9-]+\.html</loc>\s*<lastmod>)[^<]+',
-                r'\g<1>' + TODAY, sm)
-    sitemap_path.write_text(sm)
+    representative_manual_pages = sorted({
+        f"product-{p['slug']}.html"
+        for groups in GROUPS.values()
+        for grp in groups
+        for sub in (grp["subs"] or [grp])
+        for p in sub.get("_public_products", [])
+    })
+    representative_pages = sorted(set(generated_model_pages + representative_manual_pages))
+    indexable_hierarchy_pages = sorted(set(generated_hierarchy_pages))
+
+    removed_product_pages = 0
+    representative_set = set(representative_pages)
+    for path in ROOT.glob("product-*.html"):
+        if path.name not in representative_set:
+            path.unlink()
+            removed_product_pages += 1
+    for path in ROOT.glob("category-*.html"):
+        set_indexability(path, path.name in indexable_hierarchy_pages)
+
+    sync_sitemap(indexable_hierarchy_pages + representative_pages)
+
+    leaf_groups = []
+    for cat_slug, groups in GROUPS.items():
+        for grp in groups:
+            public_leaves = (
+                grp["_public_subs"]
+                if grp["subs"]
+                else ([grp] if grp["_public_entries"] or grp["_public_products"] else [])
+            )
+            for sub in public_leaves:
+                selected = [
+                    {"kind": "catalog", "model": p.get("model") or p["name"],
+                     "name": p["name"], "page": f"product-{p['slug']}.html"}
+                    for p in sub["_public_products"]
+                ] + [
+                    {"kind": "model", "model": e["model"], "name": e["name"],
+                     "page": e["detail"]}
+                    for e in sub["_public_entries"]
+                ]
+                leaf_groups.append({
+                    "category": cat_slug,
+                    "group": grp["slug"],
+                    "leaf": sub["slug"],
+                    "title": sub["title"],
+                    "page": sub["_url_file"],
+                    "availableCandidates": len(sub["_entries"]) + len(sub["_products"]),
+                    "representatives": selected,
+                })
+    REPRESENTATIVE_PATH.write_text(json.dumps({
+        "schemaVersion": 1,
+        "generatedAt": TODAY,
+        "maxPerLeaf": REPRESENTATIVE_MAX,
+        "leafGroups": leaf_groups,
+        "indexableHierarchyPages": indexable_hierarchy_pages,
+        "indexableProductPages": representative_pages,
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # persist v2 data
     catalog["schemaVersion"] = 2
     catalog["generatedAt"] = TODAY
+    catalog["representativeMode"] = {
+        "maxPerLeaf": REPRESENTATIVE_MAX,
+        "leafGroups": len(leaf_groups),
+        "indexableProducts": len(representative_pages),
+    }
     (DATA / "catalog-products.json").write_text(json.dumps(catalog, ensure_ascii=False, indent=1))
-    print(f"wrote {len(generated_pages)} hierarchy pages; products without group: {sorted(unlinked_products)}")
+    print(
+        f"wrote {len(indexable_hierarchy_pages)} hierarchy pages and "
+        f"selected {len(representative_pages)} representative product pages; "
+        f"removed {removed_product_pages} stale generated product pages; "
+        f"products without group: {sorted(unlinked_products)}"
+    )
 
 
 if __name__ == "__main__":
