@@ -1,15 +1,17 @@
 {
-"source": "睫毛/国内款(99图) + 外贸款(108图), 图片网格无款号",
+"source": "睫毛/国内款(99图) + 外贸款(108图); 国内款单元格可核对6P/10P/30P类型，外贸款无型号",
 "models": [
 {
 "id": "CN-CL6P",
 "type": "6P cluster lashes, glue-free (domestic line)",
-"note": "6p免胶 series, multiple curls/lengths"
+"note": "6p免胶 series, multiple curls/lengths",
+"imageSource": "国内款(3)(2).xlsx Sheet1 A14/B14; supplier branding removed in the published derivative"
 },
 {
 "id": "CN-CL10P",
 "type": "10P cluster lashes, glue-free (domestic line)",
-"note": "10p免胶 series, main volume line"
+"note": "10p免胶 series, main volume line",
+"imageSource": "国内款(3)(2).xlsx Sheet1 E2/F2; Chinese style caption removed in the published derivative"
 },
 {
 "id": "CN-CL30P",

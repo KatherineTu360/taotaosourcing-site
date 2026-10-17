@@ -542,7 +542,7 @@
      "intro": "Stainless espagnolette lock cases in 11 centre heights (7.5-35 cm).",
      "subs": [],
      "url": "category-hinges--lock-cases.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": null,
      "totalModels": 2
     },
     {
@@ -551,7 +551,7 @@
      "intro": "Aluminium and CNC-machined handles with fluorocarbon finishes.",
      "subs": [],
      "url": "category-hinges--handles.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": null,
      "totalModels": 2
     },
     {
@@ -560,7 +560,7 @@
      "intro": "Anti-pry espagnolette sets and strike plates for Euro and 23 mm grooves.",
      "subs": [],
      "url": "category-hinges--espag-sets.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": null,
      "totalModels": 2
     },
     {
@@ -569,7 +569,7 @@
      "intro": "Matched full-window hardware suites (friction stay + concealed hinge + lock case + handles + espag set).",
      "subs": [],
      "url": "category-hinges--hardware-suites.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": null,
      "totalModels": 2
     }
    ]
@@ -590,7 +590,7 @@
      "intro": "",
      "subs": [],
      "url": "category-decking--co-extruded.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": "assets/products/hierarchy/decking/decking-co-extruded/lfm13823k6b.jpg",
      "totalModels": 3
     },
     {
@@ -852,7 +852,7 @@
       }
      ],
      "url": "category-sanitary--toilets.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": "assets/products/sanitary/sanitary-1.jpg",
      "totalModels": 7
     },
     {
@@ -1058,7 +1058,7 @@
      "intro": "",
      "subs": [],
      "url": "category-pv--carports.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": "assets/products/gallery/carport-1-1.jpg",
      "totalModels": 3
     },
     {
@@ -1199,7 +1199,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heatpump--commercial-heating.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": null,
      "totalModels": 2
     },
     {
@@ -1208,7 +1208,7 @@
      "intro": "",
      "subs": [],
      "url": "category-heatpump--tanks.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": null,
      "totalModels": 2
     }
    ]
@@ -1304,7 +1304,7 @@
      "intro": "",
      "subs": [],
      "url": "category-led--foldable-updown.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": "assets/products/gallery/hb-x1-25-2.jpg",
      "totalModels": 3
     },
     {
@@ -1322,7 +1322,7 @@
      "intro": "",
      "subs": [],
      "url": "category-led--special-displays.html",
-     "cover": "assets/products/product-photo-on-request.svg",
+     "cover": "assets/products/led/hb-d2-5-excel.png",
      "totalModels": 2
     }
    ]
@@ -1444,7 +1444,7 @@
      "intro": "",
      "subs": [],
      "url": "category-eyelashes--cluster-trays.html",
-     "cover": null,
+     "cover": "assets/products/eyelashes/cn-cl6p-excel-brand-removed.png",
      "totalModels": 2
     }
    ]

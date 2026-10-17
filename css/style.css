@@ -732,6 +732,59 @@ a { color: var(--navy); text-decoration: none; }
   transition: transform .25s ease;
 }
 
+.catalog-product-media--pending,
+.catalog-product-media--category {
+  height: 220px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 92% 5%, rgba(255, 255, 255, .18), transparent 34%),
+    linear-gradient(135deg, #173e67, #295d85);
+}
+
+.catalog-product-media--pending {
+  color: var(--navy-ink);
+  background:
+    radial-gradient(circle at 92% 5%, rgba(31, 84, 129, .12), transparent 36%),
+    linear-gradient(135deg, #eef4fa, #e4edf6);
+}
+
+.catalog-product-media--pending:hover,
+.catalog-product-media--category:hover { color: inherit; }
+
+.catalog-media-kicker {
+  font-size: .7rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .78;
+}
+
+.catalog-product-media--pending strong,
+.catalog-product-media--category strong {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.catalog-product-media--pending small,
+.catalog-product-media--category small {
+  max-width: 32rem;
+  font-size: .76rem;
+  line-height: 1.45;
+  opacity: .78;
+}
+
+.catalog-product-media--cover img {
+  object-fit: cover;
+  background: #edf2f9;
+}
+
 .catalog-product-card:hover .catalog-product-media img { transform: scale(1.025); }
 
 .catalog-product-body {
@@ -1235,12 +1288,17 @@ a { color: var(--navy); text-decoration: none; }
 }
 
 /* ---- hierarchy navigation (v2 catalog) ---- */
-.model-img-placeholder {
-  width: 100%; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center;
-  background: repeating-linear-gradient(45deg, #f2f2f2, #f2f2f2 10px, #e9e9e9 10px, #e9e9e9 20px);
-  color: var(--muted, #777); font-size: .85rem; text-align: center; padding: 1rem;
-  border-radius: 8px;
+.model-img-placeholder,
+.product-photo-pending {
+  width: 100%; min-height: 220px; display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: center; gap: 8px;
+  background: linear-gradient(135deg, #eef4fa, #e4edf6);
+  color: var(--navy-ink); text-align: left; padding: 28px;
+  border: 1px solid var(--line); border-radius: 12px;
 }
+.product-photo-pending { grid-column: 1 / -1; }
+.product-photo-pending strong { font-size: 1.05rem; }
+.product-photo-pending small { color: var(--muted); line-height: 1.55; }
 .model-source {
   display: inline-block; font-size: .75rem; color: var(--muted, #777); margin-bottom: .5rem;
 }

@@ -5,7 +5,7 @@ import shutil
 from pathlib import Path
 from urllib.parse import quote
 
-from image_privacy import is_blocked_image, public_image, public_images
+from image_privacy import is_blocked_image, placeholder, public_image, public_images
 from model_copy import build as build_copy
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +15,7 @@ HQ_RUN = Path("/Users/katherinetu/CODEX/独立站/website-optimization/run/"
 GALLERY_MANIFEST = HQ_RUN / "gallery_manifest.json"
 HQ_ROOT = HQ_RUN / "extracted_hq"
 GALLERY_ASSETS = ASSETS / "gallery"
+UNVERIFIED_MODEL_IMAGE_CATEGORIES = {"sanitary"}
 
 FAQS = [
     ("What is the MOQ for the {m}?",
@@ -83,7 +84,9 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
     gallery_candidates = list(entry.get("gallery") or [])
     if entry.get("image"):
         gallery_candidates.append(entry["image"])
-    gallery = public_images(gallery_candidates)
+    gallery = [path for path in public_images(gallery_candidates) if path != placeholder()]
+    if cat.get("slug") in UNVERIFIED_MODEL_IMAGE_CATEGORIES:
+        gallery = []
     if gallery:
         main_img, thumbs = gallery[0], gallery[1:]
         gallery_html = (
@@ -93,8 +96,11 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
                 for i, t in enumerate(thumbs))
         )
     else:
-        gallery_html = ('<div class="model-img-placeholder"><span>Photos available on request — '
-                        'catalogue page reference is listed in the specifications.</span></div>')
+        gallery_html = ('<div class="product-photo-pending">'
+                        '<span class="catalog-media-kicker">Image verification</span>'
+                        '<strong>Exact model photo available on request</strong>'
+                        '<small>We verify the model and remove supplier-identifying marks before publication. '
+                        'The catalogue page reference remains listed in the specifications.</small></div>')
 
     spec_rows = "\n".join(
         f"            <tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>" for k, v in c["spec_rows"])
@@ -112,12 +118,22 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
         href = sib.get("detail")
         if not href:
             continue
-        img = public_images(list(sib.get("gallery") or []) + [sib.get("image") or "assets/logo.png"])[0]
+        img = public_images(list(sib.get("gallery") or []) + [sib.get("image")])[0]
+        if img == placeholder() or cat.get("slug") in UNVERIFIED_MODEL_IMAGE_CATEGORIES:
+            media = (
+                f'          <a class="catalog-product-media catalog-product-media--pending" href="{esc(href)}">\n'
+                '            <span class="catalog-media-kicker">Image verification</span>\n'
+                '            <strong>Exact model photo on request</strong>\n'
+                '            <small>Model-specific image is checked before publication.</small>\n'
+                '          </a>\n')
+        else:
+            media = (
+                f'          <a class="catalog-product-media" href="{esc(href)}">\n'
+                f'            <img src="{esc(img)}" alt="{esc(sib["name"])}" loading="lazy">\n'
+                '          </a>\n')
         related.append(
             '        <article class="catalog-product-card">\n'
-            f'          <a class="catalog-product-media" href="{esc(href)}">\n'
-            f'            <img src="{esc(img)}" alt="{esc(sib["name"])}" loading="lazy">\n'
-            '          </a>\n'
+            + media +
             '          <div class="catalog-product-body">\n'
             f'            <span class="catalog-badge">{esc(sib["model"])}</span>\n'
             f'            <h3><a href="{esc(href)}">{esc(sib["name"])}</a></h3>\n'

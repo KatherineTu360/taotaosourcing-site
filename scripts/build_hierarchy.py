@@ -65,7 +65,60 @@ GALLERY_INDEX = json.loads(GALLERY_MANIFEST.read_text()) if GALLERY_MANIFEST.exi
 # similar-looking product photo must never be presented as an exact model.
 PHOTO_OVERRIDES = {
     "CJ5011-R": "assets/products/door-closers/cj5011-r-no-logo.jpeg",
+    # Source: 睫毛/国内款(3)(2).xlsx. The image anchors match the adjacent
+    # 6P/10P cell descriptions; the 6P derivative removes only the source
+    # supplier branding while the original workbook remains unchanged.
+    "CN-CL6P": "assets/products/eyelashes/cn-cl6p-excel-brand-removed.png",
+    "CN-CL10P": "assets/products/eyelashes/cn-cl10p-excel-label-removed.png",
+    # Source: LED电子屏幕（领英找我）/260305-Led poster display summary.xlsx.
+    # The drawing anchor is on row 15, whose model cell identifies HB-D2.5.
+    "HB-D2.5": "assets/products/led/hb-d2-5-excel.png",
 }
+
+# Category-card covers reviewed for relevance and supplier privacy. These are
+# category-level visuals, not claims that the pictured item is a specific
+# model. A value of None deliberately uses the compact verification state.
+GROUP_COVER_OVERRIDES = {
+    ("heatpump", "residential-hot-water"): None,
+    ("heatpump", "residential-heating"): None,
+    ("heatpump", "evi-cold-climate"): None,
+    ("heatpump", "commercial-hot-water"): None,
+    ("heatpump", "high-temp"): None,
+    ("heatpump", "pool-spa"): "assets/products/heatpump/pool-heat-pump.jpg",
+    ("heatpump", "commercial-heating"): "assets/products/industrial-detail/heatpump-r290-ultraheat.jpg",
+    ("heatpump", "tanks"): None,
+    ("sanitary", "smart-toilets"): None,
+    ("sanitary", "toilets"): None,
+    ("sanitary", "basins"): None,
+    ("sanitary", "squat-urinal"): None,
+    ("sanitary", "cisterns"): None,
+    ("sanitary", "showers"): None,
+    ("sanitary", "faucets"): None,
+    ("sanitary", "hanging-pans"): None,
+    ("sanitary", "bathroom-accessories"): None,
+    ("sanitary", "smart-toilet"): None,
+    ("sanitary", "bidet-seats"): None,
+    ("sanitary", "one-piece"): None,
+    ("sanitary", "two-piece"): None,
+    ("sanitary", "wall-hung"): None,
+    ("sanitary", "pedestal"): None,
+    ("sanitary", "wall-counter"): None,
+    ("sanitary", "art-undermount"): None,
+    ("sanitary", "squat-pans"): None,
+    ("sanitary", "urinals"): None,
+    ("sanitary", "mop-tubs"): None,
+    ("sanitary", "shower-columns"): None,
+    ("sanitary", "concealed-showers"): None,
+    ("sanitary", "basin-faucets"): None,
+    ("sanitary", "kitchen-faucets"): None,
+    ("sanitary", "taps-valves"): None,
+    ("eyelashes", "cluster-trays"): "assets/products/eyelashes/cn-cl10p-excel-label-removed.png",
+}
+
+# The sanitary catalogue was extracted from composite PDF spreads. Several
+# automatic crops contain adjacent products or specification text, so they are
+# not safe to present as exact-model photos until manually matched.
+UNVERIFIED_MODEL_IMAGE_CATEGORIES = {"sanitary"}
 
 # Keep this supplier catalogue as an internal source record only. Its models,
 # images and generated pages must not be included in the public site.
@@ -83,6 +136,22 @@ PUBLIC_MODEL_ALIASES = {
 
 def esc(v):
     return html.escape(str(v), quote=True)
+
+
+def usable_public_image(value):
+    """Return a publishable image, excluding the generic missing-photo asset."""
+    if not value:
+        return None
+    image = public_image(value)
+    return None if image == placeholder() else image
+
+
+def group_cover(cat_slug, group):
+    """Resolve a reviewed category cover or deliberately return no image."""
+    key = (cat_slug, group.get("slug"))
+    if key in GROUP_COVER_OVERRIDES:
+        return usable_public_image(GROUP_COVER_OVERRIDES[key])
+    return usable_public_image(group.get("cover"))
 
 
 def slugify(s):
@@ -438,9 +507,9 @@ def model_card(entry, product_ref=None, cat_slug=None, group_path=None):
     if entry.get("image"):
         candidates.append(entry["image"])
     image = public_images(candidates)[0] if candidates else None
-    img = (f'<img src="{esc(image)}" alt="{esc(entry["name"])} catalog reference" loading="lazy">'
-           if image else
-           '<div class="model-img-placeholder" aria-hidden="true"><span>Photo on request</span></div>')
+    image = usable_public_image(image)
+    if cat_slug in UNVERIFIED_MODEL_IMAGE_CATEGORIES:
+        image = None
     detail_href = entry.get("detail") or (product_ref and f"product-{product_ref['slug']}.html") or (group_path or "#")
     if product_ref:
         detail_link = f'<a class="more" href="product-{esc(product_ref["slug"])}.html">Full product details →</a>'
@@ -448,13 +517,23 @@ def model_card(entry, product_ref=None, cat_slug=None, group_path=None):
         detail_link = f'<a class="more" href="{esc(entry["detail"])}">View details →</a>'
     else:
         detail_link = ""
+    if image:
+        media = f"""          <a class="catalog-product-media" href="{esc(detail_href)}">
+            <img src="{esc(image)}" alt="{esc(entry['name'])} catalog reference" loading="lazy">
+          </a>"""
+        card_class = "catalog-product-card model-card"
+    else:
+        media = f"""          <a class="catalog-product-media catalog-product-media--pending" href="{esc(detail_href)}" aria-label="View {esc(entry['name'])} details">
+            <span class="catalog-media-kicker">Image verification</span>
+            <strong>Exact model photo on request</strong>
+            <small>We verify the model and remove supplier-identifying marks before publication.</small>
+          </a>"""
+        card_class = "catalog-product-card model-card has-no-product-photo"
     page_ref = f'<span class="model-source">Catalog p.{entry["page"]}</span>' if entry.get("page") else ""
     wa = f"https://wa.me/{WHATSAPP}?text=" + __import__("urllib.parse", fromlist=["quote"]).quote(
         f"Hello Katherine, I'm interested in {entry['model']}. Target market and quantity: ")
-    return f"""        <article class="catalog-product-card model-card">
-          <a class="catalog-product-media" href="{esc(detail_href)}">
-            {img}
-          </a>
+    return f"""        <article class="{card_class}">
+{media}
           <div class="catalog-product-body">
             {model_badge}
             <h3>{esc(entry['name'])}</h3>
@@ -470,14 +549,24 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
     cards = []
     for grp in groups:
         count = grp.get("total_models", 0)
-        img = public_image(grp.get("cover") or "assets/logo.png")
+        img = group_cover(cat["slug"], grp)
         href = grp["_url_file"]
         sub_note = (f'{len(grp["subs"])} product types' if grp["subs"] else
                     f'{count} representative product' + ('' if count == 1 else 's'))
-        cards.append(f"""        <article class="catalog-product-card">
-          <a class="catalog-product-media" href="{href}">
+        if img:
+            media = f"""          <a class="catalog-product-media catalog-product-media--cover" href="{href}">
             <img src="{esc(img)}" alt="{esc(grp['title'])} category photo" loading="lazy">
-          </a>
+          </a>"""
+            card_class = "catalog-product-card"
+        else:
+            media = f"""          <a class="catalog-product-media catalog-product-media--category" href="{href}" aria-label="Browse {esc(grp['title'])}">
+            <span class="catalog-media-kicker">Sourcing category</span>
+            <strong>{esc(grp['title'])}</strong>
+            <small>Compare representative models and buyer checkpoints</small>
+          </a>"""
+            card_class = "catalog-product-card has-no-category-photo"
+        cards.append(f"""        <article class="{card_class}">
+{media}
           <div class="catalog-product-body">
             <span class="catalog-badge">{esc(sub_note)}</span>
             <h3><a href="{href}">{esc(grp['title'])}</a></h3>
@@ -498,7 +587,9 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
     }, ensure_ascii=False, separators=(",", ":"))
     schema = schema + f'</script><script type="application/ld+json">{itemlist}'
 
-    return f"""{page_head(f"{parent_title} | Taotao Sourcing", f"Browse {parent_title} product types and a focused shortlist of representative products for buyer review.", parent_url, groups[0]["cover"] if groups else "assets/logo.png")}
+    head_image = next((group_cover(cat["slug"], group) for group in groups
+                       if group_cover(cat["slug"], group)), "assets/logo.png")
+    return f"""{page_head(f"{parent_title} | Taotao Sourcing", f"Browse {parent_title} product types and a focused shortlist of representative products for buyer review.", parent_url, head_image)}
 {header()}
   <main>
     <section class="page-hero">
@@ -537,10 +628,11 @@ def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
     canonical = f"{DOMAIN}/{sub['_url_file']}"
     entries = sub["_public_entries"]
     products = sub["_public_products"]
-    cards = [model_card(e) for e in entries]
+    cards = [model_card(e, cat_slug=cat["slug"]) for e in entries]
     cards += [model_card(
         {"id": p["slug"], "slug": p["slug"], "name": p["name"], "model": p.get("model") or p["name"],
-         "spec": p.get("summary", ""), "image": p.get("image"), "page": None}, product_ref=p)
+         "spec": p.get("summary", ""), "image": p.get("image"), "page": None},
+        product_ref=p, cat_slug=cat["slug"])
         for p in products]
     count = len(entries) + len(products)
     trail = " / ".join(f'<a href="{u}">{esc(t)}</a>' for t, u in parent_chain) + f" / {esc(title)}"
@@ -557,7 +649,15 @@ def render_model_list(cat, group, sub, parent_chain, breadcrumbs):
                           ensure_ascii=False, separators=(",", ":"))
     schema = schema + f'</script><script type="application/ld+json">{itemlist}' + "\n"
     note = '<p class="source-note">This page shows a focused buyer-facing shortlist rather than every available model. Specifications, certification scope, MOQ and lead time are re-confirmed for the selected model and target market before quotation.</p>'
-    return f"""{page_head(f"{title} — Representative Products | Taotao Sourcing", f"Compare {count} representative {title} products and request a model-specific quotation, document check or broader shortlist.", canonical, (entries[0]["image"] if entries and entries[0].get("image") else (products[0]["image"] if products else "assets/logo.png")))}
+    # The categories reviewed in this pass use a category-level cover rather
+    # than an arbitrary first model crop. Other categories retain their current
+    # social image until their media has been reviewed separately.
+    if cat["slug"] in {"heatpump", "sanitary", "eyelashes"}:
+        head_image = group_cover(cat["slug"], group) or "assets/logo.png"
+    else:
+        head_image = (entries[0]["image"] if entries and entries[0].get("image")
+                      else (products[0]["image"] if products else "assets/logo.png"))
+    return f"""{page_head(f"{title} — Representative Products | Taotao Sourcing", f"Compare {count} representative {title} products and request a model-specific quotation, document check or broader shortlist.", canonical, head_image)}
 {header()}
   <main>
     <section class="page-hero">
@@ -619,7 +719,11 @@ def sync_sitemap(indexable_pages):
         if name.startswith(("product-", "category-", "detail-")):
             continue
         if loc not in seen:
-            records.append(block.strip())
+            lines = [line.strip() for line in block.strip().splitlines()]
+            records.append("\n".join(
+                line if index in (0, len(lines) - 1) else "  " + line
+                for index, line in enumerate(lines)
+            ))
             seen.add(loc)
     for name in indexable_pages:
         loc = f"{DOMAIN}/{name}"
@@ -740,18 +844,22 @@ def main():
                 for p in sub["_products"]:
                     unlinked_products.discard(p["slug"])
 
-            # group cover: first model image found in any leaf
+            # Group cover: first model image found in any leaf. Rendering later
+            # decides whether that source is suitable for a public card.
             cover = None
             for sub in public_leaves:
                 for e in sub["_public_entries"]:
-                    if e.get("image"):
-                        cover = e["image"]
+                    reviewed_image = usable_public_image(e.get("image"))
+                    if reviewed_image:
+                        cover = reviewed_image
                         break
                 if cover:
                     break
                 for e in sub["_public_entries"]:
-                    if e.get("gallery"):
-                        cover = e["gallery"][0]
+                    reviewed_gallery = [usable_public_image(value) for value in e.get("gallery") or []]
+                    reviewed_gallery = [value for value in reviewed_gallery if value]
+                    if reviewed_gallery:
+                        cover = reviewed_gallery[0]
                         break
                 if cover:
                     break

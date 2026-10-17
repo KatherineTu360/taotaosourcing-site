@@ -10,7 +10,7 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import quote, urlparse
 
-from image_privacy import public_image, public_images
+from image_privacy import placeholder, public_image, public_images
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +19,7 @@ REPRESENTATIVE_PATH = ROOT / "data" / "representative-products.json"
 DOMAIN = "https://taotaosourcing.com"
 WHATSAPP = "8616626662274"
 TODAY = date.today().isoformat()
+UNVERIFIED_PRODUCT_IMAGE_CATEGORIES = {"sanitary"}
 
 
 def esc(value: object) -> str:
@@ -152,10 +153,22 @@ def breadcrumb_json(items: list[tuple[str, str]]) -> str:
 def product_card(product: dict) -> str:
     badge = f'<span class="catalog-badge">{esc(product["model"])}</span>' if product.get("model") else ""
     image = public_images(list(product.get("images") or []) + [product.get("image")])[0]
-    return f"""        <article class="catalog-product-card">
-          <a class="catalog-product-media" href="product-{esc(product['slug'])}.html">
+    if product.get("category") in UNVERIFIED_PRODUCT_IMAGE_CATEGORIES:
+        image = placeholder()
+    if image == placeholder():
+        media = f"""          <a class="catalog-product-media catalog-product-media--pending" href="product-{esc(product['slug'])}.html">
+            <span class="catalog-media-kicker">Image verification</span>
+            <strong>Exact model photo on request</strong>
+            <small>Model-specific image is checked before publication.</small>
+          </a>"""
+        card_class = "catalog-product-card has-no-product-photo"
+    else:
+        media = f"""          <a class="catalog-product-media" href="product-{esc(product['slug'])}.html">
             <img src="{esc(image)}" alt="{esc(product['imageAlt'])}" loading="lazy">
-          </a>
+          </a>"""
+        card_class = "catalog-product-card"
+    return f"""        <article class="{card_class}">
+{media}
           <div class="catalog-product-body">
             {badge}
             <h3><a href="product-{esc(product['slug'])}.html">{esc(product['name'])}</a></h3>
@@ -248,11 +261,23 @@ def render_product(product: dict, category: dict, related: list[dict], *, indexa
     checks = "\n".join(f"              <li>{esc(item)}</li>" for item in product.get("confirmBeforeOrder", []))
     gallery_parts = []
     gallery_paths = public_images(product.get("images") or [product.get("image")])
-    for i, path in enumerate(gallery_paths):
-        loading = ' loading="lazy"' if i else ""
+    if product.get("category") in UNVERIFIED_PRODUCT_IMAGE_CATEGORIES:
+        gallery_paths = [placeholder()]
+    if gallery_paths == [placeholder()]:
+        gallery_paths = []
         gallery_parts.append(
-            f'          <img src="{esc(path)}" alt="{esc(product["imageAlt"])}"{loading}>'
+            '          <div class="product-photo-pending">'
+            '<span class="catalog-media-kicker">Image verification</span>'
+            '<strong>Exact model photo available on request</strong>'
+            '<small>We verify the model and remove supplier-identifying marks before publication.</small>'
+            '</div>'
         )
+    else:
+        for i, path in enumerate(gallery_paths):
+            loading = ' loading="lazy"' if i else ""
+            gallery_parts.append(
+                f'          <img src="{esc(path)}" alt="{esc(product["imageAlt"])}"{loading}>'
+            )
     gallery = "\n".join(gallery_parts)
     related_cards = "\n".join(product_card(item) for item in related[:3])
     schema = breadcrumb_json([
@@ -262,7 +287,7 @@ def render_product(product: dict, category: dict, related: list[dict], *, indexa
         (product["name"], canonical),
     ])
     note = product.get("documentNote", "Specifications shown here come from the supplied catalog material. Confirm the final model, configuration and current documents before placing an order.")
-    return f"""{page_head(product['seoTitle'], product['metaDescription'], canonical, gallery_paths[0], indexable=indexable)}
+    return f"""{page_head(product['seoTitle'], product['metaDescription'], canonical, gallery_paths[0] if gallery_paths else "assets/logo.png", indexable=indexable)}
 {header()}
   <main>
     <section class="page-hero product-page-hero">
@@ -345,7 +370,11 @@ def update_sitemap(generated: list[str]) -> None:
         if Path(urlparse(loc).path).name.startswith("product-"):
             continue
         if loc not in seen:
-            records.append(block.strip())
+            lines = [line.strip() for line in block.strip().splitlines()]
+            records.append("\n".join(
+                line if index in (0, len(lines) - 1) else "  " + line
+                for index, line in enumerate(lines)
+            ))
             seen.add(loc)
     for name in generated:
         loc = f"{DOMAIN}/{name}"

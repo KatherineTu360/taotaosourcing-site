@@ -47,7 +47,8 @@
 "model": "HB-D2.5",
 "type": "Standalone LED poster display",
 "spec": "655x2000mm; P2.5; 256x768P",
-"page": 8
+"page": 8,
+"imageSource": "260305-Led poster display summary.xlsx row 15, drawing image6.png"
 },
 {
 "model": "HB-X1.25",
