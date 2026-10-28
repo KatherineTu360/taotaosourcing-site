@@ -38,7 +38,8 @@ def build(source, entry):
     display_name = _clean(entry.get("name"))
     spec = _clean(entry.get("spec"))
     if not etype and spec:
-        etype = spec  # grid/table catalogs store the type phrase in spec
+        # Door/window records separate the complete type from parameters with semicolons.
+        etype = spec.split(";", 1)[0] if source == "doors-windows" else spec
     label = SOURCE_LABEL.get(source, "supplier catalogue")
     shell = _clean(entry.get("shell"))
     sizes = _clean(entry.get("sizes"))
@@ -107,7 +108,7 @@ def build(source, entry):
         oem = "Custom lengths, packing and logo requirements are confirmed with the factory subject to quantity."
     elif source == "doors-windows":
         overview = (
-            f"{model} is an aluminum {etype.lower()} recorded in the {label}. Configuration: {spec}. "
+            f"{model} is an aluminum {etype.lower()} recorded in the {label}. "
             "Glass specification, frame finishes and hardware brands are confirmed per project specification."
         ).strip()
         benefits = [
@@ -288,6 +289,10 @@ def build(source, entry):
     seo_title = seo_title[:70]
     meta_desc = (f"Source the {model} ({etype or 'catalogue reference'}) from reviewed supplier catalogues. "
                  f"Taotao Sourcing confirms specifications, documents and samples before you commit.")[:158]
+    if source == "doors-windows":
+        seo_title = f"{title} | Taotao Sourcing"
+        meta_desc = (f"{title} from the reviewed supplier catalogue. "
+                     "Request model-specific specifications, samples and a quotation.")
     return {"title": title, "seo_title": seo_title, "meta_desc": meta_desc,
             "overview": overview, "benefits": benefits, "spec_rows": spec_rows,
             "qc": qc, "oem": oem}

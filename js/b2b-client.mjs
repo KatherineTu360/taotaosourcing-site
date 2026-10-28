@@ -125,7 +125,12 @@ export function mountConsent(t) {
 export function formContext() {
   let c=window.__ttInquiryContext||{};try{c=JSON.parse(sessionStorage.getItem('tt:inquiry-context')||'{}');}catch{}
   const q=new URLSearchParams(location.search);
-  return {page:new URLSearchParams(location.search).get('from')||c.page||location.pathname,product:clean(q.get('product')||c.product,160),model:clean(q.get('model')||c.model,100),cta_id:clean(c.cta_id,100)};
+  let page=location.pathname;
+  try {
+    const source=decodeURIComponent(q.get('from')||c.page||'');
+    if(source.startsWith('/')&&!source.startsWith('//')&&!/[\\?#<>\x00-\x20\x7f]/.test(source))page=new URL(source,location.origin).pathname.slice(0,500);
+  } catch { /* Invalid context falls back to the current contact page. */ }
+  return {page,product:clean(q.get('product')||c.product,160),model:clean(q.get('model')||c.model,100),cta_id:clean(c.cta_id,100)};
 }
 // One key per unchanged payload, including after an uncertain network result or page reload.
 // Only a hash and random key persist in session storage; no customer fields are saved there.

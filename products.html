@@ -6,13 +6,13 @@
   <title>Product Catalog &amp; Sourcing Categories | Taotao Sourcing</title>
   <meta name="description" content="Browse helmets, building products, energy equipment and selected sourcing categories. Each inquiry is evaluated by product requirements, target market and supplier fit before quotation.">
   <link rel="canonical" href="https://taotaosourcing.com/products.html">
-  <meta property="og:title" content="Taotao Sourcing — Full Product Catalog (21 Categories)">
+  <meta property="og:title" content="Taotao Sourcing — Full Product Catalog">
   <meta property="og:description" content="Helmets, building products, energy equipment and selected sourcing categories with project-specific supplier checks. MOQ and lead time are quoted by model and quantity.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://taotaosourcing.com/products.html">
   <meta property="og:image" content="https://taotaosourcing.com/assets/logo.png">
   <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261028-inquiry">
   <style>
     .filter-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; }
     .filter-tabs button {
@@ -88,7 +88,7 @@
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
       <h1>Product catalog</h1>
-      <p>Explore 21 sourcing categories supported through supplier matching and project-specific
+      <p>Explore our <span data-category-count></span>sourcing categories supported through supplier matching and project-specific
       screening. Products outside this catalog can be reviewed through the same risk-control
       process. MOQ and lead time are quoted by model and quantity.</p>
     </div>
@@ -535,7 +535,7 @@
       <div class="cta-band">
         <div>
           <h2>Don't see your product?</h2>
-          <p>These 21 categories are our reviewed catalog. Anything else goes through
+          <p>These <span data-category-count></span>categories are our reviewed catalog. Anything else goes through
           custom sourcing — you get the same supplier screening, samples and QC follow-up.</p>
         </div>
         <div class="hero-actions">
@@ -611,6 +611,9 @@
   </a>
 
   <script>
+    const categoryCount = document.querySelectorAll('#catalogGrid .pcard').length;
+    document.querySelectorAll('[data-category-count]').forEach(label => { label.textContent = categoryCount + ' '; });
+
     // Catalog filter
     document.querySelectorAll('.filter-tabs button').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -670,6 +673,6 @@
       });
     });
   </script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261028-inquiry"></script>
 </body>
 </html>

@@ -545,6 +545,39 @@ def model_card(entry, product_ref=None, cat_slug=None, group_path=None):
         </article>"""
 
 
+def render_window_shortlist():
+    """Quick access to the two named window references; keep the existing full catalog paths."""
+    records = json.loads((INTEL / "doors-windows.json").read_text())["models"]
+    cards = []
+    for model, tracks, href in (("TC76", "two-track", "product-tc76.html"),
+                                ("TC115", "six-track", "products.html#doors-spec")):
+        record = next(entry for entry in records if entry["model"] == model)
+        product_type = record["spec"].split(";", 1)[0]
+        title = f"{model} {product_type}"
+        cards.append(f"""          <article class="catalog-product-card" data-window-model="{esc(title)}" data-tracks="{tracks}">
+            <div class="catalog-product-body">
+              <span class="catalog-badge">{esc(model)}</span>
+              <h3><a href="{href}">{esc(title)}</a></h3>
+              <p>Supplier catalogue reference, p.{record['page']}. Confirm the configuration and project dimensions before ordering.</p>
+              <a class="more" href="{href}">View {'details' if model == 'TC76' else 'specification'} →</a>
+              <a class="btn btn-red" href="contact.html?product={model}&amp;model={model}">Ask about {model}</a>
+            </div>
+          </article>""")
+    return f"""        <section class="window-shortlist" data-window-shortlist aria-labelledby="windowShortlistTitle">
+          <h2 id="windowShortlistTitle">Go straight to a window model</h2>
+          <p>Compare these catalogued sliding-window references, or browse all product types below.</p>
+          <div class="window-shortlist-filters" hidden>
+            <label for="windowModelSearch">Search this shortlist<input id="windowModelSearch" type="search" placeholder="Model or window type" autocomplete="off"></label>
+            <label for="windowTrackFilter">Track layout<select id="windowTrackFilter"><option value="all">All layouts</option><option value="two-track">Two-track</option><option value="six-track">Six-track</option></select></label>
+          </div>
+          <p role="status" aria-live="polite">2 models in this shortlist.</p>
+          <div class="catalog-product-grid">
+{chr(10).join(cards)}
+          </div>
+        </section>
+"""
+
+
 def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_link=None, back_label=None):
     cards = []
     for grp in groups:
@@ -587,6 +620,7 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
     }, ensure_ascii=False, separators=(",", ":"))
     schema = schema + f'</script><script type="application/ld+json">{itemlist}'
 
+    quick_access = render_window_shortlist() if cat["slug"] == "doors-windows" and parent_url == f"{DOMAIN}/detail-doors-windows.html" else ""
     head_image = next((group_cover(cat["slug"], group) for group in groups
                        if group_cover(cat["slug"], group)), "assets/logo.png")
     return f"""{page_head(f"{parent_title} | Taotao Sourcing", f"Browse {parent_title} product types and a focused shortlist of representative products for buyer review.", parent_url, head_image)}
@@ -602,7 +636,7 @@ def render_group_cards(cat, groups, parent_title, parent_url, breadcrumbs, back_
     <section class="section">
       <div class="container">
         <p class="backlink"><a href="{esc(back_link or 'products.html')}">← Back to {esc(back_label or 'full catalog')}</a></p>
-        <div class="catalog-product-grid">
+{quick_access}        <div class="catalog-product-grid">
 {cards_html}
         </div>
         <div class="cta-band">

@@ -1335,3 +1335,17 @@ a { color: var(--navy); text-decoration: none; }
 .contact-line a {overflow-wrap:anywhere;}
 .contact-info-card .check-list li {color:var(--text);}
 @media(max-width:760px){.contact-grid{grid-template-columns:minmax(0,1fr);}.form-card{padding:18px;}}
+
+/* Compact first inquiry and direct window-model access. */
+.inquiry-optional {border:1px solid var(--line);border-radius:8px;padding:0 14px;margin:18px 0;}
+.inquiry-optional summary {cursor:pointer;font-weight:600;min-height:44px;padding:12px 0;}
+.inquiry-optional[open] summary {margin-bottom:12px;}
+.inquiry-product-context {background:#eef4fa;border-radius:8px;padding:12px;overflow-wrap:anywhere;}
+.window-shortlist {margin:24px 0 40px;}
+.window-shortlist h2 {font-size:1.45rem;}
+.window-shortlist-filters {display:grid;grid-template-columns:2fr 1fr;gap:16px;margin:18px 0;}
+.window-shortlist-filters label {font-weight:600;}
+.window-shortlist-filters input,.window-shortlist-filters select {display:block;width:100%;min-width:0;min-height:44px;font:inherit;margin-top:6px;padding:10px;border:1px solid var(--line);border-radius:6px;background:#fff;}
+.window-shortlist .catalog-product-body .more {display:block;margin-bottom:14px;}
+.window-shortlist [hidden] {display:none!important;}
+@media(max-width:600px){.window-shortlist-filters{grid-template-columns:minmax(0,1fr);}.window-shortlist .catalog-product-grid{grid-template-columns:minmax(0,1fr);}}
