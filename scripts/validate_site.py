@@ -197,6 +197,16 @@ def main() -> None:
         if not isinstance(evidence, list) or not evidence:
             errors.append(f"{item['slug']}: source evidence must be a non-empty list")
 
+    home_html = (ROOT / "index.html").read_text(encoding="utf-8")
+    product_pos = home_html.find('id="featured-products"')
+    decision_pos = home_html.find('id="buyer-decisions"')
+    if product_pos < 0:
+        errors.append("index.html missing featured product section")
+    elif decision_pos < 0:
+        errors.append("index.html missing buyer decision section")
+    elif product_pos > decision_pos:
+        errors.append("index.html must present products before buyer decision content")
+
     catalog_html = (ROOT / "products.html").read_text(encoding="utf-8")
     category_slugs = {item["slug"] for item in data["categories"]}
     for category in data["categories"]:
