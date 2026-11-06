@@ -67,7 +67,7 @@ def build(source, entry):
             (f"Size range {sizes}" if sizes else "Size range on file", "Adult and junior size runs are confirmed per model before sampling."),
             ("Documents before commitment", "Model-specific test reports or certificates for your target market are requested from the supplier and shared before order confirmation."),
         ]
-        qc = "Order checks cover specification confirmation against the approved sample, shell and finish inspection, weight and size-run verification, and carton and packing checks. Photo or video evidence is shared before shipment."
+        qc = "Order checks cover specification confirmation against the approved sample, shell and finish inspection, weight and size-run verification, and carton and packing checks. When pre-shipment photo or video evidence is included in the agreed inspection scope, it is shared before shipment."
         oem = "Custom colours, graphics and logo placement are available subject to model-specific minimum order quantities. Send your artwork, target quantity and destination market, and we confirm feasibility and cost with the factory."
     elif source == "hongxin-visors":
         overview = (
@@ -278,11 +278,12 @@ def build(source, entry):
     if etype: spec_rows.append(("Type", etype))
     if shell and shell.lower() != "not stated": spec_rows.append(("Shell", shell))
     if sizes: spec_rows.append(("Sizes", sizes))
-    if cert and cert.lower() != "per panel" and cert.lower() != "none printed": spec_rows.append(("Markings noted in catalogue", cert))
+    if cert and cert.lower() != "per panel" and cert.lower() != "none printed": spec_rows.append(("Catalogue marking (documents not reviewed)", cert))
     if refr and refr != "-": spec_rows.append(("Refrigerant", refr))
     if cap: spec_rows.append(("Capacity", cap))
     if material and source in ("bags", "belts", "slg"): spec_rows.append(("Reference material", material))
     if spec and spec.lower() not in (etype.lower(), ""): spec_rows.append(("Configuration", spec))
+    if source == "door-closers": spec_rows.append(("Evidence status", "Supplier-catalogue claim; supporting cycle-test and component files not reviewed"))
     if page: spec_rows.append(("Catalogue page", f"p.{page}"))
 
     seo_title = f"{model} {etype} Sourcing | Taotao Sourcing" if etype else f"{model} Sourcing | Taotao Sourcing"

@@ -231,12 +231,12 @@ GROUPS = {
 
     "door-closers": [
         g("surface-standard", "Standard Surface-Mounted Closers",
-          "150,000-cycle economy fire-door line with square and round bodies, 25-85 kg doors.", models=[
+          "Supplier catalogue lists a 150,000-cycle line with square and round bodies for 25-85 kg doors; current test evidence must be reviewed for the selected model.", models=[
             m("door-closers", keys=["CJ051","CJ061-S","CJ061-R","CJ071"]),
             m("catalog", keys=["cj051-compact-surface","cj061-medium-surface"]),
         ]),
         g("surface-high-cycle", "High-Cycle Heavy-Duty Closers",
-          "300,000-cycle high-grade line with upgraded internals, German seal rings and AW/AD options.", models=[
+          "Supplier catalogue lists a 300,000-cycle line, upgraded internals, German seal rings and AW/AD options; supporting test and component files were not reviewed.", models=[
             m("door-closers", keys=["CJ5011-S","CJ5011-R","CJ5022-S","CJ5022-R","CJ5033-S","CJ5033-R"]),
             m("catalog", keys=["cj5022-high-cycle"]),
         ]),

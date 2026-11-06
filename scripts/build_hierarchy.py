@@ -305,8 +305,11 @@ def resolve_group_models(rules, intel, used, log):
                 spec = f"{e['type']}; shell: {e['shell']}" if spec else f"Shell: {e['shell']}"
             if e.get("sizes"):
                 spec += f"; sizes {e['sizes']}" if spec else f"Sizes: {e['sizes']}"
-            if e.get("cert"):
-                spec += f"; {e['cert']}"
+            cert = str(e.get("cert") or "").strip()
+            if cert and cert.lower() not in {"per panel", "none printed"}:
+                spec += f"; catalogue marking: {cert} (documents not reviewed)"
+            if src == "door-closers":
+                spec += "; supplier-catalogue claim (supporting cycle-test and component files not reviewed)"
             public_mid = PUBLIC_MODEL_ALIASES.get(mid, mid)
             public_entry = dict(e)
             if public_mid != mid:

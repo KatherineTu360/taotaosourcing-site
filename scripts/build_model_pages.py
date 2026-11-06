@@ -168,7 +168,7 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
         <div class="breadcrumb">{trail}</div>
         <span class="catalog-eyebrow">{esc(entry["model"])}</span>
         <h1>{esc(title)}</h1>
-        <p>{esc(c["overview"])}</p>
+        <p>{esc(f'Review the catalogue-recorded configuration, buyer checkpoints and document status for {entry["model"]}.' if entry["model"] == "F617" else c["overview"])}</p>
       </div>
     </section>
     <section class="section product-detail-section">
@@ -197,7 +197,7 @@ def render_model_detail(entry, cat, group, sub, siblings, canonical_slug,
             </div>
           </section>
           <section class="product-info-card">
-            <h2>Why buyers choose the {esc(entry["model"])}</h2>
+            <h2>Why this model may fit a sourcing brief</h2>
             <div class="benefit-list">
 {benefits}
             </div>
