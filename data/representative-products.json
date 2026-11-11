@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17",
+  "generatedAt": "2026-11-11",
   "maxPerLeaf": 3,
   "leafGroups": [
     {
@@ -37,7 +37,7 @@
       "leaf": "full-face-sport-racing",
       "title": "Full-Face Sport & Racing",
       "page": "category-helmets--motorcycle--full-face-sport-racing.html",
-      "availableCandidates": 13,
+      "availableCandidates": 5,
       "representatives": [
         {
           "kind": "catalog",
@@ -46,16 +46,16 @@
           "page": "product-f616-double-visor-full-face-helmet.html"
         },
         {
-          "kind": "catalog",
-          "model": "FK108",
-          "name": "FK108 Double-Visor Full-Face Helmet",
-          "page": "product-fk108-double-visor-full-face-helmet.html"
-        },
-        {
           "kind": "model",
           "model": "F617",
           "name": "F617",
           "page": "product-f617.html"
+        },
+        {
+          "kind": "model",
+          "model": "F618",
+          "name": "F618",
+          "page": "product-f618.html"
         }
       ]
     },
@@ -65,25 +65,13 @@
       "leaf": "flip-up-modular",
       "title": "Flip-Up Modular",
       "page": "category-helmets--motorcycle--flip-up-modular.html",
-      "availableCandidates": 4,
+      "availableCandidates": 1,
       "representatives": [
         {
           "kind": "model",
-          "model": "FK112",
-          "name": "FK112",
-          "page": "product-fk112.html"
-        },
-        {
-          "kind": "model",
-          "model": "KU965A",
-          "name": "KU965A",
-          "page": "product-ku965a.html"
-        },
-        {
-          "kind": "model",
-          "model": "IRONMAN",
-          "name": "IRONMAN",
-          "page": "product-ironman.html"
+          "model": "M902",
+          "name": "M902",
+          "page": "product-m902.html"
         }
       ]
     },
@@ -93,7 +81,7 @@
       "leaf": "off-road",
       "title": "Off-Road & Motocross",
       "page": "category-helmets--motorcycle--off-road.html",
-      "availableCandidates": 8,
+      "availableCandidates": 2,
       "representatives": [
         {
           "kind": "catalog",
@@ -106,40 +94,6 @@
           "model": "MX801",
           "name": "MX801",
           "page": "product-mx801.html"
-        },
-        {
-          "kind": "model",
-          "model": "KU129",
-          "name": "KU129",
-          "page": "product-ku129.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "motorcycle",
-      "leaf": "vintage-cruiser",
-      "title": "Vintage & Cruiser",
-      "page": "category-helmets--motorcycle--vintage-cruiser.html",
-      "availableCandidates": 5,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "KU08",
-          "name": "KU08",
-          "page": "product-ku08.html"
-        },
-        {
-          "kind": "model",
-          "model": "KU600",
-          "name": "KU600",
-          "page": "product-ku600.html"
-        },
-        {
-          "kind": "model",
-          "model": "KU701",
-          "name": "KU701",
-          "page": "product-ku701.html"
         }
       ]
     },
@@ -149,7 +103,7 @@
       "leaf": "open-face-half",
       "title": "Open-Face & Half Shell",
       "page": "category-helmets--motorcycle--open-face-half.html",
-      "availableCandidates": 16,
+      "availableCandidates": 6,
       "representatives": [
         {
           "kind": "catalog",
@@ -174,38 +128,10 @@
     {
       "category": "helmets",
       "group": "motorcycle",
-      "leaf": "smart-bluetooth",
-      "title": "Smart Bluetooth",
-      "page": "category-helmets--motorcycle--smart-bluetooth.html",
-      "availableCandidates": 3,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "KU636",
-          "name": "KU636",
-          "page": "product-ku636.html"
-        },
-        {
-          "kind": "model",
-          "model": "FK07",
-          "name": "FK07",
-          "page": "product-fk07.html"
-        },
-        {
-          "kind": "model",
-          "model": "FT08",
-          "name": "FT08",
-          "page": "product-ft08.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "motorcycle",
       "leaf": "kids-junior",
       "title": "Kids & Junior",
       "page": "category-helmets--motorcycle--kids-junior.html",
-      "availableCandidates": 5,
+      "availableCandidates": 2,
       "representatives": [
         {
           "kind": "model",
@@ -218,40 +144,6 @@
           "model": "P121",
           "name": "P121",
           "page": "product-p121.html"
-        },
-        {
-          "kind": "model",
-          "model": "KU128",
-          "name": "KU128",
-          "page": "product-ku128.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "motorcycle",
-      "leaf": "novelty-gift",
-      "title": "Novelty & Gift",
-      "page": "category-helmets--motorcycle--novelty-gift.html",
-      "availableCandidates": 4,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "HIPHOP",
-          "name": "HIPHOP",
-          "page": "product-hiphop.html"
-        },
-        {
-          "kind": "model",
-          "model": "SKULL",
-          "name": "SKULL",
-          "page": "product-skull.html"
-        },
-        {
-          "kind": "model",
-          "model": "BATMAN",
-          "name": "BATMAN",
-          "page": "product-batman.html"
         }
       ]
     },
@@ -261,529 +153,13 @@
       "leaf": "road",
       "title": "Road Cycling",
       "page": "category-helmets--cycling-sports--road.html",
-      "availableCandidates": 23,
+      "availableCandidates": 1,
       "representatives": [
         {
           "kind": "catalog",
           "model": "HO-210",
           "name": "HO-210 Aerodynamic Bicycle Helmet",
           "page": "product-ho210-road-bicycle-helmet.html"
-        },
-        {
-          "kind": "model",
-          "model": "AR01",
-          "name": "AR01",
-          "page": "product-ar01.html"
-        },
-        {
-          "kind": "model",
-          "model": "AR3",
-          "name": "AR3",
-          "page": "product-ar3.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "mtb",
-      "title": "Mountain Bike (MTB)",
-      "page": "category-helmets--cycling-sports--mtb.html",
-      "availableCandidates": 14,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "SKS-3",
-          "name": "SKS-3",
-          "page": "product-sks-3.html"
-        },
-        {
-          "kind": "model",
-          "model": "SKS113",
-          "name": "SKS113",
-          "page": "product-sks113.html"
-        },
-        {
-          "kind": "model",
-          "model": "SKS31",
-          "name": "SKS31",
-          "page": "product-sks31.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "downhill-fullface",
-      "title": "Downhill & Full-Face",
-      "page": "category-helmets--cycling-sports--downhill-fullface.html",
-      "availableCandidates": 5,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "FT89",
-          "name": "FT89",
-          "page": "product-ft89.html"
-        },
-        {
-          "kind": "model",
-          "model": "KS05B",
-          "name": "KS05B",
-          "page": "product-ks05b.html"
-        },
-        {
-          "kind": "model",
-          "model": "SKS217",
-          "name": "SKS217",
-          "page": "product-sks217.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "city-commuter",
-      "title": "City & Commuter",
-      "page": "category-helmets--cycling-sports--city-commuter.html",
-      "availableCandidates": 12,
-      "representatives": [
-        {
-          "kind": "catalog",
-          "model": "KS83",
-          "name": "KS83 In-Mould City Bicycle Helmet",
-          "page": "product-ks83-city-bicycle-helmet.html"
-        },
-        {
-          "kind": "model",
-          "model": "HB25",
-          "name": "HB25",
-          "page": "product-hb25.html"
-        },
-        {
-          "kind": "model",
-          "model": "KS22",
-          "name": "KS22",
-          "page": "product-ks22.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "e-bike",
-      "title": "E-Bike (NTA 8776)",
-      "page": "category-helmets--cycling-sports--e-bike.html",
-      "availableCandidates": 3,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "FT09",
-          "name": "FT09",
-          "page": "product-ft09.html"
-        },
-        {
-          "kind": "model",
-          "model": "FT11",
-          "name": "FT11",
-          "page": "product-ft11.html"
-        },
-        {
-          "kind": "model",
-          "model": "FT09C",
-          "name": "FT09C",
-          "page": "product-ft09c.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "smart-camera",
-      "title": "Smart & Camera",
-      "page": "category-helmets--cycling-sports--smart-camera.html",
-      "availableCandidates": 12,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "W3",
-          "name": "W3",
-          "page": "product-w3.html"
-        },
-        {
-          "kind": "model",
-          "model": "HB3-1S",
-          "name": "HB3-1S",
-          "page": "product-hb3-1s.html"
-        },
-        {
-          "kind": "model",
-          "model": "FT03",
-          "name": "FT03",
-          "page": "product-ft03.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "visor-led",
-      "title": "Visor & Taillight Series",
-      "page": "category-helmets--cycling-sports--visor-led.html",
-      "availableCandidates": 8,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "TY04",
-          "name": "TY04",
-          "page": "product-ty04.html"
-        },
-        {
-          "kind": "model",
-          "model": "KS09",
-          "name": "KS09",
-          "page": "product-ks09.html"
-        },
-        {
-          "kind": "model",
-          "model": "KS28",
-          "name": "KS28",
-          "page": "product-ks28.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "aero-triathlon",
-      "title": "Aero & Triathlon",
-      "page": "category-helmets--cycling-sports--aero-triathlon.html",
-      "availableCandidates": 3,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "KS13",
-          "name": "KS13",
-          "page": "product-ks13.html"
-        },
-        {
-          "kind": "model",
-          "model": "KS01",
-          "name": "KS01",
-          "page": "product-ks01.html"
-        },
-        {
-          "kind": "model",
-          "model": "KS02A",
-          "name": "KS02A",
-          "page": "product-ks02a.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "freestyle-skate",
-      "title": "Freestyle & Skate",
-      "page": "category-helmets--cycling-sports--freestyle-skate.html",
-      "availableCandidates": 6,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "MTV12",
-          "name": "MTV12",
-          "page": "product-mtv12.html"
-        },
-        {
-          "kind": "model",
-          "model": "MTV28",
-          "name": "MTV28",
-          "page": "product-mtv28.html"
-        },
-        {
-          "kind": "model",
-          "model": "MTV26B",
-          "name": "MTV26B",
-          "page": "product-mtv26b.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "cycling-sports",
-      "leaf": "kids",
-      "title": "Kids & Junior Cycling",
-      "page": "category-helmets--cycling-sports--kids.html",
-      "availableCandidates": 29,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "HB3-4",
-          "name": "HB3-4",
-          "page": "product-hb3-4.html"
-        },
-        {
-          "kind": "model",
-          "model": "MV11",
-          "name": "MV11",
-          "page": "product-mv11.html"
-        },
-        {
-          "kind": "model",
-          "model": "MB11",
-          "name": "MB11",
-          "page": "product-mb11.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "snow-sports",
-      "leaf": "ski-adult",
-      "title": "Adult Ski & Snowboard",
-      "page": "category-helmets--snow-sports--ski-adult.html",
-      "availableCandidates": 20,
-      "representatives": [
-        {
-          "kind": "catalog",
-          "model": "MS108",
-          "name": "MS108 In-Mould Ski Helmet",
-          "page": "product-ms108-ski-helmet.html"
-        },
-        {
-          "kind": "model",
-          "model": "MS106",
-          "name": "MS106",
-          "page": "product-ms106.html"
-        },
-        {
-          "kind": "model",
-          "model": "MS105",
-          "name": "MS105",
-          "page": "product-ms105.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "snow-sports",
-      "leaf": "ski-kids",
-      "title": "Kids & Youth Ski",
-      "page": "category-helmets--snow-sports--ski-kids.html",
-      "availableCandidates": 4,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "MS95B",
-          "name": "MS95B",
-          "page": "product-ms95b.html"
-        },
-        {
-          "kind": "model",
-          "model": "MTV18SK",
-          "name": "MTV18SK",
-          "page": "product-mtv18sk.html"
-        },
-        {
-          "kind": "model",
-          "model": "MS98",
-          "name": "MS98",
-          "page": "product-ms98.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "snow-sports",
-      "leaf": "race-snow",
-      "title": "Race & Smart Ski",
-      "page": "category-helmets--snow-sports--race-snow.html",
-      "availableCandidates": 4,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "JY05B",
-          "name": "JY05B",
-          "page": "product-jy05b.html"
-        },
-        {
-          "kind": "model",
-          "model": "MS82",
-          "name": "MS82",
-          "page": "product-ms82.html"
-        },
-        {
-          "kind": "model",
-          "model": "ASP016",
-          "name": "ASP016",
-          "page": "product-asp016.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "snow-sports",
-      "leaf": "goggles",
-      "title": "Ski & Snow Goggles",
-      "page": "category-helmets--snow-sports--goggles.html",
-      "availableCandidates": 7,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "SK88",
-          "name": "SK88",
-          "page": "product-sk88.html"
-        },
-        {
-          "kind": "model",
-          "model": "SK694",
-          "name": "SK694",
-          "page": "product-sk694.html"
-        },
-        {
-          "kind": "model",
-          "model": "SK687",
-          "name": "SK687",
-          "page": "product-sk687.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "specialty-sports",
-      "leaf": "equestrian",
-      "title": "Equestrian",
-      "page": "category-helmets--specialty-sports--equestrian.html",
-      "availableCandidates": 10,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "MK01",
-          "name": "MK01",
-          "page": "product-mk01.html"
-        },
-        {
-          "kind": "model",
-          "model": "MSU05",
-          "name": "MSU05",
-          "page": "product-msu05.html"
-        },
-        {
-          "kind": "model",
-          "model": "MSU03",
-          "name": "MSU03",
-          "page": "product-msu03.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "specialty-sports",
-      "leaf": "climbing",
-      "title": "Climbing",
-      "page": "category-helmets--specialty-sports--climbing.html",
-      "availableCandidates": 4,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "PY02",
-          "name": "PY02",
-          "page": "product-py02.html"
-        },
-        {
-          "kind": "model",
-          "model": "PY01",
-          "name": "PY01",
-          "page": "product-py01.html"
-        },
-        {
-          "kind": "model",
-          "model": "HB16",
-          "name": "HB16",
-          "page": "product-hb16.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "specialty-sports",
-      "leaf": "water-sports",
-      "title": "Water Sports",
-      "page": "category-helmets--specialty-sports--water-sports.html",
-      "availableCandidates": 6,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "JY04",
-          "name": "JY04",
-          "page": "product-jy04.html"
-        },
-        {
-          "kind": "model",
-          "model": "JY05",
-          "name": "JY05",
-          "page": "product-jy05.html"
-        },
-        {
-          "kind": "model",
-          "model": "MTV16",
-          "name": "MTV16",
-          "page": "product-mtv16.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "specialty-sports",
-      "leaf": "ice-hockey",
-      "title": "Speed Skating & Hockey",
-      "page": "category-helmets--specialty-sports--ice-hockey.html",
-      "availableCandidates": 4,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "MM03",
-          "name": "MM03",
-          "page": "product-mm03.html"
-        },
-        {
-          "kind": "model",
-          "model": "MM08",
-          "name": "MM08",
-          "page": "product-mm08.html"
-        },
-        {
-          "kind": "model",
-          "model": "MM04",
-          "name": "MM04",
-          "page": "product-mm04.html"
-        }
-      ]
-    },
-    {
-      "category": "helmets",
-      "group": "specialty-sports",
-      "leaf": "protection",
-      "title": "Body Protection",
-      "page": "category-helmets--specialty-sports--protection.html",
-      "availableCandidates": 4,
-      "representatives": [
-        {
-          "kind": "model",
-          "model": "PC03",
-          "name": "PC03",
-          "page": "product-pc03.html"
-        },
-        {
-          "kind": "model",
-          "model": "PJ01",
-          "name": "PJ01",
-          "page": "product-pj01.html"
-        },
-        {
-          "kind": "model",
-          "model": "PJA03",
-          "name": "PJA03",
-          "page": "product-pja03.html"
         }
       ]
     },
@@ -4172,38 +3548,15 @@
     "category-helmet-visors--brand-visors--shark.html",
     "category-helmet-visors--brand-visors--shoei.html",
     "category-helmet-visors--brand-visors.html",
-    "category-helmets--cycling-sports--aero-triathlon.html",
-    "category-helmets--cycling-sports--city-commuter.html",
-    "category-helmets--cycling-sports--downhill-fullface.html",
-    "category-helmets--cycling-sports--e-bike.html",
-    "category-helmets--cycling-sports--freestyle-skate.html",
-    "category-helmets--cycling-sports--kids.html",
-    "category-helmets--cycling-sports--mtb.html",
     "category-helmets--cycling-sports--road.html",
-    "category-helmets--cycling-sports--smart-camera.html",
-    "category-helmets--cycling-sports--visor-led.html",
     "category-helmets--cycling-sports.html",
     "category-helmets--motorcycle--flip-up-modular.html",
     "category-helmets--motorcycle--full-face-sport-racing.html",
     "category-helmets--motorcycle--full-face-touring.html",
     "category-helmets--motorcycle--kids-junior.html",
-    "category-helmets--motorcycle--novelty-gift.html",
     "category-helmets--motorcycle--off-road.html",
     "category-helmets--motorcycle--open-face-half.html",
-    "category-helmets--motorcycle--smart-bluetooth.html",
-    "category-helmets--motorcycle--vintage-cruiser.html",
     "category-helmets--motorcycle.html",
-    "category-helmets--snow-sports--goggles.html",
-    "category-helmets--snow-sports--race-snow.html",
-    "category-helmets--snow-sports--ski-adult.html",
-    "category-helmets--snow-sports--ski-kids.html",
-    "category-helmets--snow-sports.html",
-    "category-helmets--specialty-sports--climbing.html",
-    "category-helmets--specialty-sports--equestrian.html",
-    "category-helmets--specialty-sports--ice-hockey.html",
-    "category-helmets--specialty-sports--protection.html",
-    "category-helmets--specialty-sports--water-sports.html",
-    "category-helmets--specialty-sports.html",
     "category-hinges--concealed-hinges.html",
     "category-hinges--espag-sets.html",
     "category-hinges--friction-stays.html",
@@ -4327,15 +3680,12 @@
     "product-agv-k1-k1s-k3sv-k5-k5s.html",
     "product-agv-k5-plus.html",
     "product-alpinestars-r10-compatible-visor.html",
-    "product-ar01.html",
-    "product-ar3.html",
     "product-arai-compatible-helmet-visors.html",
     "product-arai-rx-7x.html",
     "product-arai-tour-cross-5.html",
     "product-asa-11316.html",
     "product-asa-17717.html",
     "product-asa14021-coextruded-decking.html",
-    "product-asp016.html",
     "product-b1-05.html",
     "product-b1-10.html",
     "product-b1-14.html",
@@ -4362,7 +3712,6 @@
     "product-bag2-p28.html",
     "product-bag2-p41.html",
     "product-bag2-p55.html",
-    "product-batman.html",
     "product-bell-bubble-flat-visor.html",
     "product-bell-rs-1.html",
     "product-bell-rs1-compatible-visor.html",
@@ -4421,21 +3770,13 @@
     "product-f609-double-visor-full-face-helmet.html",
     "product-f616-double-visor-full-face-helmet.html",
     "product-f617.html",
+    "product-f618.html",
     "product-fab-member.html",
     "product-fixed-and-tracking-pv-mounting-systems.html",
     "product-fixed.html",
-    "product-fk07.html",
-    "product-fk108-double-visor-full-face-helmet.html",
-    "product-fk112.html",
     "product-flex.html",
     "product-frp380.html",
     "product-frp830.html",
-    "product-ft03.html",
-    "product-ft08.html",
-    "product-ft09.html",
-    "product-ft09c.html",
-    "product-ft11.html",
-    "product-ft89.html",
     "product-full-pu-running-track-system.html",
     "product-gxd-14525.html",
     "product-hb-cn-battery-foldable-led-poster-display.html",
@@ -4447,13 +3788,8 @@
     "product-hb-xzd1-25.html",
     "product-hb-xzd1-53.html",
     "product-hb-xzd1-86.html",
-    "product-hb16.html",
-    "product-hb25.html",
-    "product-hb3-1s.html",
-    "product-hb3-4.html",
     "product-hdg-mount.html",
     "product-herring-inverter-pool-heat-pump.html",
-    "product-hiphop.html",
     "product-hjc-c70-hj20m.html",
     "product-hjc-compatible-helmet-visors.html",
     "product-hjc-i10-i70-hj31.html",
@@ -4504,31 +3840,12 @@
     "product-icon-compatible-helmet-visors.html",
     "product-icon-ic-06-wing.html",
     "product-industrial-degreasers-and-cleaners.html",
-    "product-ironman.html",
     "product-jcfg-1.html",
     "product-jewelry-display-trays-and-props.html",
-    "product-jy04.html",
-    "product-jy05.html",
-    "product-jy05b.html",
     "product-k601-k603.html",
     "product-kh-p01.html",
     "product-kh-p02.html",
     "product-kh-p03.html",
-    "product-ks01.html",
-    "product-ks02a.html",
-    "product-ks05b.html",
-    "product-ks09.html",
-    "product-ks13.html",
-    "product-ks22.html",
-    "product-ks28.html",
-    "product-ks83-city-bicycle-helmet.html",
-    "product-ku08.html",
-    "product-ku128.html",
-    "product-ku129.html",
-    "product-ku600.html",
-    "product-ku636.html",
-    "product-ku701.html",
-    "product-ku965a.html",
     "product-kyt-compatible-helmet-visors.html",
     "product-kyt-r2r.html",
     "product-kyt-tt-revo.html",
@@ -4569,17 +3886,13 @@
     "product-lxf-8045-f.html",
     "product-m76-thermal-break-system-window.html",
     "product-m78-triple-glazed-system-window.html",
+    "product-m902.html",
     "product-mb-12.html",
     "product-mb-13.html",
     "product-mb-14.html",
     "product-mb-24.html",
-    "product-mb11.html",
     "product-mc200-mc300-mc1000.html",
     "product-metalworking-cutting-grinding-fluids.html",
-    "product-mk01.html",
-    "product-mm03.html",
-    "product-mm04.html",
-    "product-mm08.html",
     "product-mobile-power-go.html",
     "product-motorax-r50s-compatible-visor.html",
     "product-mr-002-mini-kitchen-heating-element.html",
@@ -4600,23 +3913,9 @@
     "product-mr-77es5.html",
     "product-mr-ty.html",
     "product-mr-tys.html",
-    "product-ms105.html",
-    "product-ms106.html",
-    "product-ms108-ski-helmet.html",
-    "product-ms82.html",
-    "product-ms95b.html",
-    "product-ms98.html",
-    "product-msu03.html",
-    "product-msu05.html",
     "product-mt-compatible-helmet-visors.html",
     "product-mt-v-12-targo.html",
     "product-mt-v-14-revenge-2-rapide-pro-targo.html",
-    "product-mtv12.html",
-    "product-mtv16.html",
-    "product-mtv18sk.html",
-    "product-mtv26b.html",
-    "product-mtv28.html",
-    "product-mv11.html",
     "product-mx801.html",
     "product-mx802-carbon-adventure-helmet.html",
     "product-nb25w-01.html",
@@ -4641,17 +3940,12 @@
     "product-pc-p01.html",
     "product-pc-p02.html",
     "product-pc-p03.html",
-    "product-pc03.html",
     "product-pc110.html",
-    "product-pj01.html",
-    "product-pja03.html",
     "product-pkg-dline.html",
     "product-pkg-temp.html",
     "product-profiled-roof-wall-sandwich-panels.html",
     "product-profiled-steel-floor-deck-panels.html",
     "product-pv-support-materials-galvanized-znalmg.html",
-    "product-py01.html",
-    "product-py02.html",
     "product-r290-12kw.html",
     "product-r290-6kw.html",
     "product-r290-9kw.html",
@@ -4675,14 +3969,6 @@
     "product-shoei-compatible-helmet-visors.html",
     "product-shoei-x14.html",
     "product-shoei-z7.html",
-    "product-sk687.html",
-    "product-sk694.html",
-    "product-sk88.html",
-    "product-sks-3.html",
-    "product-sks113.html",
-    "product-sks217.html",
-    "product-sks31.html",
-    "product-skull.html",
     "product-solar-pv-carport-structures.html",
     "product-sp-830pu.html",
     "product-sp-850.html",
@@ -4700,7 +3986,6 @@
     "product-track-da.html",
     "product-track-sa.html",
     "product-travel-jewelry-cases.html",
-    "product-ty04.html",
     "product-tz110c.html",
     "product-vt-2056b.html",
     "product-vt-2056c.html",
@@ -4719,7 +4004,6 @@
     "product-vt331b-vt335b-heavy-duty-hinge.html",
     "product-vt351a-wide-opening-hinge.html",
     "product-vt353a-heavy-duty-hinge.html",
-    "product-w3.html",
     "product-wl-p01.html",
     "product-wl-p02.html",
     "product-wl-p03.html",

@@ -122,7 +122,12 @@ UNVERIFIED_MODEL_IMAGE_CATEGORIES = {"sanitary"}
 
 # Keep this supplier catalogue as an internal source record only. Its models,
 # images and generated pages must not be included in the public site.
-PUBLICLY_EXCLUDED_SOURCES = {"meicheng", "yongbao"}
+PUBLICLY_EXCLUDED_SOURCES = {"meicheng", "yongbao", "kuuvi-moto", "moon-ski", "moon-sports"}
+PUBLICLY_EXCLUDED_CATALOG_PRODUCTS = {
+    "fk108-double-visor-full-face-helmet",
+    "ks83-city-bicycle-helmet",
+    "ms108-ski-helmet",
+}
 # Source-specific group pages generated before a supplier was excluded must not
 # remain in the public sitemap.
 PUBLICLY_EXCLUDED_PAGE_PATHS = {
@@ -789,6 +794,7 @@ def sync_sitemap(indexable_pages):
 def main():
     catalog = json.loads((DATA / "catalog-products.json").read_text())
     intel = load_intel()
+    catalog["products"] = [p for p in catalog["products"] if p["slug"] not in PUBLICLY_EXCLUDED_CATALOG_PRODUCTS]
     products = catalog["products"]
     products_by_slug = {p["slug"]: p for p in products}
     used = set()
@@ -998,7 +1004,10 @@ def main():
             path.unlink()
             removed_product_pages += 1
     for path in ROOT.glob("category-*.html"):
-        set_indexability(path, path.name in indexable_hierarchy_pages)
+        if path.name.startswith("category-helmets--") and path.name not in indexable_hierarchy_pages:
+            path.unlink()
+        else:
+            set_indexability(path, path.name in indexable_hierarchy_pages)
 
     sync_sitemap(indexable_hierarchy_pages + representative_pages)
 
