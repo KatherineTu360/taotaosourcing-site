@@ -12,26 +12,35 @@
   <meta property="og:url" content="https://taotaosourcing.com/products.html">
   <meta property="og:image" content="https://taotaosourcing.com/assets/logo.png">
   <link rel="icon" type="image/png" href="assets/logo.png">
-  <link rel="stylesheet" href="css/style.css?v=20261106-product-first">
+  <link rel="stylesheet" href="css/style.css?v=20261112-ui-polish">
   <style>
     .filter-tabs { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; }
     .filter-tabs button {
       padding: 9px 20px; border-radius: 999px; border: 1.5px solid #cfdaea;
       background: #fff; color: var(--text); font-weight: 700; font-size: 0.9rem;
-      cursor: pointer; font-family: var(--font); transition: all 0.15s;
+      min-height: 44px; cursor: pointer; font-family: var(--font); touch-action: manipulation;
+      transition: background-color 0.15s ease-out, border-color 0.15s ease-out,
+        color 0.15s ease-out, transform 0.15s ease-out;
     }
+    .filter-tabs button:active { transform: scale(0.96); }
     .filter-tabs button.active { background: var(--navy); border-color: var(--navy); color: #fff; }
     .catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
     .pcard {
       background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
-      overflow: hidden; display: flex; flex-direction: column; transition: all 0.2s;
+      overflow: hidden; display: flex; flex-direction: column;
+      transition: transform 0.18s ease-out, box-shadow 0.18s ease-out,
+        border-color 0.18s ease-out;
     }
-    .pcard:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    @media (hover: hover) and (pointer: fine) {
+      .pcard:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); border-color: #c3d2db; }
+    }
     .pcard-body { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
     .pcard-body h3 { font-size: 1.1rem; color: var(--navy-ink); margin-bottom: 8px; font-weight: 750; }
     .pcard-body p { font-size: 0.9rem; color: var(--muted); flex: 1; }
     .pcard-body .more { margin-top: 14px; font-weight: 700; font-size: 0.88rem; color: var(--red); }
-    .pcard-body .more:hover { color: var(--red-dark); }
+    @media (hover: hover) and (pointer: fine) {
+      .pcard-body .more:hover { color: var(--red-dark); }
+    }
 
     .pcard-media { position: relative; height: 210px; overflow: hidden; background: #eef2f9; }
     .slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; height: 100%; cursor: pointer; }
@@ -44,12 +53,16 @@
     }
     .s-btn {
       position: absolute; top: 50%; transform: translateY(-50%); z-index: 3;
-      width: 30px; height: 30px; border-radius: 50%; border: none; cursor: pointer;
+      width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer;
       background: rgba(255,255,255,0.92); color: var(--navy); font-size: 1.15rem; font-weight: 800;
       display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-      transition: background 0.15s; padding: 0; line-height: 1;
+      transition: background-color 0.15s ease-out, transform 0.15s ease-out;
+      padding: 0; line-height: 1; touch-action: manipulation;
     }
-    .s-btn:hover { background: #fff; }
+    .s-btn:active { transform: translateY(-50%) scale(0.96); }
+    @media (hover: hover) and (pointer: fine) {
+      .s-btn:hover { background: #fff; }
+    }
     .s-prev { left: 10px; } .s-next { right: 10px; }
     .s-dots { position: absolute; bottom: 9px; left: 0; right: 0; display: flex; justify-content: center; gap: 5px; z-index: 3; }
     .s-dots span { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.55); transition: background 0.15s; }
