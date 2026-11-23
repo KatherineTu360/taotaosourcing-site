@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Taotao Sourcing | Start a Sourcing or Helmet Inquiry</title>
-  <meta name="description" content="Contact Katherine Tu at Taotao Sourcing for helmet sourcing, supplier verification, scoped factory visits, product inspection or selected sourcing projects in South China.">
+  <title>Contact Taotao Sourcing | Product Sourcing &amp; Factory Visit Requests</title>
+  <meta name="description" content="Contact Katherine Tu for product sourcing, supplier checks, factory visits, English–Chinese business interpreting or inspection coordination in South China.">
   <link rel="canonical" href="https://taotaosourcing.com/contact.html">
   <meta property="og:title" content="Contact Taotao Sourcing">
-  <meta property="og:description" content="Start an inquiry — helmets, visors, supplier checks or custom sourcing in South China.">
+  <meta property="og:description" content="Discuss a product requirement, supplier check, factory visit or sourcing project with Katherine Tu in South China.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://taotaosourcing.com/contact.html">
   <meta property="og:image" content="https://taotaosourcing.com/assets/logo.png">
@@ -43,8 +43,9 @@
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
       <h1>Start an inquiry</h1>
-      <p>Tell us the product, service or factory you have in mind. Katherine reviews each
-      inquiry personally and replies through your chosen contact channel.</p>
+      <p>Contact Katherine Tu, China Sourcing &amp; Factory Visit Coordinator. Share a product
+      requirement or a specific task; Katherine will reply with the information and scope needed
+      for the next step.</p>
     </div>
   </section>
 
@@ -63,9 +64,22 @@
           </div>
           <div class="form-group"><label for="contact">Email or WhatsApp with country code *</label><input id="contact" name="contact" required maxlength="200" autocomplete="email" placeholder="buyer@company.com or +44…"></div>
           <div class="form-group">
+            <label for="interest">What do you need help with? (optional)</label>
+            <select id="interest" name="interest">
+              <option value="" selected>Select a task</option>
+              <option value="product">Product sourcing or quotation</option>
+              <option value="supplier-verification">Supplier verification</option>
+              <option value="factory-visit">Factory visit / scoped capability review</option>
+              <option value="interpreting">English–Chinese business interpreting</option>
+              <option value="inspection">Inspection &amp; QC coordination</option>
+              <option value="managed-sourcing">Managed sourcing project</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label for="message">Your requirement *</label>
-            <textarea id="message" name="message" rows="4" required maxlength="4000"
-              placeholder="Describe the product or supplier check you need. Add a model or link if you have one."></textarea>
+            <textarea id="message" name="message" rows="4" required maxlength="3900"
+              placeholder="For products: category or model, quantity and destination market. For a service: supplier or location, the task and your deadline."></textarea>
           </div>
           <details class="inquiry-optional">
             <summary>Add product, company or quotation details (optional)</summary>
@@ -73,33 +87,13 @@
               <div class="form-group"><label for="company">Company</label><input type="text" id="company" name="company" maxlength="200" autocomplete="organization" placeholder="Company / shop name"></div>
               <div class="form-group"><label for="country">Country / region</label><input type="text" id="country" name="country" maxlength="100" autocomplete="country-name" placeholder="e.g. Germany"></div>
             </div>
-            <div class="form-group">
-              <label for="interest">I'm interested in</label>
-              <select id="interest" name="interest">
-                <option value="" disabled selected>Select one…</option>
-                <option>Product catalog item / model</option>
-                <option>Building products &amp; hardware</option>
-                <option>Energy &amp; industrial equipment</option>
-                <option>Consumer &amp; lifestyle products</option>
-                <option>Motorcycle helmets &amp; visors</option>
-                <option>Sports / cycling helmets</option>
-                <option>Ski helmets</option>
-                <option>Custom industrial sourcing</option>
-                <option>Supplier verification</option>
-                <option>Factory visit / scoped capability review</option>
-                <option>English–Chinese business interpreting</option>
-                <option>Inspection &amp; QC</option>
-                <option>Full sourcing service</option>
-                <option>Something else</option>
-              </select>
-            </div>
             <div class="form-row"><div class="form-group"><label for="product">Product</label><input id="product" name="product" maxlength="160"></div><div class="form-group"><label for="model">Model</label><input id="model" name="model" maxlength="100"></div></div>
             <div class="form-row"><div class="form-group"><label for="quantity">Estimated quantity</label><input id="quantity" name="quantity" inputmode="numeric" maxlength="100"></div><div class="form-group"><label for="market">Target market</label><input id="market" name="market" maxlength="100"></div></div>
             <div class="form-group"><label for="customization">Customization</label><input id="customization" name="customization" maxlength="200" placeholder="Logo, packaging, specifications"></div>
           </details>
           <label class="tt-honeypot" aria-hidden="true">Leave empty<input name="website" tabindex="-1" autocomplete="off"></label>
           <div id="inquiryChallenge"></div>
-          <button type="submit" disabled data-cta-id="sourcing:form:submit" data-cta-name="Request a sourcing assessment" class="btn btn-red">Request a sourcing assessment</button>
+          <button type="submit" disabled data-cta-id="sourcing:form:submit" data-cta-name="Send your requirement" class="btn btn-red">Send your requirement</button>
           <p id="inquiryStatus" role="status" aria-live="polite">Checking online inquiry availability…</p>
           <p class="form-note">Your details are used to respond to your request. Optional tracking is separate. See our <a href="privacy.html">privacy note</a>.</p>
           <p><a data-cta-id="sourcing:form:whatsapp" href="https://wa.me/8616626662274" target="_blank" rel="noreferrer">Open WhatsApp</a> · <a data-cta-id="sourcing:form:email" href="mailto:rabieternity@gmail.com">Open email</a></p>
@@ -230,6 +224,6 @@
     </svg>
   </a>
 
-  <script src="js/main.js?v=20261028-inquiry"></script>
+  <script src="js/main.js?v=20261123-inquiry"></script>
 </body>
 </html>

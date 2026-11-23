@@ -97,7 +97,7 @@ export function mountTracking(siteId) {
     const channel=/wa\.me/.test(href)?'whatsapp':/^mailto:/.test(href)?'email':/^tel:/.test(href)?'phone':'form';
     t.cta(el.dataset.ctaId,el.dataset.ctaName,channel);
     // Only product context is retained as necessary form state. No visitor/ad identifier is linked across domains.
-    if(channel==='form' && el.getAttribute('type')!=='submit') {const previous=window.__ttInquiryContext||{};const c={page:location.pathname,product:el.dataset.product||previous.product||'',model:el.dataset.model||previous.model||'',cta_id:el.dataset.ctaId};window.__ttInquiryContext=c;try {sessionStorage.setItem('tt:inquiry-context',JSON.stringify(c));}catch{}window.dispatchEvent(new CustomEvent('tt:inquiry-context',{detail:c}));}
+    if(channel==='form' && el.getAttribute('type')!=='submit') {const previous=window.__ttInquiryContext||{};const task=el.dataset.inquiryTask||'';const service=task&&task!=='product';const c={page:location.pathname,product:service?'':el.dataset.product||previous.product||'',model:service?'':el.dataset.model||previous.model||'',task,cta_id:el.dataset.ctaId};window.__ttInquiryContext=c;try {sessionStorage.setItem('tt:inquiry-context',JSON.stringify(c));}catch{}window.dispatchEvent(new CustomEvent('tt:inquiry-context',{detail:c}));}
   },true);
   for(const method of ['pushState','replaceState']) {
     const original=history[method];history[method]=function(...args){const result=original.apply(this,args);t.page();tag();return result;};
@@ -130,7 +130,12 @@ export function formContext() {
     const source=decodeURIComponent(q.get('from')||c.page||'');
     if(source.startsWith('/')&&!source.startsWith('//')&&!/[\\?#<>\x00-\x20\x7f]/.test(source))page=new URL(source,location.origin).pathname.slice(0,500);
   } catch { /* Invalid context falls back to the current contact page. */ }
-  return {page,product:clean(q.get('product')||c.product,160),model:clean(q.get('model')||c.model,100),cta_id:clean(c.cta_id,100)};
+  const tasks=['product','supplier-verification','factory-visit','interpreting','inspection','managed-sourcing','other'];
+  const suppliedProduct=q.has('product')||q.has('model');
+  const selectedTask=q.get('task')||(suppliedProduct?'product':c.task);
+  const task=tasks.includes(selectedTask)?selectedTask:'';
+  const service=task&&task!=='product';
+  return {page,product:clean(q.get('product')||(service?'':c.product),160),model:clean(q.get('model')||(service?'':c.model),100),task,cta_id:clean(c.cta_id,100)};
 }
 // One key per unchanged payload, including after an uncertain network result or page reload.
 // Only a hash and random key persist in session storage; no customer fields are saved there.

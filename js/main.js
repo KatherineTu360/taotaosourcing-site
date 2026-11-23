@@ -93,12 +93,13 @@ if (windowShortlist) {
 }
 
 // Shared consent-gated inquiry integration. Kept separate from product-page generation.
-import('./b2b-client.mjs?v=20261028-inquiry').then(async ({mountTracking,mountConsent,formContext,sendInquiry,mountChallenge})=>{
+import('./b2b-client.mjs?v=20261123-inquiry').then(async ({mountTracking,mountConsent,formContext,sendInquiry,mountChallenge})=>{
   const tracker=mountTracking('taotao_sourcing');mountConsent(tracker);
   const preferences=document.createElement('button');preferences.type='button';preferences.textContent='Privacy choices';preferences.className='tt-privacy-settings';preferences.onclick=()=>window.dispatchEvent(new Event('taotao:open-analytics-preferences'));(document.querySelector('footer')||document.body).append(preferences);
   document.querySelectorAll('a[href*="contact.html"]').forEach(link=>{
     const url=new URL(link.href,location.href);if(url.origin!==location.origin)return;
     url.searchParams.set('from',location.pathname);
+    if(link.dataset.inquiryTask)url.searchParams.set('task',link.dataset.inquiryTask);
     if(location.pathname.startsWith('/product-')){const product=document.querySelector('h1')?.textContent.trim();if(product&&!url.searchParams.has('product'))url.searchParams.set('product',product.slice(0,160));const modelRow=Array.from(document.querySelectorAll('.spec-table tr')).find(row=>/Model/.test(row.querySelector('th')?.textContent||''));const model=modelRow?.querySelector('td')?.textContent.trim();if(model)url.searchParams.set('model',model.slice(0,100));}
     link.href=url.href;
   });
@@ -106,7 +107,7 @@ import('./b2b-client.mjs?v=20261028-inquiry').then(async ({mountTracking,mountCo
   const context=formContext();
   const status=document.getElementById('inquiryStatus'),button=form.querySelector('button[type="submit"]');
   form.elements.product.value=context.product;form.elements.model.value=context.model;
-  if(context.product)form.elements.interest.value='Product catalog item / model';
+  form.elements.interest.value=context.task||(context.product?'product':'');
   const productContext=document.getElementById('inquiryProductContext');
   if(productContext&&(context.product||context.model)){productContext.textContent='Inquiry about: '+[context.product,context.model].filter((value,index,list)=>value&&list.indexOf(value)===index).join(' · ')+'. You can edit this in the optional details.';productContext.hidden=false;}
   const endpoint=location.hostname==='localhost'||location.hostname==='127.0.0.1'?'http://localhost:4178/api/inquiries':'https://www.taotaotrading.com/api/inquiries';
@@ -114,9 +115,11 @@ import('./b2b-client.mjs?v=20261028-inquiry').then(async ({mountTracking,mountCo
   try{const response=await fetch(endpoint+'/config',{credentials:'omit'});const config=await response.json();button.disabled=!config.enabled;status.textContent=config.enabled?(config.test_mode?'TEST environment — no production conversion uploads.':''):'Online inquiry receipt is not enabled yet. Use the direct contact links.';if(config.enabled)challenge=await mountChallenge(config,document.getElementById('inquiryChallenge'));}catch{status.textContent='Online receipt is unavailable. Use the direct contact links or retry later.';}
   form.addEventListener('submit',async event=>{
     event.preventDefault();if(busy)return;busy=true;button.disabled=true;button.textContent='Sending…';status.textContent='Sending your sourcing request…';
-    const fields=Object.fromEntries(new FormData(form));fields.product=fields.product||fields.interest;delete fields.interest;fields.origin_page=context.page;fields.cta_id=context.cta_id;
+    const fields=Object.fromEntries(new FormData(form));
+    if(fields.interest){const taskLabel=form.elements.interest.selectedOptions[0].textContent.trim();fields.message='Request type: '+taskLabel+'\n\n'+fields.message;}
+    delete fields.interest;fields.origin_page=context.page;fields.cta_id=context.cta_id;
     try{const result=await sendInquiry(endpoint,'taotao_sourcing','sourcing_inquiry',fields,tracker,challenge.token());status.textContent='Request received. Reference: '+result.lead_id+'. Katherine can now review your requirements.';}
     catch(error){status.textContent=error.message||'We could not confirm receipt. Retry with the same details.';challenge.reset();}
-    finally{busy=false;button.disabled=false;button.textContent='Request a sourcing assessment';}
+    finally{busy=false;button.disabled=false;button.textContent='Send your requirement';}
   });
 }).catch(()=>{const status=document.getElementById('inquiryStatus');if(status)status.textContent='Online form could not load. Please use the direct contact links.';});

@@ -12,7 +12,7 @@ beforeEach(() => {
 
 test('TC76 query retains model and the initiating product path', () => {
   location.search = '?product=TC76&model=TC76&from=%2Fproduct-tc76.html';
-  assert.deepEqual(formContext(), { page: '/product-tc76.html', product: 'TC76', model: 'TC76', cta_id: '' });
+  assert.deepEqual(formContext(), { page: '/product-tc76.html', product: 'TC76', model: 'TC76', task: 'product', cta_id: '' });
 });
 
 test('external, injected and malformed source paths fall back to the contact page', () => {
@@ -24,7 +24,7 @@ test('external, injected and malformed source paths fall back to the contact pag
 
 test('inquiry context can recover from storage without query parameters', () => {
   stored = JSON.stringify({ page: '/detail-doors-windows.html', product: 'TC115', model: 'TC115', cta_id: 'window:quote' });
-  assert.deepEqual(formContext(), { page: '/detail-doors-windows.html', product: 'TC115', model: 'TC115', cta_id: 'window:quote' });
+  assert.deepEqual(formContext(), { page: '/detail-doors-windows.html', product: 'TC115', model: 'TC115', task: '', cta_id: 'window:quote' });
 });
 
 test('form text stays bounded and strips control characters', () => {
@@ -40,4 +40,24 @@ test('missing browser storage still preserves a valid query', () => {
   location.search = '?product=TC115&model=TC115&from=%2Fdetail-doors-windows.html';
   assert.equal(formContext().page, '/detail-doors-windows.html');
   assert.equal(formContext().model, 'TC115');
+});
+
+test('a service task clears an earlier product while retaining its source', () => {
+  stored = JSON.stringify({ page: '/product-tc76.html', product: 'TC76', model: 'TC76' });
+  location.search = '?task=supplier-verification&from=%2Fservices.html';
+  assert.deepEqual(formContext(), { page: '/services.html', product: '', model: '', task: 'supplier-verification', cta_id: '' });
+});
+
+test('direct product context takes precedence over a stored service task', () => {
+  stored = JSON.stringify({ task: 'factory-visit' });
+  location.search = '?product=TC76&model=TC76';
+  assert.equal(formContext().task, 'product');
+  assert.equal(formContext().model, 'TC76');
+});
+
+test('only supported inquiry tasks can be prefilled', () => {
+  location.search = '?task=unrecognized';
+  assert.equal(formContext().task, '');
+  location.search = '?task=interpreting';
+  assert.equal(formContext().task, 'interpreting');
 });
